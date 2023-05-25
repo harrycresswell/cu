@@ -1,0 +1,145 @@
+ /* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+ body {
+   color: var(--color-dark);
+   background: var(--color-light);
+   font-size: var(--step-0);
+   font-family: var(--font-base);
+   letter-spacing: var(--tracking);
+ }
+
+ /* Base typesetting */
+ h1,
+ h2,
+ h3 {
+   line-height: 1;
+   letter-spacing: var(--tracking-s);
+ }
+
+ h1,
+ .h1 {
+   font-size: var(--step-4);
+ }
+
+ h2,
+ .h2 {
+   font-size: var(--step-3);
+ }
+
+ h3,
+ .h3 {
+   font-size: var(--step-2);
+ }
+
+ h4,
+ .h4 {
+   font-size: var(--step-1);
+ }
+
+ h5,
+ .h5 {
+   font-size: var(--step-0);
+ }
+
+ h6,
+ .h6 {
+   font-size: var(--step--1);
+ }
+
+ /* Set line lengths */
+ p,
+ li,
+ blockquote:not([class]) {
+   max-width: var(--width-longform);
+ }
+
+ h1,
+ h2,
+ h3 {
+   max-width: 20ch;
+ }
+
+ mark {
+   color: var(--color-light);
+   background-color: var(--color-dark);
+ }
+
+ kbd {
+   font-size: 1rem;
+   border: solid 1px;
+   border-bottom: solid 3px;
+   border-radius: var(--border-radius-sm);
+   padding: .115rem .25rem;
+ }
+
+ /* More generic elements */
+ blockquote:not([class]) {
+   border-left: solid 3px var(--color-dark);
+   padding-inline-start: var(--space-s);
+   font-family: var(--font-serif);
+   font-size: var(--step-2);
+ }
+
+ /* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+ blockquote:not([class]) p:last-of-type,
+ blockquote:not([class]) cite {
+   font-family: var(--font-base);
+   font-size: var(--step-1);
+   font-weight: normal;
+   margin-block-start: var(--space-2xs);
+ }
+
+ svg {
+   height: 2ex;
+   width: auto;
+   flex: none;
+ }
+
+ [role='list'] {
+   padding: 0;
+ }
+
+ /* Base interactive elements */
+ a {
+   color: currentcolor;
+ }
+
+ a:hover {
+   background-color: var(--color-dark);
+   color: var(--color-light);
+   text-decoration: none;
+
+ }
+
+ /* Hide focus styles if they're not needed, for example, 
+ when an element receives focus via the mouse. */
+ :focus:not(:focus-visible) {
+   outline: 0;
+ }
+
+ /* Show focus styles on keyboard focus. */
+ :focus-visible {
+   outline: dotted 2px var(--color-dark);
+   outline-offset: 3px;
+ }
+
+ /* Add scroll margin to all target elements 
+  * See https://piccalil.li/quick-tip/add-scroll-margin-to-all-elements-which-can-be-targeted/
+ */
+ :target {
+   scroll-margin-top: 2ex;
+ }
+
+ main:focus {
+   outline: none;
+ }
+
+ /* Base selection styles that invert whatever colours are rendered */
+ ::selection {
+   background: var(--color-dark);
+   color: var(--color-light);
+ }

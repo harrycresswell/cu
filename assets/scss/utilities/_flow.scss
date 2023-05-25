@@ -1,0 +1,8 @@
+/**
+ * FLOW
+ * Applies a margin to sibling elements based on a --flow-space custom property.
+ * See: * https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+ */
+.flow>*+* {
+  margin-top: var(--flow-space, 1em);
+}

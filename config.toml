@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+# Allow HTML in markdown (use with caution)
+[markup.goldmark.renderer]
+unsafe = true

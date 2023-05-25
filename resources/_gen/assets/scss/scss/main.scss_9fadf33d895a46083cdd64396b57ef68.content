@@ -1,0 +1,579 @@
+/* 
+* The variables/tokens (or whatever you 
+* wish to call them) that power the rest of your styles
+*/
+/**
+ * Breakpoints
+ *
+ *
+$base-font-size = 100%/16px
+  *
+*/
+/**
+* Mobile-first styles FTW
+*
+Example:
+*/
+aside {
+  /* Regular content */ }
+  @media (min-width: 36em) {
+    aside {
+      /* responsive content */ } }
+/* @link https://gwfh.mranftl.com/fonts/inter?subsets=latin */
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+  --space-2xs: clamp(0.50rem, calc(0.46rem + 0.22vw), 0.63rem);
+  --space-xs: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+  --space-s: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --space-m: clamp(1.50rem, calc(1.37rem + 0.65vw), 1.88rem);
+  --space-l: clamp(2.00rem, calc(1.83rem + 0.87vw), 2.50rem);
+  --space-xl: clamp(3.00rem, calc(2.74rem + 1.30vw), 3.75rem);
+  --space-2xl: clamp(4.00rem, calc(3.65rem + 1.74vw), 5.00rem);
+  --space-3xl: clamp(6.00rem, calc(5.48rem + 2.61vw), 7.50rem);
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.12rem + 0.65vw), 0.63rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.35rem + 0.76vw), 0.94rem);
+  --space-xs-s: clamp(0.75rem, calc(0.58rem + 0.87vw), 1.25rem);
+  --space-s-m: clamp(1.00rem, calc(0.70rem + 1.52vw), 1.88rem);
+  --space-m-l: clamp(1.50rem, calc(1.15rem + 1.74vw), 2.50rem);
+  --space-l-xl: clamp(2.00rem, calc(1.39rem + 3.04vw), 3.75rem);
+  --space-xl-2xl: clamp(3.00rem, calc(2.30rem + 3.48vw), 5.00rem);
+  --space-2xl-3xl: clamp(4.00rem, calc(2.78rem + 6.09vw), 7.50rem);
+  /* Custom pairs */
+  --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
+
+/* Global variables */
+:root {
+  /* Typography */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-display: var(--font-base);
+  --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
+  --font-weight-light: 400;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+  --line-height-compact: 1.2;
+  --line-height-loose: 1.7;
+  --width-compact: 28ch;
+  --width-longform: 56ch;
+  --tracking: -0.05ch;
+  --tracking-s: -0.05ch;
+  /* Colours
+    * @link Utopia Kickstarter project 
+    * https://www.figma.com/community/file/1122903924123950023
+  */
+  --color-light: #ffffff;
+  --color-light-mod-1: #FAF9FA;
+  --color-light-mod-2: #EDEBEF;
+  --color-light-mod-3: #9F96AB;
+  --color-dark: #121212;
+  --color-dark-mod-1: #42335C;
+  --color-dark-mod-2: #685C7C;
+  --color-brand-primary: #3977C8;
+  --color-brand-primary-tint: #EFF4FB;
+  --color-brand-primary-shade: #264F85;
+  --color-accent-primary: #C83977;
+  --color-accent-primary-tint: #F4D7E4;
+  --color-accent-primary-shade: #85264F;
+  --color-system-critical: #E54D4D;
+  --color-system-critical-tint: #FADBDB;
+  --color-system-warning: #E67300;
+  --color-system-warning-tint: #FAE3CC;
+  --color-system-success: #3DAA18;
+  --color-system-success-tint: #D8EED1;
+  --color-brand-purple-tint: #ECEDFE;
+  /* Grid */
+  --gutter: var(--space-s-m);
+  /* Effects */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --shadow-xs: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
+  --shadow-sm: 0px 4px 11px 1px rgba(0, 0, 0, 0.04), 0px 3px 10px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.025);
+  --shadow-md: 0px 6px 13px 1px rgba(0, 0, 0, 0.03), 0px 5px 14px 1px rgba(0, 0, 0, 0.04), 0px 3px 14px rgba(0, 0, 0, 0.08), 0px 0px 3px rgba(0, 0, 0, 0.025);
+  --shadow-lg: 0px 6px 8px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 7px 14px 1px rgba(0, 0, 0, 0.03), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
+  --shadow-xl: 0px 8px 16px rgba(0, 0, 0, 0.05), 0px 9px 13px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 12px 17px 1px rgba(0, 0, 0, 0.05), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5); }
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN */
+:root {
+  --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+  --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --step-1: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem); }
+
+/* 
+* Embrace the cascade and inheritance to 
+* style as much as possible at a global level 
+*/
+/* Modern reset: https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Prevent zooming when orientation changes on some iOS devices */
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important; } }
+
+/* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+body {
+  color: var(--color-dark);
+  background: var(--color-light);
+  font-size: var(--step-0);
+  font-family: var(--font-base);
+  letter-spacing: var(--tracking); }
+
+/* Base typesetting */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  letter-spacing: var(--tracking-s); }
+
+h1,
+.h1 {
+  font-size: var(--step-4); }
+
+h2,
+.h2 {
+  font-size: var(--step-3); }
+
+h3,
+.h3 {
+  font-size: var(--step-2); }
+
+h4,
+.h4 {
+  font-size: var(--step-1); }
+
+h5,
+.h5 {
+  font-size: var(--step-0); }
+
+h6,
+.h6 {
+  font-size: var(--step--1); }
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+  max-width: var(--width-longform); }
+
+h1,
+h2,
+h3 {
+  max-width: 20ch; }
+
+mark {
+  color: var(--color-light);
+  background-color: var(--color-dark); }
+
+kbd {
+  font-size: 1rem;
+  border: solid 1px;
+  border-bottom: solid 3px;
+  border-radius: var(--border-radius-sm);
+  padding: .115rem .25rem; }
+
+/* More generic elements */
+blockquote:not([class]) {
+  border-left: solid 3px var(--color-dark);
+  padding-inline-start: var(--space-s);
+  font-family: var(--font-serif);
+  font-size: var(--step-2); }
+
+/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+blockquote:not([class]) p:last-of-type,
+blockquote:not([class]) cite {
+  font-family: var(--font-base);
+  font-size: var(--step-1);
+  font-weight: normal;
+  margin-block-start: var(--space-2xs); }
+
+svg {
+  height: 2ex;
+  width: auto;
+  flex: none; }
+
+[role='list'] {
+  padding: 0; }
+
+/* Base interactive elements */
+a {
+  color: currentcolor; }
+
+a:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-decoration: none; }
+
+/* Hide focus styles if they're not needed, for example, 
+ when an element receives focus via the mouse. */
+:focus:not(:focus-visible) {
+  outline: 0; }
+
+/* Show focus styles on keyboard focus. */
+:focus-visible {
+  outline: dotted 2px var(--color-dark);
+  outline-offset: 3px; }
+
+/* Add scroll margin to all target elements 
+  * See https://piccalil.li/quick-tip/add-scroll-margin-to-all-elements-which-can-be-targeted/
+ */
+:target {
+  scroll-margin-top: 2ex; }
+
+main:focus {
+  outline: none; }
+
+/* Base selection styles that invert whatever colours are rendered */
+::selection {
+  background: var(--color-dark);
+  color: var(--color-light); }
+
+fieldset {
+  border: solid 0.1rem var(--color-dark); }
+
+legend {
+  font-weight: var(--font-weight-bold); }
+
+label {
+  display: block;
+  margin-block: var(--space-3xs); }
+
+form button {
+  display: block;
+  margin-block-start: var(--space-xs); }
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  background: var(--color-light);
+  box-shadow: none;
+  letter-spacing: -.5px;
+  border: solid 0.1rem var(--color-dark);
+  color: var(--color-dark);
+  padding: var(--space-3xs) var(--space-2xs); }
+
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative; }
+
+/* Chevron for select */
+select:not([multiple]) {
+  background-image: linear-gradient(45deg, transparent 49%, var(--color-dark) 51%), linear-gradient(135deg, var(--color-dark) 51%, transparent 49%);
+  background-position: calc(100% - 16px), calc(100% - 11px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat; }
+
+/* checkbox and radio button style */
+input[type="checkbox"],
+input[type="radio"] {
+  border: solid 0.1rem var(--color-dark);
+  padding: var(--space-2xs);
+  vertical-align: middle;
+  position: relative;
+  width: min-content;
+  margin-inline-start: 0;
+  margin-inline-end: .25rem;
+  margin-block-end: .3rem; }
+
+input[type="radio"] {
+  border-radius: 100%; }
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: var(--color-dark); }
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: .17em;
+  height: .32em;
+  border-radius: 0;
+  position: absolute;
+  top: .06em;
+  left: .16em;
+  background-color: transparent;
+  border-right: solid var(--color-light) 0.07em;
+  border-bottom: solid var(--color-light) 0.07em;
+  font-size: 2em;
+  transform: rotate(45deg); }
+
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: .25em;
+  height: .25em;
+  border-radius: 100%;
+  position: absolute;
+  top: .13em;
+  background-color: var(--color-light);
+  left: .13em;
+  font-size: 2em; }
+
+pre {
+  background: var(--color-light-mod-1);
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-wrap: normal;
+  padding: var(--space-xs-s); }
+
+code {
+  background: var(--color-light-mod-1);
+  font-size: var(--step-0); }
+
+p code,
+li code {
+  padding: .125rem .35rem; }
+
+button {
+  background-color: var(--color-dark);
+  border: solid 0.1rem var(--color-dark);
+  color: var(--color-light);
+  cursor: pointer;
+  padding: var(--space-3xs) var(--space-2xs);
+  display: inline-block; }
+
+button:hover,
+button:focus {
+  transform: translateY(-2px); }
+
+/* @link https://cube.fyi/exception.html */
+button[data-style='secondary'] {
+  background-color: var(--color-light-mod-2);
+  border: solid 0.1rem var(--color-light-mod-2);
+  color: var(--color-dark); }
+
+/* 
+* Skeletal components or organisational structures.
+*/
+.prose {
+  --flow-space: var(--space-m-l);
+  --wrapper-max-width: 55rem; }
+
+.prose :is(h2, h3, h4) + * {
+  --flow-space: var(--space-s-m); }
+
+.prose .heading-anchor:is(:hover, :focus) {
+  text-decoration: underline; }
+
+.prose .heading-anchor {
+  text-decoration: none; }
+
+.prose hr {
+  border: none;
+  border-top: 2px dotted; }
+
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999; }
+
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  width: auto;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: var(--space-s);
+  line-height: 1; }
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+/* 
+* High level, flexible layouts that provide a 
+* skeleton to support any variant of a component
+*/
+/* AUTO GRID
+Related Every Layout: https://every-layout.dev/layouts/grid/
+More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+A flexible layout that will create an auto-fill grid with
+configurable grid item sizes
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+
+--grid-min-item-size (14rem): How large each item should be
+ideally, as a minimum.
+
+--grid-placement (auto-fill): Set either auto-fit or auto-fill
+to change how empty grid tracks are handled */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
+  gap: var(--gutter, var(--space-s-l)); }
+
+/* @link https://cube.fyi/exception.html */
+.grid[data-rows='masonry'] {
+  grid-template-rows: masonry;
+  align-items: start; }
+
+.grid[data-layout='50-50'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 26rem); }
+
+/* 
+* Classes that do one job and one job well 
+*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+/**
+ * FLOW
+ * Applies a margin to sibling elements based on a --flow-space custom property.
+ * See: * https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+ */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+
+/**
+ * REGION 
+ * Add consistent vertical padding to create regions of content 
+ * Can either be configured by setting --region-space or use a default from the space scale
+ */
+.region {
+  padding-top: var(--region-space, var(--space-l-xl));
+  padding-bottom: var(--region-space, var(--space-l-xl)); }
+
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ * Info: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+ */
+.wrapper {
+  max-width: var(--wrapper-max-width, 85rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  position: relative; }
+
+.w-full {
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,103 @@
+fieldset {
+  border: solid .1rem var(--color-dark);
+}
+
+legend {
+  font-weight: var(--font-weight-bold);
+}
+
+label {
+  display: block;
+  margin-block: var(--space-3xs);
+}
+
+form button {
+  display: block;
+  margin-block-start: var(--space-xs);
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  background: var(--color-light);
+  box-shadow: none;
+  letter-spacing: -.5px;
+  border: solid .1rem var(--color-dark);
+  color: var(--color-dark);
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+/* Chevron for select */
+select:not([multiple]) {
+  background-image: linear-gradient(45deg, transparent 49%, var(--color-dark) 51%), linear-gradient(135deg, var(--color-dark) 51%, transparent 49%);
+  background-position: calc(100% - 16px), calc(100% - 11px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* checkbox and radio button style */
+input[type="checkbox"],
+input[type="radio"] {
+  border: solid .1rem var(--color-dark);
+  padding: var(--space-2xs);
+  vertical-align: middle;
+  position: relative;
+  width: min-content;
+  margin-inline-start: 0;
+  margin-inline-end: .25rem;
+  margin-block-end: .3rem;
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: var(--color-dark);
+}
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: .17em;
+  height: .32em;
+  border-radius: 0;
+  position: absolute;
+  top: .06em;
+  left: .16em;
+  background-color: transparent;
+  border-right: solid var(--color-light) .07em;
+  border-bottom: solid var(--color-light) .07em;
+  font-size: 2em;
+  transform: rotate(45deg);
+}
+
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: .25em;
+  height: .25em;
+  border-radius: 100%;
+  position: absolute;
+  top: .13em;
+  background-color: var(--color-light);
+  left: .13em;
+  font-size: 2em;
+}

@@ -1,0 +1,55 @@
+/* Global variables */
+:root {
+  /* Typography */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-display: var(--font-base);
+  --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
+  --font-weight-light: 400;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+  --line-height-compact: 1.2;
+  --line-height-loose: 1.7;
+  --width-compact: 28ch;
+  --width-longform: 56ch;
+  --tracking: -0.05ch;
+  --tracking-s: -0.05ch;
+  /* Colours
+    * @link Utopia Kickstarter project 
+    * https://www.figma.com/community/file/1122903924123950023
+  */
+  --color-light: #ffffff;
+  --color-light-mod-1: #FAF9FA;
+  --color-light-mod-2: #EDEBEF;
+  --color-light-mod-3: #9F96AB;
+  --color-dark: #121212;
+  --color-dark-mod-1: #42335C;
+  --color-dark-mod-2: #685C7C;
+  --color-brand-primary: #3977C8;
+  --color-brand-primary-tint: #EFF4FB;
+  --color-brand-primary-shade: #264F85;
+  --color-accent-primary: #C83977;
+  --color-accent-primary-tint: #F4D7E4;
+  --color-accent-primary-shade: #85264F;
+  --color-system-critical: #E54D4D;
+  --color-system-critical-tint: #FADBDB;
+  --color-system-warning: #E67300;
+  --color-system-warning-tint: #FAE3CC;
+  --color-system-success: #3DAA18;
+  --color-system-success-tint: #D8EED1;
+  --color-brand-purple-tint: #ECEDFE;
+  /* Grid */
+  --gutter: var(--space-s-m);
+  /* Effects */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --shadow-xs: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
+  --shadow-sm: 0px 4px 11px 1px rgba(0, 0, 0, 0.04), 0px 3px 10px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.025);
+  --shadow-md: 0px 6px 13px 1px rgba(0, 0, 0, 0.03), 0px 5px 14px 1px rgba(0, 0, 0, 0.04), 0px 3px 14px rgba(0, 0, 0, 0.08), 0px 0px 3px rgba(0, 0, 0, 0.025);
+  --shadow-lg: 0px 6px 8px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 7px 14px 1px rgba(0, 0, 0, 0.03), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
+  --shadow-xl: 0px 8px 16px rgba(0, 0, 0, 0.05), 0px 9px 13px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 12px 17px 1px rgba(0, 0, 0, 0.05), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+}

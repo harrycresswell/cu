@@ -1,0 +1,62 @@
+/**
+ * Breakpoints
+ *
+ *
+$base-font-size = 100%/16px
+  *
+*/
+
+$bp-xs : 30em; // 480px / 16 = 30em
+$bp-sm : 36em; // 576px / 16 = 36em
+$bp-md : 48em; // 768px / 16 = 48em
+$bp-lg : 64em; // 1024px / 16 = 64em
+$bp-xl : 75em; // 1200px / 16 = 75em
+
+@mixin breakpoint($class) {
+  @if $class==xs {
+    @media (max-width: $bp-xs) {
+      @content;
+    }
+  }
+
+  @else if $class==sm {
+    @media (min-width: $bp-sm) {
+      @content;
+    }
+  }
+
+  @else if $class==md {
+    @media (min-width: $bp-md) {
+      @content;
+    }
+  }
+
+  @else if $class==lg {
+    @media (min-width: $bp-lg) {
+      @content;
+    }
+  }
+
+  @else if $class==xl {
+    @media (min-width: $bp-xl) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+/**
+* Mobile-first styles FTW
+*
+Example:
+*/
+aside {
+
+  /* Regular content */
+  @include breakpoint(sm) {
+    /* responsive content */
+  }
+}
