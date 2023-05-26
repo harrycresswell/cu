@@ -112,19 +112,23 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
 </form>
 
 ```
-<label>Choose a size:</label>
-<label>
-  <input type="radio" name="size" value="small">
-  Small
-</label>
-<label>
-  <input type="radio" name="size" value="medium">
-  Medium
-</label>
-<label>
-  <input type="radio" name="size" value="large">
-  Large
-</label>
+<form>
+  <fieldset>
+    <legend>Choose a size:</legend>
+    <label>
+      <input type="radio" name="size" value="small">
+      Small
+    </label>
+    <label>
+      <input type="radio" name="size" value="medium">
+      Medium
+    </label>
+    <label>
+      <input type="radio" name="size" value="large">
+      Large
+    </label>
+  </fieldset>
+</form>
 ```
 
 <form>
@@ -139,11 +143,16 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
   <button type="submit" value="Submit">Sign up</button>
 </form>
 
-
-
 ```
-<label>
-  <input type="checkbox" name="checkbox" id="checkbox">
-  I agree to the <a href="#">terms and conditions</a>.
-</label> 
+<form>
+  <label for="email-address">Email Address</label>
+  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" autocomplete="current-password">
+  <label>
+    <input type="checkbox" name="checkbox" id="checkbox">
+    I agree to the <a href="#">terms and conditions</a>.
+  </label> 
+  <button type="submit" value="Submit">Sign up</button>
+</form>
 ```
