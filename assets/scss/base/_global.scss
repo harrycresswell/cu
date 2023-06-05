@@ -106,10 +106,11 @@
  /* Base interactive elements */
  a {
    color: currentcolor;
+   color: var(--color-brand);
  }
 
  a:hover {
-   background-color: var(--color-dark);
+   background-color: var(--color-brand);
    color: var(--color-light);
    text-decoration: none;
 

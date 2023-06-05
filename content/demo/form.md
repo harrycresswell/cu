@@ -62,7 +62,7 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
     <legend>Your favourite pet</legend>
       <label for="pet-select">Choose a pet:</label>
       <select name="pets" id="pet-select">
-        <option value="">--Please choose an option--</option>
+        <option value="">Choose an option</option>
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
         <option value="hamster">Hamster</option>
@@ -80,7 +80,7 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
     <legend>Your favourite pet</legend>
       <label for="pet-select">Choose a pet:</label>
       <select name="pets" id="pet-select">
-        <option value="">--Please choose an option--</option>
+        <option value="">Choose an option</option>
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
         <option value="hamster">Hamster</option>

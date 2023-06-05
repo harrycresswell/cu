@@ -1,23 +1,20 @@
 /* Format the expanding box */
 details {
-  background: var(--accent-bg);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  margin-bottom: 1rem;
+  background: var(--color-light-mod-1);
 }
 
 summary {
   cursor: pointer;
-  font-weight: bold;
-  padding: 0.6rem 1rem;
+  font-weight: var(--font-weight-bold);
+  padding: .5rem 1rem;
 }
 
 details[open] {
-  padding: 0.6rem 1rem 0.75rem 1rem;
+  padding: .5rem 1rem .75rem 1rem;
 }
 
 details[open] summary {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   padding: 0;
 }
 

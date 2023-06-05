@@ -35,39 +35,59 @@
     <article class="region flow">
       {{ $type := $headless.Resources.Match "type*" }}
       {{ range $type }}
-        <h2>{{ .Title }}</h2>
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
         {{ .Content }}
       {{ end }}
     </article>
     <article class="region flow">
       {{ $list := $headless.Resources.Match "list*" }}
       {{ range $list }}
-        <h2>{{ .Title }}</h2>
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
         {{ .Content }}
       {{ end }}
     </article>
     <article class="region flow">
       {{ $blockquote := $headless.Resources.Match "blockquote*" }}
       {{ range $blockquote }}
-        <h2>{{ .Title }}</h2>
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
         {{ .Content }}
       {{ end }}
     </article>
     <article class="region flow">
       {{ $codeblock := $headless.Resources.Match "codeblock*" }}
       {{ range $codeblock }}
-        <h2>{{ .Title }}</h2>
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
         {{ .Content }}
       {{ end }}
     </article>
     <article class="region flow">
       {{ $form := $headless.Resources.Match "form*" }}
       {{ range $form }}
-        <h2>{{ .Title }}</h2>
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
         {{ .Content }}
       {{ end }}
     </article>
-    
+    <article class="region flow">
+      {{ $form := $headless.Resources.Match "accordion*" }}
+      {{ range $form }}
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </article>
+    <article class="region flow">
+      {{ $form := $headless.Resources.Match "table*" }}
+      {{ range $form }}
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </article>
+    <article class="region flow">
+      {{ $form := $headless.Resources.Match "button*" }}
+      {{ range $form }}
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </article>
   </main>
 </body>
 </html>

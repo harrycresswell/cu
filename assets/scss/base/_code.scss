@@ -9,7 +9,12 @@ pre {
 
 code {
   background: var(--color-light-mod-1);
+  color: var(--color-accent);
   font-size: var(--step-0);
+}
+
+pre code {
+  color: var(--color-dark);
 }
 
 p code,

@@ -49,6 +49,7 @@ select:not([multiple]) {
   background-position: calc(100% - 16px), calc(100% - 11px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
+  padding-inline-end: 2rem;
 }
 
 /* checkbox and radio button style */

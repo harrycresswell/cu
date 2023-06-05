@@ -4,8 +4,7 @@
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-display: var(--font-base);
   --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
-  --font-weight-light: 400;
-  --font-weight-regular: 500;
+  --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-compact: 1.2;
   --line-height-loose: 1.7;
@@ -24,19 +23,18 @@
   --color-dark: #121212;
   --color-dark-mod-1: #42335C;
   --color-dark-mod-2: #685C7C;
-  --color-brand-primary: #3977C8;
-  --color-brand-primary-tint: #EFF4FB;
-  --color-brand-primary-shade: #264F85;
-  --color-accent-primary: #C83977;
-  --color-accent-primary-tint: #F4D7E4;
-  --color-accent-primary-shade: #85264F;
+  --color-brand: #2A5997;
+  --color-brand-tint: #EFF4FB;
+  --color-brand-shade: #264F85;
+  --color-accent: #9F2C5E;
+  --color-accent-tint: #F4D7E4;
+  --color-accent-shade: #85264F;
   --color-system-critical: #E54D4D;
   --color-system-critical-tint: #FADBDB;
   --color-system-warning: #E67300;
   --color-system-warning-tint: #FAE3CC;
   --color-system-success: #3DAA18;
   --color-system-success-tint: #D8EED1;
-  --color-brand-purple-tint: #ECEDFE;
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */

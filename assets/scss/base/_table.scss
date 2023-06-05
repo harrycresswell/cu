@@ -7,22 +7,21 @@ table {
 
 td,
 th {
-  border: 1px solid var(--border);
+  border: .1rem solid var(--color-dark);
   text-align: left;
   padding: 0.5rem;
 }
 
 th {
-  background: var(--accent-bg);
+  background: var(--color-light-mod-1);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  /* Set every other cell slightly darker. Improves readability. */
-  background: var(--accent-bg);
+  background: var(--color-light-mod-1);
 }
 
 table caption {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  padding: .5rem;
+  caption-side: bottom;
 }

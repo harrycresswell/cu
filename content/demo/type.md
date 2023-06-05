@@ -24,4 +24,4 @@ There are also various HTML elements you can use to format inline text in a bunc
 - `<mark>` element to <mark>highlight text</mark>.
 - `<kbd>` for keyboard commands; <kbd>CTL+Z</kbd>.
 
-Of course, you can also create [links](#) to anchors and pages.
+Of course, you can also create [links](#) to anchors and between pages.

@@ -69,8 +69,7 @@ aside {
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-display: var(--font-base);
   --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
-  --font-weight-light: 400;
-  --font-weight-regular: 500;
+  --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-compact: 1.2;
   --line-height-loose: 1.7;
@@ -89,19 +88,18 @@ aside {
   --color-dark: #121212;
   --color-dark-mod-1: #42335C;
   --color-dark-mod-2: #685C7C;
-  --color-brand-primary: #3977C8;
-  --color-brand-primary-tint: #EFF4FB;
-  --color-brand-primary-shade: #264F85;
-  --color-accent-primary: #C83977;
-  --color-accent-primary-tint: #F4D7E4;
-  --color-accent-primary-shade: #85264F;
+  --color-brand: #2A5997;
+  --color-brand-tint: #EFF4FB;
+  --color-brand-shade: #264F85;
+  --color-accent: #9F2C5E;
+  --color-accent-tint: #F4D7E4;
+  --color-accent-shade: #85264F;
   --color-system-critical: #E54D4D;
   --color-system-critical-tint: #FADBDB;
   --color-system-warning: #E67300;
   --color-system-warning-tint: #FAE3CC;
   --color-system-success: #3DAA18;
   --color-system-success-tint: #D8EED1;
-  --color-brand-purple-tint: #ECEDFE;
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
@@ -287,10 +285,11 @@ svg {
 
 /* Base interactive elements */
 a {
-  color: currentcolor; }
+  color: currentcolor;
+  color: var(--color-brand); }
 
 a:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-brand);
   color: var(--color-light);
   text-decoration: none; }
 
@@ -362,7 +361,8 @@ select:not([multiple]) {
   background-image: linear-gradient(45deg, transparent 49%, var(--color-dark) 51%), linear-gradient(135deg, var(--color-dark) 51%, transparent 49%);
   background-position: calc(100% - 16px), calc(100% - 11px);
   background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-inline-end: 2rem; }
 
 /* checkbox and radio button style */
 input[type="checkbox"],
@@ -419,7 +419,11 @@ pre {
 
 code {
   background: var(--color-light-mod-1);
+  color: var(--color-accent);
   font-size: var(--step-0); }
+
+pre code {
+  color: var(--color-dark); }
 
 p code,
 li code {
@@ -442,6 +446,48 @@ button[data-style='secondary'] {
   background-color: var(--color-light-mod-2);
   border: solid 0.1rem var(--color-light-mod-2);
   color: var(--color-dark); }
+
+/* Format the expanding box */
+details {
+  background: var(--color-light-mod-1); }
+
+summary {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  padding: .5rem 1rem; }
+
+details[open] {
+  padding: .5rem 1rem .75rem 1rem; }
+
+details[open] summary {
+  margin-bottom: .5rem;
+  padding: 0; }
+
+details[open] > *:last-child {
+  margin-bottom: 0; }
+
+/* Format tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0; }
+
+td,
+th {
+  border: 0.1rem solid var(--color-dark);
+  text-align: left;
+  padding: 0.5rem; }
+
+th {
+  background: var(--color-light-mod-1);
+  font-weight: bold; }
+
+tr:nth-child(even) {
+  background: var(--color-light-mod-1); }
+
+table caption {
+  padding: .5rem;
+  caption-side: bottom; }
 
 /* 
 * Skeletal components or organisational structures.
