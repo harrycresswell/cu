@@ -71,7 +71,8 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background-color: var(--color-dark);
+  border: solid .1rem var(--color-brand);
+  background-color: var(--color-brand);
 }
 
 input[type="checkbox"]:checked::after {

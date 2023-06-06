@@ -1,6 +1,6 @@
 button {
-  background-color: var(--color-dark);
-  border: solid 0.1rem var(--color-dark);
+  background-color: var(--color-brand);
+  border: solid 0.1rem var(--color-brand);
   color: var(--color-light);
   cursor: pointer;
   padding: var(--space-3xs) var(--space-2xs);
@@ -9,12 +9,30 @@ button {
 
 button:hover,
 button:focus {
+  background-color: var(--color-brand-shade);
   transform: translateY(-2px)
 }
 
 /* @link https://cube.fyi/exception.html */
 button[data-style='secondary'] {
+  color: var(--color-brand);
+  background: var(--color-brand-tint);
+  border: solid 0.1rem var(--color-brand-tint);
+}
+
+button[data-style='secondary']:hover {
+  color: var(--color-light);
+  background-color: var(--color-brand);
+  border: solid 0.1rem var(--color-brand);
+}
+
+button:disabled, 
+input[type="button"]:disabled, 
+input[type="reset"]:disabled, 
+input[type="submit"]:disabled {
   background-color: var(--color-light-mod-2);
   border: solid 0.1rem var(--color-light-mod-2);
   color: var(--color-dark);
+  cursor: not-allowed;
+  transform: none;
 }
