@@ -3,7 +3,7 @@ title: Code blocks
 weight: 4
 ---
 
-Create code blocks, like the example below, using the `<pre>` element with a nested `<code>` element inside.
+Create code blocks, like the one below, using the `<pre>` element with a nested `<code>` element inside.
 
 ```
 <pre>

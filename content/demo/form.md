@@ -3,7 +3,32 @@ title: 'Forms'
 weight: 5
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+Use the `<form>` element to contain any interative elements, used to submit information and collect data. 
+
+<form>
+  <label for="email-address">Email Address</label>
+  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" autocomplete="current-password">
+  <button type="submit" value="Submit">Submit</button>
+</form>
+
+```
+<form>
+  <label for="email-address">Email Address</label>
+  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" autocomplete="current-password">
+  <button type="submit" value="Submit">Submit</button>
+</form>
+```
+
+Optionally, you can also:
+
+- Use `<fieldset>` to group elements within the form.
+- Use `<legend>` to caption the form contents. 
+- Add the `w-full` utility class to any input, textarea or button to make it fill the width of the form.
+
 
 <form>
   <fieldset>  
@@ -33,29 +58,7 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
 </form>
 ```
 
-<form>
-  <label for="email-address">Email Address</label>
-  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" autocomplete="current-password">
-  <div style="display: flex; gap: .5rem;">
-    <button type="submit" value="Submit">Submit</button>
-    <button data-style="secondary" type="submit" value="Submit">Clear</button>
-  </div>
-</form>
-
-```
-<form>
-  <label for="email-address">Email Address</label>
-  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" autocomplete="current-password">
-  <div style="display: flex; gap: .5rem;">
-    <button type="submit" value="Submit">Submit</button>
-    <button data-style="secondary" type="submit" value="Submit">Clear</button>
-  </div>
-</form>
-```
+Selects are also a thing:
 
 <form>
   <fieldset>
@@ -92,6 +95,8 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
   </fieldset>
 </form>
 ```
+
+As are radio buttons:
 
 <form>
 <fieldset>
@@ -130,6 +135,8 @@ Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat 
   </fieldset>
 </form>
 ```
+
+And, checkboxes:
 
 <form>
   <label for="email-address">Email Address</label>
