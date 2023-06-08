@@ -458,11 +458,11 @@ button:focus {
 button[data-variant='outline'] {
   color: var(--color-brand);
   background: var(--color-light);
-  border: solid 0.1rem var(--color-brand-shade); }
+  border: solid 0.1rem var(--color-brand); }
 
 button[data-variant='outline']:hover {
   color: var(--color-light);
-  background-color: var(--color-brand);
+  background-color: var(--color-brand-shade);
   border: solid 0.1rem var(--color-brand); }
 
 button:disabled,
