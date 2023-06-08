@@ -63,17 +63,29 @@
    max-width: 20ch;
  }
 
- mark {
-   color: var(--color-light);
-   background-color: var(--color-dark);
- }
+ hr {
+  border: none;
+  border-top: 2px dotted;
+ } 
 
  kbd {
-   font-size: 1rem;
-   border: solid 1px;
-   border-bottom: solid 3px;
-   border-radius: var(--border-radius-sm);
-   padding: .115rem .25rem;
+  background-color: var(--color-light-mod-2);
+  border: solid 1px var(--color-light-mod-3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  padding: .115rem .25rem;
+ }
+
+ figcaption {
+  font-size: var(--step--1);
+  margin-block-start: .5rem;
+  text-align: center;
+ }
+
+ small {
+  font-size: var(--step--1);
  }
 
  /* More generic elements */
@@ -140,7 +152,7 @@
  }
 
  /* Base selection styles that invert whatever colours are rendered */
+ mark,
  ::selection {
-   background: var(--color-dark);
-   color: var(--color-light);
+  background-color: var(--color-brand-tint);
  }

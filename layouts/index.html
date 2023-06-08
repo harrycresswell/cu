@@ -88,6 +88,23 @@
         {{ .Content }}
       {{ end }}
     </article>
+    <article class="region flow">
+      {{ $form := $headless.Resources.Match "image*" }}
+      {{ range $form }}
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </article>
+    <article class="region flow">
+      {{ $form := $headless.Resources.Match "hr*" }}
+      {{ range $form }}
+        <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      {{ end }}
+    </article>
   </main>
+  <footer class="wrapper prose text-center">
+    <small>Created by <a href="#">Harry Cresswell</a>.</small>
+  </footer>
 </body>
 </html>

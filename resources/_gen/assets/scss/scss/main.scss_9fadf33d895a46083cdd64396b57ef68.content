@@ -74,7 +74,7 @@ aside {
   --line-height-compact: 1.2;
   --line-height-loose: 1.7;
   --width-compact: 28ch;
-  --width-longform: 56ch;
+  --width-longform: 62ch;
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
   /* Colours
@@ -249,16 +249,26 @@ h2,
 h3 {
   max-width: 20ch; }
 
-mark {
-  color: var(--color-light);
-  background-color: var(--color-dark); }
+hr {
+  border: none;
+  border-top: 2px dotted; }
 
 kbd {
-  font-size: 1rem;
-  border: solid 1px;
-  border-bottom: solid 3px;
+  background-color: var(--color-light-mod-2);
+  border: solid 1px var(--color-light-mod-3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
   border-radius: var(--border-radius-sm);
+  font-family: var(--font-accent);
+  font-size: 1rem;
   padding: .115rem .25rem; }
+
+figcaption {
+  font-size: var(--step--1);
+  margin-block-start: .5rem;
+  text-align: center; }
+
+small {
+  font-size: var(--step--1); }
 
 /* More generic elements */
 blockquote:not([class]) {
@@ -313,9 +323,9 @@ main:focus {
   outline: none; }
 
 /* Base selection styles that invert whatever colours are rendered */
+mark,
 ::selection {
-  background: var(--color-dark);
-  color: var(--color-light); }
+  background-color: var(--color-brand-tint); }
 
 fieldset {
   border: solid 0.1rem var(--color-dark); }
@@ -416,7 +426,8 @@ pre {
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
-  padding: var(--space-xs-s); }
+  padding: var(--space-xs-s);
+  margin: 0; }
 
 code {
   background: var(--color-light-mod-1);
@@ -444,12 +455,12 @@ button:focus {
   transform: translateY(-2px); }
 
 /* @link https://cube.fyi/exception.html */
-button[data-style='secondary'] {
+button[data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-brand-tint);
-  border: solid 0.1rem var(--color-brand-tint); }
+  background: var(--color-light);
+  border: solid 0.1rem var(--color-brand-shade); }
 
-button[data-style='secondary']:hover {
+button[data-variant='outline']:hover {
   color: var(--color-light);
   background-color: var(--color-brand);
   border: solid 0.1rem var(--color-brand); }
@@ -460,7 +471,7 @@ input[type="reset"]:disabled,
 input[type="submit"]:disabled {
   background-color: var(--color-light-mod-2);
   border: solid 0.1rem var(--color-light-mod-2);
-  color: var(--color-dark);
+  color: var(--color-dark-mod-2);
   cursor: not-allowed;
   transform: none; }
 
@@ -523,10 +534,6 @@ table caption {
 .prose .heading-anchor {
   text-decoration: none; }
 
-.prose hr {
-  border: none;
-  border-top: 2px dotted; }
-
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
   display: block;
@@ -543,9 +550,9 @@ table caption {
   height: auto;
   overflow: visible;
   width: auto;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding: var(--space-s);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: var(--space-xs);
   line-height: 1; }
 
 .skip-link:not(:focus) {
@@ -639,5 +646,8 @@ to change how empty grid tracks are handled */
 
 .w-full {
   width: 100%; }
+
+.text-center {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

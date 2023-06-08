@@ -22,6 +22,6 @@ There are also various HTML elements you can use to format inline text in a bunc
 - `<small>` to make <small>small</small> text.
 - `<code>` to create inline code examples.
 - `<mark>` element to <mark>highlight text</mark>.
-- `<kbd>` for keyboard commands; <kbd>CTL+Z</kbd>.
+- `<kbd>` for keyboard commands; <kbd>Ctrl</kbd> + <kbd>V</kbd>.
 
 Of course, you can also create [links](#) to anchors and between pages.

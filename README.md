@@ -4,15 +4,15 @@ This CSS starter is based heavily on [Cube CSS](https://cube.fyi/), a methodolog
 
 However, unlike Cube CSS, this starter doesn’t abstract design tokens away from the CSS. Or generate utility classes for you. 
 
-Instead, CSS custom properties replace the concept of tokens. And utility classes are created by hand, as and when they are required. 
+Instead, tokens are added directly to the CSS in the form of Custom Properties. And utility classes are created by hand, as and when they are required. 
 
 This keeps things simple, approachable and most of all, dependency free.
 
 ## Features
 
-- Cube CSS
-- Utopia.fyi
-
+- [Cube CSS](https://cube.fyi/) methodology
+- Fluid responsive type with [Utopia](https://utopia.fyi/).
+- Custom fonts
 
 ## Getting started
 
@@ -36,7 +36,7 @@ Contains the config, a.k.a the settings, the design tokens which power the rest 
 
 ### The `base` folder
 
-Low-specificity, global styles that apply to the whole project (see https://cube.fyi/css.html). Target only element selectors here so you do as much of the work as high as possible. Ditch any partials you don’t need in your project. For example, you may not need code, table or form styles. 
+Low-specificity, global styles that apply to the whole project (see https://cube.fyi/css.html). Target only element selectors here so you do as much of the work as high as possible. Ditch any partials you don’t need in your project. For example, you may not need code, table or form styles, so remove the corresponding file from the folder. 
 
 ### The `blocks` folder
 

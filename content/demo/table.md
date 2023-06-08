@@ -7,7 +7,7 @@ Tables are handy for visualising and making connections between different types 
 
 <table>
   <caption>
-    <small>Star Wars characters, their home worlds and choice of weapon.</small>
+    <small>Star Wars characters, their home worlds and preferred weapon.</small>
   </caption>
   <thead>
     <tr>

@@ -1,6 +1,6 @@
 ---
 title: eryn.css
-description: A Modern SCSS Starter
+description: A modern SCSS framework
 ---
 
 - [Overview](#overview)
