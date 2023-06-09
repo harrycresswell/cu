@@ -588,6 +588,9 @@ input[type="button"][data-variant='outline']:hover {
   background-color: var(--color-brand-shade);
   border: solid 0.1rem var(--color-brand); }
 
+body > footer {
+  margin-block: 2rem; }
+
 /* 
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
