@@ -1,0 +1,61 @@
+button,
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: var(--color-brand);
+  border: solid 0.1rem var(--color-brand);
+  color: var(--color-light);
+  cursor: pointer;
+  padding: var(--space-3xs) var(--space-2xs);
+  display: inline-block;
+  text-decoration: none;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="button"]:hover
+input[type="button"]:focus {
+  background-color: var(--color-brand-shade);
+  transform: translateY(-2px)
+}
+
+button:disabled,
+/* @link https://www.scottohara.me/blog/2021/05/28/disabled-links.html */
+.button[aria-disabled="true"],
+input[type="submit"]:disabled,
+input[type="reset"]:disabled, 
+input[type="button"]:disabled {
+  background-color: var(--color-light-mod-2);
+  border: solid 0.1rem var(--color-light-mod-2);
+  color: var(--color-dark-mod-2);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* @link https://cube.fyi/exception.html */
+button[data-variant='outline'],
+.button[data-variant='outline'],
+input[type="submit"][data-variant='outline'],
+input[type="reset"][data-variant='outline'],
+input[type="button"][data-variant='outline'] {
+  color: var(--color-brand);
+  background: var(--color-light);
+  border: solid 0.1rem var(--color-brand);
+}
+
+button[data-variant='outline']:hover,
+.button[data-variant='outline']:hover,
+input[type="submit"][data-variant='outline']:hover,
+input[type="reset"][data-variant='outline']:hover,
+input[type="button"][data-variant='outline']:hover {
+  color: var(--color-light);
+  background-color: var(--color-brand-shade);
+  border: solid 0.1rem var(--color-brand);
+}
