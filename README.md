@@ -1,10 +1,10 @@
 # A Modern CSS Starter
 
-This CSS starter is based heavily on [Cube CSS](https://cube.fyi/), a methodology orientated towards simplicity, pragmatism and consistency.
+This CSS starter is heavily inspired by [Cube CSS](https://cube.fyi/), a methodology orientated towards simplicity, pragmatism and consistency.
 
-However, unlike Cube CSS, this starter doesn’t abstract design tokens away from the CSS. Or generate utility classes for you. 
+Unlike Cube CSS, however, this starter doesn’t abstract design tokens away from the CSS, or generate utility classes for you. 
 
-Instead, tokens are added directly to the CSS in the form of Custom Properties. And utility classes are created by hand, as and when they are required. 
+Instead, tokens are added directly to the CSS in the form of CSS Custom Properties. And utility classes are created by hand, as and when they are required. 
 
 This keeps things simple, approachable and most of all, dependency free.
 
@@ -28,9 +28,10 @@ Then link to the folder in the head of your pages.
 
 ### The `abstracts` folder
 
-Contains the config, a.k.a the settings, the design tokens which power the rest of the CSS. Making changes here will cascade through the entire CSS.
+Contains the config a.k.a the settings. These are the design tokens which power the rest of the CSS. Making changes here will cascade through the entire CSS.
 
-`abstracts/break` is a handy mixin for working with breakpoints. `abstracts/fonts` handles custom fonts.
+- `abstracts/break` is a handy mixin for working with breakpoints. 
+- `abstracts/fonts` handles custom fonts.
 
 [Utopia](https://utopia.fyi/) provides a systematic approach to fluid type, space and grid.
 
@@ -54,13 +55,17 @@ The U in Cube CSS.
 
 No two projects are exactly the same, but under the hood, a good bit of the CSS still might well be. This starter project is that “good bit” of CSS. And if the name “starter” isn’t a give away, it’s expected to be built upon. 
 
-How you extend this theme is very much up to you. You make find you only need to update a few custom properties, or you may have big plans to turn it into something unrecognisable.
+How you choose to extend this theme is very much up to you. You make find you only need to update a few custom properties, or you may want to turn it into something completely unrecognisable.
 
-Either way, I chose to lean on existing methodologies to make the process as easy as possible.
+Either way, I chose to lean on existing methodologies to make this process as easy as possible. You will find plenty of documentation online about how to work with both Cube CSS and Utopia, meaning that anyone with some knowledge of CSS should be able to adopt the project and extend it in a systematic way. 
 
-There is plenty of documentation online about how to work with both Cube CSS and Utopia, meaning that anyone with some knowledge of CSS should be able to adopt the project and extend it in a systematic way. 
+## Resources
 
+The following resources will help you learn more about this approach.
 
+- [Be the browser's mentor, not its micromanager](https://heypresents.com/talks/be-the-browser-s-mentor-not-its-micromanager)
+- [Every Layout by Heydon Pickering and Andy Bell](https://every-layout.dev/)
+- [A look at the CUBE CSS methodology in action](https://www.youtube.com/watch?v=NanhQvnvbR8) from Kevin Powell.
 ## Author
 
 Harry Cresswell

@@ -2,12 +2,10 @@
 * The variables/tokens (or whatever you 
 * wish to call them) that power the rest of your styles
 */
-/**
- * Breakpoints
- *
- *
+/*
+Breakpoints
+
 $base-font-size = 100%/16px
-  *
 */
 /**
 * Mobile-first styles FTW
@@ -19,7 +17,11 @@ aside {
   @media (min-width: 36em) {
     aside {
       /* responsive content */ } }
-/* @link https://gwfh.mranftl.com/fonts/inter?subsets=latin */
+/* 
+Fonts using Google Webfonts Helper
+
+@link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
+*/
 /* inter-regular - latin */
 @font-face {
   font-display: swap;
@@ -40,7 +42,11 @@ aside {
   src: url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-/* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* 
+Utopia fluid space
+
+@link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
+*/
 :root {
   --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
   --space-2xs: clamp(0.50rem, calc(0.46rem + 0.22vw), 0.63rem);
@@ -63,7 +69,10 @@ aside {
   /* Custom pairs */
   --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
 
-/* Global variables */
+/* 
+Global theme tokens
+
+*/
 :root {
   /* Typography */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -77,17 +86,17 @@ aside {
   --width-longform: 62ch;
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
-  /* Colours
+  /* Colors
     * @link Utopia Kickstarter project 
     * https://www.figma.com/community/file/1122903924123950023
   */
   --color-light: #ffffff;
-  --color-light-mod-1: #FAF9FA;
-  --color-light-mod-2: #F3F1F3;
-  --color-light-mod-3: #E6E0E6;
-  --color-dark: #121212;
-  --color-dark-mod-1: #42335C;
-  --color-dark-mod-2: #685C7C;
+  --color-light-mod-1: #F8F8F8;
+  --color-light-mod-2: #F4F4F4;
+  --color-light-mod-3: #E9E9E9;
+  --color-dark: #1D1D1D;
+  --color-dark-mod-1: #494949;
+  --color-dark-mod-2: #616161;
   --color-brand: #2A5997;
   --color-brand-tint: #EFF4FB;
   --color-brand-shade: #264F85;
@@ -116,7 +125,11 @@ aside {
   --transition-fade: 200ms ease;
   --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5); }
 
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN */
+/* 
+Utopia fluid type
+
+@link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN 
+*/
 :root {
   --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
   --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
@@ -129,7 +142,11 @@ aside {
 * Embrace the cascade and inheritance to 
 * style as much as possible at a global level 
 */
-/* Modern reset: https://piccalil.li/blog/a-modern-css-reset/ */
+/* 
+A modern reset
+
+@link: https://piccalil.li/blog/a-modern-css-reset/ 
+*/
 /* Box sizing rules */
 *,
 *::before,
@@ -195,10 +212,10 @@ select {
     scroll-behavior: auto !important; } }
 
 /* 
-  Global styles 
+Global styles 
 
-  Low-specificity, global styles that apply to the whole 
-  project: https://cube.fyi/css.html
+Low-specificity, global styles that apply to the whole 
+project: https://cube.fyi/css.html
 */
 body {
   color: var(--color-dark);
@@ -247,7 +264,7 @@ blockquote:not([class]) {
 h1,
 h2,
 h3 {
-  max-width: 20ch; }
+  max-width: var(--width-compact); }
 
 hr {
   border: none;
@@ -290,6 +307,7 @@ svg {
   width: auto;
   flex: none; }
 
+/* Remove padding on ul, ol elements with a list role */
 [role='list'] {
   padding: 0; }
 
@@ -327,6 +345,11 @@ mark,
 ::selection {
   background-color: var(--color-brand-tint); }
 
+/* 
+Form styles
+
+Ditch these styles altogether if not required for the website.
+*/
 fieldset {
   border: solid 0.1rem var(--color-dark); }
 
@@ -421,6 +444,13 @@ input[type="radio"]:checked::after {
   left: .13em;
   font-size: 2em; }
 
+/* 
+Code styles
+
+Used for inline code and code blocks
+
+Ditch these styles altogether if not required for the website.
+*/
 pre {
   background: var(--color-light-mod-1);
   overflow: auto;
@@ -441,7 +471,13 @@ p code,
 li code {
   padding: .125rem .35rem; }
 
-/* Format the expanding box */
+/* 
+Details and summary styles
+
+Format the expanding box, a.k.a accordion.
+
+Ditch these styles altogether if not required for the website.
+*/
 details {
   background: var(--color-light-mod-1); }
 
@@ -460,7 +496,11 @@ details[open] summary {
 details[open] > *:last-child {
   margin-bottom: 0; }
 
-/* Format tables */
+/* 
+Table styles
+
+Ditch these styles altogether if not required for the website.
+*/
 table {
   border-collapse: collapse;
   width: 100%;
@@ -487,19 +527,6 @@ table caption {
 /* 
 * Skeletal components or organisational structures.
 */
-.prose {
-  --flow-space: var(--space-m-l);
-  --wrapper-max-width: 55rem; }
-
-.prose :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m); }
-
-.prose .heading-anchor:is(:hover, :focus) {
-  text-decoration: underline; }
-
-.prose .heading-anchor {
-  text-decoration: none; }
-
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
   display: block;
@@ -588,8 +615,22 @@ input[type="button"][data-variant='outline']:hover {
   background-color: var(--color-brand-shade);
   border: solid 0.1rem var(--color-brand); }
 
-body > footer {
+body > footer,
+.site-foot {
   margin-block: 2rem; }
+
+.prose {
+  --flow-space: var(--space-m-l);
+  --wrapper-max-width: 55rem; }
+
+.prose :is(h2, h3, h4) + * {
+  --flow-space: var(--space-s-m); }
+
+.prose .heading-anchor:is(:hover, :focus) {
+  text-decoration: underline; }
+
+.prose .heading-anchor {
+  text-decoration: none; }
 
 /* 
 * High level, flexible layouts that provide a 
@@ -599,7 +640,7 @@ body > footer {
 Related Every Layout: https://every-layout.dev/layouts/grid/
 More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
 A flexible layout that will create an auto-fill grid with
-configurable grid item sizes
+configurable grid item sizes.
 
 CUSTOM PROPERTIES AND CONFIGURATION
 --gutter (var(--space-s-m)): This defines the space
@@ -609,20 +650,33 @@ between each item.
 ideally, as a minimum.
 
 --grid-placement (auto-fill): Set either auto-fit or auto-fill
-to change how empty grid tracks are handled */
+to change how empty grid tracks are handled. 
+*/
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
   gap: var(--gutter, var(--space-s-l)); }
 
-/* @link https://cube.fyi/exception.html */
+/* 
+EXCEPTIONS
+  
+@link https://cube.fyi/exception.html 
+*/
+/* Masonry layout (will work one day in all browsers) */
 .grid[data-rows='masonry'] {
   grid-template-rows: masonry;
   align-items: start; }
 
+/* Two column when space permits */
 .grid[data-layout='50-50'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 26rem); }
+
+/* Three column when space permits */
+.grid[data-layout='33x3'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+  text-align: center; }
 
 /* 
 * Classes that do one job and one job well 
@@ -638,29 +692,31 @@ to change how empty grid tracks are handled */
   width: 1px;
   white-space: nowrap; }
 
-/**
- * FLOW
- * Applies a margin to sibling elements based on a --flow-space custom property.
- * See: * https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
- */
+/*
+FLOW
+Applies a margin to sibling elements based on a --flow-space custom property.
+@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
+@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+@link: https://piccalil.li/quick-tip/flow-utility/
+*/
 .flow > * + * {
   margin-top: var(--flow-space, 1em); }
 
-/**
- * REGION 
- * Add consistent vertical padding to create regions of content 
- * Can either be configured by setting --region-space or use a default from the space scale
- */
+/*
+REGION 
+Add consistent vertical padding to create regions of content 
+Can either be configured by setting --region-space or use a default from the space scale
+*/
 .region {
   padding-top: var(--region-space, var(--space-l-xl));
   padding-bottom: var(--region-space, var(--space-l-xl)); }
 
-/**
- * WRAPPER
- * Sets a max width, adds a consistent gutter and horizontally
- * centers the contents
- * Info: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
- */
+/*
+WRAPPER
+Sets a max width, adds a consistent gutter and horizontally
+centers the contents
+@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+*/
 .wrapper {
   max-width: var(--wrapper-max-width, 85rem);
   margin-left: auto;

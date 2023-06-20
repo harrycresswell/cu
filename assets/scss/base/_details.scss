@@ -1,4 +1,10 @@
-/* Format the expanding box */
+/* 
+Details and summary styles
+
+Format the expanding box, a.k.a accordion.
+
+Ditch these styles altogether if not required for the website.
+*/
 details {
   background: var(--color-light-mod-1);
 }

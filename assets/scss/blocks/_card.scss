@@ -1,0 +1,8 @@
+.card {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: var(--space-m-l);
+  border-radius: var(--border-radius-md);
+  /* When card is used on an <li>, unset line lengths set in global styles and fill entire width of parent instead */
+  max-width: unset;
+}

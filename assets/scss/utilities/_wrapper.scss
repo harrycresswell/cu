@@ -1,9 +1,9 @@
-/**
- * WRAPPER
- * Sets a max width, adds a consistent gutter and horizontally
- * centers the contents
- * Info: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
- */
+/*
+WRAPPER
+Sets a max width, adds a consistent gutter and horizontally
+centers the contents
+@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+*/
 .wrapper {
   max-width: var(--wrapper-max-width, 85rem);
   margin-left: auto;

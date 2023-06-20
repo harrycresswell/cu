@@ -1,4 +1,7 @@
-/* Global variables */
+/* 
+Global theme tokens
+
+*/
 :root {
   /* Typography */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -12,17 +15,17 @@
   --width-longform: 62ch;
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
-  /* Colours
+  /* Colors
     * @link Utopia Kickstarter project 
     * https://www.figma.com/community/file/1122903924123950023
   */
   --color-light: #ffffff;
-  --color-light-mod-1: #FAF9FA;
-  --color-light-mod-2: #F3F1F3;
-  --color-light-mod-3: #E6E0E6;
-  --color-dark: #121212;
-  --color-dark-mod-1: #42335C;
-  --color-dark-mod-2: #685C7C;
+  --color-light-mod-1: #F8F8F8;
+  --color-light-mod-2: #F4F4F4;
+  --color-light-mod-3: #E9E9E9;
+  --color-dark: #1D1D1D;
+  --color-dark-mod-1: #494949;
+  --color-dark-mod-2: #616161;
   --color-brand: #2A5997;
   --color-brand-tint: #EFF4FB;
   --color-brand-shade: #264F85;

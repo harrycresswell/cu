@@ -1,8 +1,8 @@
- /* 
-  Global styles 
+/* 
+Global styles 
 
-  Low-specificity, global styles that apply to the whole 
-  project: https://cube.fyi/css.html
+Low-specificity, global styles that apply to the whole 
+project: https://cube.fyi/css.html
 */
  body {
    color: var(--color-dark);
@@ -60,7 +60,7 @@
  h1,
  h2,
  h3 {
-   max-width: 20ch;
+   max-width: var(--width-compact);
  }
 
  hr {
@@ -111,6 +111,7 @@
    flex: none;
  }
 
+ /* Remove padding on ul, ol elements with a list role */
  [role='list'] {
    padding: 0;
  }
