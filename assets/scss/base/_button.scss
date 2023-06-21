@@ -1,3 +1,9 @@
+/*
+Button styles
+
+Globally style the button element, submit, button and reset input.
+Include the .button class for use primarily on <a> tags etc. 
+*/
 button,
 .button,
 input[type="submit"],
@@ -27,7 +33,11 @@ input[type="button"]:focus {
 }
 
 button:disabled,
-/* @link https://www.scottohara.me/blog/2021/05/28/disabled-links.html */
+/* 
+For disabled link styles, used with role=link
+
+@link https://www.scottohara.me/blog/2021/05/28/disabled-links.html 
+*/
 .button[aria-disabled="true"],
 input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
@@ -39,7 +49,13 @@ input[type="button"]:disabled {
   transform: none;
 }
 
-/* @link https://cube.fyi/exception.html */
+/* 
+EXCEPTIONS
+
+Offer a variant button style
+
+@link https://cube.fyi/exception.html 
+*/
 button[data-variant='outline'],
 .button[data-variant='outline'],
 input[type="submit"][data-variant='outline'],

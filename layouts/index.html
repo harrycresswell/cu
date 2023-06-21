@@ -31,7 +31,7 @@
     {{/*  <div class="flow">
       {{ .Content }}
     </div>  */}}
-    {{ $headless := .Site.GetPage "/demo" }}
+    {{ $headless := .Site.GetPage "/global" }}
     <article class="region flow">
       {{ $type := $headless.Resources.Match "type*" }}
       {{ range $type }}

@@ -18,7 +18,7 @@ aside {
     aside {
       /* responsive content */ } }
 /* 
-Fonts using Google Webfonts Helper
+Google fonts with subsetting via Google Webfonts Helper
 
 @link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
 */
@@ -86,9 +86,11 @@ Global theme tokens
   --width-longform: 62ch;
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
-  /* Colors
-    * @link Utopia Kickstarter project 
-    * https://www.figma.com/community/file/1122903924123950023
+  /* 
+  Colors
+  
+  @link Utopia Kickstarter project 
+  https://www.figma.com/community/file/1122903924123950023
   */
   --color-light: #ffffff;
   --color-light-mod-1: #F8F8F8;
@@ -524,41 +526,12 @@ table caption {
   padding: .5rem;
   caption-side: bottom; }
 
-/* 
-* Skeletal components or organisational structures.
+/*
+Button styles
+
+Globally style the button element, submit, button and reset input.
+Include the .button class for use primarily on <a> tags etc. 
 */
-.skip-link {
-  clip: rect(1px, 1px, 1px, 1px);
-  display: block;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  top: 1rem;
-  left: 1rem;
-  z-index: 999; }
-
-.skip-link:focus {
-  clip: auto;
-  height: auto;
-  overflow: visible;
-  width: auto;
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  padding: var(--space-xs);
-  line-height: 1; }
-
-.skip-link:not(:focus) {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; }
-
 button,
 .button,
 input[type="submit"],
@@ -596,7 +569,13 @@ input[type="button"]:disabled {
   cursor: not-allowed;
   transform: none; }
 
-/* @link https://cube.fyi/exception.html */
+/* 
+EXCEPTIONS
+
+Offer a variant button style
+
+@link https://cube.fyi/exception.html 
+*/
 button[data-variant='outline'],
 .button[data-variant='outline'],
 input[type="submit"][data-variant='outline'],
@@ -614,6 +593,41 @@ input[type="button"][data-variant='outline']:hover {
   color: var(--color-light);
   background-color: var(--color-brand-shade);
   border: solid 0.1rem var(--color-brand); }
+
+/* 
+* Skeletal components or organisational structures.
+*/
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999; }
+
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  width: auto;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: var(--space-xs);
+  line-height: 1; }
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
 
 body > footer,
 .site-foot {

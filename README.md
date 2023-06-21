@@ -66,6 +66,7 @@ The following resources will help you learn more about this approach.
 - [Be the browser's mentor, not its micromanager](https://heypresents.com/talks/be-the-browser-s-mentor-not-its-micromanager)
 - [Every Layout by Heydon Pickering and Andy Bell](https://every-layout.dev/)
 - [A look at the CUBE CSS methodology in action](https://www.youtube.com/watch?v=NanhQvnvbR8) from Kevin Powell.
+
 ## Author
 
 Harry Cresswell
