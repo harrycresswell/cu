@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compositions on My New Hugo Site</title>
+    <link>http://example.org/compositions/</link>
+    <description>Recent content in Compositions on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jul 2023 16:42:51 +0100</lastBuildDate><atom:link href="http://example.org/compositions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grid</title>
+      <link>http://example.org/compositions/grid/</link>
+      <pubDate>Tue, 11 Jul 2023 16:42:51 +0100</pubDate>
+      
+      <guid>http://example.org/compositions/grid/</guid>
+      <description>Some grid content.</description>
+    </item>
+    
+    <item>
+      <title>Repel</title>
+      <link>http://example.org/compositions/repel/</link>
+      <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
+      
+      <guid>http://example.org/compositions/repel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

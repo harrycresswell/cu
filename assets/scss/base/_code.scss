@@ -6,7 +6,7 @@ Used for inline code and code blocks
 Ditch these styles altogether if not required for the website.
 */
 pre {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
@@ -15,13 +15,13 @@ pre {
 }
 
 code {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   color: var(--color-accent);
   font-size: var(--step-0);
 }
 
 pre code {
-  color: var(--color-dark);
+  color: var(--color-text);
 }
 
 p code,

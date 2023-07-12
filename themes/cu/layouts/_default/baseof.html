@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+    {{- partial "head.html" . -}}
+    <body>
+      <a class="skip-link" href="#main-content">Main content</a>
+      {{- partial "header.html" . -}}
+      <main id="main-content" class="wrapper prose">
+        <section class="region" style="--region-space: 6rem;">
+          <h1 class="text-center">{{ .Title }}</h1>
+        </section>
+        {{- block "main" . }}{{- end }}
+      </main>
+      {{- partial "footer.html" . -}}
+    </body>
+</html>

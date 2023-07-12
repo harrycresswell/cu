@@ -12,18 +12,18 @@ table {
 
 td,
 th {
-  border: .1rem solid var(--color-dark);
+  border: .1rem solid var(--color-border);
   text-align: left;
   padding: 0.5rem;
 }
 
 th {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
 }
 
 table caption {

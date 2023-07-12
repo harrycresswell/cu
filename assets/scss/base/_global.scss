@@ -5,8 +5,8 @@ Low-specificity, global styles that apply to the whole
 project: https://cube.fyi/css.html
 */
  body {
-   color: var(--color-dark);
-   background: var(--color-light);
+   color: var(--color-text);
+   background: var(--color-bg);
    font-size: var(--step-0);
    font-family: var(--font-base);
    letter-spacing: var(--tracking);
@@ -69,9 +69,8 @@ project: https://cube.fyi/css.html
  } 
 
  kbd {
-  background-color: var(--color-light-mod-2);
-  border: solid 1px var(--color-light-mod-3);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  background-color: var(--color-bg-mod-1);
+  border: solid 1px var(--color-bg-mod-2);
   border-radius: var(--border-radius-sm);
   font-family: var(--font-accent);
   font-size: 1rem;
@@ -90,7 +89,7 @@ project: https://cube.fyi/css.html
 
  /* More generic elements */
  blockquote:not([class]) {
-   border-left: solid 3px var(--color-dark);
+   border-left: solid 3px var(--color-text);
    padding-inline-start: var(--space-s);
    font-family: var(--font-serif);
    font-size: var(--step-2);
@@ -120,13 +119,26 @@ project: https://cube.fyi/css.html
  a {
    color: currentcolor;
    color: var(--color-brand);
+   /* aligned text correctly when using .button and .w-full class on links */
+   text-align: center;
  }
 
  a:hover {
    background-color: var(--color-brand);
-   color: var(--color-light);
+   color: var(--color-bg);
    text-decoration: none;
 
+ }
+
+ /* Use naked variant to style links as text*/
+ a[data-variant="naked"] {
+  color: var(--color-text);
+  text-decoration: none;
+ }
+
+ a[data-variant="naked"]:hover {
+  background-color: unset;
+  text-decoration: underline;
  }
 
  /* Hide focus styles if they're not needed, for example, 
@@ -137,7 +149,7 @@ project: https://cube.fyi/css.html
 
  /* Show focus styles on keyboard focus. */
  :focus-visible {
-   outline: dotted 2px var(--color-dark);
+   outline: dotted 2px var(--color-text);
    outline-offset: 3px;
  }
 
@@ -152,8 +164,21 @@ project: https://cube.fyi/css.html
    outline: none;
  }
 
- /* Base selection styles that invert whatever colours are rendered */
+ /* Add highlight styles */
  mark,
  ::selection {
-  background-color: var(--color-brand-tint);
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+  /* Reverse text colour in dark mode */
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-bg);
+  }
  }
+
+/* Decrease the brightness and contrast of images in dark mode */
+@media (prefers-color-scheme: dark) {
+  img,
+  picture {
+    filter: brightness(.8) contrast(1.2);
+  }
+}

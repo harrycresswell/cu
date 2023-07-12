@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 * The variables/tokens (or whatever you 
 * wish to call them) that power the rest of your styles
@@ -92,25 +93,19 @@ Global theme tokens
   @link Utopia Kickstarter project 
   https://www.figma.com/community/file/1122903924123950023
   */
-  --color-light: #ffffff;
-  --color-light-mod-1: #F8F8F8;
-  --color-light-mod-2: #F4F4F4;
-  --color-light-mod-3: #E9E9E9;
-  --color-dark: #1D1D1D;
-  --color-dark-mod-1: #494949;
-  --color-dark-mod-2: #616161;
-  --color-brand: #2A5997;
-  --color-brand-tint: #EFF4FB;
-  --color-brand-shade: #264F85;
+  --color-text: #1D1D1D;
+  --color-text-mod-1: #494949;
+  --color-text-mod-2: #616161;
+  --color-bg: #ffffff;
+  --color-bg-mod-1:#F8F8F8;
+  --color-bg-mod-2: #EDEDED;
+  --color-border: #1D1D1D;
+  --color-brand: #4f29f0;
   --color-accent: #9F2C5E;
-  --color-accent-tint: #F4D7E4;
-  --color-accent-shade: #85264F;
-  --color-system-critical: #E54D4D;
-  --color-system-critical-tint: #FADBDB;
-  --color-system-warning: #E67300;
-  --color-system-warning-tint: #FAE3CC;
-  --color-system-success: #3DAA18;
-  --color-system-success-tint: #D8EED1;
+  --color-highlight: #eefbc1;
+  /* 
+  If theme doesn’t require a dark mode then remove this media query altogether
+  */
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
@@ -126,7 +121,17 @@ Global theme tokens
   --transition-movement: 200ms linear;
   --transition-fade: 200ms ease;
   --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5); }
-
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: #CED3E8;
+      --color-text-mod-1: #C4CAE3;
+      --color-text-mod-2: #8995C8;
+      --color-bg: #0A0C15;
+      --color-bg-mod-1:#121626;
+      --color-bg-mod-2: #212845;
+      --color-border: #CED3E8;
+      --color-brand: #a08aff;
+      --color-accent: #FF70AE; } }
 /* 
 Utopia fluid type
 
@@ -220,8 +225,8 @@ Low-specificity, global styles that apply to the whole
 project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  background: var(--color-light);
+  color: var(--color-text);
+  background: var(--color-bg);
   font-size: var(--step-0);
   font-family: var(--font-base);
   letter-spacing: var(--tracking); }
@@ -273,9 +278,8 @@ hr {
   border-top: 2px dotted; }
 
 kbd {
-  background-color: var(--color-light-mod-2);
-  border: solid 1px var(--color-light-mod-3);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  background-color: var(--color-bg-mod-1);
+  border: solid 1px var(--color-bg-mod-2);
   border-radius: var(--border-radius-sm);
   font-family: var(--font-accent);
   font-size: 1rem;
@@ -291,7 +295,7 @@ small {
 
 /* More generic elements */
 blockquote:not([class]) {
-  border-left: solid 3px var(--color-dark);
+  border-left: solid 3px var(--color-text);
   padding-inline-start: var(--space-s);
   font-family: var(--font-serif);
   font-size: var(--step-2); }
@@ -316,12 +320,23 @@ svg {
 /* Base interactive elements */
 a {
   color: currentcolor;
-  color: var(--color-brand); }
+  color: var(--color-brand);
+  /* aligned text correctly when using .button and .w-full class on links */
+  text-align: center; }
 
 a:hover {
   background-color: var(--color-brand);
-  color: var(--color-light);
+  color: var(--color-bg);
   text-decoration: none; }
+
+/* Use naked variant to style links as text*/
+a[data-variant="naked"] {
+  color: var(--color-text);
+  text-decoration: none; }
+
+a[data-variant="naked"]:hover {
+  background-color: unset;
+  text-decoration: underline; }
 
 /* Hide focus styles if they're not needed, for example, 
  when an element receives focus via the mouse. */
@@ -330,7 +345,7 @@ a:hover {
 
 /* Show focus styles on keyboard focus. */
 :focus-visible {
-  outline: dotted 2px var(--color-dark);
+  outline: dotted 2px var(--color-text);
   outline-offset: 3px; }
 
 /* Add scroll margin to all target elements 
@@ -342,10 +357,21 @@ a:hover {
 main:focus {
   outline: none; }
 
-/* Base selection styles that invert whatever colours are rendered */
+/* Add highlight styles */
 mark,
 ::selection {
-  background-color: var(--color-brand-tint); }
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+  /* Reverse text colour in dark mode */ }
+  @media (prefers-color-scheme: dark) {
+    mark,
+    ::selection {
+      color: var(--color-bg); } }
+/* Decrease the brightness and contrast of images in dark mode */
+@media (prefers-color-scheme: dark) {
+  img,
+  picture {
+    filter: brightness(0.8) contrast(1.2); } }
 
 /* 
 Form styles
@@ -353,7 +379,7 @@ Form styles
 Ditch these styles altogether if not required for the website.
 */
 fieldset {
-  border: solid 0.1rem var(--color-dark); }
+  border: solid 0.1rem var(--color-border); }
 
 legend {
   font-weight: var(--font-weight-bold); }
@@ -375,11 +401,11 @@ input[type="text"],
 input[type="url"],
 textarea,
 select {
-  background: var(--color-light);
+  background: var(--color-bg);
   box-shadow: none;
   letter-spacing: -.5px;
-  border: solid 0.1rem var(--color-dark);
-  color: var(--color-dark);
+  border: solid 0.1rem var(--color-border);
+  color: var(--color-text);
   padding: var(--space-3xs) var(--space-2xs); }
 
 input[type="submit"],
@@ -393,7 +419,7 @@ select {
 
 /* Chevron for select */
 select:not([multiple]) {
-  background-image: linear-gradient(45deg, transparent 49%, var(--color-dark) 51%), linear-gradient(135deg, var(--color-dark) 51%, transparent 49%);
+  background-image: linear-gradient(45deg, transparent 49%, var(--color-text) 51%), linear-gradient(135deg, var(--color-text) 51%, transparent 49%);
   background-position: calc(100% - 16px), calc(100% - 11px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
@@ -402,7 +428,7 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: solid 0.1rem var(--color-dark);
+  border: solid 0.1rem var(--color-border);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -429,8 +455,8 @@ input[type="checkbox"]:checked::after {
   top: .06em;
   left: .16em;
   background-color: transparent;
-  border-right: solid var(--color-light) 0.07em;
-  border-bottom: solid var(--color-light) 0.07em;
+  border-right: solid var(--color-bg) 0.07em;
+  border-bottom: solid var(--color-bg) 0.07em;
   font-size: 2em;
   transform: rotate(45deg); }
 
@@ -442,7 +468,7 @@ input[type="radio"]:checked::after {
   border-radius: 100%;
   position: absolute;
   top: .13em;
-  background-color: var(--color-light);
+  background-color: var(--color-bg);
   left: .13em;
   font-size: 2em; }
 
@@ -454,7 +480,7 @@ Used for inline code and code blocks
 Ditch these styles altogether if not required for the website.
 */
 pre {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
@@ -462,12 +488,12 @@ pre {
   margin: 0; }
 
 code {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   color: var(--color-accent);
   font-size: var(--step-0); }
 
 pre code {
-  color: var(--color-dark); }
+  color: var(--color-text); }
 
 p code,
 li code {
@@ -481,7 +507,7 @@ Format the expanding box, a.k.a accordion.
 Ditch these styles altogether if not required for the website.
 */
 details {
-  background: var(--color-light-mod-1); }
+  background: var(--color-bg-mod-1); }
 
 summary {
   cursor: pointer;
@@ -511,16 +537,16 @@ table {
 
 td,
 th {
-  border: 0.1rem solid var(--color-dark);
+  border: 0.1rem solid var(--color-border);
   text-align: left;
   padding: 0.5rem; }
 
 th {
-  background: var(--color-light-mod-1);
+  background: var(--color-bg-mod-1);
   font-weight: bold; }
 
 tr:nth-child(even) {
-  background: var(--color-light-mod-1); }
+  background: var(--color-bg-mod-1); }
 
 table caption {
   padding: .5rem;
@@ -530,7 +556,7 @@ table caption {
 Button styles
 
 Globally style the button element, submit, button and reset input.
-Include the .button class for use primarily on <a> tags etc. 
+Include the .button class for styling <a> tags as buttons. 
 */
 button,
 .button,
@@ -539,7 +565,7 @@ input[type="reset"],
 input[type="button"] {
   background-color: var(--color-brand);
   border: solid 0.1rem var(--color-brand);
-  color: var(--color-light);
+  color: var(--color-bg);
   cursor: pointer;
   padding: var(--space-3xs) var(--space-2xs);
   display: inline-block;
@@ -555,7 +581,7 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="button"]:hover
 input[type="button"]:focus {
-  background-color: var(--color-brand-shade);
+  filter: brightness(1.2);
   transform: translateY(-2px); }
 
 button:disabled,
@@ -563,11 +589,12 @@ button:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled {
-  background-color: var(--color-light-mod-2);
-  border: solid 0.1rem var(--color-light-mod-2);
-  color: var(--color-dark-mod-2);
+  background-color: var(--color-bg-mod-2);
+  border: solid 0.1rem var(--color-bg-mod-2);
+  color: var(--color-text-mod-2);
   cursor: not-allowed;
-  transform: none; }
+  transform: none;
+  filter: none; }
 
 /* 
 EXCEPTIONS
@@ -582,7 +609,7 @@ input[type="submit"][data-variant='outline'],
 input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-light);
+  background: var(--color-bg);
   border: solid 0.1rem var(--color-brand); }
 
 button[data-variant='outline']:hover,
@@ -590,9 +617,16 @@ button[data-variant='outline']:hover,
 input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
-  color: var(--color-light);
-  background-color: var(--color-brand-shade);
+  filter: brightness(1.2);
   border: solid 0.1rem var(--color-brand); }
+
+/* 
+Nav styles
+*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /* 
 * Skeletal components or organisational structures.
@@ -613,8 +647,8 @@ input[type="button"][data-variant='outline']:hover {
   height: auto;
   overflow: visible;
   width: auto;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   padding: var(--space-xs);
   line-height: 1; }
 
@@ -692,8 +726,35 @@ EXCEPTIONS
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
   text-align: center; }
 
+.flex {
+  display: flex; }
+
+/*
+REPEL
+A little layout that pushes items away from each other where
+there is space in the viewport and stacks on small viewports
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+--repel-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-s-l)); }
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap; }
+
 /* 
 * Classes that do one job and one job well 
+*/
+/* 
+VISUALLY HIDDEN
+Info: https://piccalil.li/quick-tip/visually-hidden/ 
 */
 .visually-hidden {
   border: 0;

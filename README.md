@@ -1,6 +1,10 @@
-# A Modern CSS Starter
+# cu.css – A modern CSS framework
 
-This CSS starter is heavily inspired by [Cube CSS](https://cube.fyi/), a methodology orientated towards simplicity, pragmatism and consistency.
+cu.css starter is a modern CSS framework based on [Cube CSS](https://cube.fyi/)–a methodology orientated towards simplicity, pragmatism and consistency–and [Utopia](https://utopia.fyi/)– fluid responsive type.
+
+It’s also inspired by simple.css.
+
+There are, however, a few difference from Cube CSS. 
 
 Unlike Cube CSS, however, this starter doesn’t abstract design tokens away from the CSS, or generate utility classes for you. 
 

@@ -1,0 +1,19 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Modern CSS Starter</title>
+  {{ if .Site.IsServer }}
+    <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
+    {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
+    <!-- Load main.css-->
+    <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
+  {{ else }}
+    <!-- Set target path -->
+    {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
+    <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+    <!-- Load main.css and authenticate hashed file -->
+    <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" integrity="" media="screen">
+  {{ end }}
+</head>

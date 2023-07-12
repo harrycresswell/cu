@@ -21,25 +21,52 @@ Global theme tokens
   @link Utopia Kickstarter project 
   https://www.figma.com/community/file/1122903924123950023
   */
-  --color-light: #ffffff;
-  --color-light-mod-1: #F8F8F8;
-  --color-light-mod-2: #F4F4F4;
-  --color-light-mod-3: #E9E9E9;
-  --color-dark: #1D1D1D;
-  --color-dark-mod-1: #494949;
-  --color-dark-mod-2: #616161;
-  --color-brand: #2A5997;
-  --color-brand-tint: #EFF4FB;
-  --color-brand-shade: #264F85;
+  // --color-light: #ffffff;
+  // --color-light-mod-1: #F8F8F8;
+  // --color-light-mod-2: #F4F4F4;
+  // --color-light-mod-3: #E9E9E9;
+  // --color-dark: #1D1D1D;
+  // --color-dark-mod-1: #494949;
+  // --color-dark-mod-2: #616161;
+  // --color-brand: #4f29f0;
+  //--color-brand-tint: #EFF4FB;
+  //--color-brand-shade: #264F85;
+  // --color-accent: #9F2C5E;
+  // --color-accent-tint: #F4D7E4;
+  // --color-accent-shade: #85264F;
+  // --color-system-critical: #E54D4D;
+  // --color-system-critical-tint: #FADBDB;
+  // --color-system-warning: #E67300;
+  // --color-system-warning-tint: #FAE3CC;
+  // --color-system-success: #3DAA18;
+  // --color-system-success-tint: #D8EED1;
+
+  --color-text: #1D1D1D;
+  --color-text-mod-1: #494949;
+  --color-text-mod-2: #616161;
+  --color-bg: #ffffff;
+  --color-bg-mod-1:#F8F8F8;
+  --color-bg-mod-2: #EDEDED;
+  --color-border: #1D1D1D;
+  --color-brand: #4f29f0;
   --color-accent: #9F2C5E;
-  --color-accent-tint: #F4D7E4;
-  --color-accent-shade: #85264F;
-  --color-system-critical: #E54D4D;
-  --color-system-critical-tint: #FADBDB;
-  --color-system-warning: #E67300;
-  --color-system-warning-tint: #FAE3CC;
-  --color-system-success: #3DAA18;
-  --color-system-success-tint: #D8EED1;
+  --color-highlight: #eefbc1;
+  
+  /* 
+  If theme doesn’t require a dark mode then remove this media query altogether
+  */
+  @media (prefers-color-scheme: dark) {
+    --color-text: #CED3E8;
+    --color-text-mod-1: #C4CAE3;
+    --color-text-mod-2: #8995C8;
+    --color-bg: #0A0C15;
+    --color-bg-mod-1:#121626;
+    --color-bg-mod-2: #212845;
+    --color-border: #CED3E8;
+    --color-brand: #a08aff;
+    --color-accent: #FF70AE;
+  }
+
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */

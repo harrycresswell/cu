@@ -2,7 +2,7 @@
 Button styles
 
 Globally style the button element, submit, button and reset input.
-Include the .button class for use primarily on <a> tags etc. 
+Include the .button class for styling <a> tags as buttons. 
 */
 button,
 .button,
@@ -11,7 +11,7 @@ input[type="reset"],
 input[type="button"] {
   background-color: var(--color-brand);
   border: solid 0.1rem var(--color-brand);
-  color: var(--color-light);
+  color: var(--color-bg);
   cursor: pointer;
   padding: var(--space-3xs) var(--space-2xs);
   display: inline-block;
@@ -28,7 +28,8 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="button"]:hover
 input[type="button"]:focus {
-  background-color: var(--color-brand-shade);
+  //background-color: var(--color-brand-shade);
+  filter: brightness(1.2);
   transform: translateY(-2px)
 }
 
@@ -42,11 +43,12 @@ For disabled link styles, used with role=link
 input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
-  background-color: var(--color-light-mod-2);
-  border: solid 0.1rem var(--color-light-mod-2);
-  color: var(--color-dark-mod-2);
+  background-color: var(--color-bg-mod-2);
+  border: solid 0.1rem var(--color-bg-mod-2);
+  color: var(--color-text-mod-2);
   cursor: not-allowed;
   transform: none;
+  filter: none;
 }
 
 /* 
@@ -62,7 +64,7 @@ input[type="submit"][data-variant='outline'],
 input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-light);
+  background: var(--color-bg);
   border: solid 0.1rem var(--color-brand);
 }
 
@@ -71,7 +73,8 @@ button[data-variant='outline']:hover,
 input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
-  color: var(--color-light);
-  background-color: var(--color-brand-shade);
+  //color: var(--color-bg);
+  //background-color: var(--color-brand-shade);
+  filter: brightness(1.2);
   border: solid 0.1rem var(--color-brand);
 }

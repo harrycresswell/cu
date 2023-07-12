@@ -1,6 +1,7 @@
 ---
 title: 'Typography'
 weight: 1
+slug: 'typography'
 ---
 
 All typography is fluid responsive, set using Utopia’s [Fluid Type Calculator](https://utopia.fyi/type/calculator), which makes use of the [CSS Clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function. Choose your min and max font size, then select a type scale and Utopia will generate the code.

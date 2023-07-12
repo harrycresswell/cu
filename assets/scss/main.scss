@@ -19,6 +19,7 @@
 @import 'base/details';
 @import 'base/table';
 @import 'base/button';
+@import 'base/nav';
 
 /* 
 * Skeletal components or organisational structures.
@@ -32,6 +33,8 @@
 * skeleton to support any variant of a component
 */
 @import 'compositions/grid';
+@import 'compositions/flex';
+@import 'compositions/repel';
 
 /* 
 * Classes that do one job and one job well 

@@ -1,0 +1,15 @@
+<nav aria-label="Main Navigation">
+  <ul class="flex" style="gap: var(--space-s);">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li>
+        <a 
+        data-variant="naked"
+        class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
+        href="{{ .URL }}">
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
