@@ -33,7 +33,9 @@ You can also use the `.button` class to style links as buttons.
 
 Combine this with the `w-full` utility class to make a button styled link fill the full width of it’s container.
 
+<div>
 <a class="button w-full" href="#">Link styled as a full-width button</a>
+</div>
 
 ```
 <a class="button w-full" href="#">Link styled as a full-width button</a>

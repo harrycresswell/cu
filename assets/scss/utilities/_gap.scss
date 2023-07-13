@@ -1,0 +1,8 @@
+/*
+GAP
+Sets the gaps (gutters) between rows and columns, used it with flex, grid and columns.
+Used on the parent element like flex and grid. Defaults to --space-xs from spacing scale. For fine-grain control set --row-gap and/or --column-gap.
+*/
+.gap {
+  gap: var(--row-gap, var(--space-xs)) var(--column-gap, var(--space-xs));
+}

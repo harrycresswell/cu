@@ -235,6 +235,7 @@ body {
 h1,
 h2,
 h3 {
+  font-family: var(--font-display);
   line-height: 1;
   letter-spacing: var(--tracking-s); }
 
@@ -805,5 +806,13 @@ centers the contents
 
 .text-center {
   text-align: center; }
+
+/*
+GAP
+Sets the gaps (gutters) between rows and columns, used it with flex, grid and columns.
+Used on the parent element like flex and grid. Defaults to --space-xs from spacing scale. For fine-grain control set --row-gap and/or --column-gap.
+*/
+.gap {
+  gap: var(--row-gap, var(--space-xs)) var(--column-gap, var(--space-xs)); }
 
 /*# sourceMappingURL=main.css.map */

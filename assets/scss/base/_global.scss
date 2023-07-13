@@ -16,13 +16,14 @@ project: https://cube.fyi/css.html
  h1,
  h2,
  h3 {
-   line-height: 1;
-   letter-spacing: var(--tracking-s);
+ 	font-family: var(--font-display);
+		line-height: 1;
+  letter-spacing: var(--tracking-s);
  }
 
  h1,
  .h1 {
-   font-size: var(--step-4);
+			font-size: var(--step-4);
  }
 
  h2,
