@@ -5,6 +5,18 @@ draft: false
 weight: 3
 ---
 
+<section class="region flow">
+
+<figure>
+  <div class="demo | flow" style="--flow-space: 0;">
+    <div class="container" style="flex: 1; height: 6rem;">Content</div>
+    <div class="margin"><mark>margin</mark></div>
+    <div class="container" style="flex: 1; height: 6rem;">Content</div>
+    <div class="margin"><mark>margin</mark></div>
+    <div class="container" style="flex: 1; height: 6rem;">Content</div>
+  </div>
+</figure>
+
 ```
 /*
 FLOW
@@ -17,3 +29,5 @@ Applies a margin to sibling elements based on a --flow-space custom property.
   margin-top: var(--flow-space, 1em);
 }
 ```
+
+</section>

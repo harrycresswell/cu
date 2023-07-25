@@ -5,6 +5,18 @@ draft: false
 weight: 1
 ---
 
+<section class="region flow">
+
+<figure>
+  <div class="demo | wrapper" style="display: flex;">
+    <div class="margin"><mark>Margin</mark></div>
+    <div class="padding">Padding</div>
+    <div class="container" style="flex: 1;">Content</div>
+    <div class="padding">Padding</div>
+    <div class="margin"><mark>Margin</mark></div>
+  </div>
+</figure>
+
 ```
 /*
 WRAPPER
@@ -22,3 +34,4 @@ centers the contents
 }
 ```
 
+</section>

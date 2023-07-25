@@ -4,9 +4,9 @@
     <body>
       <a class="skip-link" href="#main-content">Main content</a>
       {{- partial "header.html" . -}}
-      <main id="main-content" class="wrapper prose">
+      <main id="main-content" class="wrapper">
         <section class="region" style="--region-space: 6rem;">
-          <h1 class="text-center">{{ .Title }}</h1>
+          <h1 class="text-center w-full">{{ .Title }}</h1>
         </section>
         {{- block "main" . }}{{- end }}
       </main>

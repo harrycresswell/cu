@@ -1,0 +1,29 @@
+.demo {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l);
+}
+
+.demo > * {
+  padding: 1rem;
+}
+
+.demo .item {
+  display: flex;
+  background-color: var(--color-brand); 
+  color: var(--color-bg);
+}
+
+.demo .margin {
+  background-color: var(--color-highlight);
+}
+
+.demo .padding {
+  background-color: var(--color-brand); 
+  color: var(--color-bg);
+}
+
+.demo .container {
+  display: flex;
+  background-color: var(--color-bg);
+  color: var(--color-text); 
+}

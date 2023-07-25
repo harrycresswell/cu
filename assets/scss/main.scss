@@ -27,14 +27,15 @@
 @import 'blocks/skip-link';
 @import 'blocks/site-foot';
 @import 'blocks/prose';
+@import 'blocks/demo';
 
 /* 
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
 */
 @import 'compositions/grid';
-@import 'compositions/flex';
 @import 'compositions/repel';
+@import 'compositions/cluster';
 
 /* 
 * Classes that do one job and one job well 
@@ -45,4 +46,4 @@
 @import 'utilities/wrapper';
 @import 'utilities/width';
 @import 'utilities/text';
-@import 'utilities/gap';
+//@import 'utilities/gap';

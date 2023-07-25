@@ -5,6 +5,16 @@ draft: false
 weight: 2
 ---
 
+<section class="region flow">
+
+<figure>
+  <div class="demo | region">
+    <div class="padding">Padding</div>
+    <div class="container" style="flex: 1; height: 9rem;">Content</div>
+    <div class="padding">Padding</div>
+  </div>
+</figure>
+
 ```
 /*
 REGION 
@@ -16,3 +26,5 @@ Can either be configured by setting --region-space or use a default from the spa
  padding-bottom: var(--region-space, var(--space-l-xl));
 }
 ```
+
+</section>

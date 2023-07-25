@@ -625,6 +625,8 @@ input[type="button"][data-variant='outline']:hover {
 Nav styles
 */
 nav ul {
+  font-family: var(--font-accent);
+  font-size: var(--step--1);
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -681,6 +683,30 @@ body > footer,
 .prose .heading-anchor {
   text-decoration: none; }
 
+.demo {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l); }
+
+.demo > * {
+  padding: 1rem; }
+
+.demo .item {
+  display: flex;
+  background-color: var(--color-brand);
+  color: var(--color-bg); }
+
+.demo .margin {
+  background-color: var(--color-highlight); }
+
+.demo .padding {
+  background-color: var(--color-brand);
+  color: var(--color-bg); }
+
+.demo .container {
+  display: flex;
+  background-color: var(--color-bg);
+  color: var(--color-text); }
+
 /* 
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
@@ -727,9 +753,6 @@ EXCEPTIONS
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
   text-align: center; }
 
-.flex {
-  display: flex; }
-
 /*
 REPEL
 A little layout that pushes items away from each other where
@@ -749,6 +772,29 @@ Can be any acceptable flexbox alignment value.
 
 .repel[data-nowrap] {
   flex-wrap: nowrap; }
+
+/*
+CLUSTER
+More info: https://every-layout.dev/layouts/cluster/
+A layout that lets you distribute items with consitent
+spacing, regardless of their size
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter ($global-gutter): This defines the space
+between each item.
+
+--cluster-horizontal-alignment (flex-start) How items should align
+horizontally. Can be any acceptable flexbox aligmnent value.
+
+--cluster-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-size-1));
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  align-items: var(--cluster-vertical-alignment, center); }
 
 /* 
 * Classes that do one job and one job well 
@@ -802,17 +848,10 @@ centers the contents
   position: relative; }
 
 .w-full {
-  width: 100%; }
+  width: 100%;
+  max-width: unset; }
 
 .text-center {
   text-align: center; }
-
-/*
-GAP
-Sets the gaps (gutters) between rows and columns, used it with flex, grid and columns.
-Used on the parent element like flex and grid. Defaults to --space-xs from spacing scale. For fine-grain control set --row-gap and/or --column-gap.
-*/
-.gap {
-  gap: var(--row-gap, var(--space-xs)) var(--column-gap, var(--space-xs)); }
 
 /*# sourceMappingURL=main.css.map */
