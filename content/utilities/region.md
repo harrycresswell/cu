@@ -5,10 +5,13 @@ draft: false
 weight: 2
 ---
 
-<section class="region flow">
+<section class="flow">
 
 <figure>
   <div class="demo | region">
+    <div class="padding">Padding</div>
+    <div class="container" style="flex: 1; height: 9rem;">Content</div>
+    <div class="padding">Padding</div>
     <div class="padding">Padding</div>
     <div class="container" style="flex: 1; height: 9rem;">Content</div>
     <div class="padding">Padding</div>

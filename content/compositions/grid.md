@@ -5,7 +5,7 @@ draft: false
 weight: 1
 ---
 
-<section class="region flow">
+<section class="flow">
 
 The *two-column* layout positions grid items side-by-side when space permits, so that items proportionately share the available space. 
 
@@ -30,7 +30,7 @@ Use the layout by adding `data-layout="50-50"` to any element with the `.grid` c
 ```
 </section>
 
-<section class="region flow">
+<section class="flow">
 
 The *three-column* layout positions grid items in three columns when space permits, so that items proportionately share the available space. 
 
@@ -59,7 +59,7 @@ Use the layout by adding `data-layout="33x3"` to any element with the `.grid` cl
 
 </section>
 
-<section class="region flow">
+<section class="flow">
 
 The *masonry layout* remove the extra gap often left between rows by grid items of varying size. Use the layout by applying `data-rows="masonry"` to any element with the `.grid` class applied.
 

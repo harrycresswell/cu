@@ -5,7 +5,7 @@ draft: false
 weight: 2
 ---
 
-<section class="region flow">
+<section class="flow">
 
 *Cluster* creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.
 

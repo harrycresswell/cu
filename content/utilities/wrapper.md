@@ -5,7 +5,7 @@ draft: false
 weight: 1
 ---
 
-<section class="region flow">
+<section class="flow">
 
 <figure>
   <div class="demo | wrapper" style="display: flex;">
