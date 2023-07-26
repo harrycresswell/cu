@@ -4,11 +4,19 @@
     <body>
       <a class="skip-link" href="#main-content">Main content</a>
       {{- partial "header.html" . -}}
-      <main id="main-content" class="wrapper">
-        <section class="region" style="--region-space: 6rem;">
-          <h1 class="text-center w-full">{{ .Title }}</h1>
+      <main id="main-content">
+        <section class="hero region" style="--region-space: 6rem;">
+          <div>
+            <h1 class="text-center w-full">{{ .Title }}</h1>
+            {{ if .IsHome }}
+              <p class="text-center w-full">{{ .Params.description | markdownify }}</p>
+            {{ end }}
+          </div>
         </section>
-        {{- block "main" . }}{{- end }}
+        <section class="wrapper">
+          {{- block "main" . }}{{- end }}
+        </section>
+        
       </main>
       {{- partial "footer.html" . -}}
     </body>

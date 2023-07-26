@@ -5,22 +5,22 @@ draft: false
 weight: 3
 ---
 
-<section class="flow">
+Applies a margin to sibling elements based on a `--flow-space` custom property.
 
 <figure>
-  <div class="demo | flow" style="--flow-space: 0;">
-    <div class="container" style="flex: 1; height: 6rem;">Content</div>
-    <div class="margin"><mark>margin</mark></div>
-    <div class="container" style="flex: 1; height: 6rem;">Content</div>
-    <div class="margin"><mark>margin</mark></div>
-    <div class="container" style="flex: 1; height: 6rem;">Content</div>
+  <div class="demo">
+    <div class="container" style="height: 4rem;">Content</div>
+    <div class="margin"><mark>Margin (default)</mark></div>
+    <div class="container" style="height: 4rem;">Content</div>
+    <div class="margin" style="height: 8rem;"><mark>Margin (set inline using --flow-space)</mark></div>
+    <div class="container" style="height: 4rem;">Content</div>
   </div>
+  <figcaption>Flow utility with margin visualised in green</figcaption>
 </figure>
 
 ```
 /*
 FLOW
-Applies a margin to sibling elements based on a --flow-space custom property.
 @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
 @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
 @link: https://piccalil.li/quick-tip/flow-utility/
@@ -29,5 +29,3 @@ Applies a margin to sibling elements based on a --flow-space custom property.
   margin-top: var(--flow-space, 1em);
 }
 ```
-
-</section>

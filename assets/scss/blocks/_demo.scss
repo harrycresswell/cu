@@ -1,6 +1,7 @@
 .demo {
   background-color: var(--color-bg-mod-1);
   padding: var(--space-m-l);
+  overflow-x: scroll;
 }
 
 .demo > * {
@@ -18,12 +19,11 @@
 }
 
 .demo .padding {
-  background-color: var(--color-brand); 
   color: var(--color-bg);
+  background-color: var(--color-brand);
 }
 
 .demo .container {
-  display: flex;
   background-color: var(--color-bg);
   color: var(--color-text); 
 }

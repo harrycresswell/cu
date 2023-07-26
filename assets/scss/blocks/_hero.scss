@@ -1,0 +1,10 @@
+.hero {
+  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
+  background-color: var(--color-bg);
+  background-position: 0 0, 50px 50px;
+  background-size: 3px 3px;
+}
+
+.hero p {
+  margin-top: 1rem;
+}

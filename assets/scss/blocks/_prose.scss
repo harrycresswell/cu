@@ -7,6 +7,10 @@
   --flow-space: var(--space-s-m);
 }
 
+.prose :is(pre,pre+*,figure,figure+*) {
+  --flow-space: var(--space-l-xl);
+}
+
 .prose .heading-anchor:is(:hover, :focus) {
   text-decoration: underline;
 }

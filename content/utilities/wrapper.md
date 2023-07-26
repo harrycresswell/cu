@@ -5,27 +5,26 @@ draft: false
 weight: 1
 ---
 
-<section class="flow">
+Sets a max width, adds a consistent gutter and horizontally centers content.
 
 <figure>
-  <div class="demo | wrapper" style="display: flex;">
+  <div class="demo" style="display: flex;">
     <div class="margin"><mark>Margin</mark></div>
     <div class="padding">Padding</div>
-    <div class="container" style="flex: 1;">Content</div>
+    <div class="container" style="flex: 1; padding: 1rem;">Content</div>
     <div class="padding">Padding</div>
     <div class="margin"><mark>Margin</mark></div>
   </div>
+  <figcaption>Wrapper with horizontal padding visualised in purple and margin in green</figcaption>
 </figure>
 
 ```
 /*
 WRAPPER
-Sets a max width, adds a consistent gutter and horizontally
-centers the contents
 @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
 */
 .wrapper {
-  max-width: var(--wrapper-max-width, 85rem);
+  max-width: var(--wrapper-max-width, 75rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);
@@ -33,5 +32,3 @@ centers the contents
   position: relative;
 }
 ```
-
-</section>

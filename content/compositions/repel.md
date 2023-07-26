@@ -5,9 +5,6 @@ draft: false
 weight: 3
 ---
 
-
-<section class="flow">
-
 *Repel* adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements. 
 
 Add the `.repel` class to site headers, site footers or anywhere you want to push two items away from each other.
@@ -33,5 +30,3 @@ Add the `.repel` class to site headers, site footers or anywhere you want to pus
   flex-wrap: nowrap;
 }
 ```
-
-</section>

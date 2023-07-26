@@ -126,7 +126,7 @@ Global theme tokens
       --color-text: #CED3E8;
       --color-text-mod-1: #C4CAE3;
       --color-text-mod-2: #8995C8;
-      --color-bg: #0A0C15;
+      --color-bg: #0D101A;
       --color-bg-mod-1:#121626;
       --color-bg-mod-2: #212845;
       --color-border: #CED3E8;
@@ -625,8 +625,6 @@ input[type="button"][data-variant='outline']:hover {
 Nav styles
 */
 nav ul {
-  font-family: var(--font-accent);
-  font-size: var(--step--1);
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -677,15 +675,28 @@ body > footer,
 .prose :is(h2, h3, h4) + * {
   --flow-space: var(--space-s-m); }
 
+.prose :is(pre,pre+*,figure,figure+*) {
+  --flow-space: var(--space-l-xl); }
+
 .prose .heading-anchor:is(:hover, :focus) {
   text-decoration: underline; }
 
 .prose .heading-anchor {
   text-decoration: none; }
 
+.hero {
+  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
+  background-color: var(--color-bg);
+  background-position: 0 0, 50px 50px;
+  background-size: 3px 3px; }
+
+.hero p {
+  margin-top: 1rem; }
+
 .demo {
   background-color: var(--color-bg-mod-1);
-  padding: var(--space-m-l); }
+  padding: var(--space-m-l);
+  overflow-x: scroll; }
 
 .demo > * {
   padding: 1rem; }
@@ -699,11 +710,10 @@ body > footer,
   background-color: var(--color-highlight); }
 
 .demo .padding {
-  background-color: var(--color-brand);
-  color: var(--color-bg); }
+  color: var(--color-bg);
+  background-color: var(--color-brand); }
 
 .demo .container {
-  display: flex;
   background-color: var(--color-bg);
   color: var(--color-text); }
 
@@ -822,7 +832,7 @@ Applies a margin to sibling elements based on a --flow-space custom property.
 @link: https://piccalil.li/quick-tip/flow-utility/
 */
 .flow > * + * {
-  margin-top: var(--flow-space, 1.5em); }
+  margin-top: var(--flow-space, 1em); }
 
 /*
 REGION 
@@ -840,7 +850,7 @@ centers the contents
 @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
 */
 .wrapper {
-  max-width: var(--wrapper-max-width, 85rem);
+  max-width: var(--wrapper-max-width, 75rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);

@@ -6,5 +6,5 @@ Applies a margin to sibling elements based on a --flow-space custom property.
 @link: https://piccalil.li/quick-tip/flow-utility/
 */
 .flow > * + * {
-  margin-top: var(--flow-space, 1.5em);
+  margin-top: var(--flow-space, 1em);
 }
