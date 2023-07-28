@@ -27,7 +27,7 @@ Inputs with `type="submit"`, `type="reset"` or `type="button"` applied also inhe
 <input type="submit" data-variant="outline" />
 ```
 
-Just like with form elements, you can also use the `w-full` utility class to make a `<button>` fill the full width of its parent container.
+Just like with form elements, you can also use the `w-full`  [width utility class](/utilities#width) to make a `<button>` fill the full width of its parent container.
 
 <div class="flow">
 <button class="w-full" type="submit" value="Submit">Sign up</button>

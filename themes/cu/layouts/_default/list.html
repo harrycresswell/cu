@@ -1,4 +1,9 @@
 {{ define "main" }}
+  {{ with .Content }}
+  <div style="margin-block-start: 3rem;">
+    {{ . }}
+  </div>
+  {{ end }}
   {{ range .Pages }}
     <article class="region flow">
       <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>

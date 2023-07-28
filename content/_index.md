@@ -1,6 +1,6 @@
 ---
 title: A modern CSS framework
-description: _cu.css_ is a modern CSS framework built on top of [Cube CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) fluid responsive design.
+description: _cu.css_ is built using [Cube CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) fluid responsive design.
 ---
 
 Cube CSS is a methodology orientated towards simplicity, pragmatism and consistency.

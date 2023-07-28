@@ -3,8 +3,11 @@
   background-color: var(--color-bg);
   background-position: 0 0, 50px 50px;
   background-size: 3px 3px;
+  padding-inline: var(--space-s-m);
+  text-align: center;
 }
 
+.hero h1,
 .hero p {
-  margin-top: 1rem;
+  margin-inline: auto;
 }

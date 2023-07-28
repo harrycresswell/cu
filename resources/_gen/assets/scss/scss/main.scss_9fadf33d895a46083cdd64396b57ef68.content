@@ -669,16 +669,12 @@ body > footer,
   margin-block: 2rem; }
 
 .prose {
-  --flow-space: var(--space-m-l);
-  --wrapper-max-width: 55rem; }
-
-.prose :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m); }
+  --flow-space: var(--space-m-l); }
 
 .prose :is(pre,pre+*,figure,figure+*) {
   --flow-space: var(--space-l-xl); }
 
-.prose .heading-anchor:is(:hover, :focus) {
+.prose .heading-anchor :is(:hover, :focus) {
   text-decoration: underline; }
 
 .prose .heading-anchor {
@@ -688,10 +684,45 @@ body > footer,
   background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
   background-color: var(--color-bg);
   background-position: 0 0, 50px 50px;
-  background-size: 3px 3px; }
+  background-size: 3px 3px;
+  padding-inline: var(--space-s-m);
+  text-align: center; }
 
+.hero h1,
 .hero p {
-  margin-top: 1rem; }
+  margin-inline: auto; }
+
+.callout {
+  padding: var(--space-xs-s);
+  border: dotted 2px var(--color-text-mod-2);
+  width: var(--width-longform); }
+
+.callout[data-variant='brand'] {
+  color: var(--color-brand);
+  border: dotted 2px var(--color-brand); }
+
+.callout[data-variant='brand'] > * {
+  color: var(--color-brand); }
+
+.card {
+  --img-ratio: 3/2;
+  box-shadow: var(--shadow-xs);
+  /* When card is used on an <li>, unset line lengths set in global styles and fill entire width of parent instead */
+  max-width: unset; }
+
+.card > img {
+  aspect-ratio: var(--img-ratio);
+  object-fit: cover;
+  width: 100%; }
+
+.card > :not(img) {
+  margin-inline: var(--space-xs-s); }
+
+.card > :not(img):last-child {
+  margin-bottom: var(--space-xs-s); }
+
+.card > a {
+  display: inline-block; }
 
 .demo {
   background-color: var(--color-bg-mod-1);
@@ -760,8 +791,7 @@ EXCEPTIONS
 /* Three column when space permits */
 .grid[data-layout='33x3'] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 20rem);
-  text-align: center; }
+  --grid-min-item-size: clamp(16rem, 33%, 20rem); }
 
 /*
 REPEL

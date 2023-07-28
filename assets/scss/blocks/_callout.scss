@@ -1,0 +1,14 @@
+.callout {
+  padding: var(--space-xs-s);
+  border: dotted 2px var(--color-text-mod-2);
+  width: var(--width-longform);
+}
+
+.callout[data-variant='brand'] {
+  color: var(--color-brand);
+  border: dotted 2px var(--color-brand);
+}
+
+.callout[data-variant='brand'] > * {
+  color: var(--color-brand);
+}

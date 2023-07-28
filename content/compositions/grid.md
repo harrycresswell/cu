@@ -54,7 +54,6 @@ Use the layout by adding `data-layout="33x3"` to any element with the `.grid` cl
 .grid[data-layout='33x3'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
-  text-align: center;
 }
 ```
 
@@ -63,7 +62,7 @@ Use the layout by adding `data-layout="33x3"` to any element with the `.grid` cl
 The *masonry layout* remove the extra gap often left between rows by grid items of varying size. Use the layout by applying `data-rows="masonry"` to any element with the `.grid` class applied.
 
 
-Currently the feature is only implemented in Firefox, and can be enabled by setting the flag `layout.css.grid-template-masonry-value.enabled` to `true` in `about:config`. 
+<aside class="callout" data-variant="brand">Currently the feature is only implemented in Firefox, and can be enabled by setting the flag <code>layout.css.grid-template-masonry-value.enabled</code> to <code>true</code> in <code>about:config</code>.</aside>
 
 <figure>
   <div class="demo | grid" data-rows="masonry">

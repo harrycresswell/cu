@@ -27,7 +27,7 @@ Optionally, you can also:
 
 - Use `<fieldset>` to group elements within the form.
 - Use `<legend>` to caption the form contents. 
-- Add the `w-full` utility class to any input, textarea or button to make it fill the width of the form.
+- Add the `w-full` [width utility class](/utilities#width) to any input, textarea or button to make it fill the width of the form.
 
 
 <form>

@@ -1,8 +1,24 @@
 .card {
-  background: var(--color-dark);
-  color: var(--color-light);
-  padding: var(--space-m-l);
-  border-radius: var(--border-radius-md);
+  --img-ratio: 3/2;
+  box-shadow: var(--shadow-xs);
   /* When card is used on an <li>, unset line lengths set in global styles and fill entire width of parent instead */
   max-width: unset;
+}
+
+.card > img {
+  aspect-ratio: var(--img-ratio);
+  object-fit: cover;
+  width: 100%;
+}
+
+.card > :not(img) {
+  margin-inline: var(--space-xs-s);
+}
+
+.card  > :not(img):last-child {
+  margin-bottom: var(--space-xs-s);
+}
+
+.card > a {
+  display: inline-block;
 }
