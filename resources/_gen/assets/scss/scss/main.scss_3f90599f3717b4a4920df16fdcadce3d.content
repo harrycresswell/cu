@@ -714,7 +714,7 @@ Largely based on https://inclusive-components.design/cards/
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid 2px; }
+  border: solid .1rem; }
 
 /* Ensure consistent heading size regardless of heading level */
 .card :is(h2, h3, h4) {
@@ -756,7 +756,7 @@ Largely based on https://inclusive-components.design/cards/
 /* Use :focus-within to match the :hover style */
 .card:hover,
 .card:focus-within {
-  box-shadow: 0 0 0 0.1rem; }
+  box-shadow: 0 0 0 .1rem; }
 
 /* Remove the unnecessary basic :focus style only where :focus-within is supported */
 .card:focus-within a:focus {
