@@ -1,24 +1,99 @@
+/*
+CARD
+
+A block that styles content as a card.
+Largely based on https://inclusive-components.design/cards/
+*/
 .card {
   --img-ratio: 3/2;
-  box-shadow: var(--shadow-xs);
-  /* When card is used on an <li>, unset line lengths set in global styles and fill entire width of parent instead */
-  max-width: unset;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: solid 2px;
 }
 
+/* Ensure consistent heading size regardless of heading level */
+.card :is(h2, h3, h4) {
+  font-size: var(--step-1);
+}
+
+/* Ensure consistent text size for all non-heading elements */
+.card > :not(h2, h3, h4) {
+  font-size: var(--step--1);
+}
+
+/* Target direct decending links of headings using the Child Combinator, and remove the default styles */
+.card :is(h2, h3, h4) > a,
+.card :is(h2, h3, h4) > a:hover {
+  background-color: unset;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 
+  Use Heydon’s pseudo-content trick to make the whole card clickable
+  @link: https://inclusive-components.design/cards/#thepseudocontenttrick
+*/
+.card :is(h2, h3, h4) > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Raise all other links above the pseudo-content, so they remain clickable */
+.card > div > p > a,
+.card > div > small > a,
+.card > div > .button {
+  position: relative;
+}
+
+/* Apply a basic focus style to the link so that users of older browsers that do not support :focus-within will still see a fallback focus style */
+.card a:focus {
+  text-decoration: underline;
+}
+
+
+/* Use :focus-within to match the :hover style */
+.card:hover,
+.card:focus-within {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+/* Remove the unnecessary basic :focus style only where :focus-within is supported */
+.card:focus-within a:focus {
+  text-decoration: none;
+} 
+
+/* Create consistent image behaviour and ratio */
 .card > img {
   aspect-ratio: var(--img-ratio);
   object-fit: cover;
   width: 100%;
 }
 
-.card > :not(img) {
-  margin-inline: var(--space-xs-s);
+/* Force the textual elements to take up all the available space and prevents line length for cards on large screens not supporting grid from becoming too long */
+.card > div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 60ch;
 }
 
-.card  > :not(img):last-child {
+/* Apply a consistent margin to all elements */
+.card > div > * + * {
+  margin-top: var(--space-xs-s);
+}
+
+/* Push the last textual element to the bottom of the card, regardless of its height. */
+.card > div :last-child {
+  margin-top: auto;
+}
+
+/* Add a bottom margin to the second last element, to ensure a minimum level of separation */
+.card > div :nth-last-child(2) {
   margin-bottom: var(--space-xs-s);
-}
-
-.card > a {
-  display: inline-block;
 }

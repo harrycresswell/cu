@@ -120,8 +120,6 @@ project: https://cube.fyi/css.html
  a {
    color: currentcolor;
    color: var(--color-brand);
-   /* aligned text correctly when using .button and .w-full class on links */
-   text-align: center;
  }
 
  a:hover {

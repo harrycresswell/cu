@@ -10,22 +10,28 @@ weight: 3
 
 
 <ul role="list" class="grid" data-layout="33x3">
-  <li class="card | flow" style="--flow-space: 1rem;">
+  <li class="card">
     <img src="/img/milad-moafi-EoUCAeAMt84-unsplash.jpg" alt="" />
-    <h3>Some title</h3>
-    <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
-    <a href="#">Some link text</a>  
+    <div>
+      <h3><a href="#">Some title</a></h3>
+      <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
+      <small>By <a href="https://harrycresswell.com/">Harry Cresswell</a></small>
+    </div> 
   </li>
-   <li class="card | flow" style="--flow-space: 1rem;">
+   <li class="card">
     <img src="/img/milad-moafi-EoUCAeAMt84-unsplash.jpg" alt="" />
-    <h3>Some title</h3>
-    <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
-    <a href="#" class="button w-full">Some button text</a>
+    <div>
+      <h3><a href="https://harrycresswell.com/">Some title</a></h3>
+      <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
+      <a href="https://google.com/" class="button w-full">Some button text</a>
+    </div>
   </li>
-   <li class="card | flow" style="--flow-space: 1rem;">
+   <li class="card">
     <img src="/img/milad-moafi-EoUCAeAMt84-unsplash.jpg" alt="" />
-    <h3>Some title</h3>
-    <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
-    <a href="#">Some link text</a>
+    <div>
+      <h3><a href="#">Some title</a></h3>
+      <p>Cards make use of global and utility CSS styles and will often use the grid composition as their layout</p>
+      <p><a href="#">Some link text</a></p>
+    </div>
   </li>
 </ul>
