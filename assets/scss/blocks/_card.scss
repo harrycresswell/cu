@@ -2,7 +2,9 @@
 CARD
 
 A block that styles content as a card.
-Largely based on https://inclusive-components.design/cards/
+Largely based on:
+@link: https://inclusive-components.design/cards/
+@link: https://portfolio.set.studio/design-system/component/cards/
 */
 .card {
   --img-ratio: 3/2;
@@ -22,17 +24,11 @@ Largely based on https://inclusive-components.design/cards/
   font-size: var(--step--1);
 }
 
-/* Target direct decending links of headings using the Child Combinator, and remove the default styles */
-.card :is(h2, h3, h4) > a,
-.card :is(h2, h3, h4) > a:hover {
-  background-color: unset;
-  text-decoration: none;
-  color: inherit;
-}
-
 /* 
   Use Heydon’s pseudo-content trick to make the whole card clickable
   @link: https://inclusive-components.design/cards/#thepseudocontenttrick
+  See also Andy’s Breakout button 
+  @link: https://piccalil.li/tutorial/create-a-semantic-break-out-button-to-make-an-entire-element-clickable/
 */
 .card :is(h2, h3, h4) > a::after {
   content: '';
@@ -44,10 +40,11 @@ Largely based on https://inclusive-components.design/cards/
 }
 
 /* Raise all other links above the pseudo-content, so they remain clickable */
-.card > div > p > a,
-.card > div > small > a,
-.card > div > .button {
+.card p,
+.card button,
+.card .button {
   position: relative;
+  z-index: 1;
 }
 
 /* Apply a basic focus style to the link so that users of older browsers that do not support :focus-within will still see a fallback focus style */
@@ -57,7 +54,6 @@ Largely based on https://inclusive-components.design/cards/
 
 
 /* Use :focus-within to match the :hover style */
-.card:hover,
 .card:focus-within {
   box-shadow: 0 0 0 .1rem;
 }
@@ -76,16 +72,12 @@ Largely based on https://inclusive-components.design/cards/
 
 /* Force the textual elements to take up all the available space and prevents line length for cards on large screens not supporting grid from becoming too long */
 .card > div {
+  --flow-space: 1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 1rem;
   max-width: 60ch;
-}
-
-/* Apply a consistent margin to all elements */
-.card > div > * + * {
-  margin-top: var(--space-xs-s);
 }
 
 /* Push the last textual element to the bottom of the card, regardless of its height. */
@@ -96,4 +88,12 @@ Largely based on https://inclusive-components.design/cards/
 /* Add a bottom margin to the second last element, to ensure a minimum level of separation */
 .card > div :nth-last-child(2) {
   margin-bottom: var(--space-xs-s);
+}
+
+/* Optionally flip the card design
+ @link: https://cube.fyi/exception.html 
+*/
+.card[data-state='reversed'] {
+  display: flex;
+  flex-direction: column-reverse;
 }

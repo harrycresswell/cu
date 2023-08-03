@@ -9,6 +9,8 @@ weight: 3
 
 Add the `.repel` class to site headers, site footers or anywhere you want to push two items away from each other.
 
+Use `data-nowrap` to prevent items from wrapping when space no longer permits.
+
 <figure>
   <div class="demo | repel">
     <div class="item">Item 1</div>

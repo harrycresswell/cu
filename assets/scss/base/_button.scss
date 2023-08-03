@@ -29,7 +29,6 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="button"]:hover
 input[type="button"]:focus {
-  //background-color: var(--color-brand-shade);
   filter: brightness(1.2);
   transform: translateY(-2px)
 }
@@ -74,8 +73,6 @@ button[data-variant='outline']:hover,
 input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
-  //color: var(--color-bg);
-  //background-color: var(--color-brand-shade);
   filter: brightness(1.2);
   border: solid 0.1rem var(--color-brand);
 }
