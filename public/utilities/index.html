@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en-gb"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,325 @@
     
     
     
-    <link rel="stylesheet" href="/css/main.min.16cd1d17cb1b46048413525da5acbe3a2a829af1fbc2e89a82fb17cdc4ca9b54.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/css/main.min.c0fea0413002d84e4a677785379a0f45991905ca701761392e5e5e1f0f424c68.css" integrity="" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel">
-  <h1 class="h3">Utilities</h1>
-  
-</header><main id="main-content" class="wrapper prose">
-  
+      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+  <a data-variant="naked" href="/">cu.css</a>
+  <nav aria-label="Main">
+  <ul class="cluster" style="--gutter: 1rem" role="list">
+    
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/">
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/global/">
+          Docs
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/">
+          Github
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+</header><main id="main-content">
+        <section class="hero | region | flow">
+            <h1>Utilities</h1>
+            
+        </section>
+        <section class="wrapper region">
+  <div class="sidebar">
+    <aside><nav class="sidebar-nav" aria-label="Sidebar" id="sidebar-navigation">
+ <ul role="list">
+    
+    
+      
+        <li data-children="true" >
+          <a  href="/global/">
+            Global
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#typography">Typography</a>
+              </li>
+            
+              <li>
+                <a href="#lists">Lists</a>
+              </li>
+            
+              <li>
+                <a href="#blockquotes">Blockquotes</a>
+              </li>
+            
+              <li>
+                <a href="#code-blocks">Code blocks</a>
+              </li>
+            
+              <li>
+                <a href="#forms">Forms</a>
+              </li>
+            
+              <li>
+                <a href="#accordions">Accordions</a>
+              </li>
+            
+              <li>
+                <a href="#tables">Tables</a>
+              </li>
+            
+              <li>
+                <a href="#buttons">Buttons</a>
+              </li>
+            
+              <li>
+                <a href="#links">Links</a>
+              </li>
+            
+              <li>
+                <a href="#images">Images</a>
+              </li>
+            
+              <li>
+                <a href="#horizonal-rule">Horizontal rule</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" >
+          <a  href="/compositions/">
+            Compositions
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#grid">Grid</a>
+              </li>
+            
+              <li>
+                <a href="#cluster">Cluster</a>
+              </li>
+            
+              <li>
+                <a href="#repel">Repel</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" data-state="active">
+          <a  href="/utilities/">
+            Utilities
+          </a>
+          <ul role="list" data-state="visible" aria-label="submenu">
+            
+              <li>
+                <a href="#wrapper">Wrapper</a>
+              </li>
+            
+              <li>
+                <a href="#region">Region</a>
+              </li>
+            
+              <li>
+                <a href="#flow">Flow</a>
+              </li>
+            
+              <li>
+                <a href="#visually-hidden">Visually Hidden</a>
+              </li>
+            
+              <li>
+                <a href="#text">Text</a>
+              </li>
+            
+              <li>
+                <a href="#width">Width</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" >
+          <a  href="/blocks/">
+            Blocks
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#button">Button</a>
+              </li>
+            
+              <li>
+                <a href="#callout">Callout</a>
+              </li>
+            
+              <li>
+                <a href="#card">Card</a>
+              </li>
+            
+              <li>
+                <a href="#hero">Hero</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav></aside>
+    <div>
+      
+      <div class="prose">
+        <p>A utility, in the context of CUBE CSS, is a CSS class that does one job and does that one job well.</p>
 
+      </div>
+      
+      
+        <article class="prose | region flow">
+          <h2 id="wrapper">Wrapper</h2>
+          <p>Sets a max width, adds a consistent gutter and horizontally centers content.</p>
+<figure>
+  <div class="demo" style="display: flex;">
+    <div class="margin"><mark>Margin</mark></div>
+    <div class="padding">Padding</div>
+    <div class="container" style="flex: 1; padding: 1rem;">Content</div>
+    <div class="padding">Padding</div>
+    <div class="margin"><mark>Margin</mark></div>
+  </div>
+  <figcaption>Wrapper with horizontal padding visualised in purple and margin in green</figcaption>
+</figure>
+<pre tabindex="0"><code>/*
+WRAPPER
+@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+*/
+.wrapper {
+  max-width: var(--wrapper-max-width, 90rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  position: relative;
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="region">Region</h2>
+          <p>Adds consistent vertical padding to an element to create regions of content. Can either be configured by setting <code>--region-space</code> or use a default from a space scale.</p>
+<figure>
+  <div class="demo | region">
+    <div class="padding">Padding</div>
+    <div class="container">Content</div>
+    <div class="padding">Padding</div>
+  </div>
+  <figcaption>A region of content with vertical padding visualised in purple</figcaption>
+</figure>
+<pre tabindex="0"><code>/*
+REGION 
+Add consistent vertical padding to create regions of content 
+Can either be configured by setting --region-space or use a default from the space scale
+@link: https://codepen.io/harrycresswell/pen/bGQmBNL
+*/
+.region {
+ padding-top: var(--region-space, var(--space-l-xl));
+ padding-bottom: var(--region-space, var(--space-l-xl));
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="flow">Flow</h2>
+          <p>Applies a margin to sibling elements based on a <code>--flow-space</code> custom property.</p>
+<figure>
+  <div class="demo">
+    <div class="container" style="height: 4rem;">Content</div>
+    <div class="margin"><mark>Margin (default)</mark></div>
+    <div class="container" style="height: 4rem;">Content</div>
+    <div class="margin" style="height: 8rem;"><mark>Margin (set inline using --flow-space)</mark></div>
+    <div class="container" style="height: 4rem;">Content</div>
+  </div>
+  <figcaption>Flow utility with margin visualised in green</figcaption>
+</figure>
+<pre tabindex="0"><code>/*
+FLOW
+@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
+@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+@link: https://piccalil.li/quick-tip/flow-utility/
+*/
+.flow &gt; * + * {
+  margin-top: var(--flow-space, 1em);
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="visually-hidden">Visually Hidden</h2>
+          <p>Use the <code>.visually-hidden</code> utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.</p>
+<pre tabindex="0"><code>/* 
+VISUALLY HIDDEN
+@link: https://piccalil.li/quick-tip/visually-hidden/ 
+*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="text">Text</h2>
+          <p>The <code>.text-center</code> utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.</p>
+<pre tabindex="0"><code>.text-center {
+  text-align: center;
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="width">Width</h2>
+          <p>The <code>.w-full</code> utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.</p>
+<pre tabindex="0"><code>.w-full {
+  width: 100%;
+}
+</code></pre>
+        </article>
+      
+    </div>
+
+        </section>
       </main><footer class="wrapper prose text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://simplecss.org/">Simple.css</a>, and <a href="https://utopia.fyi/">Utopia.fyi</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://utopia.fyi/">Utopia.fyi</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a>, <a href="https://web.dev/design-system/">web.dev/design-system</a> and <a href="https://simplecss.org/">Simple.css</a>. MIT license.</small>
 </footer></body>
 </html>

@@ -1,4 +1,8 @@
+/*
+HERO
+*/
 .hero {
+  --region-space: 8rem;
   background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
   background-color: var(--color-bg);
   background-position: 0 0, 50px 50px;
@@ -7,7 +11,16 @@
   text-align: center;
 }
 
-.hero h1,
-.hero p {
+/* 
+Ensure direct decending elements maintain a consistent flow space when hero is used with .flow. 
+Center align elements.
+*/
+.hero > * {
+  --flow-space: 1rem;
   margin-inline: auto;
+  // max-width: var(--wrapper-max-width, 75rem);
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: var(--gutter);
+  // padding-right: var(--gutter);
 }

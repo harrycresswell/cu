@@ -1,7 +1,14 @@
+/* 
+CALLOUT
+*/
 .callout {
   padding: var(--space-xs-s);
   border: dotted 2px var(--color-text-mod-2);
-  width: var(--width-longform);
+  max-width: var(--width-longform);
+}
+
+.callout > * {
+  line-height: var(--line-height-base);
 }
 
 .callout[data-variant='brand'] {

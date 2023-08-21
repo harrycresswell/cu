@@ -5,16 +5,15 @@
       <a class="skip-link" href="#main-content">Main content</a>
       {{- partial "header.html" . -}}
       <main id="main-content">
-        <section class="hero | region | flow" style="--region-space: 6rem;">
+        <section class="hero | region | flow">
             <h1>{{ .Title }}</h1>
             {{ if .IsHome }}
               <p>{{ .Params.description | markdownify }}</p>
             {{ end }}
         </section>
-        <section class="wrapper">
+        <section class="wrapper region">
           {{- block "main" . }}{{- end }}
         </section>
-        
       </main>
       {{- partial "footer.html" . -}}
     </body>

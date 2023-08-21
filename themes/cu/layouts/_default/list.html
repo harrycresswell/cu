@@ -1,15 +1,19 @@
 {{ define "main" }}
-  {{ with .Content }}
-  <div style="margin-block-start: 3rem;">
-    {{ . }}
-  </div>
-  {{ end }}
-  {{ range .Pages }}
-    <article class="region flow">
-      <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
-      <div class="prose flow">
-        {{ .Content }}
+  <div class="sidebar">
+    <aside>
+      {{- partial "nav-sidebar.html" . -}}
+    </aside>
+    <div>
+      {{ with .Content }}
+      <div class="prose">
+        {{ . }}
       </div>
-    </article>
-  {{ end }}
+      {{ end }}
+      {{ range .Pages }}
+        <article class="prose | region flow">
+          <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+          {{ .Content }}
+        </article>
+      {{ end }}
+    </div>
 {{ end }}

@@ -92,8 +92,9 @@ project: https://cube.fyi/css.html
  blockquote:not([class]) {
    border-left: solid 3px var(--color-text);
    padding-inline-start: var(--space-s);
-   font-family: var(--font-serif);
+   font-family: var(--font-display);
    font-size: var(--step-2);
+   line-height: var(--line-height-base);
  }
 
  /* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
@@ -111,9 +112,10 @@ project: https://cube.fyi/css.html
    flex: none;
  }
 
- /* Remove padding on ul, ol elements with a list role */
+ /* Remove padding and margin on ul, ol elements with a list role */
  [role='list'] {
    padding: 0;
+   margin: 0;
  }
 
  /* Base interactive elements */

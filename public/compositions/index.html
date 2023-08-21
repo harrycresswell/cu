@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en-gb"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,321 @@
     
     
     
-    <link rel="stylesheet" href="/css/main.min.16cd1d17cb1b46048413525da5acbe3a2a829af1fbc2e89a82fb17cdc4ca9b54.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/css/main.min.c0fea0413002d84e4a677785379a0f45991905ca701761392e5e5e1f0f424c68.css" integrity="" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel">
-  <h1 class="h3">Compositions</h1>
-  
-</header><main id="main-content" class="wrapper prose">
-  
-    Grid
-  
-    Repel
-  
+      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+  <a data-variant="naked" href="/">cu.css</a>
+  <nav aria-label="Main">
+  <ul class="cluster" style="--gutter: 1rem" role="list">
+    
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/">
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/global/">
+          Docs
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        class=""
+        href="/">
+          Github
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+</header><main id="main-content">
+        <section class="hero | region | flow">
+            <h1>Compositions</h1>
+            
+        </section>
+        <section class="wrapper region">
+  <div class="sidebar">
+    <aside><nav class="sidebar-nav" aria-label="Sidebar" id="sidebar-navigation">
+ <ul role="list">
+    
+    
+      
+        <li data-children="true" >
+          <a  href="/global/">
+            Global
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#typography">Typography</a>
+              </li>
+            
+              <li>
+                <a href="#lists">Lists</a>
+              </li>
+            
+              <li>
+                <a href="#blockquotes">Blockquotes</a>
+              </li>
+            
+              <li>
+                <a href="#code-blocks">Code blocks</a>
+              </li>
+            
+              <li>
+                <a href="#forms">Forms</a>
+              </li>
+            
+              <li>
+                <a href="#accordions">Accordions</a>
+              </li>
+            
+              <li>
+                <a href="#tables">Tables</a>
+              </li>
+            
+              <li>
+                <a href="#buttons">Buttons</a>
+              </li>
+            
+              <li>
+                <a href="#links">Links</a>
+              </li>
+            
+              <li>
+                <a href="#images">Images</a>
+              </li>
+            
+              <li>
+                <a href="#horizonal-rule">Horizontal rule</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" data-state="active">
+          <a  href="/compositions/">
+            Compositions
+          </a>
+          <ul role="list" data-state="visible" aria-label="submenu">
+            
+              <li>
+                <a href="#grid">Grid</a>
+              </li>
+            
+              <li>
+                <a href="#cluster">Cluster</a>
+              </li>
+            
+              <li>
+                <a href="#repel">Repel</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" >
+          <a  href="/utilities/">
+            Utilities
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#wrapper">Wrapper</a>
+              </li>
+            
+              <li>
+                <a href="#region">Region</a>
+              </li>
+            
+              <li>
+                <a href="#flow">Flow</a>
+              </li>
+            
+              <li>
+                <a href="#visually-hidden">Visually Hidden</a>
+              </li>
+            
+              <li>
+                <a href="#text">Text</a>
+              </li>
+            
+              <li>
+                <a href="#width">Width</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li data-children="true" >
+          <a  href="/blocks/">
+            Blocks
+          </a>
+          <ul role="list"  aria-label="submenu">
+            
+              <li>
+                <a href="#button">Button</a>
+              </li>
+            
+              <li>
+                <a href="#callout">Callout</a>
+              </li>
+            
+              <li>
+                <a href="#card">Card</a>
+              </li>
+            
+              <li>
+                <a href="#hero">Hero</a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav></aside>
+    <div>
+      
+      <div class="prose">
+        <p>In CUBE CSS, the composition layer extends CSS and is very much a high level macro view—even when applied in smaller, component-level contexts.</p>
 
+      </div>
+      
+      
+        <article class="prose | region flow">
+          <h2 id="grid">Grid</h2>
+          <p>Grid comes in three flavours: <em>Two-column</em>, <em>Three-column</em> and <em>Masonry</em> layout.</p>
+<h3 id="two-column-layout">Two-column layout</h3>
+<p>The <em>two-column</em> layout positions grid items side-by-side when space permits, so that items proportionately share the available space.</p>
+<p>Use the layout by adding <code>data-layout=&quot;50-50&quot;</code> to any element with the <code>.grid</code> class applied.</p>
+<figure>
+  <div class="demo | grid" data-layout="50-50">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+  <figcaption>Two column when space permits</figcaption>
+</figure>
+<pre tabindex="0"><code>/* Two column when space permits */
+.grid[data-layout=&#39;50-50&#39;] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 26rem);
+}
+</code></pre><h3 id="three-column-layout">Three-column layout</h3>
+<p>The <em>three-column</em> layout positions grid items in three columns when space permits, so that items proportionately share the available space.</p>
+<p>Use the layout by adding <code>data-layout=&quot;33x3&quot;</code> to any element with the <code>.grid</code> class applied.</p>
+<figure>
+  <div class="demo | grid" data-layout="33x3">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+  <figcaption>Three column when space permits</figcaption>
+</figure>
+<pre tabindex="0"><code>/* Three column when space permits */
+.grid[data-layout=&#39;33x3&#39;] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 18rem);
+}
+</code></pre><h3 id="masonry-layout">Masonry layout</h3>
+<p>The <em>masonry layout</em> remove the extra gap often left between rows by grid items of varying size. Use the layout by applying <code>data-rows=&quot;masonry&quot;</code> to any element with the <code>.grid</code> class applied.</p>
+<aside class="callout" data-variant="brand">Currently the feature is only implemented in Firefox, and can be enabled by setting the flag <code>layout.css.grid-template-masonry-value.enabled</code> to <code>true</code> in <code>about:config</code>.</aside>
+<figure>
+  <div class="demo | grid" data-rows="masonry">
+    <div class="item">Item 1</div>
+    <div class="item" style="height: 6rem;">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item" style="height: 8rem;">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+  <figcaption>Masonry layout (will work one day in all browsers)</figcaption>
+</figure>
+<pre tabindex="0"><code>/* Masonry layout (will work one day in all browsers) */
+.grid[data-rows=&#39;masonry&#39;] {
+  grid-template-rows: masonry;
+  align-items: start;
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="cluster">Cluster</h2>
+          <p><em>Cluster</em> creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.</p>
+<p>This layout is handy for navigation links, breadcrumbs, etc. Use it by adding the <code>.cluster</code> class to an element with nested children.</p>
+<figure>
+  <div class="demo | cluster">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+  <figcaption>Cluster will cluster items inline while space permits</figcaption>
+</figure>
+<pre tabindex="0"><code>.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-size-1));
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  align-items: var(--cluster-vertical-alignment, center);
+}
+</code></pre>
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="repel">Repel</h2>
+          <p><em>Repel</em> adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.</p>
+<p>Add the <code>.repel</code> class to site headers, site footers or anywhere you want to push two items away from each other.</p>
+<p>Use <code>data-nowrap</code> to prevent items from wrapping when space no longer permits.</p>
+<figure>
+  <div class="demo | repel">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+  <figcaption>Repel quite literally repels two items from one another</figcaption>
+</figure>
+<pre tabindex="0"><code>.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-s-l));
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}
+</code></pre>
+        </article>
+      
+    </div>
+
+        </section>
       </main><footer class="wrapper prose text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://simplecss.org/">Simple.css</a>, and <a href="https://utopia.fyi/">Utopia.fyi</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://utopia.fyi/">Utopia.fyi</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a>, <a href="https://web.dev/design-system/">web.dev/design-system</a> and <a href="https://simplecss.org/">Simple.css</a>. MIT license.</small>
 </footer></body>
 </html>

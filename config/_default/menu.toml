@@ -1,0 +1,182 @@
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Docs"
+url = "/global/"
+weight = 2
+
+[[main]]
+name = "Github"
+url = "/"
+weight = 3
+
+[[sidebar]]
+name = "Global"
+url = "/global/"
+weight = 1
+identifier = "Global"
+
+[[sidebar]]
+name = "Typography"
+url = "#typography"
+weight = 2
+parent = "Global"
+
+[[sidebar]]
+name = "Lists"
+url = "#lists"
+weight = 3
+parent = "Global"
+
+[[sidebar]]
+name = "Blockquotes"
+url = "#blockquotes"
+weight = 4
+parent = "Global"
+
+[[sidebar]]
+name = "Code blocks"
+url = "#code-blocks"
+weight = 5
+parent = "Global"
+
+[[sidebar]]
+name = "Forms"
+url = "#forms"
+weight = 6
+parent = "Global"
+
+[[sidebar]]
+name = "Accordions"
+url = "#accordions"
+weight = 7
+parent = "Global"
+
+[[sidebar]]
+name = "Tables"
+url = "#tables"
+weight = 8
+parent = "Global"
+
+[[sidebar]]
+name = "Buttons"
+url = "#buttons"
+weight = 9
+parent = "Global"
+
+[[sidebar]]
+name = "Links"
+url = "#links"
+weight = 10
+parent = "Global"
+
+[[sidebar]]
+name = "Images"
+url = "#images"
+weight = 11
+parent = "Global"
+
+[[sidebar]]
+name = "Horizontal rule"
+url = "#horizonal-rule"
+weight = 12
+parent = "Global"
+
+[[sidebar]]
+name = "Compositions"
+url = "/compositions/"
+weight = 13
+identifier = "Compositions"
+
+[[sidebar]]
+name = "Grid"
+url = "#grid"
+weight = 14
+parent = "Compositions"
+
+[[sidebar]]
+name = "Cluster"
+url = "#cluster"
+weight = 15
+parent = "Compositions"
+
+[[sidebar]]
+name = "Repel"
+url = "#repel"
+weight = 16
+parent = "Compositions"
+
+[[sidebar]]
+name = "Utilities"
+url = "/utilities/"
+weight = 17
+identifier = "Utilities"
+
+[[sidebar]]
+name = "Wrapper"
+url = "#wrapper"
+weight = 18
+parent = "Utilities"
+
+[[sidebar]]
+name = "Region"
+url = "#region"
+weight = 19
+parent = "Utilities"
+
+[[sidebar]]
+name = "Flow"
+url = "#flow"
+weight = 20
+parent = "Utilities"
+
+[[sidebar]]
+name = "Visually Hidden"
+url = "#visually-hidden"
+weight = 21
+parent = "Utilities"
+
+[[sidebar]]
+name = "Text"
+url = "#text"
+weight = 22
+parent = "Utilities"
+
+[[sidebar]]
+name = "Width"
+url = "#width"
+weight = 23
+parent = "Utilities"
+
+[[sidebar]]
+name = "Blocks"
+url = "/blocks/"
+weight = 24
+identifier = "Blocks"
+
+[[sidebar]]
+name = "Button"
+url = "#button"
+weight = 25
+parent = "Blocks"
+
+[[sidebar]]
+name = "Callout"
+url = "#callout"
+weight = 26
+parent = "Blocks"
+
+[[sidebar]]
+name = "Card"
+url = "#card"
+weight = 27
+parent = "Blocks"
+
+[[sidebar]]
+name = "Hero"
+url = "#hero"
+weight = 28
+parent = "Blocks"

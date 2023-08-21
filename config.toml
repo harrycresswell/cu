@@ -9,25 +9,3 @@ description = 'A modern SCSS framework'
 # Allow HTML in markdown (use with caution)
 [markup.goldmark.renderer]
 unsafe = true
-
-[menu]
-[[menu.main]]
-  name = 'Global'
-  url = '/global'
-  pageRef = 'global'
-  weight = 10
-[[menu.main]]
-  name = 'Compositions'
-  url = '/compositions'
-  pageRef = 'compositions'
-  weight = 20
-[[menu.main]]
-  name = 'Utilities'
-  url = '/utilities'
-  pageRef = 'utilities'
-  weight = 30
-[[menu.main]]
-  name = 'Blocks'
-  url = '/blocks'
-  pageRef = 'blocks'
-  weight = 40

@@ -24,7 +24,7 @@ WRAPPER
 @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
 */
 .wrapper {
-  max-width: var(--wrapper-max-width, 75rem);
+  max-width: var(--wrapper-max-width, 90rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);

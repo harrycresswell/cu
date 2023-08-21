@@ -82,9 +82,10 @@ Global theme tokens
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-compact: 1.2;
+  --line-height-base: 1.5;
   --line-height-loose: 1.7;
-  --width-compact: 28ch;
-  --width-longform: 62ch;
+  --width-compact: 35ch;
+  --width-longform: 65ch;
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
   /* 
@@ -298,8 +299,9 @@ small {
 blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
   padding-inline-start: var(--space-s);
-  font-family: var(--font-serif);
-  font-size: var(--step-2); }
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  line-height: var(--line-height-base); }
 
 /* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
 blockquote:not([class]) p:last-of-type,
@@ -314,9 +316,10 @@ svg {
   width: auto;
   flex: none; }
 
-/* Remove padding on ul, ol elements with a list role */
+/* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 /* Base interactive elements */
 a {
@@ -621,14 +624,6 @@ input[type="button"][data-variant='outline']:hover {
   border: solid 0.1rem var(--color-brand); }
 
 /* 
-Nav styles
-*/
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-/* 
 * Skeletal components or organisational structures.
 */
 .skip-link {
@@ -668,18 +663,17 @@ body > footer,
   margin-block: 2rem; }
 
 .prose {
-  --flow-space: var(--space-m-l); }
+  --flow-space: var(--space-m-l);
+  line-height: var(--line-height-loose); }
 
-.prose :is(pre,pre+*,figure,figure+*) {
-  --flow-space: var(--space-l-xl); }
+.prose :is(p, ul:not([class]), ol:not([class])) {
+  max-width: var(--width-longform); }
 
-.prose .heading-anchor :is(:hover, :focus) {
-  text-decoration: underline; }
-
-.prose .heading-anchor {
-  text-decoration: none; }
-
+/*
+HERO
+*/
 .hero {
+  --region-space: 8rem;
   background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
   background-color: var(--color-bg);
   background-position: 0 0, 50px 50px;
@@ -687,14 +681,24 @@ body > footer,
   padding-inline: var(--space-s-m);
   text-align: center; }
 
-.hero h1,
-.hero p {
+/* 
+Ensure direct decending elements maintain a consistent flow space when hero is used with .flow. 
+Center align elements.
+*/
+.hero > * {
+  --flow-space: 1rem;
   margin-inline: auto; }
 
+/* 
+CALLOUT
+*/
 .callout {
   padding: var(--space-xs-s);
   border: dotted 2px var(--color-text-mod-2);
-  width: var(--width-longform); }
+  max-width: var(--width-longform); }
+
+.callout > * {
+  line-height: var(--line-height-base); }
 
 .callout[data-variant='brand'] {
   color: var(--color-brand);
@@ -813,11 +817,59 @@ Largely based on:
   background-color: var(--color-bg);
   color: var(--color-text); }
 
+.sidebar-nav li {
+  max-width: unset; }
+
+.sidebar-nav li[data-children='true'] {
+  position: relative; }
+  .sidebar-nav li[data-children='true']::before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDhsLTYgNiAxLjQxIDEuNDFMMTIgMTAuODNsNC41OSA0LjU4TDE4IDE0bC02LTZ6Ii8+PC9zdmc+");
+    height: 1.2rem;
+    pointer-events: none;
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    transform: rotate(180deg); }
+  .sidebar-nav li[data-children='true'][data-state='active']::before {
+    top: .2rem;
+    transform: rotate(0deg); }
+
+.sidebar-nav li[data-state='active'] + ul,
+.sidebar-nav ul[data-state='visible'] {
+  display: block;
+  padding-inline: 1rem;
+  width: 100%;
+  height: auto;
+  clip: auto; }
+
+.sidebar-nav ul > li ul {
+  display: none; }
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; }
+
+.sidebar > :first-child {
+  flex-basis: var(--sidebar-target-width, 18rem);
+  flex-grow: 1; }
+  @media screen and (min-width: 960px) {
+    .sidebar > :first-child {
+      position: sticky;
+      top: 2rem;
+      overflow: auto;
+      height: 100vh; } }
+.sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 60%); }
+
 /* 
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
 */
-/* AUTO GRID
+/* 
+AUTO GRID
 Related Every Layout: https://every-layout.dev/layouts/grid/
 More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
 A flexible layout that will create an auto-fill grid with
@@ -856,7 +908,7 @@ EXCEPTIONS
 /* Three column when space permits */
 .grid[data-layout='33x3'] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 20rem); }
+  --grid-min-item-size: clamp(16rem, 33%, 18rem); }
 
 /*
 REPEL
@@ -946,7 +998,7 @@ centers the contents
 @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
 */
 .wrapper {
-  max-width: var(--wrapper-max-width, 75rem);
+  max-width: var(--wrapper-max-width, 90rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);

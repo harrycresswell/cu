@@ -1,0 +1,27 @@
+<nav class="sidebar-nav" aria-label="Sidebar" id="sidebar-navigation">
+ <ul role="list">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.sidebar }}
+      {{ if .HasChildren }}
+        <li data-children="true" {{ if eq $currentPage.RelPermalink .URL }}data-state="active"{{ end }}>
+          <a {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}data-state="active"{{end}} href="{{.URL}}">
+            {{ .Name }}
+          </a>
+          <ul role="list" {{ if eq $currentPage.RelPermalink .URL }}data-state="visible"{{ end }} aria-label="submenu">
+            {{ range .Children }}
+              <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </li>
+      {{ else }}
+        <li>
+          <a {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}data-state="active"{{end}} href="{{.URL}}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>

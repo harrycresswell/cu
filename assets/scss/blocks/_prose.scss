@@ -1,24 +1,22 @@
 .prose {
   --flow-space: var(--space-m-l);
+  line-height: var(--line-height-loose);
 }
 
-// .prose :is(h2, h3, h4)+* {
-//   --flow-space: var(--space-s-m);
-// }
+.prose :is(p, ul:not([class]), ol:not([class])) {
+  max-width: var(--width-longform);
+}
 
-// .prose :not(figure, figure *, pre) {
+
+// .prose > :not(figure, code, pre, .grid) {
 //   max-width: var(--width-longform);
 //   margin-inline: auto;
 // }
 
-.prose :is(pre,pre+*,figure,figure+*) {
-  --flow-space: var(--space-l-xl);
-}
+// .prose .heading-anchor :is(:hover, :focus) {
+//   text-decoration: underline;
+// }
 
-.prose .heading-anchor :is(:hover, :focus) {
-  text-decoration: underline;
-}
-
-.prose .heading-anchor {
-  text-decoration: none;
-}
+// .prose .heading-anchor {
+//   text-decoration: none;
+// }
