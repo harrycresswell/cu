@@ -5,8 +5,12 @@
       <li>
         <a 
         data-variant="naked"
-        class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
-        href="{{ .URL }}">
+        {{ if $currentPage.IsMenuCurrent "main" . }}data-state="active"{{ end }}
+        {{ if eq .Params.external true }}
+          target="_blank" rel="noopener noreferrer"
+        {{ end }}
+        href="{{ .URL }}"
+        >
           {{ .Name }}
         </a>
       </li>

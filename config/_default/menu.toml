@@ -1,25 +1,32 @@
 [[main]]
+pageRef = "/"
 name = "Home"
 url = "/"
 weight = 1
 
 [[main]]
+pageRef = "global"
 name = "Docs"
 url = "/global/"
 weight = 2
 
 [[main]]
 name = "Github"
-url = "/"
+url = "https://github.com/harrycresswell/"
 weight = 3
+[main.params]
+external = true
+
 
 [[sidebar]]
+pageRef = "global"
 name = "Global"
 url = "/global/"
 weight = 1
 identifier = "Global"
 
 [[sidebar]]
+pageRef = "typography"
 name = "Typography"
 url = "#typography"
 weight = 2
@@ -86,6 +93,7 @@ weight = 12
 parent = "Global"
 
 [[sidebar]]
+pageRef = "compositions"
 name = "Compositions"
 url = "/compositions/"
 weight = 13
@@ -110,6 +118,7 @@ weight = 16
 parent = "Compositions"
 
 [[sidebar]]
+pageRef = "utilities"
 name = "Utilities"
 url = "/utilities/"
 weight = 17
@@ -152,6 +161,7 @@ weight = 23
 parent = "Utilities"
 
 [[sidebar]]
+pageRef = "blocks"
 name = "Blocks"
 url = "/blocks/"
 weight = 24

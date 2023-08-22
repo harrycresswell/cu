@@ -823,13 +823,17 @@ Largely based on:
 .sidebar-nav li[data-children='true'] {
   position: relative; }
   .sidebar-nav li[data-children='true']::before {
-    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDhsLTYgNiAxLjQxIDEuNDFMMTIgMTAuODNsNC41OSA0LjU4TDE4IDE0bC02LTZ6Ii8+PC9zdmc+");
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiMxRDFEMUQiLz4KPC9zdmc+Cg==");
+    /* Use light chevron for darkmode */
     height: 1.2rem;
     pointer-events: none;
     position: absolute;
     right: 1rem;
     top: .6rem;
     transform: rotate(180deg); }
+    @media (prefers-color-scheme: dark) {
+      .sidebar-nav li[data-children='true']::before {
+        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
   .sidebar-nav li[data-children='true'][data-state='active']::before {
     top: .2rem;
     transform: rotate(0deg); }
@@ -863,6 +867,12 @@ Largely based on:
   flex-basis: 0;
   flex-grow: 999;
   min-width: var(--sidebar-content-min-width, 60%); }
+
+nav[aria-label='Main'] a[data-state='active'] {
+  text-decoration: underline; }
+
+nav[aria-label='sidebar'] a[data-state='active'] {
+  text-decoration: line-through; }
 
 /* 
 * High level, flexible layouts that provide a 

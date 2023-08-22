@@ -1,0 +1,11 @@
+nav[aria-label='Main'] {
+  a[data-state='active'] {
+    text-decoration: underline;
+  }
+}
+
+nav[aria-label='sidebar'] {
+  a[data-state='active'] {
+    text-decoration: line-through;
+  }
+}
