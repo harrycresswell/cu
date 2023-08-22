@@ -5,9 +5,9 @@ url = "/"
 weight = 1
 
 [[main]]
-pageRef = "global"
+pageRef = "docs"
 name = "Docs"
-url = "/global/"
+url = "/docs/"
 weight = 2
 
 [[main]]
