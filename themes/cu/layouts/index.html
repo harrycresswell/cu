@@ -1,18 +1,15 @@
 {{ define "main" }}
-  <div class="sidebar">
-    <aside>
-      {{- partial "nav-sidebar.html" . -}}
-    </aside>
-    <div>
+  <article style="max-width: var(--width-longform); margin-inline: auto;">
+    <section class="prose flow">
       {{ .Content }}
-      {{ $headless := .Site.GetPage "/home" }}
-      <article class="">
-        {{ $type := $headless.Resources.Match "type*" }}
-        {{ range $type }}
-          <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
-          {{ .Content }}
-        {{ end }}
-      </article>
-    </div>
-  </div>
+    </section>
+    {{ $headless := .Site.GetPage "/home" }}
+    {{ $type := $headless.Resources.Match "*" }}
+    {{ range $type }}
+    <section class="region flow">
+      <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+      {{ .Content }}
+    </section>
+    {{ end }}
+  </article>
 {{ end }}
