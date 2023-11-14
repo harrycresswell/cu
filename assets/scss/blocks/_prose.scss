@@ -1,11 +1,16 @@
 .prose {
-  --flow-space: var(--space-m-l);
+  --flow-space: var(--space-s-m);
   line-height: var(--line-height-loose);
 }
 
 .prose :is(p, ul:not([class]), ol:not([class])) {
   max-width: var(--width-longform);
 }
+
+.prose :is(pre,pre+*,figure,figure+*,h2,h3,h4) {
+  --flow-space: var(--space-l-xl);
+}
+
 
 
 // .prose > :not(figure, code, pre, .grid) {

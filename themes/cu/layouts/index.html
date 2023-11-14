@@ -1,15 +1,11 @@
 {{ define "main" }}
-  <article style="max-width: var(--width-longform); margin-inline: auto;">
-    <section class="prose flow">
-      {{ .Content }}
-    </section>
+  <article class="prose flow" style="max-width: var(--width-longform); margin-inline: auto;">
+    {{ .Content }}
     {{ $headless := .Site.GetPage "/home" }}
     {{ $type := $headless.Resources.Match "*" }}
     {{ range $type }}
-    <section class="region flow">
       <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
       {{ .Content }}
-    </section>
     {{ end }}
   </article>
 {{ end }}
