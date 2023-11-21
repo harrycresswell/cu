@@ -7,7 +7,7 @@ weight = 10
 [[main]]
 pageRef = "docs"
 name = "Docs"
-url = "/docs/"
+url = "/getting-started/"
 weight = 20
 
 [[main]]
@@ -46,7 +46,7 @@ weight = 40
 parent = "Getting Started"
 
 [[sidebar]]
-pageRef = "global"
+pageRef = "global-styles"
 name = "Global styles"
 url = "/global-styles/"
 weight = 50
