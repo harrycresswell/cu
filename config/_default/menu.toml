@@ -2,191 +2,218 @@
 pageRef = "/"
 name = "Home"
 url = "/"
-weight = 1
+weight = 10
 
 [[main]]
 pageRef = "docs"
 name = "Docs"
 url = "/docs/"
-weight = 2
+weight = 20
 
 [[main]]
 name = "Github"
 url = "https://github.com/harrycresswell/"
-weight = 3
+weight = 30
 [main.params]
 external = true
 
+[[sidebar]]
+pageRef = "getting-started"
+name = "Getting started"
+url = "/getting-started/"
+weight = 10
+identifier = "Getting Started"
+
+[[sidebar]]
+pageRef = "installation"
+name = "Installation"
+url = "#installation"
+weight = 20
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "working-with-css"
+name = "Working with CSS"
+url = "#working-with-css"
+weight = 30
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "working-with-sass"
+name = "Working with SASS"
+url = "#working-with-sass"
+weight = 40
+parent = "Getting Started"
 
 [[sidebar]]
 pageRef = "global"
-name = "Global"
-url = "/global/"
-weight = 1
+name = "Global styles"
+url = "/global-styles/"
+weight = 50
 identifier = "Global"
 
 [[sidebar]]
 pageRef = "typography"
 name = "Typography"
 url = "#typography"
-weight = 2
+weight = 60
 parent = "Global"
 
 [[sidebar]]
 name = "Lists"
 url = "#lists"
-weight = 3
+weight = 70
 parent = "Global"
 
 [[sidebar]]
 name = "Blockquotes"
 url = "#blockquotes"
-weight = 4
+weight = 80
 parent = "Global"
 
 [[sidebar]]
 name = "Code blocks"
 url = "#code-blocks"
-weight = 5
+weight = 90
 parent = "Global"
 
 [[sidebar]]
 name = "Forms"
 url = "#forms"
-weight = 6
+weight = 100
 parent = "Global"
 
 [[sidebar]]
 name = "Accordions"
 url = "#accordions"
-weight = 7
+weight = 110
 parent = "Global"
 
 [[sidebar]]
 name = "Tables"
 url = "#tables"
-weight = 8
+weight = 120
 parent = "Global"
 
 [[sidebar]]
 name = "Buttons"
 url = "#buttons"
-weight = 9
+weight = 130
 parent = "Global"
 
 [[sidebar]]
 name = "Links"
 url = "#links"
-weight = 10
+weight = 140
 parent = "Global"
 
 [[sidebar]]
 name = "Images"
 url = "#images"
-weight = 11
+weight = 150
 parent = "Global"
 
 [[sidebar]]
 name = "Horizontal rule"
 url = "#horizontal-rule"
-weight = 12
+weight = 160
 parent = "Global"
 
 [[sidebar]]
 pageRef = "compositions"
 name = "Compositions"
 url = "/compositions/"
-weight = 13
+weight = 170
 identifier = "Compositions"
 
 [[sidebar]]
 name = "Grid"
 url = "#grid"
-weight = 14
+weight = 180
 parent = "Compositions"
 
 [[sidebar]]
 name = "Cluster"
 url = "#cluster"
-weight = 15
+weight = 190
 parent = "Compositions"
 
 [[sidebar]]
 name = "Repel"
 url = "#repel"
-weight = 16
+weight = 200
 parent = "Compositions"
 
 [[sidebar]]
 pageRef = "utilities"
 name = "Utilities"
 url = "/utilities/"
-weight = 17
+weight = 210
 identifier = "Utilities"
 
 [[sidebar]]
 name = "Wrapper"
 url = "#wrapper"
-weight = 18
+weight = 220
 parent = "Utilities"
 
 [[sidebar]]
 name = "Region"
 url = "#region"
-weight = 19
+weight = 230
 parent = "Utilities"
 
 [[sidebar]]
 name = "Flow"
 url = "#flow"
-weight = 20
+weight = 240
 parent = "Utilities"
 
 [[sidebar]]
 name = "Visually Hidden"
 url = "#visually-hidden"
-weight = 21
+weight = 250
 parent = "Utilities"
 
 [[sidebar]]
 name = "Text"
 url = "#text"
-weight = 22
+weight = 260
 parent = "Utilities"
 
 [[sidebar]]
 name = "Width"
 url = "#width"
-weight = 23
+weight = 270
 parent = "Utilities"
 
 [[sidebar]]
 pageRef = "blocks"
 name = "Blocks"
 url = "/blocks/"
-weight = 24
+weight = 280
 identifier = "Blocks"
 
 [[sidebar]]
 name = "Button"
 url = "#button"
-weight = 25
+weight = 290
 parent = "Blocks"
 
 [[sidebar]]
 name = "Callout"
 url = "#callout"
-weight = 26
+weight = 300
 parent = "Blocks"
 
 [[sidebar]]
 name = "Card"
 url = "#card"
-weight = 27
+weight = 310
 parent = "Blocks"
 
 [[sidebar]]
 name = "Hero"
 url = "#hero"
-weight = 28
+weight = 320
 parent = "Blocks"

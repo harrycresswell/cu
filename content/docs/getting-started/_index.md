@@ -1,5 +1,5 @@
 ---
-title: Global styles
+title: Getting started
 ---
 
 Global styles are default styles applied directly to HTML elements. This means HTML looks great without any additional classes.

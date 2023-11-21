@@ -11,11 +11,11 @@ features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+name = ""
+homepage = ""
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+name = ""
+homepage = ""
+repo = ""
