@@ -4,10 +4,11 @@
     {{ range .Site.Menus.sidebar }}
       {{ if .HasChildren }}
         <li data-children="true" {{ if eq $currentPage.RelPermalink .URL }}data-state="active"{{ end }}>
-          <a {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}data-state="active"{{end}} href="{{.URL}}">
+          <a {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}data-state="active"{{ end }} href="{{ .URL }}">
             {{ .Name }}
           </a>
           <ul role="list" {{ if eq $currentPage.RelPermalink .URL }}data-state="visible"{{ end }} aria-label="submenu">
+
             {{ range .Children }}
               <li>
                 <a href="{{ .URL }}">{{ .Name }}</a>
@@ -17,7 +18,7 @@
         </li>
       {{ else }}
         <li>
-          <a {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}data-state="active"{{end}} href="{{.URL}}">
+          <a {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}data-state="active"{{end}} href="{{ .URL }}">
             {{ .Name }}
           </a>
         </li>

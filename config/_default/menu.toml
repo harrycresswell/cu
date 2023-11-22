@@ -25,21 +25,23 @@ weight = 10
 identifier = "Getting Started"
 
 [[sidebar]]
-pageRef = "installation"
-name = "Installation"
+#Set pageRef to a value that site.GetPage understands, and the menu entry will be correctly connected to the page.
+pageRef = "#installation"
+# When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
 url = "#installation"
+name = "Installation"
 weight = 20
 parent = "Getting Started"
 
 [[sidebar]]
-pageRef = "working-with-css"
+pageRef = "#working-with-css"
 name = "Working with CSS"
 url = "#working-with-css"
 weight = 30
 parent = "Getting Started"
 
 [[sidebar]]
-pageRef = "working-with-sass"
+pageRef = "#working-with-sass"
 name = "Working with SASS"
 url = "#working-with-sass"
 weight = 40
@@ -53,7 +55,7 @@ weight = 50
 identifier = "Global"
 
 [[sidebar]]
-pageRef = "typography"
+#pageRef = "typography"
 name = "Typography"
 url = "#typography"
 weight = 60
