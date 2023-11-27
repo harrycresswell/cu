@@ -681,10 +681,6 @@ nav[aria-label='sidebar'] a[data-state='active'] {
   width: 1px;
   white-space: nowrap; }
 
-body > footer,
-.site-foot {
-  margin-block: 2rem; }
-
 .prose {
   --flow-space: var(--space-s-m);
   line-height: var(--line-height-loose); }
