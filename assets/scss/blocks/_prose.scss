@@ -11,12 +11,9 @@
   --flow-space: var(--space-l-xl);
 }
 
-
-
-// .prose > :not(figure, code, pre, .grid) {
-//   max-width: var(--width-longform);
-//   margin-inline: auto;
-// }
+.prose blockquote {
+  max-width: 50ch;
+}
 
 // .prose .heading-anchor :is(:hover, :focus) {
 //   text-decoration: underline;

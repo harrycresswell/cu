@@ -691,6 +691,9 @@ nav[aria-label='sidebar'] a[data-state='active'] {
 .prose :is(pre,pre+*,figure,figure+*,h2,h3,h4) {
   --flow-space: var(--space-l-xl); }
 
+.prose blockquote {
+  max-width: 50ch; }
+
 /*
 HERO
 */
