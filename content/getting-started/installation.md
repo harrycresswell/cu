@@ -6,9 +6,11 @@ weight: 1
 ---
 
 
-There are a few different ways to install cu.css, depending on which flavour you would like to use.
+Depending on which flavour you would like to use, there are a few different ways to install cu.css.
 
 ## CSS
+
+Include via a CDN.
 
 Paste the following into the `<head>` of your HTML:
 
