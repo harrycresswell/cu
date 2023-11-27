@@ -5,7 +5,9 @@ draft: false
 weight: 2
 ---
 
-Adds consistent vertical padding to an element to create regions of content. Can either be configured by setting `--region-space` or use a default from a space scale.
+`.region` adds consistent vertical padding to an element to create regions of content with sufficient spacing. 
+
+By default, `.region` uses `--space-l-xl` from [the space scale](assets/scss/abstracts/_space.scss), however the amount of space can also be configured by setting `--region-space` inline or within any new class you decide to create and use alongside `.region`.
 
 <figure>
   <div class="demo | region">

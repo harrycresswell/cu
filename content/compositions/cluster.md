@@ -7,7 +7,7 @@ weight: 2
 
 *Cluster* creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.
 
-This layout is handy for navigation links, breadcrumbs, etc. Use it by adding the `.cluster` class to an element with nested children.
+This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the `.cluster` class to an element with nested children.
 
 <figure>
   <div class="demo | cluster">

@@ -692,7 +692,7 @@ nav[aria-label='sidebar'] a[data-state='active'] {
   --flow-space: var(--space-l-xl); }
 
 .prose blockquote {
-  max-width: 50ch; }
+  max-width: 40ch; }
 
 /*
 HERO

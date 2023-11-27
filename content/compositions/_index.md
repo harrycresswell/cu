@@ -2,6 +2,8 @@
 title: Compositions
 ---
 
-In CUBE CSS, the composition layer extends CSS and is very much a high level macro view—even when applied in smaller, component-level contexts.
+*cu.css* includes a handful of compositions. These classes create flexible layouts, helping to bring structure to whatever content you decide to use them with. 
 
-*cu.css* includes a handful of [Compositions](/docs/compositions/). These classes create flexible layout systems, helping to bring structure to any content. 
+According to [cube.fyi](https://cube.fyi/): “The composition layer’s job is to create flexible, component-agnostic layout systems that support as many variants of content as possible.”
+
+The CSS for these compositions can be found in `assets/scss/compositions`.

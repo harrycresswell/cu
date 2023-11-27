@@ -147,7 +147,7 @@ weight = 200
 parent = "Compositions"
 
 [[sidebar]]
-pageRef = "utilities"
+pageRef = "/utilities/"
 name = "Utilities"
 url = "/utilities/"
 weight = 210
