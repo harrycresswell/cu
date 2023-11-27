@@ -12,6 +12,7 @@ Largely based on:
   flex-direction: column;
   position: relative;
   border: solid .1rem;
+  border-radius: var(--border-radius);
 }
 
 /* Ensure consistent heading size regardless of heading level */

@@ -34,6 +34,7 @@ select {
   box-shadow: none;
   letter-spacing: -.5px;
   border: solid .1rem var(--color-border);
+  border-radius: var(--border-radius);
   color: var(--color-text);
   padding: var(--space-3xs) var(--space-2xs);
 }
@@ -68,6 +69,10 @@ input[type="radio"] {
   margin-inline-start: 0;
   margin-inline-end: .25rem;
   margin-block-end: .3rem;
+}
+
+input[type="checkbox"] {
+  border-radius: var(--border-radius);
 }
 
 input[type="radio"] {

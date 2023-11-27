@@ -90,7 +90,6 @@ Global theme tokens
   --tracking-s: -0.05ch;
   /* 
   Colors
-  
   @link Utopia Kickstarter project 
   https://www.figma.com/community/file/1122903924123950023
   */
@@ -110,18 +109,8 @@ Global theme tokens
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
-  --border-radius-sm: 0.25rem;
-  --border-radius-md: 0.5rem;
-  --border-radius-lg: 1rem;
-  --shadow-xs: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
-  --shadow-sm: 0px 4px 11px 1px rgba(0, 0, 0, 0.04), 0px 3px 10px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.025);
-  --shadow-md: 0px 6px 13px 1px rgba(0, 0, 0, 0.03), 0px 5px 14px 1px rgba(0, 0, 0, 0.04), 0px 3px 14px rgba(0, 0, 0, 0.08), 0px 0px 3px rgba(0, 0, 0, 0.025);
-  --shadow-lg: 0px 6px 8px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 7px 14px 1px rgba(0, 0, 0, 0.03), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
-  --shadow-xl: 0px 8px 16px rgba(0, 0, 0, 0.05), 0px 9px 13px rgba(0, 0, 0, 0.03), 0px 12px 19px 1px rgba(0, 0, 0, 0.03), 0px 12px 17px 1px rgba(0, 0, 0, 0.05), 0px 7px 18px rgba(0, 0, 0, 0.08), 0px 2px 3px rgba(0, 0, 0, 0.025);
-  --transition-base: 250ms ease;
-  --transition-movement: 200ms linear;
-  --transition-fade: 200ms ease;
-  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5); }
+  --border-radius: 0;
+  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025); }
   @media (prefers-color-scheme: dark) {
     :root {
       --color-text: #CED3E8;
@@ -407,6 +396,7 @@ select {
   box-shadow: none;
   letter-spacing: -.5px;
   border: solid 0.1rem var(--color-border);
+  border-radius: var(--border-radius);
   color: var(--color-text);
   padding: var(--space-3xs) var(--space-2xs); }
 
@@ -438,6 +428,9 @@ input[type="radio"] {
   margin-inline-start: 0;
   margin-inline-end: .25rem;
   margin-block-end: .3rem; }
+
+input[type="checkbox"] {
+  border-radius: var(--border-radius); }
 
 input[type="radio"] {
   border-radius: 100%; }
@@ -509,7 +502,8 @@ Format the expanding box, a.k.a accordion.
 Ditch these styles altogether if not required for the website.
 */
 details {
-  background: var(--color-bg-mod-1); }
+  background: var(--color-bg-mod-1);
+  border-radius: var(--border-radius); }
 
 summary {
   cursor: pointer;
@@ -589,6 +583,7 @@ input[type="reset"],
 input[type="button"] {
   background-color: var(--color-brand);
   border: solid 0.1rem var(--color-brand);
+  border-radius: var(--border-radius);
   color: var(--color-bg);
   cursor: pointer;
   padding: var(--space-3xs) var(--space-2xs);
@@ -720,7 +715,8 @@ CALLOUT
 .callout {
   padding: var(--space-xs-s);
   border: dotted 2px var(--color-text-mod-2);
-  max-width: var(--width-longform); }
+  max-width: var(--width-longform);
+  border-radius: var(--border-radius); }
 
 .callout > * {
   line-height: var(--line-height-base); }
@@ -745,7 +741,8 @@ Largely based on:
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid .1rem; }
+  border: solid .1rem;
+  border-radius: var(--border-radius); }
 
 /* Ensure consistent heading size regardless of heading level */
 .card :is(h2, h3, h4) {
