@@ -640,6 +640,12 @@ input[type="button"][data-variant='outline']:hover {
   filter: brightness(1.2);
   border: solid 0.1rem var(--color-brand); }
 
+nav[aria-label='Main'] a[data-state='active'] {
+  text-decoration: underline; }
+
+nav[aria-label='sidebar'] a[data-state='active'] {
+  text-decoration: line-through; }
+
 /* 
 * Skeletal components or organisational structures.
 */
@@ -889,12 +895,6 @@ Largely based on:
   flex-basis: 0;
   flex-grow: 999;
   min-width: var(--sidebar-content-min-width, 60%); }
-
-nav[aria-label='Main'] a[data-state='active'] {
-  text-decoration: underline; }
-
-nav[aria-label='sidebar'] a[data-state='active'] {
-  text-decoration: line-through; }
 
 /* 
 * High level, flexible layouts that provide a 
