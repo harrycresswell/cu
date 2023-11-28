@@ -2,8 +2,4 @@
 title: Getting started
 ---
 
-Some intro text.
-
-https://github.com/kevquirk/simple.css/wiki/Getting-Started-With-Simple.css
-
-https://cferdinandi.github.io/kraken/getting-started.html
+*cu.css* should be relatively straight forward to start working with in your next project. However, please keep in mind that this project is still in its infancy. The installation methods and apporaches outlined below are likely to change as the project evolves.

@@ -12,7 +12,7 @@
     <!-- Set target path -->
     {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
-    {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify }}
     <!-- Load main.css and authenticate hashed file -->
     <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" integrity="" media="screen">
   {{ end }}

@@ -1,71 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Utilities on cu.css</title>
-    <link>http://example.org/utilities/</link>
-    <description>Recent content in Utilities on cu.css</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Thu, 27 Jul 2023 16:50:03 +0100</lastBuildDate><atom:link href="http://example.org/utilities/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wrapper</title>
-      <link>http://example.org/utilities/wrapper/</link>
-      <pubDate>Wed, 12 Jul 2023 12:59:06 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/wrapper/</guid>
-      <description>Sets a max width, adds a consistent gutter and horizontally centers content.
-Margin Padding Content Padding Margin Wrapper with horizontal padding visualised in purple and margin in green /* WRAPPER @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/ */ .wrapper { max-width: var(--wrapper-max-width, 90rem); margin-left: auto; margin-right: auto; padding-left: var(--gutter); padding-right: var(--gutter); position: relative; } </description>
-    </item>
-    
-    <item>
-      <title>Region</title>
-      <link>http://example.org/utilities/region/</link>
-      <pubDate>Wed, 12 Jul 2023 12:58:48 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/region/</guid>
-      <description>Adds consistent vertical padding to an element to create regions of content. Can either be configured by setting --region-space or use a default from a space scale.
-Padding Content Padding A region of content with vertical padding visualised in purple /* REGION Add consistent vertical padding to create regions of content Can either be configured by setting --region-space or use a default from the space scale @link: https://codepen.io/harrycresswell/pen/bGQmBNL */ .region { padding-top: var(--region-space, var(--space-l-xl)); padding-bottom: var(--region-space, var(--space-l-xl)); } </description>
-    </item>
-    
-    <item>
-      <title>Flow</title>
-      <link>http://example.org/utilities/flow/</link>
-      <pubDate>Wed, 12 Jul 2023 12:58:27 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/flow/</guid>
-      <description>Applies a margin to sibling elements based on a --flow-space custom property.
-Content Margin (default) Content Margin (set inline using --flow-space) Content Flow utility with margin visualised in green /* FLOW @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/ @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility @link: https://piccalil.li/quick-tip/flow-utility/ */ .flow &amp;gt; * + * { margin-top: var(--flow-space, 1em); } </description>
-    </item>
-    
-    <item>
-      <title>Visually Hidden</title>
-      <link>http://example.org/utilities/visually-hidden/</link>
-      <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/visually-hidden/</guid>
-      <description>Use the .visually-hidden utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.
-/* VISUALLY HIDDEN @link: https://piccalil.li/quick-tip/visually-hidden/ */ .visually-hidden { border: 0; clip: rect(0 0 0 0); height: auto; margin: 0; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; } </description>
-    </item>
-    
-    <item>
-      <title>Text</title>
-      <link>http://example.org/utilities/text/</link>
-      <pubDate>Thu, 27 Jul 2023 16:50:03 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/text/</guid>
-      <description>The .text-center utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.
-.text-center { text-align: center; } </description>
-    </item>
-    
-    <item>
-      <title>Width</title>
-      <link>http://example.org/utilities/width/</link>
-      <pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate>
-      
-      <guid>http://example.org/utilities/width/</guid>
-      <description>The .w-full utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.
-.w-full { width: 100%; } </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utilities on cu.css</title><link>http://example.org/utilities/</link><description>Recent content in Utilities on cu.css</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><lastBuildDate>Thu, 27 Jul 2023 16:50:03 +0100</lastBuildDate><atom:link href="http://example.org/utilities/index.xml" rel="self" type="application/rss+xml"/><item><title>Wrapper</title><link>http://example.org/utilities/wrapper/</link><pubDate>Wed, 12 Jul 2023 12:59:06 +0100</pubDate><guid>http://example.org/utilities/wrapper/</guid><description>Sets a max width, adds a consistent gutter and horizontally centers content.
+Margin Padding Content Padding Margin Wrapper with horizontal padding visualised in purple and margin in green /* WRAPPER @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/ */ .wrapper { max-width: var(--wrapper-max-width, 90rem); margin-left: auto; margin-right: auto; padding-left: var(--gutter); padding-right: var(--gutter); position: relative; }</description></item><item><title>Region</title><link>http://example.org/utilities/region/</link><pubDate>Wed, 12 Jul 2023 12:58:48 +0100</pubDate><guid>http://example.org/utilities/region/</guid><description>.region adds consistent vertical padding to an element to create regions of content with sufficient spacing.
+By default, .region uses --space-l-xl from the space scale, however the amount of space can also be configured by setting --region-space inline or within any new class you decide to create and use alongside .region.
+Padding Content Padding A region of content with vertical padding visualised in purple /* REGION Add consistent vertical padding to create regions of content Can either be configured by setting --region-space or use a default from the space scale @link: https://codepen.</description></item><item><title>Flow</title><link>http://example.org/utilities/flow/</link><pubDate>Wed, 12 Jul 2023 12:58:27 +0100</pubDate><guid>http://example.org/utilities/flow/</guid><description>Applies a margin to sibling elements based on a --flow-space custom property.
+Content Margin (default) Content Margin (set inline using --flow-space) Content Flow utility with margin visualised in green /* FLOW @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/ @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility @link: https://piccalil.li/quick-tip/flow-utility/ */ .flow &amp;gt; * + * { margin-top: var(--flow-space, 1em); }</description></item><item><title>Visually Hidden</title><link>http://example.org/utilities/visually-hidden/</link><pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate><guid>http://example.org/utilities/visually-hidden/</guid><description>Use the .visually-hidden utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.
+/* VISUALLY HIDDEN @link: https://piccalil.li/quick-tip/visually-hidden/ */ .visually-hidden { border: 0; clip: rect(0 0 0 0); height: auto; margin: 0; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; }</description></item><item><title>Text</title><link>http://example.org/utilities/text/</link><pubDate>Thu, 27 Jul 2023 16:50:03 +0100</pubDate><guid>http://example.org/utilities/text/</guid><description>The .text-center utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.
+.text-center { text-align: center; }</description></item><item><title>Width</title><link>http://example.org/utilities/width/</link><pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate><guid>http://example.org/utilities/width/</guid><description>The .w-full utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.
+.w-full { width: 100%; }</description></item></channel></rss>

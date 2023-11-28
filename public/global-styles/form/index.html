@@ -1,0 +1,90 @@
+<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>A Modern CSS Starter</title><link rel=stylesheet href=/css/main.min.css integrity media=screen></head><body><a class=skip-link href=#main-content>Main content</a><header class="wrapper region repel" style=--region-space:1.5rem><a data-variant=naked href=/>cu.css</a><nav aria-label=Main><ul class=cluster style=--gutter:1rem role=list><li><a data-variant=naked href=/>Home</a></li><li><a data-variant=naked href=/getting-started/>Docs</a></li><li><a data-variant=naked target=_blank rel="noopener noreferrer" href=https://github.com/harrycresswell/>Github</a></li></ul></nav></header><main id=main-content><section class="hero | region | flow"><h1>Forms</h1></section><section class="wrapper region"><article class="prose flow"><p>Use the <code>&lt;form></code> element to contain any interative elements, used to submit information and collect data.</p><form><label for=email-address>Email Address</label>
+<input name=email-address id=email-address type=email autocomplete=username required>
+<label for=password>Password</label>
+<input type=password name=password id=password autocomplete=current-password>
+<button type=submit value=Submit>Submit</button></form><pre tabindex=0><code>&lt;form&gt;
+  &lt;label for=&#34;email-address&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input name=&#34;email-address&#34; id=&#34;email-address&#34; type=&#34;email&#34; autocomplete=&#34;username&#34; required&gt;
+  &lt;label for=&#34;password&#34;&gt;Password&lt;/label&gt;
+  &lt;input type=&#34;password&#34; name=&#34;password&#34; id=&#34;password&#34; autocomplete=&#34;current-password&#34;&gt;
+  &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre><p>Optionally, you can also:</p><ul><li>Use <code>&lt;fieldset></code> to group elements within the form.</li><li>Use <code>&lt;legend></code> to caption the form contents.</li><li>Add the <code>w-full</code> <a href=/utilities#width>width utility class</a> to any input, textarea or button to make it fill the width of the form.</li></ul><form><fieldset><legend>Give us your feedback</legend>
+<label for=full-name>Full Name</label>
+<input class=w-full name=full-name id=full-name type=text placeholder="e.g Harry" required>
+<label for=email-address>Email Address</label>
+<input class=w-full name=email-address id=email-address type=email autocomplete=username required>
+<label for=message>Message</label>
+<textarea class=w-full rows=4 name=message id=message type=text required></textarea>
+<button class=w-full type=submit value=Submit>Submit</button></fieldset></form><pre tabindex=0><code>&lt;form&gt;
+  &lt;fieldset&gt;  
+    &lt;legend&gt;Give us your feedback&lt;/legend&gt;
+    &lt;label for=&#34;full-name&#34;&gt;Full Name&lt;/label&gt;
+    &lt;input class=&#34;w-full&#34; name=&#34;full-name&#34; id=&#34;full-name&#34; type=&#34;text&#34; placeholder=&#34;e.g Harry&#34; required&gt;
+    &lt;label for=&#34;email-address&#34;&gt;Email Address&lt;/label&gt;
+    &lt;input class=&#34;w-full&#34; name=&#34;email-address&#34; id=&#34;email-address&#34; type=&#34;email&#34; autocomplete=&#34;username&#34; required&gt;
+    &lt;label for=&#34;message&#34;&gt;Message&lt;/label&gt;
+    &lt;textarea class=&#34;w-full&#34; rows=&#34;4&#34; name=&#34;message&#34; id=&#34;message&#34; type=&#34;text&#34; required&gt;&lt;/textarea&gt;
+    &lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre><p>Selects are also a thing:</p><form><fieldset><legend>Your favourite pet</legend>
+<label for=pet-select>Choose a pet:</label>
+<select name=pets id=pet-select><option value>Choose an option</option><option value=dog>Dog</option><option value=cat>Cat</option><option value=hamster>Hamster</option><option value=parrot>Parrot</option><option value=spider>Spider</option><option value=goldfish>Goldfish</option></select>
+<button type=submit value=Submit>Submit</button></fieldset></form><pre tabindex=0><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Your favourite pet&lt;/legend&gt;
+      &lt;label for=&#34;pet-select&#34;&gt;Choose a pet:&lt;/label&gt;
+      &lt;select name=&#34;pets&#34; id=&#34;pet-select&#34;&gt;
+        &lt;option value=&#34;&#34;&gt;Choose an option&lt;/option&gt;
+        &lt;option value=&#34;dog&#34;&gt;Dog&lt;/option&gt;
+        &lt;option value=&#34;cat&#34;&gt;Cat&lt;/option&gt;
+        &lt;option value=&#34;hamster&#34;&gt;Hamster&lt;/option&gt;
+        &lt;option value=&#34;parrot&#34;&gt;Parrot&lt;/option&gt;
+        &lt;option value=&#34;spider&#34;&gt;Spider&lt;/option&gt;
+        &lt;option value=&#34;goldfish&#34;&gt;Goldfish&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre><p>As are radio buttons:</p><form><fieldset><legend>Choose a size:</legend>
+<label><input type=radio name=size value=small>
+Small</label>
+<label><input type=radio name=size value=medium>
+Medium</label>
+<label><input type=radio name=size value=large>
+Large</label></fieldset></form><pre tabindex=0><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Choose a size:&lt;/legend&gt;
+    &lt;label&gt;
+      &lt;input type=&#34;radio&#34; name=&#34;size&#34; value=&#34;small&#34;&gt;
+      Small
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&#34;radio&#34; name=&#34;size&#34; value=&#34;medium&#34;&gt;
+      Medium
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&#34;radio&#34; name=&#34;size&#34; value=&#34;large&#34;&gt;
+      Large
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre><p>And, checkboxes:</p><form><label for=email-address>Email Address</label>
+<input name=email-address id=email-address type=email autocomplete=username required>
+<label for=password>Password</label>
+<input type=password name=password id=password autocomplete=current-password>
+<label><input type=checkbox name=checkbox id=checkbox>
+I agree to the <a href=#>terms and conditions</a>.</label>
+<button type=submit value=Submit>Sign up</button></form><pre tabindex=0><code>&lt;form&gt;
+  &lt;label for=&#34;email-address&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input name=&#34;email-address&#34; id=&#34;email-address&#34; type=&#34;email&#34; autocomplete=&#34;username&#34; required&gt;
+  &lt;label for=&#34;password&#34;&gt;Password&lt;/label&gt;
+  &lt;input type=&#34;password&#34; name=&#34;password&#34; id=&#34;password&#34; autocomplete=&#34;current-password&#34;&gt;
+  &lt;label&gt;
+    &lt;input type=&#34;checkbox&#34; name=&#34;checkbox&#34; id=&#34;checkbox&#34;&gt;
+    I agree to the &lt;a href=&#34;#&#34;&gt;terms and conditions&lt;/a&gt;.
+  &lt;/label&gt; 
+  &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
+&lt;/form&gt;
+</code></pre></article></section></main><footer class="wrapper region text-center"><small>Created by <a href=https://harrycresswell.com/>Harry Cresswell</a>. Inspired by <a href=https://cube.fyi/>Cube.css</a>, <a href=https://utopia.fyi/>Utopia.fyi</a>, <a href=https://every-layout.dev/>Every Layout</a>, <a href=https://inclusive-components.design/>Inclusive Components</a> and <a href=https://simplecss.org/>Simple.css</a>. MIT license.</small></footer></body></html>

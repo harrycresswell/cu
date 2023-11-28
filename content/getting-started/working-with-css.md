@@ -5,4 +5,4 @@ draft: false
 weight: 2
 ---
 
-Some text
+If you plan to customise or build upon *cu.css* to suit your project, then a good place to start is  unminifying the CSS with a [CSS Formatter](https://www.cleancss.com/css-beautify/) to make it easier to work with.

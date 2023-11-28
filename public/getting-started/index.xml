@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting started on cu.css</title><link>http://example.org/getting-started/</link><description>Recent content in Getting started on cu.css</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><lastBuildDate>Tue, 11 Jul 2023 16:42:27 +0100</lastBuildDate><atom:link href="http://example.org/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>http://example.org/getting-started/installation/</link><pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate><guid>http://example.org/getting-started/installation/</guid><description>There are a few different ways to install cu.css in your project, depending on whether you prefer to work with CSS or SASS.
+Installing CSS:
+Download the full project from Github
+Copy public/css/main.min.css into your project.
+Copy static/fonts into your project.
+Download the full project from Github.
+Grab the CSS from Github
+Grab the CSS from Github
+CSS SASS If you plan to work with the SASS files, either:
+download cu.</description></item><item><title>Working with CSS</title><link>http://example.org/getting-started/working-with-css/</link><pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate><guid>http://example.org/getting-started/working-with-css/</guid><description>Some text</description></item><item><title>Working with SASS</title><link>http://example.org/getting-started/working-with-sass/</link><pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate><guid>http://example.org/getting-started/working-with-sass/</guid><description>Some text</description></item></channel></rss>
