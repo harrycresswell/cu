@@ -2,6 +2,8 @@
 title: Getting started
 ---
 
-Global styles are default styles applied directly to HTML elements. This means HTML looks great without any additional classes.
+Some intro text.
 
-With CUBE CSS, we embrace the cascade and inheritance to style as much as possible at a high level. This means that when nothing but your global styles make it to the browser, the page will still look great. It’s progressive enhancement in action and enables us to write as little CSS as possible.
+https://github.com/kevquirk/simple.css/wiki/Getting-Started-With-Simple.css
+
+https://cferdinandi.github.io/kraken/getting-started.html

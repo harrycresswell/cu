@@ -6,21 +6,25 @@ weight: 1
 ---
 
 
-Depending on which flavour you would like to use, there are a few different ways to install cu.css.
+Depending on whether you prefer to work with CSS or SASS 
 
-## CSS
+you would like to use, there are a few different ways to use cu.css.
 
-Include via a CDN.
+
+1. [Download or clone cu.css from Github]().
+2. 
+
+<!-- Include via a CDN.
 
 Paste the following into the `<head>` of your HTML:
 
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cu.css@2/out/cu.css">
-```
+``` -->
 
 
 
-## SASS
+### SASS
 
 If you plan to work with the SASS files, either:
 
