@@ -13,11 +13,6 @@ $base-font-size = 100%/16px
 *
 Example:
 */
-aside {
-  /* Regular content */ }
-  @media (min-width: 36em) {
-    aside {
-      /* responsive content */ } }
 /* 
 Google fonts with subsetting via Google Webfonts Helper
 

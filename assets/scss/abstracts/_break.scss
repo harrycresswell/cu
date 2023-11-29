@@ -51,10 +51,10 @@ $bp-xl : 75em; // 1200px / 16 = 75em
 *
 Example:
 */
-aside {
+// aside {
 
-  /* Regular content */
-  @include breakpoint(sm) {
-    /* responsive content */
-  }
-}
+//   /* Regular content */
+//   @include breakpoint(sm) {
+//     /* responsive content */
+//   }
+// }
