@@ -1,329 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Modern CSS Starter</title>
-  
-    
-    
-    
-    
-    
-    
-    
-    http://example.org/css/main.css
-    
-    <link rel="stylesheet" href="/css/main.min.fd01c12c4132b53b56f6061d5f5a4942db4ac1425b5ae4ff951d871f747c7e7e.css" integrity="" media="screen">
-  
-</head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
-  <a data-variant="naked" href="/">cu.css</a>
-  <nav aria-label="Main">
-  <ul class="cluster" style="--gutter: 1rem" role="list">
-    
-    
-      <li>
-        <a 
-        data-variant="naked"
-        
-        
-        href="/"
-        >
-          Home
-        </a>
-      </li>
-    
-      <li>
-        <a 
-        data-variant="naked"
-        
-        
-        href="/getting-started/"
-        >
-          Docs
-        </a>
-      </li>
-    
-      <li>
-        <a 
-        data-variant="naked"
-        
-        
-          target="_blank" rel="noopener noreferrer"
-        
-        href="https://github.com/harrycresswell/"
-        >
-          Github
-        </a>
-      </li>
-    
-  </ul>
-</nav>
-</header><main id="main-content">
-        <section class="hero | region | flow">
-            <h1>Global styles</h1>
-            
-        </section>
-        <section class="wrapper region">
-  <div class="sidebar">
-    <aside><nav class="sidebar-nav" aria-label="sidebar" id="sidebar-navigation">
- <ul role="list">
-    
-    
-      
-        <li data-children="true" >
-          <a  href="/getting-started/">
-            Getting started
-          </a>
-          <ul role="list"  aria-label="submenu">
-
-            
-              <li>
-                <a href="#installation">Installation</a>
-              </li>
-            
-              <li>
-                <a href="#working-with-css">Working with CSS</a>
-              </li>
-            
-              <li>
-                <a href="#working-with-sass">Working with SASS</a>
-              </li>
-            
-          </ul>
-        </li>
-      
-    
-      
-        <li data-children="true" data-state="active">
-          <a data-state="active" href="/global-styles/">
-            Global styles
-          </a>
-          <ul role="list" data-state="visible" aria-label="submenu">
-
-            
-              <li>
-                <a href="#typography">Typography</a>
-              </li>
-            
-              <li>
-                <a href="#lists">Lists</a>
-              </li>
-            
-              <li>
-                <a href="#blockquotes">Blockquotes</a>
-              </li>
-            
-              <li>
-                <a href="#code-blocks">Code blocks</a>
-              </li>
-            
-              <li>
-                <a href="#forms">Forms</a>
-              </li>
-            
-              <li>
-                <a href="#accordions">Accordions</a>
-              </li>
-            
-              <li>
-                <a href="#tables">Tables</a>
-              </li>
-            
-              <li>
-                <a href="#buttons">Buttons</a>
-              </li>
-            
-              <li>
-                <a href="#links">Links</a>
-              </li>
-            
-              <li>
-                <a href="#images">Images</a>
-              </li>
-            
-              <li>
-                <a href="#horizontal-rule">Horizontal rule</a>
-              </li>
-            
-          </ul>
-        </li>
-      
-    
-      
-        <li data-children="true" >
-          <a  href="/compositions/">
-            Compositions
-          </a>
-          <ul role="list"  aria-label="submenu">
-
-            
-              <li>
-                <a href="#grid">Grid</a>
-              </li>
-            
-              <li>
-                <a href="#cluster">Cluster</a>
-              </li>
-            
-              <li>
-                <a href="#repel">Repel</a>
-              </li>
-            
-          </ul>
-        </li>
-      
-    
-      
-        <li data-children="true" >
-          <a  href="/utilities/">
-            Utilities
-          </a>
-          <ul role="list"  aria-label="submenu">
-
-            
-              <li>
-                <a href="#wrapper">Wrapper</a>
-              </li>
-            
-              <li>
-                <a href="#region">Region</a>
-              </li>
-            
-              <li>
-                <a href="#flow">Flow</a>
-              </li>
-            
-              <li>
-                <a href="#visually-hidden">Visually Hidden</a>
-              </li>
-            
-              <li>
-                <a href="#text">Text</a>
-              </li>
-            
-              <li>
-                <a href="#width">Width</a>
-              </li>
-            
-          </ul>
-        </li>
-      
-    
-      
-        <li data-children="true" >
-          <a  href="/blocks/">
-            Blocks
-          </a>
-          <ul role="list"  aria-label="submenu">
-
-            
-              <li>
-                <a href="#button">Button</a>
-              </li>
-            
-              <li>
-                <a href="#callout">Callout</a>
-              </li>
-            
-              <li>
-                <a href="#card">Card</a>
-              </li>
-            
-              <li>
-                <a href="#hero">Hero</a>
-              </li>
-            
-          </ul>
-        </li>
-      
-    
-  </ul>
-</nav></aside>
-    <div>
-      
-      <div class="prose flow">
-        <p><em>cu.css</em> aims to <strong>broadly style as much as possible at a global level</strong>. This is done by applying default styles directly to native HTML elements, an approach  often referred to as creating <em>base</em> or <em>global styles</em>.</p>
-<p>The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">the cascade and inheritance</a> – two core features of CSS — we are styling as much as possible, using as little CSS as possible.</p>
-<p>In <em>cu.css</em>, global styles can be found in the <code>assets/scss/base</code> folder.</p>
-<p>Most projects will likely require both <code>assets/scss/base/global.scss</code> and <code>assets/scss/base/reset.scss</code>, however you may prefer to remove other partials from your project, depending on your  requirements.</p>
-<!-- *cu.css*, like CUBE CSS, aims to **broadly style as much as possible at a global level**, then let [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS — do the heavy lifting.
-
-This is done by styling [Type Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#types_of_selectors) to create a set of base a.k.a [global styles](/docs/global/) for native HTML elements. The result of which is HTML that looks great, without any additional classes.
-
-
-Global styles are default styles applied directly to HTML elements. This means HTML looks great without any additional classes.
-
-With CUBE CSS, we embrace the cascade and inheritance to style as much as possible at a high level. This means that when nothing but your global styles make it to the browser, the page will still look great. It’s progressive enhancement in action and enables us to write as little CSS as possible. -->
-      </div>
-      
-      
-        <article class="prose | region flow">
-          <h2 id="typography">Typography</h2>
-          <p>All typography is fluid responsive, set using Utopia’s <a href="https://utopia.fyi/type/calculator">Fluid Type Calculator</a>, which makes use of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">CSS Clamp</a> function. Choose your min and max font size, then select a type scale and Utopia will generate the code.</p>
-<p>All six <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">heading level elements</a> are available to use.</p>
-<h1 id="h1-heading">h1 heading</h1>
-<h2 id="h2-heading">h2 heading</h2>
-<h3 id="h3-heading">h3 heading</h3>
-<h4 id="h4-heading">h4 heading</h4>
-<h5 id="h5-heading">h5 heading</h5>
-<h6 id="h6-heading">h6 heading</h6>
-<p>There are also various HTML elements you can use to format inline text in a bunch of different ways:</p>
-<ul>
-<li><code>&lt;strong&gt;</code> to create <strong>Bold</strong> text.</li>
-<li><code>&lt;em&gt;</code> to create <em>emphasised</em> text.</li>
-<li><code>&lt;u&gt;</code> to <u>underline</u> text.</li>
-<li><code>&lt;small&gt;</code> to make <small>small</small> text.</li>
-<li><code>&lt;code&gt;</code> to create inline code examples.</li>
-<li><code>&lt;mark&gt;</code> element to <mark>highlight text</mark>.</li>
-<li><code>&lt;kbd&gt;</code> for keyboard commands; <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
-</ul>
-<p>Of course, you can also create <a href="#">links</a> to anchors and between pages.</p>
-
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="lists">Lists</h2>
-          <p>Create unordered lists using the <code>ul</code> element:</p>
-<ul>
-<li>Unordered list item</li>
-<li>Unordered list item</li>
-</ul>
-<pre tabindex="0"><code>&lt;ul&gt;
+<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>A Modern CSS Starter</title>http://example.org/css/main.min.css
+http://example.org/css/main.css
+<link rel=stylesheet href=/css/main.min.fd01c12c4132b53b56f6061d5f5a4942db4ac1425b5ae4ff951d871f747c7e7e.css integrity media=screen></head><body><a class=skip-link href=#main-content>Main content</a><header class="wrapper region repel" style=--region-space:1.5rem><a data-variant=naked href=/>cu.css</a><nav aria-label=Main><ul class=cluster style=--gutter:1rem role=list><li><a data-variant=naked href=/>Home</a></li><li><a data-variant=naked href=/getting-started/>Docs</a></li><li><a data-variant=naked target=_blank rel="noopener noreferrer" href=https://github.com/harrycresswell/>Github</a></li></ul></nav></header><main id=main-content><section class="hero | region | flow"><h1>Global styles</h1></section><section class="wrapper region"><div class=sidebar><aside><nav class=sidebar-nav aria-label=sidebar id=sidebar-navigation><ul role=list><li data-children=true><a href=/getting-started/>Getting started</a><ul role=list aria-label=submenu><li><a href=#installation>Installation</a></li><li><a href=#working-with-css>Working with CSS</a></li><li><a href=#working-with-sass>Working with SASS</a></li></ul></li><li data-children=true data-state=active><a data-state=active href=/global-styles/>Global styles</a><ul role=list data-state=visible aria-label=submenu><li><a href=#typography>Typography</a></li><li><a href=#lists>Lists</a></li><li><a href=#blockquotes>Blockquotes</a></li><li><a href=#code-blocks>Code blocks</a></li><li><a href=#forms>Forms</a></li><li><a href=#accordions>Accordions</a></li><li><a href=#tables>Tables</a></li><li><a href=#buttons>Buttons</a></li><li><a href=#links>Links</a></li><li><a href=#images>Images</a></li><li><a href=#horizontal-rule>Horizontal rule</a></li></ul></li><li data-children=true><a href=/compositions/>Compositions</a><ul role=list aria-label=submenu><li><a href=#grid>Grid</a></li><li><a href=#cluster>Cluster</a></li><li><a href=#repel>Repel</a></li></ul></li><li data-children=true><a href=/utilities/>Utilities</a><ul role=list aria-label=submenu><li><a href=#wrapper>Wrapper</a></li><li><a href=#region>Region</a></li><li><a href=#flow>Flow</a></li><li><a href=#visually-hidden>Visually Hidden</a></li><li><a href=#text>Text</a></li><li><a href=#width>Width</a></li></ul></li><li data-children=true><a href=/blocks/>Blocks</a><ul role=list aria-label=submenu><li><a href=#button>Button</a></li><li><a href=#callout>Callout</a></li><li><a href=#card>Card</a></li><li><a href=#hero>Hero</a></li></ul></li></ul></nav></aside><div><div class="prose flow"><p><em>cu.css</em> aims to <strong>broadly style as much as possible at a global level</strong>. This is done by applying default styles directly to native HTML elements, an approach often referred to as creating <em>base</em> or <em>global styles</em>.</p><p>The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on <a href=https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance>the cascade and inheritance</a> – two core features of CSS — we are styling as much as possible, using as little CSS as possible.</p><p>In <em>cu.css</em>, global styles can be found in the <code>assets/scss/base</code> folder.</p><p>Most projects will likely require both <code>assets/scss/base/global.scss</code> and <code>assets/scss/base/reset.scss</code>, however you may prefer to remove other partials from your project, depending on your requirements.</p></div><article class="prose | region flow"><h2 id=typography>Typography</h2><p>All typography is fluid responsive, set using Utopia’s <a href=https://utopia.fyi/type/calculator>Fluid Type Calculator</a>, which makes use of the <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/clamp>CSS Clamp</a> function. Choose your min and max font size, then select a type scale and Utopia will generate the code.</p><p>All six <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements>heading level elements</a> are available to use.</p><h1 id=h1-heading>h1 heading</h1><h2 id=h2-heading>h2 heading</h2><h3 id=h3-heading>h3 heading</h3><h4 id=h4-heading>h4 heading</h4><h5 id=h5-heading>h5 heading</h5><h6 id=h6-heading>h6 heading</h6><p>There are also various HTML elements you can use to format inline text in a bunch of different ways:</p><ul><li><code>&lt;strong></code> to create <strong>Bold</strong> text.</li><li><code>&lt;em></code> to create <em>emphasised</em> text.</li><li><code>&lt;u></code> to <u>underline</u> text.</li><li><code>&lt;small></code> to make <small>small</small> text.</li><li><code>&lt;code></code> to create inline code examples.</li><li><code>&lt;mark></code> element to <mark>highlight text</mark>.</li><li><code>&lt;kbd></code> for keyboard commands; <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li></ul><p>Of course, you can also create <a href=#>links</a> to anchors and between pages.</p></article><article class="prose | region flow"><h2 id=lists>Lists</h2><p>Create unordered lists using the <code>ul</code> element:</p><ul><li>Unordered list item</li><li>Unordered list item</li></ul><pre tabindex=0><code>&lt;ul&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
 &lt;/ul&gt;
-</code></pre><p>Create ordered lists using the <code>ol</code> element:</p>
-<ol>
-<li>Ordered list item</li>
-<li>Ordered list item</li>
-</ol>
-<pre tabindex="0"><code>&lt;ol&gt;
+</code></pre><p>Create ordered lists using the <code>ol</code> element:</p><ol><li>Ordered list item</li><li>Ordered list item</li></ol><pre tabindex=0><code>&lt;ol&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
 &lt;/ol&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="blockquotes">Blockquotes</h2>
-          <p>Use the <code>&lt;blockquote&gt;</code> element to quote books you’ve read, things you’ve heard from your pals or even ideas you’ve had yourself.</p>
-<blockquote>
-<p>All large-scale human cooperation is ultimately based on our belief in imagined orders.</p>
-<p>– Yuval Noah Harari</p>
-</blockquote>
-<pre tabindex="0"><code>&lt;blockquote&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=blockquotes>Blockquotes</h2><p>Use the <code>&lt;blockquote></code> element to quote books you’ve read, things you’ve heard from your pals or even ideas you’ve had yourself.</p><blockquote><p>All large-scale human cooperation is ultimately based on our belief in imagined orders.</p><p>– Yuval Noah Harari</p></blockquote><pre tabindex=0><code>&lt;blockquote&gt;
   &lt;p&gt;All large-scale human cooperation is ultimately based on our belief in imagined orders.&lt;/p&gt;
   &lt;p&gt;- &lt;cite&gt;Yuval Noah Harari&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="code-blocks">Code blocks</h2>
-          <p>Create code blocks, like the one below, using the <code>&lt;pre&gt;</code> element with a nested <code>&lt;code&gt;</code> element inside.</p>
-<pre tabindex="0"><code>&lt;pre&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=code-blocks>Code blocks</h2><p>Create code blocks, like the one below, using the <code>&lt;pre></code> element with a nested <code>&lt;code></code> element inside.</p><pre tabindex=0><code>&lt;pre&gt;
   &lt;code&gt;
     body {
       color: var(--color-dark);
@@ -334,45 +23,25 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     }
   &lt;/code&gt;
 &lt;/pre&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="forms">Forms</h2>
-          <p>Use the <code>&lt;form&gt;</code> element to contain any interative elements, used to submit information and collect data.</p>
-<form>
-  <label for="email-address">Email Address</label>
-  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" autocomplete="current-password">
-  <button type="submit" value="Submit">Submit</button>
-</form>
-<pre tabindex="0"><code>&lt;form&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=forms>Forms</h2><p>Use the <code>&lt;form></code> element to contain any interative elements, used to submit information and collect data.</p><form><label for=email-address>Email Address</label>
+<input name=email-address id=email-address type=email autocomplete=username required>
+<label for=password>Password</label>
+<input type=password name=password id=password autocomplete=current-password>
+<button type=submit value=Submit>Submit</button></form><pre tabindex=0><code>&lt;form&gt;
   &lt;label for=&#34;email-address&#34;&gt;Email Address&lt;/label&gt;
   &lt;input name=&#34;email-address&#34; id=&#34;email-address&#34; type=&#34;email&#34; autocomplete=&#34;username&#34; required&gt;
   &lt;label for=&#34;password&#34;&gt;Password&lt;/label&gt;
   &lt;input type=&#34;password&#34; name=&#34;password&#34; id=&#34;password&#34; autocomplete=&#34;current-password&#34;&gt;
   &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;
-</code></pre><p>Optionally, you can also:</p>
-<ul>
-<li>Use <code>&lt;fieldset&gt;</code> to group elements within the form.</li>
-<li>Use <code>&lt;legend&gt;</code> to caption the form contents.</li>
-<li>Add the <code>w-full</code> <a href="/utilities#width">width utility class</a> to any input, textarea or button to make it fill the width of the form.</li>
-</ul>
-<form>
-  <fieldset>  
-    <legend>Give us your feedback</legend>
-    <label for="full-name">Full Name</label>
-    <input class="w-full" name="full-name" id="full-name" type="text" placeholder="e.g Harry" required>
-    <label for="email-address">Email Address</label>
-    <input class="w-full" name="email-address" id="email-address" type="email" autocomplete="username" required>
-    <label for="message">Message</label>
-    <textarea class="w-full" rows="4" name="message" id="message" type="text" required></textarea>
-    <button class="w-full" type="submit" value="Submit">Submit</button>
-  </fieldset>
-</form>
-<pre tabindex="0"><code>&lt;form&gt;
+</code></pre><p>Optionally, you can also:</p><ul><li>Use <code>&lt;fieldset></code> to group elements within the form.</li><li>Use <code>&lt;legend></code> to caption the form contents.</li><li>Add the <code>w-full</code> <a href=/utilities#width>width utility class</a> to any input, textarea or button to make it fill the width of the form.</li></ul><form><fieldset><legend>Give us your feedback</legend>
+<label for=full-name>Full Name</label>
+<input class=w-full name=full-name id=full-name type=text placeholder="e.g Harry" required>
+<label for=email-address>Email Address</label>
+<input class=w-full name=email-address id=email-address type=email autocomplete=username required>
+<label for=message>Message</label>
+<textarea class=w-full rows=4 name=message id=message type=text required></textarea>
+<button class=w-full type=submit value=Submit>Submit</button></fieldset></form><pre tabindex=0><code>&lt;form&gt;
   &lt;fieldset&gt;  
     &lt;legend&gt;Give us your feedback&lt;/legend&gt;
     &lt;label for=&#34;full-name&#34;&gt;Full Name&lt;/label&gt;
@@ -384,24 +53,10 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
-</code></pre><p>Selects are also a thing:</p>
-<form>
-  <fieldset>
-    <legend>Your favourite pet</legend>
-      <label for="pet-select">Choose a pet:</label>
-      <select name="pets" id="pet-select">
-        <option value="">Choose an option</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
-      </select>
-      <button type="submit" value="Submit">Submit</button>
-  </fieldset>
-</form>
-<pre tabindex="0"><code>&lt;form&gt;
+</code></pre><p>Selects are also a thing:</p><form><fieldset><legend>Your favourite pet</legend>
+<label for=pet-select>Choose a pet:</label>
+<select name=pets id=pet-select><option value>Choose an option</option><option value=dog>Dog</option><option value=cat>Cat</option><option value=hamster>Hamster</option><option value=parrot>Parrot</option><option value=spider>Spider</option><option value=goldfish>Goldfish</option></select>
+<button type=submit value=Submit>Submit</button></fieldset></form><pre tabindex=0><code>&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Your favourite pet&lt;/legend&gt;
       &lt;label for=&#34;pet-select&#34;&gt;Choose a pet:&lt;/label&gt;
@@ -417,25 +72,13 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
       &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
-</code></pre><p>As are radio buttons:</p>
-<form>
-<fieldset>
-<legend>Choose a size:</legend>
-<label>
-  <input type="radio" name="size" value="small">
-  Small
-</label>
-<label>
-  <input type="radio" name="size" value="medium">
-  Medium
-</label>
-<label>
-  <input type="radio" name="size" value="large">
-  Large
-</label>
-</fieldset>
-</form>
-<pre tabindex="0"><code>&lt;form&gt;
+</code></pre><p>As are radio buttons:</p><form><fieldset><legend>Choose a size:</legend>
+<label><input type=radio name=size value=small>
+Small</label>
+<label><input type=radio name=size value=medium>
+Medium</label>
+<label><input type=radio name=size value=large>
+Large</label></fieldset></form><pre tabindex=0><code>&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Choose a size:&lt;/legend&gt;
     &lt;label&gt;
@@ -452,19 +95,13 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;/label&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
-</code></pre><p>And, checkboxes:</p>
-<form>
-  <label for="email-address">Email Address</label>
-  <input name="email-address" id="email-address" type="email" autocomplete="username" required>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" autocomplete="current-password">
-  <label>
-    <input type="checkbox" name="checkbox" id="checkbox">
-    I agree to the <a href="#">terms and conditions</a>.
-  </label> 
-  <button type="submit" value="Submit">Sign up</button>
-</form>
-<pre tabindex="0"><code>&lt;form&gt;
+</code></pre><p>And, checkboxes:</p><form><label for=email-address>Email Address</label>
+<input name=email-address id=email-address type=email autocomplete=username required>
+<label for=password>Password</label>
+<input type=password name=password id=password autocomplete=current-password>
+<label><input type=checkbox name=checkbox id=checkbox>
+I agree to the <a href=#>terms and conditions</a>.</label>
+<button type=submit value=Submit>Sign up</button></form><pre tabindex=0><code>&lt;form&gt;
   &lt;label for=&#34;email-address&#34;&gt;Email Address&lt;/label&gt;
   &lt;input name=&#34;email-address&#34; id=&#34;email-address&#34; type=&#34;email&#34; autocomplete=&#34;username&#34; required&gt;
   &lt;label for=&#34;password&#34;&gt;Password&lt;/label&gt;
@@ -475,75 +112,15 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
   &lt;/label&gt; 
   &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
 &lt;/form&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="accordions">Accordions</h2>
-          <p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements to create accordions.</p>
-<details>
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
-<pre tabindex="0"><code>&lt;details&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=accordions>Accordions</h2><p>Use the <code>&lt;details></code> and <code>&lt;summary></code> elements to create accordions.</p><details><summary>Do you ship internationally?</summary><p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p></details><pre tabindex=0><code>&lt;details&gt;
   &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
   &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
 &lt;/details&gt;
-</code></pre><p>Add <code>data-variant=&quot;fancy&quot;</code> to hide default <code>::marker</code> and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the <code>&lt;summary&gt;</code> text.</p>
-<details data-variant="fancy">
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
-<pre tabindex="0"><code>&lt;details data-variant=&#34;fancy&#34;&gt;
+</code></pre><p>Add <code>data-variant="fancy"</code> to hide default <code>::marker</code> and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the <code>&lt;summary></code> text.</p><details data-variant=fancy><summary>Do you ship internationally?</summary><p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p></details><pre tabindex=0><code>&lt;details data-variant=&#34;fancy&#34;&gt;
   &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
   &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
 &lt;/details&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="tables">Tables</h2>
-          <p>Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tbody&gt;</code>,  <code>&lt;td&gt;</code> and <code>&lt;caption&gt;</code>.</p>
-<table>
-  <caption>
-    <small>Star Wars characters, their home worlds and preferred weapon.</small>
-  </caption>
-  <thead>
-    <tr>
-      <th>Character</th>
-      <th>Homeworld</th>
-      <th>Weapon</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Luke</td>
-      <td>Tatooine</td>
-      <td>Lightsaber</td>
-    </tr>
-    <tr>
-      <td>Han</td>
-      <td>Corellia</td>
-      <td>Blaster</td>
-    </tr>
-    <tr>
-      <td>Leia</td>
-      <td>Alderaan</td>
-      <td>Blaster</td>
-    </tr>
-    <tr>
-      <td>Obi-Wan</td>
-      <td>Stewjon</td>
-      <td>Lightsaber</td>
-    </tr>
-    <tr>
-      <td>Yoda</td>
-      <td>Dagobah</td>
-      <td>Lightsaber</td>
-    </tr>
-  </tbody>
-</table>
-<pre tabindex="0"><code>&lt;table&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=tables>Tables</h2><p>Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: <code>&lt;table></code>, <code>&lt;thead></code>, <code>&lt;tr></code>, <code>&lt;th></code>, <code>&lt;tbody></code>, <code>&lt;td></code> and <code>&lt;caption></code>.</p><table><caption><small>Star Wars characters, their home worlds and preferred weapon.</small></caption><thead><tr><th>Character</th><th>Homeworld</th><th>Weapon</th></tr></thead><tbody><tr><td>Luke</td><td>Tatooine</td><td>Lightsaber</td></tr><tr><td>Han</td><td>Corellia</td><td>Blaster</td></tr><tr><td>Leia</td><td>Alderaan</td><td>Blaster</td></tr><tr><td>Obi-Wan</td><td>Stewjon</td><td>Lightsaber</td></tr><tr><td>Yoda</td><td>Dagobah</td><td>Lightsaber</td></tr></tbody></table><pre tabindex=0><code>&lt;table&gt;
   &lt;caption&gt;
     &lt;small&gt;Star Wars characters and their home worlds&lt;/small&gt;
   &lt;/caption&gt;
@@ -582,76 +159,23 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="buttons">Buttons</h2>
-          <p>Use the <code>&lt;button&gt;</code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant=&quot;outline&quot;</code>. For more on this approach see <a href="https://cube.fyi/exception.html">Exception’s in Cube CSS</a>.</p>
-<div class="flow" style="--flow-space: 1rem;">
-  <button type="submit" value="Submit">Submit</button>
-  <button type="submit" data-variant="outline" value="Clear">Clear</button>
-  <button type="submit" disabled="">Disabled</button>
-</div>
-<pre tabindex="0"><code>&lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=buttons>Buttons</h2><p>Use the <code>&lt;button></code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant="outline"</code>. For more on this approach see <a href=https://cube.fyi/exception.html>Exception’s in Cube CSS</a>.</p><div class=flow style=--flow-space:1rem><button type=submit value=Submit>Submit</button>
+<button type=submit data-variant=outline value=Clear>Clear</button>
+<button type=submit disabled>Disabled</button></div><pre tabindex=0><code>&lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
 &lt;button type=&#34;submit&#34; data-variant=&#34;outline&#34; value=&#34;Clear&#34;&gt;Clear&lt;/button&gt;
 &lt;button type=&#34;submit&#34; disabled=&#34;&#34;&gt;Disabled&lt;/button&gt;
-</code></pre><p>Inputs with <code>type=&quot;submit&quot;</code>, <code>type=&quot;reset&quot;</code> or <code>type=&quot;button&quot;</code> applied also inherit button styles. Therefore, you can apply the variant style to these elements too.</p>
-<input type="submit" />
-<input type="submit" data-variant="outline" />
-<pre tabindex="0"><code>&lt;input type=&#34;submit&#34; /&gt;
+</code></pre><p>Inputs with <code>type="submit"</code>, <code>type="reset"</code> or <code>type="button"</code> applied also inherit button styles. Therefore, you can apply the variant style to these elements too.</p><input type=submit>
+<input type=submit data-variant=outline><pre tabindex=0><code>&lt;input type=&#34;submit&#34; /&gt;
 &lt;input type=&#34;submit&#34; data-variant=&#34;outline&#34; /&gt;
-</code></pre><p>Just like with form elements, you can also use the <code>w-full</code>  <a href="/utilities#width">width utility class</a> to make a <code>&lt;button&gt;</code> fill the full width of its parent container.</p>
-<div class="flow">
-<button class="w-full" type="submit" value="Submit">Sign up</button>
-</div>
-<pre tabindex="0"><code>&lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="links">Links</h2>
-          <p>Use the anchor element, a.k.a <code>&lt;a&gt;</code> tag to link to different pages</p>
-<pre tabindex="0"><code>&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt;
-</code></pre><p>Links look <a href="/">like this</a>, by default.</p>
-<p>But you can also use use the data attribute <code>data-variant=&quot;naked&quot;</code> to make them look like text.</p>
-<pre tabindex="0"><code>&lt;a href=&#34;/&#34; data-variant=&#34;naked&#34;&gt;A naked link&lt;/a&gt;
-</code></pre><p>An example of <code>data-variant=&quot;naked&quot;</code> being used on links can be seen in the navigation found at the top of each page on this website.</p>
-
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="images">Images</h2>
-          <p>Use the <code>&lt;img&gt;</code> element in the usual way. Images have <code>max-width: 100%</code> applied, ensuring they fill the entire width of parent element, as we’ve come to expect.</p>
-<img src="/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg" alt="" loading="lazy" />
-<pre tabindex="0"><code>&lt;img src=&#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
-</code></pre><p>To give your image a caption, place your <code>&lt;img&gt;</code> inside a <code>&lt;figure&gt;</code> and use <code>&lt;figcaption&gt;</code> for the caption.</p>
-<figure>
-  <img src="/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg" alt="" loading="lazy" />
-  <figcaption>Photo by <a href="https://unsplash.com/@sushioutlaw">Brian McGowan</a> on Unsplash.
-</figcaption>
-</figure>
-<pre tabindex="0"><code>&lt;figure&gt;
+</code></pre><p>Just like with form elements, you can also use the <code>w-full</code> <a href=/utilities#width>width utility class</a> to make a <code>&lt;button></code> fill the full width of its parent container.</p><div class=flow><button class=w-full type=submit value=Submit>Sign up</button></div><pre tabindex=0><code>&lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
+</code></pre></article><article class="prose | region flow"><h2 id=links>Links</h2><p>Use the anchor element, a.k.a <code>&lt;a></code> tag to link to different pages</p><pre tabindex=0><code>&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt;
+</code></pre><p>Links look <a href=/>like this</a>, by default.</p><p>But you can also use use the data attribute <code>data-variant="naked"</code> to make them look like text.</p><pre tabindex=0><code>&lt;a href=&#34;/&#34; data-variant=&#34;naked&#34;&gt;A naked link&lt;/a&gt;
+</code></pre><p>An example of <code>data-variant="naked"</code> being used on links can be seen in the navigation found at the top of each page on this website.</p></article><article class="prose | region flow"><h2 id=images>Images</h2><p>Use the <code>&lt;img></code> element in the usual way. Images have <code>max-width: 100%</code> applied, ensuring they fill the entire width of parent element, as we’ve come to expect.</p><img src=/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg alt loading=lazy><pre tabindex=0><code>&lt;img src=&#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+</code></pre><p>To give your image a caption, place your <code>&lt;img></code> inside a <code>&lt;figure></code> and use <code>&lt;figcaption></code> for the caption.</p><figure><img src=/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg alt loading=lazy><figcaption>Photo by <a href=https://unsplash.com/@sushioutlaw>Brian McGowan</a> on Unsplash.</figcaption></figure><pre tabindex=0><code>&lt;figure&gt;
   &lt;img src=&#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
   &lt;figcaption&gt;
     Photo by &lt;a href=&#34;https://unsplash.com/@sushioutlaw&#34;&gt;Brian McGowan&lt;/a&gt; on Unsplash.
   &lt;/figcaption&gt;
 &lt;/figure&gt;
-</code></pre>
-        </article>
-      
-        <article class="prose | region flow">
-          <h2 id="horizontal-rule">Horizontal rule</h2>
-          <p>The <code>&lt;hr&gt;</code> element can be used to create a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</p>
-<hr>
-<pre tabindex="0"><code>&lt;hr&gt;
-</code></pre>
-        </article>
-      
-    </div>
-
-        </section>
-      </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://utopia.fyi/">Utopia.fyi</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple.css</a>. MIT license.</small>
-</footer></body>
-</html>
+</code></pre></article><article class="prose | region flow"><h2 id=horizontal-rule>Horizontal rule</h2><p>The <code>&lt;hr></code> element can be used to create a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</p><hr><pre tabindex=0><code>&lt;hr&gt;
+</code></pre></article></div></section></main><footer class="wrapper region text-center"><small>Created by <a href=https://harrycresswell.com/>Harry Cresswell</a>. Inspired by <a href=https://cube.fyi/>Cube.css</a>, <a href=https://utopia.fyi/>Utopia.fyi</a>, <a href=https://every-layout.dev/>Every Layout</a>, <a href=https://inclusive-components.design/>Inclusive Components</a> and <a href=https://simplecss.org/>Simple.css</a>. MIT license.</small></footer></body></html>

@@ -1,6 +1,5 @@
 /* 
 Global theme tokens
-
 */
 :root {
   /* Typography */
@@ -17,9 +16,8 @@ Global theme tokens
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
   /* 
-  Colors
-  @link Utopia Kickstarter project 
-  https://www.figma.com/community/file/1122903924123950023
+  Colors created with Utopia Kickstarter project 
+  @link https://www.figma.com/community/file/1122903924123950023
   */
   --color-text: #1D1D1D;
   --color-text-mod-1: #494949;
@@ -32,10 +30,10 @@ Global theme tokens
   --color-accent: #9F2C5E;
   --color-highlight: #eefbc1;
   
-  /* 
-  If theme doesn’t require a dark mode then remove this media query altogether
-  */
   @media (prefers-color-scheme: dark) {
+    /* 
+      If theme doesn’t require a dark mode then remove this media query altogether
+    */
     --color-text: #CED3E8;
     --color-text-mod-1: #C4CAE3;
     --color-text-mod-2: #8995C8;

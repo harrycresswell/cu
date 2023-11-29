@@ -11,13 +11,17 @@
   {{ else }}
     <!-- Set target path -->
     {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
-    <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
-    {{ $stylesMin := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+    <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and fingerprint (hash) -->
+    {{ $stylesMinPrint := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+    <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify -->
+    {{ $stylesMin:= resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, remain unminifed -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") }}
+     <!-- Generate a minifed non-hashed version of styles for reference -->
+     {{ $stylesMin.Permalink }}
     <!-- Generate unminifed version of styles for reference -->
     {{ $styles.Permalink }}
     <!-- Load main.css and authenticate hashed file -->
-    <link rel="stylesheet" href="{{ $stylesMin.Permalink | relURL }}" integrity="" media="screen">
+    <link rel="stylesheet" href="{{ $stylesMinPrint.Permalink | relURL }}" integrity="" media="screen">
   {{ end }}
 </head>

@@ -3,22 +3,11 @@
 * The variables/tokens (or whatever you 
 * wish to call them) that power the rest of your styles
 */
-/*
-Breakpoints
-
-$base-font-size = 100%/16px
-*/
-/**
-* Mobile-first styles FTW
-*
-Example:
-*/
 /* 
 Google fonts with subsetting via Google Webfonts Helper
 
 @link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
 */
-/* inter-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -28,7 +17,6 @@ Google fonts with subsetting via Google Webfonts Helper
   src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-/* inter-600 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -67,7 +55,6 @@ Utopia fluid space
 
 /* 
 Global theme tokens
-
 */
 :root {
   /* Typography */
@@ -84,9 +71,8 @@ Global theme tokens
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
   /* 
-  Colors
-  @link Utopia Kickstarter project 
-  https://www.figma.com/community/file/1122903924123950023
+  Colors created with Utopia Kickstarter project 
+  @link https://www.figma.com/community/file/1122903924123950023
   */
   --color-text: #1D1D1D;
   --color-text-mod-1: #494949;
@@ -98,9 +84,6 @@ Global theme tokens
   --color-brand: #4f29f0;
   --color-accent: #9F2C5E;
   --color-highlight: #eefbc1;
-  /* 
-  If theme doesn’t require a dark mode then remove this media query altogether
-  */
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
@@ -108,6 +91,9 @@ Global theme tokens
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025); }
   @media (prefers-color-scheme: dark) {
     :root {
+      /* 
+      If theme doesn’t require a dark mode then remove this media query altogether
+    */
       --color-text: #CED3E8;
       --color-text-mod-1: #C4CAE3;
       --color-text-mod-2: #8995C8;
@@ -480,7 +466,7 @@ pre {
 code {
   background: var(--color-bg-mod-1);
   color: var(--color-accent);
-  font-size: var(--step-0); }
+  font-size: 93%; }
 
 pre code {
   color: var(--color-text); }
