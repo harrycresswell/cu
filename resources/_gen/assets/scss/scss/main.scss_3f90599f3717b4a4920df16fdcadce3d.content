@@ -844,21 +844,22 @@ Largely based on:
 
 .sidebar-nav li[data-children='true'] {
   position: relative; }
-  .sidebar-nav li[data-children='true']::before {
-    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiMxRDFEMUQiLz4KPC9zdmc+Cg==");
-    /* Use light chevron for darkmode */
-    height: 1.2rem;
-    pointer-events: none;
-    position: absolute;
-    right: 1rem;
-    top: .6rem;
-    transform: rotate(180deg); }
-    @media (prefers-color-scheme: dark) {
-      .sidebar-nav li[data-children='true']::before {
-        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
-  .sidebar-nav li[data-children='true'][data-state='active']::before {
-    top: .2rem;
-    transform: rotate(0deg); }
+
+.sidebar-nav li[data-children='true']::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiMxRDFEMUQiLz4KPC9zdmc+Cg==");
+  /* Use light chevron for darkmode */
+  height: 1.2rem;
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: .6rem;
+  transform: rotate(180deg); }
+  @media (prefers-color-scheme: dark) {
+    .sidebar-nav li[data-children='true']::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
+.sidebar-nav li[data-children='true'][data-state='active']::before {
+  top: .2rem;
+  transform: rotate(0deg); }
 
 .sidebar-nav li[data-state='active'] + ul,
 .sidebar-nav ul[data-state='visible'] {
