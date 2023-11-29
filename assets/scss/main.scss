@@ -30,7 +30,6 @@
 @import 'blocks/card';
 @import 'blocks/demo';
 @import 'blocks/sidebar-nav';
-@import 'blocks/sidebar';
 
 /* 
 * High level, flexible layouts that provide a 
@@ -39,6 +38,7 @@
 @import 'compositions/grid';
 @import 'compositions/repel';
 @import 'compositions/cluster';
+@import 'compositions/sidebar';
 
 /* 
 * Classes that do one job and one job well 

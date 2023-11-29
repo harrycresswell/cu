@@ -48,3 +48,13 @@ A flipped version where the sidebar is on the right
   flex-grow: 999;
   min-width: var(--sidebar-content-min-width, 50%);
 }
+
+@media screen and (min-width: 960px) {
+
+  .sidebar[data-variant='sticky'] > :first-child {
+    position: sticky;
+    top: 2rem;
+    overflow: auto;
+    height: 100vh;
+  }
+}
