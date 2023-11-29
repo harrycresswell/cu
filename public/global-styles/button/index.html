@@ -1,10 +1,96 @@
-<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>A Modern CSS Starter</title><link rel=stylesheet href=/css/main.min.css integrity media=screen></head><body><a class=skip-link href=#main-content>Main content</a><header class="wrapper region repel" style=--region-space:1.5rem><a data-variant=naked href=/>cu.css</a><nav aria-label=Main><ul class=cluster style=--gutter:1rem role=list><li><a data-variant=naked href=/>Home</a></li><li><a data-variant=naked href=/getting-started/>Docs</a></li><li><a data-variant=naked target=_blank rel="noopener noreferrer" href=https://github.com/harrycresswell/>Github</a></li></ul></nav></header><main id=main-content><section class="hero | region | flow"><h1>Buttons</h1></section><section class="wrapper region"><article class="prose flow"><p>Use the <code>&lt;button></code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant="outline"</code>. For more on this approach see <a href=https://cube.fyi/exception.html>Exception’s in Cube CSS</a>.</p><div class=flow style=--flow-space:1rem><button type=submit value=Submit>Submit</button>
-<button type=submit data-variant=outline value=Clear>Clear</button>
-<button type=submit disabled>Disabled</button></div><pre tabindex=0><code>&lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Modern CSS Starter</title>
+  
+    
+    
+    
+    
+    
+    
+    
+    http://example.org/css/main.css
+    
+    <link rel="stylesheet" href="/css/main.min.fd01c12c4132b53b56f6061d5f5a4942db4ac1425b5ae4ff951d871f747c7e7e.css" integrity="" media="screen">
+  
+</head><body>
+      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+  <a data-variant="naked" href="/">cu.css</a>
+  <nav aria-label="Main">
+  <ul class="cluster" style="--gutter: 1rem" role="list">
+    
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+        href="/"
+        >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+        href="/getting-started/"
+        >
+          Docs
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+          target="_blank" rel="noopener noreferrer"
+        
+        href="https://github.com/harrycresswell/"
+        >
+          Github
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+</header><main id="main-content">
+        <section class="hero | region | flow">
+            <h1>Buttons</h1>
+            
+        </section>
+        <section class="wrapper region">
+  <article class="prose flow">
+    <p>Use the <code>&lt;button&gt;</code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant=&quot;outline&quot;</code>. For more on this approach see <a href="https://cube.fyi/exception.html">Exception’s in Cube CSS</a>.</p>
+<div class="flow" style="--flow-space: 1rem;">
+  <button type="submit" value="Submit">Submit</button>
+  <button type="submit" data-variant="outline" value="Clear">Clear</button>
+  <button type="submit" disabled="">Disabled</button>
+</div>
+<pre tabindex="0"><code>&lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
 &lt;button type=&#34;submit&#34; data-variant=&#34;outline&#34; value=&#34;Clear&#34;&gt;Clear&lt;/button&gt;
 &lt;button type=&#34;submit&#34; disabled=&#34;&#34;&gt;Disabled&lt;/button&gt;
-</code></pre><p>Inputs with <code>type="submit"</code>, <code>type="reset"</code> or <code>type="button"</code> applied also inherit button styles. Therefore, you can apply the variant style to these elements too.</p><input type=submit>
-<input type=submit data-variant=outline><pre tabindex=0><code>&lt;input type=&#34;submit&#34; /&gt;
+</code></pre><p>Inputs with <code>type=&quot;submit&quot;</code>, <code>type=&quot;reset&quot;</code> or <code>type=&quot;button&quot;</code> applied also inherit button styles. Therefore, you can apply the variant style to these elements too.</p>
+<input type="submit" />
+<input type="submit" data-variant="outline" />
+<pre tabindex="0"><code>&lt;input type=&#34;submit&#34; /&gt;
 &lt;input type=&#34;submit&#34; data-variant=&#34;outline&#34; /&gt;
-</code></pre><p>Just like with form elements, you can also use the <code>w-full</code> <a href=/utilities#width>width utility class</a> to make a <code>&lt;button></code> fill the full width of its parent container.</p><div class=flow><button class=w-full type=submit value=Submit>Sign up</button></div><pre tabindex=0><code>&lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
-</code></pre></article></section></main><footer class="wrapper region text-center"><small>Created by <a href=https://harrycresswell.com/>Harry Cresswell</a>. Inspired by <a href=https://cube.fyi/>Cube.css</a>, <a href=https://utopia.fyi/>Utopia.fyi</a>, <a href=https://every-layout.dev/>Every Layout</a>, <a href=https://inclusive-components.design/>Inclusive Components</a> and <a href=https://simplecss.org/>Simple.css</a>. MIT license.</small></footer></body></html>
+</code></pre><p>Just like with form elements, you can also use the <code>w-full</code>  <a href="/utilities#width">width utility class</a> to make a <code>&lt;button&gt;</code> fill the full width of its parent container.</p>
+<div class="flow">
+<button class="w-full" type="submit" value="Submit">Sign up</button>
+</div>
+<pre tabindex="0"><code>&lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
+</code></pre>
+  </article>
+
+        </section>
+      </main><footer class="wrapper region text-center">
+  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">Cube.css</a>, <a href="https://utopia.fyi/">Utopia.fyi</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple.css</a>. MIT license.</small>
+</footer></body>
+</html>
