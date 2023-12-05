@@ -14,6 +14,7 @@ weight = 20
 name = "Github"
 url = "https://github.com/harrycresswell/"
 weight = 30
+pre = "svg/icon-github"
 [main.params]
 external = true
 

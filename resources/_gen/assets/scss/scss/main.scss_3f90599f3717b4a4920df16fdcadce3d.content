@@ -285,6 +285,8 @@ svg {
   height: 2ex;
   width: auto;
   flex: none; }
+  svg path {
+    fill: var(--color-text); }
 
 /* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
@@ -623,6 +625,14 @@ input[type="button"][data-variant='outline']:hover {
 
 nav[data-variant='main'] a[data-state='active'] {
   text-decoration: underline; }
+
+nav[data-variant='main'] li a {
+  display: flex; }
+
+nav[data-variant='main'] li a span {
+  display: flex;
+  align-items: center;
+  margin-right: .5rem; }
 
 nav[data-variant='sidebar'] a[data-state='active'] {
   text-decoration: line-through; }

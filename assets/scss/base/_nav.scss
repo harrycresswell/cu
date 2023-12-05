@@ -4,6 +4,16 @@ nav[data-variant='main'] {
   }
 }
 
+nav[data-variant='main'] li a {
+  display: flex;
+} 
+
+nav[data-variant='main'] li a span {
+  display: flex;
+  align-items: center;
+  margin-right: .5rem;
+} 
+
 nav[data-variant='sidebar'] {
   a[data-state='active'] {
     text-decoration: line-through;

@@ -1,5 +1,5 @@
 <nav data-variant="main" aria-label="Main">
-  <ul class="cluster" style="--gutter: 1rem" role="list">
+  <ul class="cluster" style="--gutter: 1.5rem" role="list">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li>
@@ -11,6 +11,11 @@
         {{ end }}
         href="{{ .URL }}"
         >
+          {{ if .Pre }}
+            <span class="icon" aria-hidden="true">
+              {{ partial (print print .Pre) . }}
+            </span>
+          {{ end }}
           {{ .Name }}
         </a>
       </li>

@@ -110,7 +110,13 @@ project: https://cube.fyi/css.html
    height: 2ex;
    width: auto;
    flex: none;
+
+   path {
+    fill: var(--color-text);
+   }
  }
+
+ 
 
  /* Remove padding and margin on ul, ol elements with a list role */
  [role='list'] {
