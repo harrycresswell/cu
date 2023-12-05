@@ -5,7 +5,7 @@ url = "/"
 weight = 10
 
 [[main]]
-pageRef = "docs"
+pageRef = "getting-started"
 name = "Docs"
 url = "/getting-started/"
 weight = 20
