@@ -1,0 +1,23 @@
+.demo {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l);
+  overflow-x: scroll; }
+
+.demo > * {
+  padding: 1rem; }
+
+.demo .item {
+  display: flex;
+  background-color: var(--color-brand);
+  color: var(--color-bg); }
+
+.demo .margin {
+  background-color: var(--color-highlight); }
+
+.demo .padding {
+  color: var(--color-bg);
+  background-color: var(--color-brand); }
+
+.demo .container {
+  background-color: var(--color-bg);
+  color: var(--color-text); }

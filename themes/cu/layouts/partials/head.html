@@ -6,22 +6,27 @@
   {{ if .Site.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
-    <!-- Load main.css-->
+    {{ $demo := resources.Get "scss/demo.scss" | toCSS }}
+    <!-- Load CSS -->
     <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
+    <link rel="stylesheet" href="{{ $demo.Permalink | relURL }}" media="screen">
   {{ else }}
     <!-- Set target path -->
     {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
+    {{ $demoOpts := (dict "targetPath" "css/demo.css" ) }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and fingerprint (hash) -->
     {{ $stylesMinPrint := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify -->
     {{ $stylesMin:= resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, remain unminifed -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") }}
+    {{ $demoMinPrint := resources.Get "scss/demo.scss" | toCSS $demoOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
      <!-- Generate a minifed non-hashed version of styles for reference -->
      {{ $stylesMin.Permalink }}
     <!-- Generate unminifed version of styles for reference -->
     {{ $styles.Permalink }}
     <!-- Load main.css and authenticate hashed file -->
     <link rel="stylesheet" href="{{ $stylesMinPrint.Permalink | relURL }}" integrity="" media="screen">
+    <link rel="stylesheet" href="{{ $demoMinPrint.Permalink | relURL }}" integrity="" media="screen">
   {{ end }}
 </head>
