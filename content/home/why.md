@@ -7,4 +7,4 @@ Unlike popular frameworks, which are often overkill or try to reinvent CSS entir
 
 For this reason, I’ve always prefered to adopt a CSS methodology over full blown framework. But when you’re busy developing websites, you often need a little more than just a methodology to give you a headstart. That’s why *cu.css* exists.
 
-*cu.css* is a lightweight framework built using a solid CSS methodology, that helps to kick start projects quickly and offers the basics to build upon, in a way that respects CSS.
+*cu.css* is a lightweight framework built using a solid CSS methodology. It will help you kick start your projects quickly, offering a base to build upon, in a way that respects CSS.
