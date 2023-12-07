@@ -42,7 +42,7 @@ Google fonts with subsetting via Google Webfonts Helper
 
 ### Customising the theme
 
-To customise the theme of *cu.css* look for the Global theme tokens, a.k.a CSS Custom Properties. These tokens are used throughout the framework, so any changes you make here will have a wide reaching impact. 
+To customise the theme of *cu.css* look for the Global theme tokens, a.k.a CSS Custom Properties. These tokens are used throughout the framework and cascade through the entire CSS, so any changes you make here will have a wide reaching impact. 
 
 Typography, color (light and dark mode), grid gutter, border radius, are all managed here. 
 
