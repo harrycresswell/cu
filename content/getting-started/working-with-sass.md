@@ -5,7 +5,7 @@ draft: false
 weight: 3
 ---
 
-You can find the Sass files for *cu.css* inside the `assets/scss` directory.
+You can find the Sass files for *cu.css* inside the `assets/scss` directory. You may find working with Sass gives you a little more flexibility when customising.
 
 ### Understanding the directory structure
 

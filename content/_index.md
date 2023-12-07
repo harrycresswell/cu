@@ -1,6 +1,6 @@
 ---
 title: A modern CSS framework
-description: _cu.css_ is built using [Cube CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) fluid responsive design.
+description: _cu.css_ is built using [CUBE CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) fluid responsive design.
 ---
 
 *cu.css* is a lightweight CSS framework that makes it quicker to start using [CUBE CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) in your projects. To get the most out of *cu.css*, you will need to be familiar with both approaches. 
