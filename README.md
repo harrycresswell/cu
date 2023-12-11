@@ -40,11 +40,12 @@ https://github.com/harrycresswell
 
 ## Credits
 
+This project was inspired by the work of:
+
 - [Andy Bell](https://andy-bell.co.uk/)
-- [Cube CSS](https://cube.fyi/)
 - [James Gilyead](https://hustlersquad.net/)
 - [Trys Mudford](https://www.trysmudford.com/)
-- [Utopia](https://utopia.fyi/)
+- [Kev Quirk](https://kevquirk.com/)
 
 ## License
 
