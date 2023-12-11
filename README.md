@@ -43,6 +43,7 @@ https://github.com/harrycresswell
 This project was inspired by the work of:
 
 - [Andy Bell](https://andy-bell.co.uk/)
+- [Heydon Pickering](https://heydonworks.com/)
 - [James Gilyead](https://hustlersquad.net/)
 - [Trys Mudford](https://www.trysmudford.com/)
 - [Kev Quirk](https://kevquirk.com/)
