@@ -1,8 +1,11 @@
 <head>
+  {{ hugo.Generator }}
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Modern CSS Starter</title>
+
+  {{ partial "meta-info.html" . }}
+
   {{ if .Site.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}

@@ -4,7 +4,14 @@ title = 'cu.css'
 theme = "cu"
 
 [params]
-description = 'A modern SCSS framework'
+site_description = 'A modern CSS framework'
+site_keywords = ""
+site_image = ""
+
+[author]
+name = "Harry Cresswell"
+github = "https://github.com/harrycresswell"
+linkedin = "https://linkedin.com/in/harrycresswell/"
 
 # Allow HTML in markdown (use with caution)
 [markup.goldmark.renderer]

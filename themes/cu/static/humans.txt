@@ -1,0 +1,51 @@
+/* TEAM */
+
+Creator: Harry Cresswell
+Site: Harry Cresswell
+Url: https://www.harrycresswell.com/
+Contact: web@harrycr.es
+Social: @harrycresswell
+Location: London, UK
+
+/* THANKS */
+
+Name: Rachel Andrew 
+Twitter: @rachelandrew
+Url: https://rachelandrew.co.uk/
+
+Michelle Barker - @MicheBarks
+https://css-irl.info/
+
+Andy Bell - @andybelldesign
+https://andy-bell.design/
+
+Frank Chimero - @frank_chimero
+https://frankchimero.com/
+
+Chris Ferdinandi - @ChrisFerdinandi
+https://gomakethings.com/
+
+Fershad Irani - @fershad
+https://fershad.com/
+
+Jeremy Keith - @adactio
+https://adactio.com/
+
+Regis Philibert - @regisphilibert
+https://www.regisphilibert.com/
+
+Haydon Pickering - @heydonworks
+https://heydonworks.com
+
+Jen Simmons - @jensimmons
+https://jensimmons.com/
+
+Sara Soueidan - @sarasoueidan
+https://www.sarasoueidan.com/
+
+/* SITE */
+
+Last update: 2023/12/11
+Standards: HTML5, CSS3, SASS
+Components: Autoprefixer, Postcss-cli, NPM scripts
+Software: Hugo, VSCode

@@ -1,0 +1,122 @@
+<!-- Grab variables stored in file -->
+{{ $site_title := .Site.Title }}
+{{ $site_description := .Site.Params.site_description }}
+{{ $site_keywords := .Site.Params.site_keywords }}
+{{ $site_lang := .Site.LanguageCode }}
+{{ $site_image := .Site.Params.site_image }}
+<!-- Grab page description -->
+{{ $description := .Params.description }}
+
+<!-- Title -->
+<title>
+  {{- if .IsHome -}}
+    {{- with $site_title -}}
+      {{ . }} &middot; {{ $site_description }}
+    {{ end }}
+  {{- else -}}
+    {{ with $site_title }}{{ . }} &middot;{{ end }} {{ .Title }}
+  {{- end -}}
+</title>
+<!-- Description -->
+{{ if .IsHome -}}
+  <meta 
+  name="description"
+  content="{{ $site_description }}">
+{{ else }}
+  <meta 
+  name="description"
+  content="{{ with $description }}{{ . | plainify }}{{ else }}{{ $site_description }}{{- end }}">
+{{ end }}
+  
+<!-- Indexing pages -->
+{{ if eq hugo.Environment "staging" }}
+  <!-- No Search Engines -->
+  <meta name="robots" content="noindex,nofollow" />
+  <!-- Google Specific -->
+  <meta name="googlebot" content="noindex,nofollow" />
+  <!-- Bing specific -->
+  <meta name="bingbot" content="noindex,nofollow" />
+{{ else if ne .Params.noindex true }}
+  <!-- All Search Engines -->
+  <meta name="robots" content="index,follow" />
+  <!-- Google Specific -->
+  <meta name="googlebot" content="index,follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- Bing specific -->
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+{{ else }}
+  <!-- All Search Engines -->
+  <meta name="robots" content="noindex">
+  <!-- Google Specific -->
+  <meta name="googlebot" content="noindex" />
+{{ end }}
+
+<!-- Prevent issues with duplicate content -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Keywords -->
+{{ with $site_keywords }}
+ <meta name="keywords" content="{{ . }}" />
+{{ end }}
+
+<!-- Language code -->
+{{ with $site_lang }}
+  <meta http-equiv="content-language" content="{{ . }}" />
+{{ end }}
+
+<!-- Open Graph / Facebook -->
+{{ if not .Site.Params.OpenGraph.hide }}
+  {{ with $site_lang }}
+    <meta property="og:locale" content="{{ . }}">
+  {{ end }}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title"
+    content="{{ if .IsHome -}}
+    {{- with $site_title -}}{{ . }}{{- else -}}{{ .Site.Title }}{{- end -}}
+  {{- else -}}
+    {{ .Title }} | {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+  {{- end -}}">
+  <meta property="og:description"
+    content="{{ with .Params.description }}{{ . | markdownify }}{{ else }}{{ $site_description }}{{- end }}">
+  <meta property="og:site_name"
+    content="{{- with $site_title -}}{{ . }}{{- else -}}{{ .Site.Title }}{{- end -}}">
+  <!-- if featured image exists in file frontmatter, use for open graph data -->
+  <meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ $site_image }}{{ end }}">
+{{ end }}
+<!-- Twitter -->
+{{ if not .Site.Params.Twitter.hide }}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title"
+    content="{{ if .IsHome -}}
+    {{- with $site_title -}}{{ . }}{{- else -}}{{ .Site.Title }}{{- end -}}
+  {{- else -}}
+    {{ .Title }} | {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+  {{- end -}}">
+  <meta property="twitter:description"
+    content="{{ with .Params.description }}{{ . | markdownify }}{{ else }}{{ $site_description }}{{- end }}">
+  {{ with .Site.Params.twitter.handle }}
+    <meta property="twitter:site" content="{{ . }}" />
+   <meta property="twitter:creator" content="{{ . }}" />
+  {{ end }}
+   <meta property="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ $site_image }}{{ end }}" />
+{{ end }}
+
+<!-- Links to information about the author -->
+<link rel="author" href="{{ .Site.BaseURL }}humans.txt" />
+
+<!-- Me -->    
+{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Author.github }}<link href="{{ . }}" rel="me">{{ end }}
+{{ with .Site.Author.linkedin }}<link href="{{ . }}" rel="me">{{ end }}
+
+<!-- Icons -->
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="{{ .Site.BaseURL }}/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{{ .Site.BaseURL }}/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/img/favicon.ico">
+
+<!-- RSS -->
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
