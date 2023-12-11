@@ -74,7 +74,7 @@
     content="{{ if .IsHome -}}
     {{- with $site_title -}}{{ . }}{{- else -}}{{ .Site.Title }}{{- end -}}
   {{- else -}}
-    {{ .Title }} | {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+    {{ .Title }} &middot; {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
   {{- end -}}">
   <meta property="og:description"
     content="{{ with .Params.description }}{{ . | markdownify }}{{ else }}{{ $site_description }}{{- end }}">
@@ -91,7 +91,7 @@
     content="{{ if .IsHome -}}
     {{- with $site_title -}}{{ . }}{{- else -}}{{ .Site.Title }}{{- end -}}
   {{- else -}}
-    {{ .Title }} | {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+    {{ .Title }} &middot; {{ with $site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
   {{- end -}}">
   <meta property="twitter:description"
     content="{{ with .Params.description }}{{ . | markdownify }}{{ else }}{{ $site_description }}{{- end }}">
