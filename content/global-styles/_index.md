@@ -6,6 +6,8 @@ title: Global styles
 
 The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS — we are styling as much as possible, using as little CSS as possible.
 
+If you’re familiar with classless CSS frameworks, like [Water.CSS](https://watercss.kognise.dev/), [Concrete.css](https://concrete.style/) or [Simple.css](https://simplecss.org/) (a big inspiration for this project), then this part of *cu.css* is exactly that.
+
 In *cu.css*, global styles can be found in the `assets/scss/base` folder. 
 
 Most projects will likely require both `assets/scss/base/global.scss` and `assets/scss/base/reset.scss`, however you may prefer to remove other partials from your project, depending on your  requirements.
