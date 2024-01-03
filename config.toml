@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://cu.harrycresswell.com/'
 languageCode = 'en-gb'
 title = 'cu.css'
 theme = "cu"
