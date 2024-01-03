@@ -30,6 +30,6 @@ Inside `assets/scss` you will find 5 directories and a bunch of files.
 
 I’ve intentionally used SASS with a very light touch, mostly just to split the CSS into granular partial files. This makes it super easy to ditch certain styles you have no use for in your project. 
 
-For example, your project may not use *forms*, *tables* or *cards*, so you might decided to delete `base/_form.scss`, `base/_table.scss` and `blocks/_card.scss` respectively.
+For example, your project may not use *forms*, *tables* or *cards*, so you might decide to delete `base/_form.scss`, `base/_table.scss` and `blocks/_card.scss`, respectively.
 
 If you do decide to delete certain partials, ensure you also remove the associated `@import` from `main.scss`.
