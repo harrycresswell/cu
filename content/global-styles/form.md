@@ -62,16 +62,15 @@ Selects are also a thing:
 
 <form>
   <fieldset>
-    <legend>Your favourite pet</legend>
-      <label for="pet-select">Choose a pet:</label>
-      <select name="pets" id="pet-select">
+    <legend>Your favourite character</legend>
+      <label for="character-select">Choose a character:</label>
+      <select name="characters" id="character-select">
         <option value="">Choose an option</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+        <option value="luke">Luke</option>
+        <option value="han">Han</option>
+        <option value="leia">Leia</option>
+        <option value="obi-wan">Obi-Wan</option>
+        <option value="yoda">Yoda</option>
       </select>
       <button type="submit" value="Submit">Submit</button>
   </fieldset>
@@ -80,16 +79,15 @@ Selects are also a thing:
 ```
 <form>
   <fieldset>
-    <legend>Your favourite pet</legend>
-      <label for="pet-select">Choose a pet:</label>
-      <select name="pets" id="pet-select">
+    <legend>Your favourite character</legend>
+      <label for="character-select">Choose a character:</label>
+      <select name="characters" id="character-select">
         <option value="">Choose an option</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+        <option value="luke">Luke</option>
+        <option value="han">Han</option>
+        <option value="leia">Leia</option>
+        <option value="obi-wan">Obi-Wan</option>
+        <option value="yoda">Yoda</option>
       </select>
       <button type="submit" value="Submit">Submit</button>
   </fieldset>
