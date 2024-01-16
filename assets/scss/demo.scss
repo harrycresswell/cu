@@ -1,3 +1,4 @@
+/* margin and padding used in utility visual examples */
 .demo {
   background-color: var(--color-bg-mod-1);
   padding: var(--space-m-l);
@@ -26,4 +27,23 @@
 .demo .container {
   background-color: var(--color-bg);
   color: var(--color-text); 
+}
+
+/* changelog item */
+.changelog {
+  --region-space: 1.5rem;
+
+  .cluster {
+    --cluster-vertical-alignment: start;
+    font-family: var(--font-accent);
+
+    span {
+      background-color: var(--color-bg-mod-1);
+      padding-inline: .5rem;
+    }
+  }
+
+  div:last-of-type {
+    --flow-space: 2rem;
+  }
 }

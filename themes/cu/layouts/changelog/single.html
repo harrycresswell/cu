@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="wrapper region" style="--wrapper-max-width: 80rem;">
+  <article class="changelog | sidebar">
+      <div class="cluster">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        {{- with .Params.badges -}}
+          {{- range . -}}
+            <span>{{ . }}</span>
+          {{- end -}}
+        {{- end -}}
+      </div>
+      <div class="flow">
+        {{ .Content }}
+      </div>
+  </article>
+</section>
+{{ end }}

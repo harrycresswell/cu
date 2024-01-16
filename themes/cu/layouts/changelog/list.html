@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="wrapper region" style="--wrapper-max-width: 80rem;">
+  {{ range .Pages }}
+    <article class="changelog | sidebar region">
+      <div class="cluster">
+        <time class="">{{ .Date.Format "2006-01-02" }}</time>
+        {{- with .Params.badges -}}
+          {{- range . -}}
+            <span class="">{{ . }}</span>
+          {{- end -}}
+        {{- end -}}
+      </div>
+      <div class="flow">
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <div class="flow">
+          {{ .Content }}
+        </div>
+      </div>
+    </article>
+  {{ end }}
+  {{ $calloutText := .Params.callout_text }}
+  {{ if eq .Params.callout true  }}
+  <section class="callout">
+    <p>{{ $calloutText | markdownify }}</p>
+  </section>
+  {{ end }}
+</section>
+{{ end }}

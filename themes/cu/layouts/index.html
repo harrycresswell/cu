@@ -1,4 +1,5 @@
 {{ define "main" }}
+<section class="wrapper region">
   <article class="prose flow" style="max-width: var(--width-longform); margin-inline: auto;">
     {{ .Content }}
     {{ $headless := .Site.GetPage "/home" }}
@@ -8,4 +9,5 @@
       {{ .Content }}
     {{ end }}
   </article>
+</section>
 {{ end }}
