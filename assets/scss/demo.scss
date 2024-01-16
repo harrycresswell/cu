@@ -31,7 +31,9 @@
 
 /* changelog item */
 .changelog {
-  --region-space: 1.5rem;
+  &:not(:first-of-type) {
+    margin-block-start: var(--space-xl);
+  }
 
   .cluster {
     --cluster-vertical-alignment: start;

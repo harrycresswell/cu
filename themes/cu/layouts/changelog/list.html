@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="wrapper region" style="--wrapper-max-width: 80rem;">
   {{ range .Pages }}
-    <article class="changelog | sidebar region">
+    <article class="changelog | sidebar">
       <div class="cluster">
         <time class="">{{ .Date.Format "2006-01-02" }}</time>
         {{- with .Params.badges -}}

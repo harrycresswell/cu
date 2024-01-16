@@ -24,13 +24,15 @@
   color: var(--color-text); }
 
 /* changelog item */
-.changelog {
-  --region-space: 1.5rem; }
-  .changelog .cluster {
-    --cluster-vertical-alignment: start;
-    font-family: var(--font-accent); }
-    .changelog .cluster span {
-      background-color: var(--color-bg-mod-1);
-      padding-inline: .5rem; }
-  .changelog div:last-of-type {
-    --flow-space: 2rem; }
+.changelog:not(:first-of-type) {
+  margin-block-start: var(--space-xl); }
+
+.changelog .cluster {
+  --cluster-vertical-alignment: start;
+  font-family: var(--font-accent); }
+  .changelog .cluster span {
+    background-color: var(--color-bg-mod-1);
+    padding-inline: .5rem; }
+
+.changelog div:last-of-type {
+  --flow-space: 2rem; }

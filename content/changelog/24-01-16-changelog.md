@@ -1,6 +1,6 @@
 ---
 title: "New features, bug fixes and improvements"
-date: 2022-01-10T19:00:42Z
+date: 2024-01-16T11:00:42Z
 slug: "new-features"
 draft: false
 badges: 
