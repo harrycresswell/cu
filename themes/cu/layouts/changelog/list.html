@@ -3,10 +3,10 @@
   {{ range .Pages }}
     <article class="changelog-item | sidebar">
       <div class="cluster">
-        <time class="">{{ .Date.Format "2006-01-02" }}</time>
+        <time>{{ .Date.Format "2006-01-02" }}</time>
         {{- with .Params.badges -}}
           {{- range . -}}
-            <span class="">{{ . }}</span>
+            <span>{{ . }}</span>
           {{- end -}}
         {{- end -}}
       </div>
