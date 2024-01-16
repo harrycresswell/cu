@@ -7,4 +7,10 @@ badges:
   - Added
 ---
 
-This site now has a changelog page, to record and keep track of new features, bug fixes and improvements.
+This site now has a changelog page ([/changelog](/changelog)) to record and keep track of new features, bug fixes and improvements. 
+
+I’ve also added the following:
+
+- 404 page template
+- Favicons
+- Open external links in a new tab.
