@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting started on cu.css</title>
+    <link>https://cu.harrycresswell.com/getting-started/</link>
+    <description>Recent content in Getting started on cu.css</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 11 Jul 2023 16:42:27 +0100</lastBuildDate><atom:link href="https://cu.harrycresswell.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation</title>
+      <link>https://cu.harrycresswell.com/getting-started/installation/</link>
+      <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
+      
+      <guid>https://cu.harrycresswell.com/getting-started/installation/</guid>
+      <description>There are currently two different ways to install cu.css in your project, depending on whether you prefer to work with CSS or SASS.
+Installing CSS Follow these steps if you plan to work with CSS:
+Download the full project from Github. Copy main.css or main.min.css from the public/css folder into your project. Copy the fonts directory into your project. The final step is to link to your stylesheet file inside the &amp;lt;head&amp;gt; of your pages:</description>
+    </item>
+    
+    <item>
+      <title>Working with CSS</title>
+      <link>https://cu.harrycresswell.com/getting-started/working-with-css/</link>
+      <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
+      
+      <guid>https://cu.harrycresswell.com/getting-started/working-with-css/</guid>
+      <description>If you plan to customise or build upon cu.css, then you will find it much easier to work with the unminified css found in public/css/main.css. If you wish to use cu.css without modification, then working with the minified CSS found in public/css/main.min.css will ensure the smallest file size.
+The stylesheets in public/css contain configurations for custom fonts, customising the theme of cu.css, and managing fluid type and space scales. Most of these configurations consist of CSS custom properties.</description>
+    </item>
+    
+    <item>
+      <title>Working with SASS</title>
+      <link>https://cu.harrycresswell.com/getting-started/working-with-sass/</link>
+      <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
+      
+      <guid>https://cu.harrycresswell.com/getting-started/working-with-sass/</guid>
+      <description>You can find the Sass files for cu.css inside the assets/scss directory. You may find working with Sass gives you a little more flexibility when customising.
+Understanding the directory structure Inside assets/scss you will find 5 directories and a bunch of files.
+The abstracts directory contains the project configurations outlined above: @font-face declarations for including custom fonts in the project. CSS custom properties for theming. CSS custom properties for Utopia fluid type and space scales.</description>
+    </item>
+    
+  </channel>
+</rss>

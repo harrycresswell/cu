@@ -13,8 +13,8 @@ There are currently two different ways to install *cu.css* in your project, depe
 Follow these steps if you plan to work with CSS:
 
 1. [Download the full project from Github](https://github.com/harrycresswell/cu/archive/refs/heads/master.zip).
-2. Copy `main.css` or `main.min.css` from the [public/css folder]() into your project.
-3. Copy the [fonts directory]() into your project.
+2. Copy `main.css` or `main.min.css` from the [public/css]() folder into your project.
+3. Copy the [fonts directory](https://github.com/harrycresswell/cu/tree/7f37e74f462eb80f8804ae3969a7fa46bd6739c7/static/fonts) into your project.
 
 The final step is to link to your stylesheet file inside the `<head>` of your pages:
 
