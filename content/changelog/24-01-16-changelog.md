@@ -12,5 +12,6 @@ This site now has a changelog page ([/changelog](/changelog)) to record and keep
 I’ve also added the following:
 
 - 404 page template
-- Favicons
-- Open external links in a new tab.
+- Missing favicons
+
+And, I’ve added some functionality that causes external links to open in a new tab. You can read more about this in [Markdown Render Hooks](https://gohugo.io/templates/render-hooks/) in the Hugo docs.
