@@ -30,7 +30,7 @@
 }
 
 /* changelog item */
-.changelog {
+.changelog-item {
   &:not(:first-of-type) {
     margin-block-start: var(--space-xl);
   }

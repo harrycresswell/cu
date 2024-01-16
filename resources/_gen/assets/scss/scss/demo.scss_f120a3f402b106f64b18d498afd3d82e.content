@@ -24,15 +24,15 @@
   color: var(--color-text); }
 
 /* changelog item */
-.changelog:not(:first-of-type) {
+.changelog-item:not(:first-of-type) {
   margin-block-start: var(--space-xl); }
 
-.changelog .cluster {
+.changelog-item .cluster {
   --cluster-vertical-alignment: start;
   font-family: var(--font-accent); }
-  .changelog .cluster span {
+  .changelog-item .cluster span {
     background-color: var(--color-bg-mod-1);
     padding-inline: .5rem; }
 
-.changelog div:last-of-type {
+.changelog-item div:last-of-type {
   --flow-space: 2rem; }
