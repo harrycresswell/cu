@@ -195,6 +195,10 @@ Global styles
 Low-specificity, global styles that apply to the whole 
 project: https://cube.fyi/css.html
 */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth; } }
+
 body {
   color: var(--color-text);
   background: var(--color-bg);
