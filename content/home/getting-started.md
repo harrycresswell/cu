@@ -1,6 +1,6 @@
 ---
 title: Getting started
-weight: 4
+weight: 6
 ---
 
 - [Read the docs](/getting-started/)

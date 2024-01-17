@@ -5,7 +5,10 @@
     {{ $headless := .Site.GetPage "/home" }}
     {{ $type := $headless.Resources.Match "*" }}
     {{ range $type }}
-      <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
+      <h2 id="{{ .Title | urlize }}">
+        {{ .Title }}
+        <a class="heading-anchor" href="#{{ .Title | urlize }}" aria-label="Anchor">#</a>
+      </h2>
       {{ .Content }}
     {{ end }}
   </article>

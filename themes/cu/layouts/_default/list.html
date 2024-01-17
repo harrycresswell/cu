@@ -7,13 +7,16 @@
     <div>
       {{ with .Content }}
       <div class="prose flow">
-        {{ . }}
+        {{ partial "heading-anchor.html" . }} 
       </div>
       {{ end }}
       {{ range .Pages }}
         <article class="prose | region flow">
-          <h2 id="{{ .Title | urlize }}">{{ .Title }}</h2>
-          {{ .Content }}
+          <h2 id="{{ .Title | urlize }}">
+            {{ .Title }}
+            <a class="heading-anchor" href="#{{ .Title | urlize }}" aria-label="Anchor">#</a>
+          </h2>
+          {{ partial "heading-anchor.html" .Content }} 
         </article>
       {{ end }}
       <div class="pagination | grid region" data-layout="50-50">

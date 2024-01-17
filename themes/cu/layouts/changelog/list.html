@@ -15,7 +15,7 @@
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
         <div class="flow">
-          {{ .Content }}
+          {{ partial "heading-anchor.html" .Content }} 
         </div>
       </div>
     </article>
