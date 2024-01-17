@@ -37,3 +37,20 @@
 
 .changelog-item div:last-of-type {
   --flow-space: 2rem; }
+
+/* Section pagination */
+.pagination a {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l); }
+  .pagination a:hover {
+    background-color: var(--color-bg-mod-2); }
+
+.pagination span {
+  display: block; }
+
+.pagination span:first-of-type {
+  font-family: var(--font-accent);
+  font-size: var(--step--1); }
+
+.pagination span:last-of-type {
+  font-size: var(--step-1); }

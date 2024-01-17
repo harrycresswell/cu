@@ -1,5 +1,6 @@
 ---
 title: Resources
+weight: 60
 ---
 
 The following resources will help you learn more about the approaches used in *cu.css*.

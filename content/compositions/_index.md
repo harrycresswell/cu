@@ -1,5 +1,6 @@
 ---
 title: Compositions
+weight: 30
 ---
 
 *cu.css* includes a handful of compositions. **Compositions create flexible layouts, helping to bring structure to whatever content they contain**. 

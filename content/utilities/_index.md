@@ -1,5 +1,6 @@
 ---
 title: Utilities
+weight: 40
 ---
 
 *cu.css* include a handful of utilities. **Utilities help to solve common, yet specific problems found throughout a project**. 

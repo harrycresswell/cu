@@ -16,6 +16,22 @@
           {{ .Content }}
         </article>
       {{ end }}
+      <div class="pagination | grid region" data-layout="50-50">
+        {{ with .Site.Sections.Next . }} 
+        <a data-variant="naked" href="{{ .Permalink }}">
+          <span>Previous</span>
+          <span><strong>{{ .Title }}</strong></span>
+        </a>
+        {{ end }}
+        {{ with .Site.Sections.Prev . }}
+          {{ if ne .Section "changelog" }}
+          <a data-variant="naked" href="{{ .Permalink }}">
+            <span>Next</span>
+            <span><strong>{{ .Title }}</strong></span>
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
     </div>
   </div>
 </section>

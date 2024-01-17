@@ -1,5 +1,6 @@
 ---
 title: Global styles
+weight: 20
 ---
 
 *cu.css* aims to **broadly style as much as possible at a global level**. This is done by applying default styles directly to native HTML elements, an approach  often referred to as creating *base* or *global styles*. 

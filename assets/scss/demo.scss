@@ -50,3 +50,28 @@
     --flow-space: 2rem;
   }
 }
+
+/* Section pagination */
+.pagination {
+  a {
+    background-color: var(--color-bg-mod-1);
+    padding: var(--space-m-l);
+
+    &:hover {
+      background-color: var(--color-bg-mod-2);
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  span:first-of-type {
+    font-family: var(--font-accent);
+    font-size: var(--step--1);
+  }
+
+  span:last-of-type {
+    font-size: var(--step-1);
+  }
+}

@@ -1,5 +1,6 @@
 ---
 title: Blocks
+weight: 50
 ---
 
 According to [cube.fyi](https://cube.fyi/block.html#block): “**A block is a skeletal component or organisational structure.** To compare it to common user interface elements: it is a card element or a button element.”
