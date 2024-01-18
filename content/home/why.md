@@ -1,6 +1,6 @@
 ---
 title: Why cu.css?
-weight: 3
+weight: 4
 ---
 
 Unlike popular frameworks, which are often overkill or try to reinvent CSS entirely, working with a CSS methodology, like CUBE CSS, helps to bring structure and consistency to your CSS, while remaining lightweight and flexible. 
