@@ -14,9 +14,9 @@
         <h2>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
-        <div class="flow">
-          {{ partial "heading-anchor.html" .Content }} 
-        </div>
+        {{ with .Params.excerpt }}
+          <p>{{ . }}</p>
+        {{ end }}
       </div>
     </article>
   {{ end }}
