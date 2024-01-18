@@ -10,6 +10,9 @@
         {{- end -}}
       </div>
       <div class="flow">
+        {{ with .Params.excerpt }}
+          <p>{{ . }}</p>
+        {{ end }}
         {{ partial "heading-anchor.html" .Content }} 
       </div>
   </article>
