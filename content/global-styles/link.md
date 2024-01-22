@@ -9,9 +9,7 @@ Use the anchor element, a.k.a `<a>` tag to link to different pages
 <a href="/about">About</a>
 ```
 
-Links look [like this](/), by default. 
-
-But you can also use use the data attribute `data-variant="naked"` to make them look like text.
+Links look [like this](/), by default. But you can also use use the data attribute `data-variant="naked"` to make them look like the same as default text.
 
 ```
 <a href="/" data-variant="naked">A naked link</a>
