@@ -5,7 +5,7 @@ draft: false
 weight: 4
 ---
 
-Use the `.visually-hidden` utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.
+Use the `.visually-hidden` utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.
 
 ```
 /* 
@@ -24,3 +24,5 @@ VISUALLY HIDDEN
   white-space: nowrap;
 }
 ```
+
+This is different from [using the [hidden] attribute](/global-styles/#visibility) which will hide the content from both the browser and assistive technologies.

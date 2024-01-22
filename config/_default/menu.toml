@@ -123,6 +123,12 @@ weight = 160
 parent = "Global"
 
 [[sidebar]]
+name = "Visibility"
+url = "#visibility"
+weight = 165
+parent = "Global"
+
+[[sidebar]]
 pageRef = "compositions"
 name = "Compositions"
 url = "/compositions/"
