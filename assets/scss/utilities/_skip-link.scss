@@ -1,14 +1,14 @@
-.skip-link {
-  clip: rect(1px, 1px, 1px, 1px);
-  display: block;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  top: 1rem;
-  left: 1rem;
-  z-index: 999;
-}
+  .skip-link {
+    clip: rect(1px, 1px, 1px, 1px);
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    top: 1rem;
+    left: 1rem;
+    z-index: 999;
+  }
 
 .skip-link:focus {
   clip: auto;

@@ -5,7 +5,11 @@ draft: false
 weight: 6
 ---
 
-The `.w-full` utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.
+The `.w-full` utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.
+
+<form>
+  <button class="w-full" type="submit" value="Submit">Submit</button>
+</form>
 
 ```
 .w-full {

@@ -197,6 +197,12 @@ weight = 270
 parent = "Utilities"
 
 [[sidebar]]
+name = "Skip link"
+url = "#skip-link"
+weight = 275
+parent = "Utilities"
+
+[[sidebar]]
 pageRef = "blocks"
 name = "Blocks"
 url = "/blocks/"
