@@ -37,6 +37,8 @@ details[data-variant='fancy'] {
   summary::-webkit-details-marker,
   summary::marker {
     content: "";
+    /* Hide marker on iOS */
+    display:none;
   }
 
   summary:after {
