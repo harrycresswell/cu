@@ -5,11 +5,11 @@ draft: false
 weight: 4
 ---
 
-*Sidebar* creates a classic sidebar layout, where two elements appear side-by-side, when space permits. 
-
-The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.
+*Sidebar* creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.
 
 To use *Sidebar*, add the `.sidebar` class to a parent element containing two child elements.  
+
+You can learn more about this composition in [Every Layout](https://every-layout.dev/layouts/sidebar/).
 
 <figure>
   <div class="demo | sidebar">
