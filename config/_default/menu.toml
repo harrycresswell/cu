@@ -160,6 +160,12 @@ weight = 201
 parent = "Compositions"
 
 [[sidebar]]
+name = "Reel"
+url = "#reel"
+weight = 202
+parent = "Compositions"
+
+[[sidebar]]
 pageRef = "/utilities/"
 name = "Utilities"
 url = "/utilities/"

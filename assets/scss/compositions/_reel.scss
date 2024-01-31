@@ -37,3 +37,12 @@ to enable scroll snapping
 .reel[data-scroll='snap'] > * {
   scroll-snap-align: start;
 }
+
+/* IMAGE EXCEPTION 
+   Use to maintain image aspect ratios when using image content in a reel */
+.reel[data-variant='img'] {
+  block-size: var(--reel-height, 50vh);
+}
+.reel[data-variant='img'] > img { 
+  block-size: 100%; width: auto;
+}

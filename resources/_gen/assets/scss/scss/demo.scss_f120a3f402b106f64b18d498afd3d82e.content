@@ -4,7 +4,7 @@
   padding: var(--space-m-l);
   overflow-x: scroll; }
 
-.demo > * {
+.demo > *:not(img) {
   padding: 1rem; }
 
 .demo .item {
