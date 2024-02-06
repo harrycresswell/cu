@@ -1,6 +1,6 @@
 {{ define "main" }}
-<section class="wrapper region">
-  <article class="prose flow" style="max-width: var(--width-longform); margin-inline: auto;">
+<section class="region">
+  <article class="prose | wrapper flow" style="--wrapper-max-width: 70ch;">
     {{ .Content }}
     {{ $headless := .Site.GetPage "/home" }}
     {{ $type := $headless.Resources.Match "*" }}
