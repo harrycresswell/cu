@@ -5,7 +5,9 @@ draft: false
 weight: 1
 ---
 
-Sets a max width, adds a consistent gutter and horizontally centers content.
+`.wrapper` horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.
+
+This is useful for creating site wide content wrappers, or simply centering sections of content, as you see on the [*cu.css* homepage](/).
 
 <figure>
   <div class="demo" style="display: flex;">
@@ -25,10 +27,20 @@ WRAPPER
 */
 .wrapper {
   max-width: var(--wrapper-max-width, 90rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
   position: relative;
 }
 ```
+
+The default max-width of `.wrapper` is set to `90rem`. However, by setting a `--wrapper-max-width` value, you can control the maximum width of an element that has the class applied.
+
+```
+<section class="wrapper" style="--wrapper-max-width: 70ch;">
+  <div>Some centered content</div>
+</section>
+```
+
+Similarly, set a value for `--gutter` to control the minimum margin applied either side of an element with `.wrapper` applied.
+
+For those familiar with Every Layout, you may recognise `.wrapper` as the [Center Layout](https://every-layout.dev/layouts/center/).
