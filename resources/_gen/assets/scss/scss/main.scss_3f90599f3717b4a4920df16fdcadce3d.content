@@ -274,14 +274,14 @@ blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
   padding-inline-start: var(--space-s);
   font-family: var(--font-display);
-  font-size: var(--step-2);
+  font-size: var(--step-1);
   line-height: var(--line-height-base); }
 
 /* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
 blockquote:not([class]) p:last-of-type,
 blockquote:not([class]) cite {
   font-family: var(--font-base);
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   font-weight: normal;
   margin-block-start: var(--space-2xs); }
 
@@ -686,11 +686,11 @@ nav[data-variant='sidebar'] ul > li ul {
 .prose :is(p, ul:not([class]), ol:not([class])) {
   max-width: var(--width-longform); }
 
+.prose :is(blockquote) {
+  max-width: 52ch; }
+
 .prose :is(pre,pre+*,figure,figure+*,h2,h3,h4) {
   --flow-space: var(--space-l-xl); }
-
-.prose blockquote {
-  max-width: 40ch; }
 
 /*
 HERO
