@@ -246,6 +246,12 @@ weight = 320
 parent = "Blocks"
 
 [[sidebar]]
+name = "Prose"
+url = "#prose"
+weight = 325
+parent = "Blocks"
+
+[[sidebar]]
 pageRef = "resources"
 name = "Resources"
 url = "/resources/"
