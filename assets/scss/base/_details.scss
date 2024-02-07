@@ -51,14 +51,14 @@ details[data-variant='fancy'] {
     pointer-events: none;
     position: absolute;
     right: 1rem;
-    top: .6rem;
+    top: .7rem;
     transform: rotate(180deg);
   }
 }
 
 details[open][data-variant='fancy'] {
   summary:after {
-    top: .6rem;
+    top: .7rem;
     transform: rotate(0deg);
   }
 }

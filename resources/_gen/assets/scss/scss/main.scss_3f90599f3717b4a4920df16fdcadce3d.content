@@ -522,13 +522,13 @@ details[data-variant='fancy'] {
     pointer-events: none;
     position: absolute;
     right: 1rem;
-    top: .6rem;
+    top: .7rem;
     transform: rotate(180deg); }
     @media (prefers-color-scheme: dark) {
       details[data-variant='fancy'] summary:after {
         content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
 details[open][data-variant='fancy'] summary:after {
-  top: .6rem;
+  top: .7rem;
   transform: rotate(0deg); }
 
 /* 
