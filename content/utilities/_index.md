@@ -3,7 +3,7 @@ title: Utilities
 weight: 40
 ---
 
-*cu.css* include a handful of utilities. **Utilities help to solve common, yet specific problems found throughout a project**. 
+*cu.css* include a handful of utilities. **Utilities help to solve common, yet specific problems found throughout a project**. They can be used with any element in any context.
 
 According to [cube.fyi](https://cube.fyi/utility.html): “A utility, in the context of CUBE CSS, is a CSS class that does one job and does that one job well.”
 
