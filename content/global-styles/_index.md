@@ -3,9 +3,9 @@ title: Global styles
 weight: 20
 ---
 
-*cu.css* aims to **broadly style as much as possible at a global level**. This is done by applying default styles directly to native HTML elements, an approach  often referred to as creating *base* or *global styles*. 
+*cu.css* aims to **broadly style as much as possible at a global level**. This is done by applying default styles directly to native HTML elements. An approach often referred to as creating *base* or *global styles*. 
 
-The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS — we are styling as much as possible, using as little CSS as possible.
+The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS — we are efficiently styling as much as possible, using as little CSS as possible.
 
 If you’re familiar with classless CSS frameworks, like [Water.CSS](https://watercss.kognise.dev/), [Concrete.css](https://concrete.style/) or [Simple.css](https://simplecss.org/) (a big inspiration for this project), then this part of *cu.css* is exactly that.
 
