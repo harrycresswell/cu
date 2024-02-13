@@ -1007,7 +1007,7 @@ to enable scroll snapping
 /*
 SWITCHER
 More info: https://every-layout.dev/layouts/switcher/
-A layout that allows you to lay **2** items next to each other
+A layout that allows you to lay **4** items next to each other
 until there is not enough horizontal space to allow that.
 
 CUSTOM PROPERTIES AND CONFIGURATION
