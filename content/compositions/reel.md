@@ -2,6 +2,7 @@
 title: "Reel"
 date: 2024-01-31T11:13:58Z
 draft: false
+weight: 5
 ---
 
 Real creates a carousel-like layout, where items that exceed the available horizontal space become horizontally scrollable. 

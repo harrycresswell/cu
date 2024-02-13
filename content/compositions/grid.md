@@ -53,7 +53,7 @@ Use the layout by adding `data-layout="33x3"` to any element with the `.grid` cl
 /* Three column when space permits */
 .grid[data-layout='33x3'] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 18rem);
+  --grid-min-item-size: clamp(16rem, 33vw, 18rem);
 }
 ```
 

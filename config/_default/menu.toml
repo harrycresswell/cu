@@ -166,6 +166,12 @@ weight = 202
 parent = "Compositions"
 
 [[sidebar]]
+name = "Switcher"
+url = "#switcher"
+weight = 203
+parent = "Compositions"
+
+[[sidebar]]
 pageRef = "/utilities/"
 name = "Utilities"
 url = "/utilities/"
