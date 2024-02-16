@@ -4,7 +4,7 @@ weight: 3
 ---
 
 - Built using the CUBE CSS methodology.
-- Fluid responsive design for space and type.
+- Utopia fluid responsive design for space and type.
 - CSS Custom Properties over token-based CSS.
 - Two flavours – choose from SCSS or CSS.
 - Zero dependencies or third-party tooling.

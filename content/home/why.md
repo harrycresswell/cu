@@ -1,5 +1,5 @@
 ---
-title: Why cu.css?
+title: Why use cu.css?
 weight: 4
 ---
 
