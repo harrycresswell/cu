@@ -7,4 +7,4 @@ According to [cube.fyi](https://cube.fyi/block.html#block): “**A block is a sk
 
 Personally, I like to think of Blocks as commonly used design patterns, which global styles, compositions and utilities don’t necessarily account for. For example, there is no pre-existing HTML `<card>` element and although we may be able to create a card using utilities alone, handling this level of complexity with a `.card` block makes life easier.
 
-*cu.css* includes 4 blocks, the CSS for which can be found in `assets/scss/blocks`.
+*cu.css* includes a handful of blocks to get you started. The CSS for which can be found in `assets/scss/blocks`.
