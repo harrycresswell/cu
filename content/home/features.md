@@ -1,6 +1,6 @@
 ---
 title: cu.css features
-weight: 3
+weight: 1
 ---
 
 - Built using the CUBE CSS methodology.

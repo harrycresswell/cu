@@ -1,6 +1,6 @@
 ---
 title: CUBE CSS in cu.css
-weight: 1
+weight: 2
 ---
 
 *cu.css*, like CUBE CSS, aims to **broadly style as much as possible at a global level**, then let [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS – do the heavy lifting. This is done by styling native HTML elements to create a set of base (or global) styles, which results in HTML that looks great, without any additional classes.

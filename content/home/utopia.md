@@ -1,6 +1,6 @@
 ---
 title: Utopia in cu.css
-weight: 2
+weight: 3
 ---
 
 [Utopia](https://utopia.fyi/) is used in _cu.css_ to create a fluid responsive design system, without the need for arbitrary breakpoints. 
