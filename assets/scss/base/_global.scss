@@ -23,7 +23,7 @@ project: https://cube.fyi/css.html
  h2,
  h3 {
  	font-family: var(--font-display);
-	line-height: 1;
+	line-height: var(--line-height-compact);
   letter-spacing: var(--tracking-s);
  }
 
