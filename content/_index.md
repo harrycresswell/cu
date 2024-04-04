@@ -1,5 +1,5 @@
 ---
-title: A lightweight CSS framework
+title: A lightweight CSS boilerplate for front-end developers
 description: _cu.css_ is built using [CUBE CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) fluid responsive design.
 ---
 
