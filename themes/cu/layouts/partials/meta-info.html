@@ -106,9 +106,9 @@
 <link rel="author" href="{{ .Site.BaseURL }}humans.txt" />
 
 <!-- Me -->    
-{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
-{{ with .Site.Author.github }}<link href="{{ . }}" rel="me">{{ end }}
-{{ with .Site.Author.linkedin }}<link href="{{ . }}" rel="me">{{ end }}
+{{ with .Site.Params.author.name }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.author.github }}<link href="{{ . }}" rel="me">{{ end }}
+{{ with .Site.Params.author.linkedin }}<link href="{{ . }}" rel="me">{{ end }}
 
 <!-- Icons -->
 <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" sizes="180x180">

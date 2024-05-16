@@ -8,7 +8,7 @@ site_description = 'A lightweight CSS framework'
 site_keywords = ""
 site_image = ""
 
-[author]
+[params.author]
 name = "Harry Cresswell"
 github = "https://github.com/harrycresswell"
 linkedin = "https://linkedin.com/in/harrycresswell/"
