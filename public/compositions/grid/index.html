@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/compositions/grid/">
+<link rel="canonical" href="http://localhost:1313/compositions/grid/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/compositions/grid/">
+  <meta property="og:url" content="http://localhost:1313/compositions/grid/">
   <meta property="og:title"
     content="Grid &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/compositions/grid/">
+  <meta property="twitter:url" content="http://localhost:1313/compositions/grid/">
   <meta property="twitter:title"
     content="Grid &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,10 +81,10 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
 
@@ -94,22 +94,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -164,10 +153,10 @@
             <h1>Grid</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <article class="prose flow">
     <p>Grid comes in three flavours: <em>Two-column</em>, <em>Three-column</em> and <em>Masonry</em> layout.</p>
-<h3 id="two-column-layout">Two-column layout</h3>
+<h3 id="two-column-layout">Two-column layout&nbsp;<a class="heading-anchor" href="#two-column-layout" aria-label="Anchor">#</a> </h3>
 <p>The <em>two-column</em> layout positions grid items side-by-side when space permits, so that items proportionately share the available space.</p>
 <p>Use the layout by adding <code>data-layout=&quot;50-50&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <figure>
@@ -184,7 +173,7 @@
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 26rem);
 }
-</code></pre><h3 id="three-column-layout">Three-column layout</h3>
+</code></pre><h3 id="three-column-layout">Three-column layout&nbsp;<a class="heading-anchor" href="#three-column-layout" aria-label="Anchor">#</a> </h3>
 <p>The <em>three-column</em> layout positions grid items in three columns when space permits, so that items proportionately share the available space.</p>
 <p>Use the layout by adding <code>data-layout=&quot;33x3&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <figure>
@@ -201,10 +190,10 @@
 <pre tabindex="0"><code>/* Three column when space permits */
 .grid[data-layout=&#39;33x3&#39;] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 18rem);
+  --grid-min-item-size: clamp(16rem, 33vw, 18rem);
 }
-</code></pre><h3 id="masonry-layout">Masonry layout</h3>
-<p>The <em>masonry layout</em> remove the extra gap often left between rows by grid items of varying size. Use the layout by applying <code>data-rows=&quot;masonry&quot;</code> to any element with the <code>.grid</code> class applied.</p>
+</code></pre><h3 id="masonry-layout">Masonry layout&nbsp;<a class="heading-anchor" href="#masonry-layout" aria-label="Anchor">#</a> </h3>
+<p>The <em>masonry layout</em> removes the extra gap often left between rows by grid items of varying size. Use the layout by applying <code>data-rows=&quot;masonry&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <aside class="callout" data-variant="brand">Currently the feature is only implemented in Firefox, and can be enabled by setting the flag <code>layout.css.grid-template-masonry-value.enabled</code> to <code>true</code> in <code>about:config</code>.</aside>
 <figure>
   <div class="demo | grid" data-rows="masonry">
@@ -222,11 +211,13 @@
   grid-template-rows: masonry;
   align-items: start;
 }
-</code></pre>
+</code></pre> 
   </article>
+</section>
 
-        </section>
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

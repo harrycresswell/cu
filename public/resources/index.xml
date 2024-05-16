@@ -2,9 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources on cu.css</title>
-    <link>https://cu.harrycresswell.com/resources/</link>
+    <link>http://localhost:1313/resources/</link>
     <description>Recent content in Resources on cu.css</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://cu.harrycresswell.com/resources/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,97 +2,135 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cu.harrycresswell.com/blocks/button/</loc>
+    <loc>http://localhost:1313/blocks/button/</loc>
     <lastmod>2023-07-27T17:16:31+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/wrapper/</loc>
+    <loc>http://localhost:1313/utilities/wrapper/</loc>
     <lastmod>2023-07-12T12:59:06+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/compositions/grid/</loc>
+    <loc>http://localhost:1313/compositions/grid/</loc>
     <lastmod>2023-07-11T16:42:51+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/getting-started/installation/</loc>
+    <loc>http://localhost:1313/getting-started/installation/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/typography/</loc>
+    <loc>http://localhost:1313/global-styles/typography/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/blocks/callout/</loc>
+    <loc>http://localhost:1313/blocks/callout/</loc>
     <lastmod>2023-07-27T17:16:24+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/region/</loc>
+    <loc>http://localhost:1313/utilities/region/</loc>
     <lastmod>2023-07-12T12:58:48+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/compositions/cluster/</loc>
+    <loc>http://localhost:1313/compositions/cluster/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/getting-started/working-with-css/</loc>
+    <loc>http://localhost:1313/getting-started/working-with-css/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/list/</loc>
+    <loc>http://localhost:1313/global-styles/list/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/blocks/card/</loc>
+    <loc>http://localhost:1313/blocks/card/</loc>
     <lastmod>2023-07-27T17:16:37+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/flow/</loc>
+    <loc>http://localhost:1313/utilities/flow/</loc>
     <lastmod>2023-07-12T12:58:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/compositions/repel/</loc>
+    <loc>http://localhost:1313/compositions/repel/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/getting-started/working-with-sass/</loc>
+    <loc>http://localhost:1313/getting-started/working-with-sass/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/blockquote/</loc>
+    <loc>http://localhost:1313/global-styles/blockquote/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/blocks/hero/</loc>
+    <loc>http://localhost:1313/compositions/sidebar/</loc>
+    <lastmod>2024-01-30T14:46:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blocks/hero/</loc>
     <lastmod>2023-07-27T17:16:41+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/visually-hidden/</loc>
+    <loc>http://localhost:1313/utilities/visually-hidden/</loc>
     <lastmod>2023-07-12T12:59:32+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/codeblock/</loc>
+    <loc>http://localhost:1313/global-styles/codeblock/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/text/</loc>
+    <loc>http://localhost:1313/blocks/prose/</loc>
+    <lastmod>2024-02-07T13:35:24+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/compositions/reel/</loc>
+    <lastmod>2024-01-31T11:13:58+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/utilities/text/</loc>
     <lastmod>2023-07-27T16:50:03+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/form/</loc>
+    <loc>http://localhost:1313/global-styles/form/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/width/</loc>
+    <loc>http://localhost:1313/compositions/switcher/</loc>
+    <lastmod>2024-02-13T11:53:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/utilities/width/</loc>
     <lastmod>2023-07-27T16:49:54+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/accordion/</loc>
+    <loc>http://localhost:1313/global-styles/accordion/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/table/</loc>
+    <loc>http://localhost:1313/utilities/skip-link/</loc>
+    <lastmod>2024-01-26T10:19:37+00:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/button/</loc>
+    <loc>http://localhost:1313/global-styles/table/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/link/</loc>
+    <loc>http://localhost:1313/global-styles/button/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/image/</loc>
+    <loc>http://localhost:1313/global-styles/link/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/hr/</loc>
-  </url><url>
-    <loc>https://cu.harrycresswell.com/</loc>
-    <lastmod>2023-07-27T17:16:41+01:00</lastmod>
-  </url><url>
-    <loc>https://cu.harrycresswell.com/blocks/</loc>
-    <lastmod>2023-07-27T17:16:41+01:00</lastmod>
-  </url><url>
-    <loc>https://cu.harrycresswell.com/utilities/</loc>
-    <lastmod>2023-07-27T16:50:03+01:00</lastmod>
-  </url><url>
-    <loc>https://cu.harrycresswell.com/compositions/</loc>
-    <lastmod>2023-07-11T16:42:51+01:00</lastmod>
-  </url><url>
-    <loc>https://cu.harrycresswell.com/getting-started/</loc>
+    <loc>http://localhost:1313/getting-started/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
-    <loc>https://cu.harrycresswell.com/categories/</loc>
+    <loc>http://localhost:1313/global-styles/image/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/global-styles/</loc>
+    <loc>http://localhost:1313/global-styles/hr/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/resources/</loc>
+    <loc>http://localhost:1313/global-styles/visibility/</loc>
   </url><url>
-    <loc>https://cu.harrycresswell.com/tags/</loc>
+    <loc>http://localhost:1313/global-styles/</loc>
+  </url><url>
+    <loc>http://localhost:1313/compositions/</loc>
+    <lastmod>2024-02-13T11:53:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/utilities/</loc>
+    <lastmod>2024-01-26T10:19:37+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blocks/</loc>
+    <lastmod>2024-02-07T13:35:24+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/resources/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-04-04T14:19:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/24-04-04-v0.1.6/</loc>
+    <lastmod>2024-04-04T14:19:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/24-02-14-v0.1.5/</loc>
+    <lastmod>2024-02-14T11:54:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/24-02-01-v0.1.4/</loc>
+    <lastmod>2024-02-01T11:01:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/24-01-26-v0.1.3/</loc>
+    <lastmod>2024-01-26T11:25:49+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/v0.1.2/</loc>
+    <lastmod>2024-01-18T12:46:47+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/</loc>
+    <lastmod>2024-01-16T11:19:08+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/v0.1.1/</loc>
+    <lastmod>2024-01-16T11:00:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

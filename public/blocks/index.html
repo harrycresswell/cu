@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/blocks/">
+<link rel="canonical" href="http://localhost:1313/blocks/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/blocks/">
+  <meta property="og:url" content="http://localhost:1313/blocks/">
   <meta property="og:title"
     content="Blocks &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/blocks/">
+  <meta property="twitter:url" content="http://localhost:1313/blocks/">
   <meta property="twitter:title"
     content="Blocks &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,13 +81,13 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://cu.harrycresswell.com/blocks/index.xml" title="cu.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blocks/index.xml" title="cu.css" />
 
 
   
@@ -95,22 +95,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -165,7 +154,7 @@
             <h1>Blocks</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <div class="sidebar" data-variant="sticky">
     <aside><nav class="sidebar-nav" data-variant="sidebar" aria-label="sidebar" id="sidebar-navigation">
  <ul role="list">
@@ -247,6 +236,10 @@
                 <a href="#horizontal-rule">Horizontal rule</a>
               </li>
             
+              <li>
+                <a href="#visibility">Visibility</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -269,6 +262,18 @@
             
               <li>
                 <a href="#repel">Repel</a>
+              </li>
+            
+              <li>
+                <a href="#sidebar">Sidebar</a>
+              </li>
+            
+              <li>
+                <a href="#reel">Reel</a>
+              </li>
+            
+              <li>
+                <a href="#switcher">Switcher</a>
               </li>
             
           </ul>
@@ -307,6 +312,10 @@
                 <a href="#width">Width</a>
               </li>
             
+              <li>
+                <a href="#skip-link">Skip link</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -335,6 +344,10 @@
                 <a href="#hero">Hero</a>
               </li>
             
+              <li>
+                <a href="#prose">Prose</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -352,15 +365,18 @@
     <div>
       
       <div class="prose flow">
-        <p>According to <a href="https://cube.fyi/block.html#block">cube.fyi</a>: “<strong>A block is a skeletal component or organisational structure.</strong> To compare it to common user interface elements: it is a card element or a button element.”</p>
+        <p>According to <a href="https://cube.fyi/block.html#block" target="_blank" rel="noopener">cube.fyi</a>: “<strong>A block is a skeletal component or organisational structure.</strong> To compare it to common user interface elements: it is a card element or a button element.”</p>
 <p>Personally, I like to think of Blocks as commonly used design patterns, which global styles, compositions and utilities don’t necessarily account for. For example, there is no pre-existing HTML <code>&lt;card&gt;</code> element and although we may be able to create a card using utilities alone, handling this level of complexity with a <code>.card</code> block makes life easier.</p>
-<p><em>cu.css</em> includes 4 blocks, the CSS for which can be found in <code>assets/scss/blocks</code>.</p>
-
+<p><em>cu.css</em> includes a handful of blocks to get you started. The CSS for which can be found in <code>assets/scss/blocks</code>.</p>
+ 
       </div>
       
       
         <article class="prose | region flow">
-          <h2 id="button">Button</h2>
+          <h2 id="button">
+            Button
+            <a class="heading-anchor" href="#button" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the <code>.button</code> class to style links as buttons.</p>
 <p><a class="button" href="#">A link as a button</a>
 <a class="button" data-variant="outline" href="#">A link as a button</a>
@@ -373,11 +389,14 @@
 <a class="button w-full" href="#">Link styled as a full-width button</a>
 </div>
 <pre tabindex="0"><code>&lt;a class=&#34;button w-full&#34; href=&#34;#&#34;&gt;Link styled as a full-width button&lt;/a&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="callout">Callout</h2>
+          <h2 id="callout">
+            Callout
+            <a class="heading-anchor" href="#callout" aria-label="Anchor">#</a>
+          </h2>
           <p>Use <code>.callout</code> to draw attention to content in a visually distinct manner.</p>
 <aside class="callout">
   <strong>Callouts are useful</strong>
@@ -397,11 +416,14 @@
   &lt;strong&gt;Callouts are useful&lt;/strong&gt;
   &lt;p&gt;Use them to visually highlight important content. &lt;a href=&#34;/compositions/#masonry-layout&#34;&gt;Grid Masonry layout&lt;/a&gt; shows a callout in action.&lt;/p&gt;
 &lt;/aside&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="card">Card</h2>
+          <h2 id="card">
+            Card
+            <a class="heading-anchor" href="#card" aria-label="Anchor">#</a>
+          </h2>
           <p><code>.card</code> can be used to distinguish content relating to a specific topic. Optionally include an <em>image</em>, <em>heading</em>, <em>paragraph content</em>, <em>links</em> and <em>buttons</em>.</p>
 <p>To make the whole card clickable, add an <code>&lt;a&gt;</code> element inside a heading element. Both links and buttons found elsewhere in the card will remain clickable.</p>
 <p>Use the <a href="/compositions/#grid">Grid</a> compostition to display multiple cards in columns, as shown below.</p>
@@ -514,12 +536,15 @@
     &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="hero">Hero</h2>
-          <p>Use <code>.hero</code>, combined with <a href="/utilities#region">region</a> and <a href="/utilities#flow">flow</a> to create a distictive headline section for pages. For the sake of clarity, pipes are used to <a href="https://cube.fyi/grouping.html#grouping-order">group classes</a>, as seen below.</p>
+          <h2 id="hero">
+            Hero
+            <a class="heading-anchor" href="#hero" aria-label="Anchor">#</a>
+          </h2>
+          <p>Use <code>.hero</code>, combined with <a href="/utilities#region">region</a> and <a href="/utilities#flow">flow</a> to create a distictive headline section for pages. For the sake of clarity, pipes are used to <a href="https://cube.fyi/grouping.html#grouping-order" target="_blank" rel="noopener">group classes</a>, as seen below.</p>
 <div class="hero | region | flow">
   <h1>A modern CSS framework</h1>
   <p>cu.css is built using Cube CSS and Utopia fluid responsive design.</p>
@@ -528,13 +553,76 @@
   &lt;h1&gt;Some page title&lt;/h1&gt;
   &lt;p&gt;Some page description&lt;/p&gt;
 &lt;/div&gt;
-</code></pre>
+</code></pre> 
         </article>
       
-    </div>
+        <article class="prose | region flow">
+          <h2 id="prose">
+            Prose
+            <a class="heading-anchor" href="#prose" aria-label="Anchor">#</a>
+          </h2>
+          <p><code>.prose</code> can be used alongside the <a href="/utilities/#flow">flow utility</a> to improve the legibility of longform content. Particular useful for improving the look of typography in articles and pages.</p>
+<p>Apply <code>.prose</code> to any HTML element that accepts <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#flow_content" target="_blank" rel="noopener">flow content</a>, to subtly increasing line-height, along with the default <code>--flow-space</code> of its children.</p>
+<p>Consider the following extract with <code>.prose</code> and <code>.flow</code> applied:</p>
+<div>
+  <article class="prose | flow" style="padding: 2rem; background-color: var(--color-bg-mod-1); --flow-space: 1rem;">
+    <h2>The Chosen One</h2>
+    <p>Long ago, in a galaxy far, far away, the Skywalker saga began. Anakin Skywalker, a young slave from Tatooine, was discovered by Jedi Master Qui-Gon Jinn. Sensing the Force was strong with him, Qui-Gon believed Anakin was the chosen one, destined to bring balance to the Force.</p>
+    <h2>The Rise of Darth Vader</h2>
+    <p>Anakin's path was fraught with temptation. Seduced by the dark side of the Force, he became Darth Vader, apprentice to the Sith Lord Darth Sidious. His actions led to the fall of the Jedi Order and the rise of the Galactic Empire.</p>
+    <h2>A New Hope</h2>
+    <p>Years later, a new hope emerged in the form of Luke Skywalker, Anakin's son. Trained by Jedi Master Obi-Wan Kenobi and the wise Jedi Master Yoda, Luke sought to redeem his father and restore peace to the galaxy.</p>
+  </article>
+</div>
+<pre tabindex="0"><code>&lt;article class=&#34;prose | flow&#34;&gt;
+  &lt;h2&gt;The Chosen One&lt;/h2&gt;
+  
+  &lt;p&gt;Long ago, in a galaxy far, far away, the Skywalker saga began. Anakin Skywalker, a young slave from Tatooine, was discovered by Jedi Master Qui-Gon Jinn. Sensing the Force was strong with him, Qui-Gon believed Anakin was the chosen one, destined to bring balance to the Force.&lt;/p&gt;
 
-        </section>
+  &lt;h2&gt;The Rise of Darth Vader&lt;/h2&gt;
+  
+  &lt;p&gt;Anakin&#39;s path was fraught with temptation. Seduced by the dark side of the Force, he became Darth Vader, apprentice to the Sith Lord Darth Sidious. His actions led to the fall of the Jedi Order and the rise of the Galactic Empire.&lt;/p&gt;
+
+  &lt;h2&gt;A New Hope&lt;/h2&gt;
+  
+  &lt;p&gt;Years later, a new hope emerged in the form of Luke Skywalker, Anakin&#39;s son. Trained by Jedi Master Obi-Wan Kenobi and the wise Jedi Master Yoda, Luke sought to redeem his father and restore peace to the galaxy.&lt;/p&gt;
+&lt;/article&gt;
+</code></pre><p>Now consider the same extract without <code>.prose</code> and <code>.flow</code> applied:</p>
+<div>
+  <article style="padding: 2rem; background-color: var(--color-bg-mod-1); line-height: 1.5;">
+    <h2>1. The Chosen One</h2>
+    <p>Long ago, in a galaxy far, far away, the Skywalker saga began. Anakin Skywalker, a young slave from Tatooine, was discovered by Jedi Master Qui-Gon Jinn. Sensing the Force was strong with him, Qui-Gon believed Anakin was the chosen one, destined to bring balance to the Force.</p>
+    <h2>2. The Rise of Darth Vader</h2>
+    <p>Anakin's path was fraught with temptation. Seduced by the dark side of the Force, he became Darth Vader, apprentice to the Sith Lord Darth Sidious. His actions led to the fall of the Jedi Order and the rise of the Galactic Empire.</p>
+    <h2>3. A New Hope</h2>
+    <p>Years later, a new hope emerged in the form of Luke Skywalker, Anakin's son. Trained by Jedi Master Obi-Wan Kenobi and the wise Jedi Master Yoda, Luke sought to redeem his father and restore peace to the galaxy.</p>
+  </article>
+</div> 
+        </article>
+      
+      <div class="pagination | grid region" data-layout="50-50">
+         
+        <a data-variant="naked" href="http://localhost:1313/utilities/">
+          <span>Previous</span>
+          <span><strong>Utilities</strong></span>
+        </a>
+        
+        
+          
+          <a data-variant="naked" href="http://localhost:1313/resources/">
+            <span>Next</span>
+            <span><strong>Resources</strong></span>
+          </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</section>
+
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

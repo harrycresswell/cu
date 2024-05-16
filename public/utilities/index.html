@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/utilities/">
+<link rel="canonical" href="http://localhost:1313/utilities/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/utilities/">
+  <meta property="og:url" content="http://localhost:1313/utilities/">
   <meta property="og:title"
     content="Utilities &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/utilities/">
+  <meta property="twitter:url" content="http://localhost:1313/utilities/">
   <meta property="twitter:title"
     content="Utilities &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,13 +81,13 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://cu.harrycresswell.com/utilities/index.xml" title="cu.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/utilities/index.xml" title="cu.css" />
 
 
   
@@ -95,22 +95,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -165,7 +154,7 @@
             <h1>Utilities</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <div class="sidebar" data-variant="sticky">
     <aside><nav class="sidebar-nav" data-variant="sidebar" aria-label="sidebar" id="sidebar-navigation">
  <ul role="list">
@@ -247,6 +236,10 @@
                 <a href="#horizontal-rule">Horizontal rule</a>
               </li>
             
+              <li>
+                <a href="#visibility">Visibility</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -269,6 +262,18 @@
             
               <li>
                 <a href="#repel">Repel</a>
+              </li>
+            
+              <li>
+                <a href="#sidebar">Sidebar</a>
+              </li>
+            
+              <li>
+                <a href="#reel">Reel</a>
+              </li>
+            
+              <li>
+                <a href="#switcher">Switcher</a>
               </li>
             
           </ul>
@@ -307,6 +312,10 @@
                 <a href="#width">Width</a>
               </li>
             
+              <li>
+                <a href="#skip-link">Skip link</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -335,6 +344,10 @@
                 <a href="#hero">Hero</a>
               </li>
             
+              <li>
+                <a href="#prose">Prose</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -352,17 +365,21 @@
     <div>
       
       <div class="prose flow">
-        <p><em>cu.css</em> include a handful of utilities. <strong>Utilities help to solve common, yet specific problems found throughout a project</strong>.</p>
-<p>According to <a href="https://cube.fyi/utility.html">cube.fyi</a>: “A utility, in the context of CUBE CSS, is a CSS class that does one job and does that one job well.”</p>
+        <p><em>cu.css</em> include a handful of utilities. <strong>Utilities help to solve common, yet specific problems found throughout a project</strong>. They can be used with any element in any context.</p>
+<p>According to <a href="https://cube.fyi/utility.html" target="_blank" rel="noopener">cube.fyi</a>: “A utility, in the context of CUBE CSS, is a CSS class that does one job and does that one job well.”</p>
 <p>It’s important to note, <em>cu.css</em> doesn’t make use of any third-party tooling to generate utility classes. Instead, create any additional utilities by hand, as and when they are required.</p>
 <p>The CSS for these utilities can be found in <code>assets/scss/utilities</code>.</p>
-
+ 
       </div>
       
       
         <article class="prose | region flow">
-          <h2 id="wrapper">Wrapper</h2>
-          <p>Sets a max width, adds a consistent gutter and horizontally centers content.</p>
+          <h2 id="wrapper">
+            Wrapper
+            <a class="heading-anchor" href="#wrapper" aria-label="Anchor">#</a>
+          </h2>
+          <p><code>.wrapper</code> horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.</p>
+<p>This is useful for creating site wide content wrappers, or simply centering sections of content, as you see on the <a href="/"><em>cu.css</em> homepage</a>.</p>
 <figure>
   <div class="demo" style="display: flex;">
     <div class="margin"><mark>Margin</mark></div>
@@ -379,17 +396,24 @@ WRAPPER
 */
 .wrapper {
   max-width: var(--wrapper-max-width, 90rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
   position: relative;
 }
-</code></pre>
+</code></pre><p>The default max-width of <code>.wrapper</code> is set to <code>90rem</code>. However, by setting a <code>--wrapper-max-width</code> value, you can control the maximum width of an element that has the class applied.</p>
+<pre tabindex="0"><code>&lt;section class=&#34;wrapper&#34; style=&#34;--wrapper-max-width: 70ch;&#34;&gt;
+  &lt;div&gt;Some centered content&lt;/div&gt;
+&lt;/section&gt;
+</code></pre><p>Similarly, set a value for <code>--gutter</code> to control the minimum margin applied either side of an element with <code>.wrapper</code> applied.</p>
+<p>For those familiar with Every Layout, you may recognise <code>.wrapper</code> as the <a href="https://every-layout.dev/layouts/center/" target="_blank" rel="noopener">Center Layout</a>.</p>
+ 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="region">Region</h2>
+          <h2 id="region">
+            Region
+            <a class="heading-anchor" href="#region" aria-label="Anchor">#</a>
+          </h2>
           <p><code>.region</code> adds consistent vertical padding to an element to create regions of content with sufficient spacing.</p>
 <p>By default, <code>.region</code> uses <code>--space-l-xl</code> from <a href="assets/scss/abstracts/_space.scss">the space scale</a>, however the amount of space can also be configured by setting <code>--region-space</code> inline or within any new class you decide to create and use alongside <code>.region</code>.</p>
 <figure>
@@ -410,11 +434,14 @@ Can either be configured by setting --region-space or use a default from the spa
  padding-top: var(--region-space, var(--space-l-xl));
  padding-bottom: var(--region-space, var(--space-l-xl));
 }
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="flow">Flow</h2>
+          <h2 id="flow">
+            Flow
+            <a class="heading-anchor" href="#flow" aria-label="Anchor">#</a>
+          </h2>
           <p>Applies a margin to sibling elements based on a <code>--flow-space</code> custom property.</p>
 <figure>
   <div class="demo">
@@ -435,12 +462,15 @@ FLOW
 .flow &gt; * + * {
   margin-top: var(--flow-space, 1em);
 }
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="visually-hidden">Visually Hidden</h2>
-          <p>Use the <code>.visually-hidden</code> utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.</p>
+          <h2 id="visually-hidden">
+            Visually Hidden
+            <a class="heading-anchor" href="#visually-hidden" aria-label="Anchor">#</a>
+          </h2>
+          <p>Use the <code>.visually-hidden</code> utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.</p>
 <pre tabindex="0"><code>/* 
 VISUALLY HIDDEN
 @link: https://piccalil.li/quick-tip/visually-hidden/ 
@@ -456,31 +486,78 @@ VISUALLY HIDDEN
   width: 1px;
   white-space: nowrap;
 }
-</code></pre>
+</code></pre><p>This is different from <a href="/global-styles/#visibility">using the [hidden] attribute</a> which will hide the content from both the browser and assistive technologies.</p>
+ 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="text">Text</h2>
+          <h2 id="text">
+            Text
+            <a class="heading-anchor" href="#text" aria-label="Anchor">#</a>
+          </h2>
           <p>The <code>.text-center</code> utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.</p>
+<div class="demo text-center">
+This text is horizontally centered
+</div>
 <pre tabindex="0"><code>.text-center {
   text-align: center;
 }
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="width">Width</h2>
-          <p>The <code>.w-full</code> utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.</p>
+          <h2 id="width">
+            Width
+            <a class="heading-anchor" href="#width" aria-label="Anchor">#</a>
+          </h2>
+          <p>The <code>.w-full</code> utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.</p>
+<form>
+  <button class="w-full" type="submit" value="Submit">Submit</button>
+</form>
 <pre tabindex="0"><code>.w-full {
   width: 100%;
 }
-</code></pre>
+</code></pre> 
         </article>
       
+        <article class="prose | region flow">
+          <h2 id="skip-link">
+            Skip link
+            <a class="heading-anchor" href="#skip-link" aria-label="Anchor">#</a>
+          </h2>
+          <p>The <code>.skip-link</code> utility can be used to create <a href="https://webaim.org/techniques/skipnav/" target="_blank" rel="noopener">skip navigation links</a>. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard <kbd>Tab</kbd> button to navigate a website.</p>
+<pre tabindex="0"><code>&lt;a class=&#34;skip-link&#34; href=&#34;#main-content&#34;&gt;Skip to main content&lt;/a&gt;
+...
+&lt;main id=&#34;main-content&#34;&gt;
+    ...
+&lt;/main&gt;
+</code></pre><p>Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.</p>
+ 
+        </article>
+      
+      <div class="pagination | grid region" data-layout="50-50">
+         
+        <a data-variant="naked" href="http://localhost:1313/compositions/">
+          <span>Previous</span>
+          <span><strong>Compositions</strong></span>
+        </a>
+        
+        
+          
+          <a data-variant="naked" href="http://localhost:1313/blocks/">
+            <span>Next</span>
+            <span><strong>Blocks</strong></span>
+          </a>
+          
+        
+      </div>
     </div>
+  </div>
+</section>
 
-        </section>
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

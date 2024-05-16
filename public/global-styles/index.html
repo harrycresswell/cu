@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/global-styles/">
+<link rel="canonical" href="http://localhost:1313/global-styles/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/global-styles/">
+  <meta property="og:url" content="http://localhost:1313/global-styles/">
   <meta property="og:title"
     content="Global styles &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/global-styles/">
+  <meta property="twitter:url" content="http://localhost:1313/global-styles/">
   <meta property="twitter:title"
     content="Global styles &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,13 +81,13 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://cu.harrycresswell.com/global-styles/index.xml" title="cu.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/global-styles/index.xml" title="cu.css" />
 
 
   
@@ -95,22 +95,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -165,7 +154,7 @@
             <h1>Global styles</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <div class="sidebar" data-variant="sticky">
     <aside><nav class="sidebar-nav" data-variant="sidebar" aria-label="sidebar" id="sidebar-navigation">
  <ul role="list">
@@ -247,6 +236,10 @@
                 <a href="#horizontal-rule">Horizontal rule</a>
               </li>
             
+              <li>
+                <a href="#visibility">Visibility</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -269,6 +262,18 @@
             
               <li>
                 <a href="#repel">Repel</a>
+              </li>
+            
+              <li>
+                <a href="#sidebar">Sidebar</a>
+              </li>
+            
+              <li>
+                <a href="#reel">Reel</a>
+              </li>
+            
+              <li>
+                <a href="#switcher">Switcher</a>
               </li>
             
           </ul>
@@ -307,6 +312,10 @@
                 <a href="#width">Width</a>
               </li>
             
+              <li>
+                <a href="#skip-link">Skip link</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -335,6 +344,10 @@
                 <a href="#hero">Hero</a>
               </li>
             
+              <li>
+                <a href="#prose">Prose</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -352,9 +365,9 @@
     <div>
       
       <div class="prose flow">
-        <p><em>cu.css</em> aims to <strong>broadly style as much as possible at a global level</strong>. This is done by applying default styles directly to native HTML elements, an approach  often referred to as creating <em>base</em> or <em>global styles</em>.</p>
-<p>The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">the cascade and inheritance</a> – two core features of CSS — we are styling as much as possible, using as little CSS as possible.</p>
-<p>If you’re familiar with classless CSS frameworks, like <a href="https://watercss.kognise.dev/">Water.CSS</a>, <a href="https://concrete.style/">Concrete.css</a> or <a href="https://simplecss.org/">Simple.css</a> (a big inspiration for this project), then this part of <em>cu.css</em> is exactly that.</p>
+        <p><em>cu.css</em> aims to <strong>broadly style as much as possible at a global level</strong>. This is done by applying default styles directly to native HTML elements. An approach often referred to as creating <em>base</em> or <em>global styles</em>.</p>
+<p>The result of creating global styles is HTML that looks great without any additional classes. By leaning heavily on <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank" rel="noopener">the cascade and inheritance</a> – two core features of CSS — we are efficiently styling as much as possible, using as little CSS as possible.</p>
+<p>If you’re familiar with classless CSS frameworks, like <a href="https://watercss.kognise.dev/" target="_blank" rel="noopener">Water.CSS</a>, <a href="https://concrete.style/" target="_blank" rel="noopener">Concrete.css</a> or <a href="https://simplecss.org/" target="_blank" rel="noopener">Simple.css</a> (a big inspiration for this project), then this part of <em>cu.css</em> is exactly that.</p>
 <p>In <em>cu.css</em>, global styles can be found in the <code>assets/scss/base</code> folder.</p>
 <p>Most projects will likely require both <code>assets/scss/base/global.scss</code> and <code>assets/scss/base/reset.scss</code>, however you may prefer to remove other partials from your project, depending on your  requirements.</p>
 <!-- *cu.css*, like CUBE CSS, aims to **broadly style as much as possible at a global level**, then let [the cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) – two core features of CSS — do the heavy lifting.
@@ -364,21 +377,35 @@ This is done by styling [Type Selectors](https://developer.mozilla.org/en-US/doc
 
 Global styles are default styles applied directly to HTML elements. This means HTML looks great without any additional classes.
 
-With CUBE CSS, we embrace the cascade and inheritance to style as much as possible at a high level. This means that when nothing but your global styles make it to the browser, the page will still look great. It’s progressive enhancement in action and enables us to write as little CSS as possible. -->
+With CUBE CSS, we embrace the cascade and inheritance to style as much as possible at a high level. This means that when nothing but your global styles make it to the browser, the page will still look great. It’s progressive enhancement in action and enables us to write as little CSS as possible. --> 
       </div>
       
       
         <article class="prose | region flow">
-          <h2 id="typography">Typography</h2>
-          <p>All typography is fluid responsive, set using Utopia’s <a href="https://utopia.fyi/type/calculator">Fluid Type Calculator</a>, which makes use of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">CSS Clamp</a> function. Choose your min and max font size, then select a type scale and Utopia will generate the code.</p>
-<p>All six <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">heading level elements</a> are available to use.</p>
-<h1 id="h1-heading">h1 heading</h1>
-<h2 id="h2-heading">h2 heading</h2>
-<h3 id="h3-heading">h3 heading</h3>
-<h4 id="h4-heading">h4 heading</h4>
-<h5 id="h5-heading">h5 heading</h5>
-<h6 id="h6-heading">h6 heading</h6>
-<p>There are also various HTML elements you can use to format inline text in a bunch of different ways:</p>
+          <h2 id="typography">
+            Typography
+            <a class="heading-anchor" href="#typography" aria-label="Anchor">#</a>
+          </h2>
+          <p>All typography is fluid responsive, set using Utopia’s <a href="https://utopia.fyi/type/calculator" target="_blank" rel="noopener">Fluid Type Calculator</a>, which makes use of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener">CSS Clamp</a> function. Choose your min and max font size, then select a type scale and Utopia will generate the code.</p>
+<h3 id="headings">Headings&nbsp;<a class="heading-anchor" href="#headings" aria-label="Anchor">#</a> </h3>
+<p>All six <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" rel="noopener">heading level elements</a> are available to use.</p>
+<h1 id="h1-heading-1">h1 Heading 1</h1>
+<h2 id="h2-heading-2">h2 Heading 2&nbsp;<a class="heading-anchor" href="#h2-heading-2" aria-label="Anchor">#</a> </h2>
+<h3 id="h3-heading-3">h3 Heading 3&nbsp;<a class="heading-anchor" href="#h3-heading-3" aria-label="Anchor">#</a> </h3>
+<h4 id="h4-heading-4">h4 Heading 4&nbsp;<a class="heading-anchor" href="#h4-heading-4" aria-label="Anchor">#</a> </h4>
+<h5 id="h5-heading-5">h5 Heading 5&nbsp;<a class="heading-anchor" href="#h5-heading-5" aria-label="Anchor">#</a> </h5>
+<h6 id="h6-heading-6">h6 Heading 6&nbsp;<a class="heading-anchor" href="#h6-heading-6" aria-label="Anchor">#</a> </h6>
+<pre tabindex="0"><code>&lt;h1&gt;h1 Heading 1&lt;/h1&gt;
+&lt;h2&gt;h2 Heading 2&lt;/h2&gt;
+&lt;h3&gt;h3 Heading 3&lt;/h3&gt;
+&lt;h4&gt;h4 Heading 4&lt;/h4&gt;
+&lt;h5&gt;h5 Heading 5&lt;/h5&gt;
+&lt;h6&gt;h6 Heading 6&lt;/h6&gt;
+</code></pre><h3 id="semantic-heading-classes">Semantic heading classes&nbsp;<a class="heading-anchor" href="#semantic-heading-classes" aria-label="Anchor">#</a> </h3>
+<p>All 6 headings sizes can also be applied as classes. This is important for when you wish to keep the semantic order of headings, but wish to style them in different sizes. For example, if the correct order of a heading means it should be an <code>h2</code>, but you would like it styled as an <code>h1</code>, you can add <code>class=&quot;h1&quot;</code> to your <code>h2</code> element, and so on.</p>
+<pre tabindex="0"><code>&lt;h2 class=&#34;h1&#34;&gt;This is a h2 heading styled as an h1 heading&lt;/h2&gt;
+</code></pre><h3 id="text-basics">Text basics&nbsp;<a class="heading-anchor" href="#text-basics" aria-label="Anchor">#</a> </h3>
+<p>There are various HTML elements you can use to format inline text in a bunch of different ways:</p>
 <ul>
 <li><code>&lt;strong&gt;</code> to create <strong>Bold</strong> text.</li>
 <li><code>&lt;em&gt;</code> to create <em>emphasised</em> text.</li>
@@ -387,13 +414,16 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
 <li><code>&lt;code&gt;</code> to create inline code examples.</li>
 <li><code>&lt;mark&gt;</code> element to <mark>highlight text</mark>.</li>
 <li><code>&lt;kbd&gt;</code> for keyboard commands; <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+<li><code>&lt;del&gt;</code>  to create <del>text with a strikethrough</del></li>
 </ul>
-<p>Of course, you can also create <a href="#">links</a> to anchors and between pages.</p>
-
+ 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="lists">Lists</h2>
+          <h2 id="lists">
+            Lists
+            <a class="heading-anchor" href="#lists" aria-label="Anchor">#</a>
+          </h2>
           <p>Create unordered lists using the <code>ul</code> element:</p>
 <ul>
 <li>Unordered list item</li>
@@ -412,11 +442,14 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
   &lt;li&gt;Unordered list item&lt;/li&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
 &lt;/ol&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="blockquotes">Blockquotes</h2>
+          <h2 id="blockquotes">
+            Blockquotes
+            <a class="heading-anchor" href="#blockquotes" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the <code>&lt;blockquote&gt;</code> element to quote books you’ve read, things you’ve heard from your pals or even ideas you’ve had yourself.</p>
 <blockquote>
 <p>All large-scale human cooperation is ultimately based on our belief in imagined orders.</p>
@@ -426,11 +459,14 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
   &lt;p&gt;All large-scale human cooperation is ultimately based on our belief in imagined orders.&lt;/p&gt;
   &lt;p&gt;- &lt;cite&gt;Yuval Noah Harari&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="code-blocks">Code blocks</h2>
+          <h2 id="code-blocks">
+            Code blocks
+            <a class="heading-anchor" href="#code-blocks" aria-label="Anchor">#</a>
+          </h2>
           <p>Create code blocks, like the one below, using the <code>&lt;pre&gt;</code> element with a nested <code>&lt;code&gt;</code> element inside.</p>
 <pre tabindex="0"><code>&lt;pre&gt;
   &lt;code&gt;
@@ -443,11 +479,14 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     }
   &lt;/code&gt;
 &lt;/pre&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="forms">Forms</h2>
+          <h2 id="forms">
+            Forms
+            <a class="heading-anchor" href="#forms" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the <code>&lt;form&gt;</code> element to contain any interative elements, used to submit information and collect data.</p>
 <form>
   <label for="email-address">Email Address</label>
@@ -496,32 +535,30 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
 </code></pre><p>Selects are also a thing:</p>
 <form>
   <fieldset>
-    <legend>Your favourite pet</legend>
-      <label for="pet-select">Choose a pet:</label>
-      <select name="pets" id="pet-select">
+    <legend>Your favourite character</legend>
+      <label for="character-select">Choose a character:</label>
+      <select name="characters" id="character-select">
         <option value="">Choose an option</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+        <option value="luke">Luke</option>
+        <option value="han">Han</option>
+        <option value="leia">Leia</option>
+        <option value="obi-wan">Obi-Wan</option>
+        <option value="yoda">Yoda</option>
       </select>
       <button type="submit" value="Submit">Submit</button>
   </fieldset>
 </form>
 <pre tabindex="0"><code>&lt;form&gt;
   &lt;fieldset&gt;
-    &lt;legend&gt;Your favourite pet&lt;/legend&gt;
-      &lt;label for=&#34;pet-select&#34;&gt;Choose a pet:&lt;/label&gt;
-      &lt;select name=&#34;pets&#34; id=&#34;pet-select&#34;&gt;
+    &lt;legend&gt;Your favourite character&lt;/legend&gt;
+      &lt;label for=&#34;character-select&#34;&gt;Choose a character:&lt;/label&gt;
+      &lt;select name=&#34;characters&#34; id=&#34;character-select&#34;&gt;
         &lt;option value=&#34;&#34;&gt;Choose an option&lt;/option&gt;
-        &lt;option value=&#34;dog&#34;&gt;Dog&lt;/option&gt;
-        &lt;option value=&#34;cat&#34;&gt;Cat&lt;/option&gt;
-        &lt;option value=&#34;hamster&#34;&gt;Hamster&lt;/option&gt;
-        &lt;option value=&#34;parrot&#34;&gt;Parrot&lt;/option&gt;
-        &lt;option value=&#34;spider&#34;&gt;Spider&lt;/option&gt;
-        &lt;option value=&#34;goldfish&#34;&gt;Goldfish&lt;/option&gt;
+        &lt;option value=&#34;luke&#34;&gt;Luke&lt;/option&gt;
+        &lt;option value=&#34;han&#34;&gt;Han&lt;/option&gt;
+        &lt;option value=&#34;leia&#34;&gt;Leia&lt;/option&gt;
+        &lt;option value=&#34;obi-wan&#34;&gt;Obi-Wan&lt;/option&gt;
+        &lt;option value=&#34;yoda&#34;&gt;Yoda&lt;/option&gt;
       &lt;/select&gt;
       &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
@@ -584,11 +621,14 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
   &lt;/label&gt; 
   &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
 &lt;/form&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="accordions">Accordions</h2>
+          <h2 id="accordions">
+            Accordions
+            <a class="heading-anchor" href="#accordions" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements to create accordions.</p>
 <details>
   <summary>Do you ship internationally?</summary>
@@ -607,11 +647,14 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
   &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
   &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
 &lt;/details&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="tables">Tables</h2>
+          <h2 id="tables">
+            Tables
+            <a class="heading-anchor" href="#tables" aria-label="Anchor">#</a>
+          </h2>
           <p>Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tbody&gt;</code>,  <code>&lt;td&gt;</code> and <code>&lt;caption&gt;</code>.</p>
 <table>
   <caption>
@@ -691,12 +734,15 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="buttons">Buttons</h2>
-          <p>Use the <code>&lt;button&gt;</code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant=&quot;outline&quot;</code>. For more on this approach see <a href="https://cube.fyi/exception.html">Exception’s in Cube CSS</a>.</p>
+          <h2 id="buttons">
+            Buttons
+            <a class="heading-anchor" href="#buttons" aria-label="Anchor">#</a>
+          </h2>
+          <p>Use the <code>&lt;button&gt;</code> element to create interactive buttons. To style a button with the outline style, use the data attribute <code>data-variant=&quot;outline&quot;</code>. For more on this approach see <a href="https://cube.fyi/exception.html" target="_blank" rel="noopener">Exception’s in Cube CSS</a>.</p>
 <div class="flow" style="--flow-space: 1rem;">
   <button type="submit" value="Submit">Submit</button>
   <button type="submit" data-variant="outline" value="Clear">Clear</button>
@@ -715,22 +761,27 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
 <button class="w-full" type="submit" value="Submit">Sign up</button>
 </div>
 <pre tabindex="0"><code>&lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="links">Links</h2>
+          <h2 id="links">
+            Links
+            <a class="heading-anchor" href="#links" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the anchor element, a.k.a <code>&lt;a&gt;</code> tag to link to different pages</p>
 <pre tabindex="0"><code>&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt;
-</code></pre><p>Links look <a href="/">like this</a>, by default.</p>
-<p>But you can also use use the data attribute <code>data-variant=&quot;naked&quot;</code> to make them look like text.</p>
+</code></pre><p>Links look <a href="/">like this</a>, by default. But you can also use use the data attribute <code>data-variant=&quot;naked&quot;</code> to make them look like the same as default text.</p>
 <pre tabindex="0"><code>&lt;a href=&#34;/&#34; data-variant=&#34;naked&#34;&gt;A naked link&lt;/a&gt;
 </code></pre><p>An example of <code>data-variant=&quot;naked&quot;</code> being used on links can be seen in the navigation found at the top of each page on this website.</p>
-
+ 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="images">Images</h2>
+          <h2 id="images">
+            Images
+            <a class="heading-anchor" href="#images" aria-label="Anchor">#</a>
+          </h2>
           <p>Use the <code>&lt;img&gt;</code> element in the usual way. Images have <code>max-width: 100%</code> applied, ensuring they fill the entire width of parent element, as we’ve come to expect.</p>
 <img src="/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg" alt="" loading="lazy" />
 <pre tabindex="0"><code>&lt;img src=&#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
@@ -746,21 +797,54 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     Photo by &lt;a href=&#34;https://unsplash.com/@sushioutlaw&#34;&gt;Brian McGowan&lt;/a&gt; on Unsplash.
   &lt;/figcaption&gt;
 &lt;/figure&gt;
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="horizontal-rule">Horizontal rule</h2>
+          <h2 id="horizontal-rule">
+            Horizontal rule
+            <a class="heading-anchor" href="#horizontal-rule" aria-label="Anchor">#</a>
+          </h2>
           <p>The <code>&lt;hr&gt;</code> element can be used to create a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</p>
 <hr>
 <pre tabindex="0"><code>&lt;hr&gt;
-</code></pre>
+</code></pre> 
         </article>
       
+        <article class="prose | region flow">
+          <h2 id="visibility">
+            Visibility
+            <a class="heading-anchor" href="#visibility" aria-label="Anchor">#</a>
+          </h2>
+          <p>You can use the <code>[hidden]</code> attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript.</p>
+<pre tabindex="0"><code>&lt;p hidden&gt;This paragraph is hidden from the browser and will not render&lt;/p&gt;
+</code></pre><p>If you don’t want content to be visible in the browser, but it should remain accessible to assistive technologies, such as screen readers, then use the <a href="/utilities/#visually-hidden">visually hidden</a> utility class instead.</p>
+ 
+        </article>
+      
+      <div class="pagination | grid region" data-layout="50-50">
+         
+        <a data-variant="naked" href="http://localhost:1313/getting-started/">
+          <span>Previous</span>
+          <span><strong>Getting started</strong></span>
+        </a>
+        
+        
+          
+          <a data-variant="naked" href="http://localhost:1313/compositions/">
+            <span>Next</span>
+            <span><strong>Compositions</strong></span>
+          </a>
+          
+        
+      </div>
     </div>
+  </div>
+</section>
 
-        </section>
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

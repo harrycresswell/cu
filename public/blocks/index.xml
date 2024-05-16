@@ -2,57 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blocks on cu.css</title>
-    <link>https://cu.harrycresswell.com/blocks/</link>
+    <link>http://localhost:1313/blocks/</link>
     <description>Recent content in Blocks on cu.css</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 27 Jul 2023 17:16:41 +0100</lastBuildDate><atom:link href="https://cu.harrycresswell.com/blocks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 13:35:24 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blocks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Button</title>
-      <link>https://cu.harrycresswell.com/blocks/button/</link>
+      <link>http://localhost:1313/blocks/button/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:31 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/button/</guid>
-      <description>Use the .button class to style links as buttons.
-A link as a button A link as a button A disabled link as a button
-&amp;lt;a class=&amp;#34;button&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link styled as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; data-variant=&amp;#34;outline&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; role=&amp;#34;link&amp;#34; aria-disabled=&amp;#34;true&amp;#34;&amp;gt;A disabled link as a button&amp;lt;/a&amp;gt; Use the w-full width utility class to make a button styled link fill the full width of it’s container.
-Link styled as a full-width button &amp;lt;a class=&amp;#34;button w-full&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;Link styled as a full-width button&amp;lt;/a&amp;gt; </description>
+      <guid>http://localhost:1313/blocks/button/</guid>
+      <description>Use the .button class to style links as buttons.&#xA;A link as a button A link as a button A disabled link as a button&#xA;&amp;lt;a class=&amp;#34;button&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link styled as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; data-variant=&amp;#34;outline&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; role=&amp;#34;link&amp;#34; aria-disabled=&amp;#34;true&amp;#34;&amp;gt;A disabled link as a button&amp;lt;/a&amp;gt; Use the w-full width utility class to make a button styled link fill the full width of it’s container.&#xA;Link styled as a full-width button &amp;lt;a class=&amp;#34;button w-full&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;Link styled as a full-width button&amp;lt;/a&amp;gt; </description>
     </item>
-    
     <item>
       <title>Callout</title>
-      <link>https://cu.harrycresswell.com/blocks/callout/</link>
+      <link>http://localhost:1313/blocks/callout/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:24 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/callout/</guid>
-      <description>Use .callout to draw attention to content in a visually distinct manner.
-Callouts are useful Use them to visually highlight important content. Grid Masonry layout shows a callout in action.
-&amp;lt;aside class=&amp;#34;callout&amp;#34;&amp;gt; &amp;lt;strong&amp;gt;Callouts are useful&amp;lt;/strong&amp;gt; &amp;lt;p&amp;gt;Use them to visually highlight important content. &amp;lt;a href=&amp;#34;/compositions/#masonry-layout&amp;#34;&amp;gt;Grid Masonry layout&amp;lt;/a&amp;gt; shows a callout in action.&amp;lt;/p&amp;gt; &amp;lt;/aside&amp;gt; Apply data-variant=&amp;quot;brand&amp;quot; to style a callout using the brand color.
-Callouts are useful Use them to visually highlight important content.</description>
+      <guid>http://localhost:1313/blocks/callout/</guid>
+      <description>Use .callout to draw attention to content in a visually distinct manner.&#xA;Callouts are useful Use them to visually highlight important content. Grid Masonry layout shows a callout in action.&#xA;&amp;lt;aside class=&amp;#34;callout&amp;#34;&amp;gt; &amp;lt;strong&amp;gt;Callouts are useful&amp;lt;/strong&amp;gt; &amp;lt;p&amp;gt;Use them to visually highlight important content. &amp;lt;a href=&amp;#34;/compositions/#masonry-layout&amp;#34;&amp;gt;Grid Masonry layout&amp;lt;/a&amp;gt; shows a callout in action.&amp;lt;/p&amp;gt; &amp;lt;/aside&amp;gt; Apply data-variant=&amp;quot;brand&amp;quot; to style a callout using the brand color.&#xA;Callouts are useful Use them to visually highlight important content.</description>
     </item>
-    
     <item>
       <title>Card</title>
-      <link>https://cu.harrycresswell.com/blocks/card/</link>
+      <link>http://localhost:1313/blocks/card/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:37 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/card/</guid>
-      <description>.card can be used to distinguish content relating to a specific topic. Optionally include an image, heading, paragraph content, links and buttons.
-To make the whole card clickable, add an &amp;lt;a&amp;gt; element inside a heading element. Both links and buttons found elsewhere in the card will remain clickable.
-Use the Grid compostition to display multiple cards in columns, as shown below.
-Millennium Falcon Won by Han Solo from Lando Calrissian in a game of sabacc.</description>
+      <guid>http://localhost:1313/blocks/card/</guid>
+      <description>.card can be used to distinguish content relating to a specific topic. Optionally include an image, heading, paragraph content, links and buttons.&#xA;To make the whole card clickable, add an &amp;lt;a&amp;gt; element inside a heading element. Both links and buttons found elsewhere in the card will remain clickable.&#xA;Use the Grid compostition to display multiple cards in columns, as shown below.&#xA;Millennium Falcon Won by Han Solo from Lando Calrissian in a game of sabacc.</description>
     </item>
-    
     <item>
       <title>Hero</title>
-      <link>https://cu.harrycresswell.com/blocks/hero/</link>
+      <link>http://localhost:1313/blocks/hero/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:41 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/hero/</guid>
-      <description>Use .hero, combined with region and flow to create a distictive headline section for pages. For the sake of clarity, pipes are used to group classes, as seen below.
-A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.
-&amp;lt;div class=&amp;#34;hero | region | flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; </description>
+      <guid>http://localhost:1313/blocks/hero/</guid>
+      <description>Use .hero, combined with region and flow to create a distictive headline section for pages. For the sake of clarity, pipes are used to group classes, as seen below.&#xA;A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.&#xA;&amp;lt;div class=&amp;#34;hero | region | flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; </description>
     </item>
-    
+    <item>
+      <title>Prose</title>
+      <link>http://localhost:1313/blocks/prose/</link>
+      <pubDate>Wed, 07 Feb 2024 13:35:24 +0000</pubDate>
+      <guid>http://localhost:1313/blocks/prose/</guid>
+      <description>.prose can be used alongside the flow utility to improve the legibility of longform content. Particular useful for improving the look of typography in articles and pages.&#xA;Apply .prose to any HTML element that accepts flow content, to subtly increasing line-height, along with the default --flow-space of its children.&#xA;Consider the following extract with .prose and .flow applied:&#xA;The Chosen One Long ago, in a galaxy far, far away, the Skywalker saga began.</description>
+    </item>
   </channel>
 </rss>

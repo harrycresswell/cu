@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/getting-started/working-with-css/">
+<link rel="canonical" href="http://localhost:1313/getting-started/working-with-css/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/getting-started/working-with-css/">
+  <meta property="og:url" content="http://localhost:1313/getting-started/working-with-css/">
   <meta property="og:title"
     content="Working with CSS &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/getting-started/working-with-css/">
+  <meta property="twitter:url" content="http://localhost:1313/getting-started/working-with-css/">
   <meta property="twitter:title"
     content="Working with CSS &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,10 +81,10 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
 
@@ -94,22 +94,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -164,13 +153,13 @@
             <h1>Working with CSS</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <article class="prose flow">
     <p>If you plan to customise or build upon <em>cu.css</em>, then you will find it much easier to work with the unminified css found in <code>public/css/main.css</code>. If you wish to use <em>cu.css</em> without modification, then working with the minified CSS found in <code>public/css/main.min.css</code> will ensure the smallest file size.</p>
 <p>The stylesheets in <code>public/css</code> contain configurations for custom fonts, customising the theme of <em>cu.css</em>, and managing fluid type and space scales. Most of these configurations consist of CSS custom properties.</p>
-<h3 id="updating-fonts">Updating fonts</h3>
-<p>The default font in <em>cu.css</em> is <a href="https://rsms.me/inter/">Inter</a> by Rasmus Andersson. The font has been subset and the <code>@font-face</code> code generated using <a href="https://gwfh.mranftl.com/fonts">Google Webfonts Helper</a>. This makes it easier to self-host Google Fonts and optimse for performance.</p>
-<p>You may wish to replace the generated code with a different font using Google Webfonts Helper, or remove this code entirely and use a <a href="https://modernfontstacks.com/">system font stack</a> instead.</p>
+<h3 id="updating-fonts">Updating fonts&nbsp;<a class="heading-anchor" href="#updating-fonts" aria-label="Anchor">#</a> </h3>
+<p>The default font in <em>cu.css</em> is <a href="https://rsms.me/inter/" target="_blank" rel="noopener">Inter</a> by Rasmus Andersson. The font has been subset and the <code>@font-face</code> code generated using <a href="https://gwfh.mranftl.com/fonts" target="_blank" rel="noopener">Google Webfonts Helper</a>. This makes it easier to self-host Google Fonts and optimse for performance.</p>
+<p>You may wish to replace the generated code with a different font using Google Webfonts Helper, or remove this code entirely and use a <a href="https://modernfontstacks.com/" target="_blank" rel="noopener">system font stack</a> instead.</p>
 <pre tabindex="0"><code>/* 
 Google fonts with subsetting via Google Webfonts Helper
 @link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
@@ -192,7 +181,7 @@ Google fonts with subsetting via Google Webfonts Helper
   font-weight: 700;
   src: url(&#34;../fonts/inter-v12-latin-700.woff2&#34;) format(&#34;woff2&#34;), url(&#34;../fonts/inter-v12-latin-700.woff&#34;) format(&#34;woff&#34;);
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-</code></pre><h3 id="customising-the-theme">Customising the theme</h3>
+</code></pre><h3 id="customising-the-theme">Customising the theme&nbsp;<a class="heading-anchor" href="#customising-the-theme" aria-label="Anchor">#</a> </h3>
 <p>To customise the theme of <em>cu.css</em> look for the Global theme tokens, a.k.a CSS Custom Properties. These tokens are used throughout the framework and cascade through the entire CSS, so any changes you make here will have a wide reaching impact.</p>
 <p>Typography, color (light and dark mode), grid gutter, border radius, are all managed here.</p>
 <pre tabindex="0"><code>/* 
@@ -248,8 +237,8 @@ Global theme tokens
   --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, cards, callouts and accordians. 
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
 }
-</code></pre><h3 id="choosing-a-fluid-type-scale">Choosing a fluid type scale</h3>
-<p>Use Utopia’s <a href="https://utopia.fyi/type/calculator/">Fluid Type Scale Calculator</a> to modify typography. Once you are happy with your scale, copy the CSS generated by Utopia and use it to replace the existing type scale.</p>
+</code></pre><h3 id="choosing-a-fluid-type-scale">Choosing a fluid type scale&nbsp;<a class="heading-anchor" href="#choosing-a-fluid-type-scale" aria-label="Anchor">#</a> </h3>
+<p>Use Utopia’s <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener">Fluid Type Scale Calculator</a> to modify typography. Once you are happy with your scale, copy the CSS generated by Utopia and use it to replace the existing type scale.</p>
 <pre tabindex="0"><code>/* 
 Utopia fluid type
 
@@ -263,8 +252,8 @@ Utopia fluid type
   --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
   --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
 }
-</code></pre><h3 id="choosing-a-fluid-space-scale">Choosing a fluid space scale</h3>
-<p>In the same way as modfiying type, use Utopia’s <a href="https://utopia.fyi/space/calculator/">Fluid Space Calculator</a> to modify the existing space scale. Once you are happy with your scale, copy the CSS generated by Utopia and use it to replace the existing space scale.</p>
+</code></pre><h3 id="choosing-a-fluid-space-scale">Choosing a fluid space scale&nbsp;<a class="heading-anchor" href="#choosing-a-fluid-space-scale" aria-label="Anchor">#</a> </h3>
+<p>In the same way as modfiying type, use Utopia’s <a href="https://utopia.fyi/space/calculator/" target="_blank" rel="noopener">Fluid Space Calculator</a> to modify the existing space scale. Once you are happy with your scale, copy the CSS generated by Utopia and use it to replace the existing space scale.</p>
 <pre tabindex="0"><code>/* 
 Utopia fluid space
 
@@ -292,11 +281,13 @@ Utopia fluid space
   /* Custom pairs */
   --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); 
 }
-</code></pre>
+</code></pre> 
   </article>
+</section>
 
-        </section>
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

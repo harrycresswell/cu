@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/global-styles/form/">
+<link rel="canonical" href="http://localhost:1313/global-styles/form/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/global-styles/form/">
+  <meta property="og:url" content="http://localhost:1313/global-styles/form/">
   <meta property="og:title"
     content="Forms &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/global-styles/form/">
+  <meta property="twitter:url" content="http://localhost:1313/global-styles/form/">
   <meta property="twitter:title"
     content="Forms &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,10 +81,10 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
 
@@ -94,22 +94,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -164,7 +153,7 @@
             <h1>Forms</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <article class="prose flow">
     <p>Use the <code>&lt;form&gt;</code> element to contain any interative elements, used to submit information and collect data.</p>
 <form>
@@ -214,32 +203,30 @@
 </code></pre><p>Selects are also a thing:</p>
 <form>
   <fieldset>
-    <legend>Your favourite pet</legend>
-      <label for="pet-select">Choose a pet:</label>
-      <select name="pets" id="pet-select">
+    <legend>Your favourite character</legend>
+      <label for="character-select">Choose a character:</label>
+      <select name="characters" id="character-select">
         <option value="">Choose an option</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+        <option value="luke">Luke</option>
+        <option value="han">Han</option>
+        <option value="leia">Leia</option>
+        <option value="obi-wan">Obi-Wan</option>
+        <option value="yoda">Yoda</option>
       </select>
       <button type="submit" value="Submit">Submit</button>
   </fieldset>
 </form>
 <pre tabindex="0"><code>&lt;form&gt;
   &lt;fieldset&gt;
-    &lt;legend&gt;Your favourite pet&lt;/legend&gt;
-      &lt;label for=&#34;pet-select&#34;&gt;Choose a pet:&lt;/label&gt;
-      &lt;select name=&#34;pets&#34; id=&#34;pet-select&#34;&gt;
+    &lt;legend&gt;Your favourite character&lt;/legend&gt;
+      &lt;label for=&#34;character-select&#34;&gt;Choose a character:&lt;/label&gt;
+      &lt;select name=&#34;characters&#34; id=&#34;character-select&#34;&gt;
         &lt;option value=&#34;&#34;&gt;Choose an option&lt;/option&gt;
-        &lt;option value=&#34;dog&#34;&gt;Dog&lt;/option&gt;
-        &lt;option value=&#34;cat&#34;&gt;Cat&lt;/option&gt;
-        &lt;option value=&#34;hamster&#34;&gt;Hamster&lt;/option&gt;
-        &lt;option value=&#34;parrot&#34;&gt;Parrot&lt;/option&gt;
-        &lt;option value=&#34;spider&#34;&gt;Spider&lt;/option&gt;
-        &lt;option value=&#34;goldfish&#34;&gt;Goldfish&lt;/option&gt;
+        &lt;option value=&#34;luke&#34;&gt;Luke&lt;/option&gt;
+        &lt;option value=&#34;han&#34;&gt;Han&lt;/option&gt;
+        &lt;option value=&#34;leia&#34;&gt;Leia&lt;/option&gt;
+        &lt;option value=&#34;obi-wan&#34;&gt;Obi-Wan&lt;/option&gt;
+        &lt;option value=&#34;yoda&#34;&gt;Yoda&lt;/option&gt;
       &lt;/select&gt;
       &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
@@ -302,11 +289,13 @@
   &lt;/label&gt; 
   &lt;button type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Sign up&lt;/button&gt;
 &lt;/form&gt;
-</code></pre>
+</code></pre> 
   </article>
+</section>
 
-        </section>
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

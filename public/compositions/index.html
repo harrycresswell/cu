@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head>
-  <meta name="generator" content="Hugo 0.115.4">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.126.1">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://cu.harrycresswell.com/compositions/">
+<link rel="canonical" href="http://localhost:1313/compositions/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cu.harrycresswell.com/compositions/">
+  <meta property="og:url" content="http://localhost:1313/compositions/">
   <meta property="og:title"
     content="Compositions &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cu.harrycresswell.com/compositions/">
+  <meta property="twitter:url" content="http://localhost:1313/compositions/">
   <meta property="twitter:title"
     content="Compositions &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="https://cu.harrycresswell.com/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,13 +81,13 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="https://cu.harrycresswell.com//img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://cu.harrycresswell.com//img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="https://cu.harrycresswell.com//img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://cu.harrycresswell.com/compositions/index.xml" title="cu.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/compositions/index.xml" title="cu.css" />
 
 
   
@@ -95,22 +95,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-     
-     
-    
-    
-    
-    <link rel="stylesheet" href="/css/main.min.ae401d3c50b815fc713a9ab29e4ad8f147592e4bf48da420231d6b01b1125542.css" integrity="" media="screen">
-    <link rel="stylesheet" href="/css/demo.min.0cd3ee0ba50acb8e9c305007c3a390df60531dd3ba68b0546fae66b9a0b73b01.css" integrity="" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
-      <a class="skip-link" href="#main-content">Main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
   <a data-variant="naked" href="/">cu.css</a>
   <nav data-variant="main" aria-label="Main">
   <ul class="cluster" style="--gutter: 1.5rem" role="list">
@@ -165,7 +154,7 @@
             <h1>Compositions</h1>
             
         </section>
-        <section class="wrapper region">
+<section class="wrapper region">
   <div class="sidebar" data-variant="sticky">
     <aside><nav class="sidebar-nav" data-variant="sidebar" aria-label="sidebar" id="sidebar-navigation">
  <ul role="list">
@@ -247,6 +236,10 @@
                 <a href="#horizontal-rule">Horizontal rule</a>
               </li>
             
+              <li>
+                <a href="#visibility">Visibility</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -269,6 +262,18 @@
             
               <li>
                 <a href="#repel">Repel</a>
+              </li>
+            
+              <li>
+                <a href="#sidebar">Sidebar</a>
+              </li>
+            
+              <li>
+                <a href="#reel">Reel</a>
+              </li>
+            
+              <li>
+                <a href="#switcher">Switcher</a>
               </li>
             
           </ul>
@@ -307,6 +312,10 @@
                 <a href="#width">Width</a>
               </li>
             
+              <li>
+                <a href="#skip-link">Skip link</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -335,6 +344,10 @@
                 <a href="#hero">Hero</a>
               </li>
             
+              <li>
+                <a href="#prose">Prose</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -353,17 +366,20 @@
       
       <div class="prose flow">
         <p><em>cu.css</em> includes a handful of compositions. <strong>Compositions create flexible layouts, helping to bring structure to whatever content they contain</strong>.</p>
-<p>According to <a href="https://cube.fyi/">cube.fyi</a>: “The composition layer’s job is to create flexible, component-agnostic layout systems that support as many variants of content as possible.”</p>
+<p>According to <a href="https://cube.fyi/" target="_blank" rel="noopener">cube.fyi</a>: “The composition layer’s job is to create flexible, component-agnostic layout systems that support as many variants of content as possible.”</p>
 <p>To use a composition, define a container element with a composition class applied. The child items of that parent container will now adopt the composition.</p>
 <p>The CSS for all compositions can be found in <code>assets/scss/compositions</code>.</p>
-
+ 
       </div>
       
       
         <article class="prose | region flow">
-          <h2 id="grid">Grid</h2>
+          <h2 id="grid">
+            Grid
+            <a class="heading-anchor" href="#grid" aria-label="Anchor">#</a>
+          </h2>
           <p>Grid comes in three flavours: <em>Two-column</em>, <em>Three-column</em> and <em>Masonry</em> layout.</p>
-<h3 id="two-column-layout">Two-column layout</h3>
+<h3 id="two-column-layout">Two-column layout&nbsp;<a class="heading-anchor" href="#two-column-layout" aria-label="Anchor">#</a> </h3>
 <p>The <em>two-column</em> layout positions grid items side-by-side when space permits, so that items proportionately share the available space.</p>
 <p>Use the layout by adding <code>data-layout=&quot;50-50&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <figure>
@@ -380,7 +396,7 @@
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 26rem);
 }
-</code></pre><h3 id="three-column-layout">Three-column layout</h3>
+</code></pre><h3 id="three-column-layout">Three-column layout&nbsp;<a class="heading-anchor" href="#three-column-layout" aria-label="Anchor">#</a> </h3>
 <p>The <em>three-column</em> layout positions grid items in three columns when space permits, so that items proportionately share the available space.</p>
 <p>Use the layout by adding <code>data-layout=&quot;33x3&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <figure>
@@ -397,10 +413,10 @@
 <pre tabindex="0"><code>/* Three column when space permits */
 .grid[data-layout=&#39;33x3&#39;] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 18rem);
+  --grid-min-item-size: clamp(16rem, 33vw, 18rem);
 }
-</code></pre><h3 id="masonry-layout">Masonry layout</h3>
-<p>The <em>masonry layout</em> remove the extra gap often left between rows by grid items of varying size. Use the layout by applying <code>data-rows=&quot;masonry&quot;</code> to any element with the <code>.grid</code> class applied.</p>
+</code></pre><h3 id="masonry-layout">Masonry layout&nbsp;<a class="heading-anchor" href="#masonry-layout" aria-label="Anchor">#</a> </h3>
+<p>The <em>masonry layout</em> removes the extra gap often left between rows by grid items of varying size. Use the layout by applying <code>data-rows=&quot;masonry&quot;</code> to any element with the <code>.grid</code> class applied.</p>
 <aside class="callout" data-variant="brand">Currently the feature is only implemented in Firefox, and can be enabled by setting the flag <code>layout.css.grid-template-masonry-value.enabled</code> to <code>true</code> in <code>about:config</code>.</aside>
 <figure>
   <div class="demo | grid" data-rows="masonry">
@@ -418,11 +434,14 @@
   grid-template-rows: masonry;
   align-items: start;
 }
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="cluster">Cluster</h2>
+          <h2 id="cluster">
+            Cluster
+            <a class="heading-anchor" href="#cluster" aria-label="Anchor">#</a>
+          </h2>
           <p><em>Cluster</em> creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.</p>
 <p>This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the <code>.cluster</code> class to an element with nested children.</p>
 <figure>
@@ -443,11 +462,14 @@
   justify-content: var(--cluster-horizontal-alignment, flex-start);
   align-items: var(--cluster-vertical-alignment, center);
 }
-</code></pre>
+</code></pre> 
         </article>
       
         <article class="prose | region flow">
-          <h2 id="repel">Repel</h2>
+          <h2 id="repel">
+            Repel
+            <a class="heading-anchor" href="#repel" aria-label="Anchor">#</a>
+          </h2>
           <p><em>Repel</em> adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.</p>
 <p>Add the <code>.repel</code> class to site headers, site footers or anywhere you want to push two items away from each other.</p>
 <p>Use <code>data-nowrap</code> to prevent items from wrapping when space no longer permits.</p>
@@ -469,13 +491,205 @@
 .repel[data-nowrap] {
   flex-wrap: nowrap;
 }
-</code></pre>
+</code></pre> 
         </article>
       
-    </div>
+        <article class="prose | region flow">
+          <h2 id="sidebar">
+            Sidebar
+            <a class="heading-anchor" href="#sidebar" aria-label="Anchor">#</a>
+          </h2>
+          <p><em>Sidebar</em> creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.</p>
+<p>To use <em>Sidebar</em>, add the <code>.sidebar</code> class to a parent element containing two child elements.</p>
+<p>You can learn more about this composition in <a href="https://every-layout.dev/layouts/sidebar/" target="_blank" rel="noopener">Every Layout</a>.</p>
+<figure>
+  <div class="demo | sidebar">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+  <figcaption>Sidebar will create a classic sidebar layout while space permits</figcaption>
+</figure>
+<pre tabindex="0"><code>.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l));
+}
 
-        </section>
+.sidebar:not([data-direction]) &gt; :first-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar:not([data-direction]) &gt; :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%);
+}
+</code></pre><p>Use the <code>data-direction=&quot;rtl&quot;</code> exception to flip the orientation of the sidebar.</p>
+<figure>
+  <div class="demo | sidebar" data-direction="rtl">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+  <figcaption>Sidebar with orientation flipped</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;sidebar&#34; data-direction=&#34;rtl&#34;&gt;
+  &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>Use the <code>data-variant=&quot;sticky&quot;</code> exception to create a sticky sidebar when space permits.</p>
+<pre tabindex="0"><code>&lt;div class=&#34;sidebar&#34; data-variant=&#34;sticky&#34;&gt;
+  &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>A good example of sidebar in use, and indeed the sticky exception, is here in navigation and content of the <em>cu.css</em> docs.</p>
+ 
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="reel">
+            Reel
+            <a class="heading-anchor" href="#reel" aria-label="Anchor">#</a>
+          </h2>
+          <p>Real creates a carousel-like layout, where items that exceed the available horizontal space become horizontally scrollable.</p>
+<p>This is a useful pattern for browsing lots of similar content in a limited amount of vertical space. For example, when creating <a href="https://btxx.org/posts/hamburger-menu-alternative/" target="_blank" rel="noopener">sausage links</a> or image galleries.</p>
+<p>To create a <em>Reel</em>, add the <code>.reel</code> class to a parent element containing any number of child elements.</p>
+<figure>
+  <div class="demo | reel">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+  </div>
+  <figcaption>Default reel – a carousel-like horizontally scrollable layout</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;reel&#34;&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+    &lt;div&gt;Item 4&lt;/div&gt;
+    &lt;div&gt;Item 5&lt;/div&gt;
+    &lt;div&gt;Item 6&lt;/div&gt;
+    &lt;div&gt;Item 7&lt;/div&gt;
+    &lt;div&gt;Item 8&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre><p>Use the <code>data-scroll=&quot;snap&quot;</code> attribute to apply <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap" target="_blank" rel="noopener">CSS scroll snap</a> to your reel items.</p>
+<figure>
+  <div class="demo | reel" data-scroll="snap">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+    <div class="item">Item 9</div>
+    <div class="item">Item 10</div>
+    <div class="item">Item 11</div>
+    <div class="item">Item 12</div>
+  </div>
+  <figcaption>Reel with scroll snap applied</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;reel&#34; data-scroll=&#34;snap&#34;&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+    &lt;div&gt;Item 4&lt;/div&gt;
+    &lt;div&gt;Item 5&lt;/div&gt;
+    &lt;div&gt;Item 6&lt;/div&gt;
+    &lt;div&gt;Item 7&lt;/div&gt;
+    &lt;div&gt;Item 8&lt;/div&gt;
+    &lt;div&gt;Item 9&lt;/div&gt;
+    &lt;div&gt;Item 10&lt;/div&gt;
+    &lt;div&gt;Item 11&lt;/div&gt;
+    &lt;div&gt;Item 12&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre><p>Use the <code>data-variant=&quot;img&quot;</code> attribute when creating a reel containing images. This ensures all images maintain their original aspect ratio. By default, the reel height is set to <code>50vh</code>, however you can control the height of your reel by setting a custom value for <code>--reel-height</code>.</p>
+<figure>
+  <div class="demo | reel" data-variant="img" style="--reel-height: 60vh;">
+    <img src="/img/josue-as-_nprTIIwSk4-unsplash.jpg" alt="" />
+    <img src="/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg" alt="" />
+    <img src="/img/christian-crocker-ShY6Jn6n9jQ-unsplash.jpeg" alt="" />
+    <img src="/img/brian-mcgowan-3bETLGHcAUU-unsplash.jpg" alt="" />
+    <img src="/img/chuck-givens-02AQdLh4gP4-unsplash.jpg" alt="" />
+  </div>
+  <figcaption>Reel with images. Images by <a href="https://unsplash.com/@one_dwigt">Chuck Givens</a>, <a href="https://unsplash.com/@christian_crocker">Christian Croker</a>, <a href="https://unsplash.com/@sushioutlaw">Brian McGowan</a> and <a href="https://unsplash.com/@yehoshuaas">Josué AS</a>.</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;reel&#34; data-variant=&#34;img&#34; style=&#34;--reel-height: 60vh;&#34;&gt;
+  &lt;img src=&#34;/img/josue-as-_nprTIIwSk4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/img/christian-crocker-ShY6Jn6n9jQ-unsplash.jpeg&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/img/brian-mcgowan-3bETLGHcAUU-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/div&gt;
+</code></pre><p>In the interest of keeping <em>cu.css</em> lightweight, Reel uses the native scrollbar. Should you wish to create a custom scrollbar, refer to <a href="https://every-layout.dev/layouts/reel/" target="_blank" rel="noopener">Every Layout</a> to learn more about what’s possible.</p>
+ 
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="switcher">
+            Switcher
+            <a class="heading-anchor" href="#switcher" aria-label="Anchor">#</a>
+          </h2>
+          <p>Switcher can be used to switch directly between a horizontal and vertical layout.</p>
+<p>Useful where each item should be considered equal to one another. For example, when displaying content in a number list of steps or showing product benefits.</p>
+<p>To create a Switcher, add the <code>.switcher</code> class to a parent element containing any number of child elements.</p>
+<p>Switcher will display up to 4 items next to each other while horizontal space permits.</p>
+<figure>
+  <div class="demo | switcher">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+  <figcaption>Switcher display up to 4 items next to each other while horizontal space permits.</figcaption>
+</figure>
+<p>With more than 4 items, switcher will stack all items vertically.</p>
+<figure>
+  <div class="demo | switcher">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+  </div>
+  <figcaption>With more than 4 items, switcher will stack all items vertically.
+</figcaption>
+</figure>
+<p>Use <code>--switcher-target-container-width</code> to define how wide the container needs to be for items to sit inline.</p>
+<p>Control the space between each item by setting a value for <code>--gutter</code>.</p>
+<p>Set how items should align vertically using <code>--switcher-vertical-alignment</code> with any flexbox alignment value.</p>
+ 
+        </article>
+      
+      <div class="pagination | grid region" data-layout="50-50">
+         
+        <a data-variant="naked" href="http://localhost:1313/global-styles/">
+          <span>Previous</span>
+          <span><strong>Global styles</strong></span>
+        </a>
+        
+        
+          
+          <a data-variant="naked" href="http://localhost:1313/utilities/">
+            <span>Next</span>
+            <span><strong>Utilities</strong></span>
+          </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</section>
+
       </main><footer class="wrapper region text-center">
-  <small>Created by <a href="https://harrycresswell.com/">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/">CUBE CSS</a>, <a href="https://utopia.fyi/">Utopia</a>, <a href="https://every-layout.dev/">Every Layout</a>, <a href="https://inclusive-components.design/">Inclusive Components</a> and <a href="https://simplecss.org/">Simple CSS</a>. MIT license.</small>
+  <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
+  <a href="/changelog">Changelog.</a>
+  </small>
 </footer></body>
 </html>

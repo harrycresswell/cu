@@ -1,306 +1,285 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A lightweight CSS framework on cu.css</title>
-    <link>https://cu.harrycresswell.com/</link>
-    <description>Recent content in A lightweight CSS framework on cu.css</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>A lightweight CSS boilerplate on cu.css</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in A lightweight CSS boilerplate on cu.css</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 27 Jul 2023 17:16:41 +0100</lastBuildDate><atom:link href="https://cu.harrycresswell.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Apr 2024 14:19:01 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Button</title>
-      <link>https://cu.harrycresswell.com/blocks/button/</link>
+      <link>http://localhost:1313/blocks/button/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:31 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/button/</guid>
-      <description>Use the .button class to style links as buttons.
-A link as a button A link as a button A disabled link as a button
-&amp;lt;a class=&amp;#34;button&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link styled as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; data-variant=&amp;#34;outline&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; role=&amp;#34;link&amp;#34; aria-disabled=&amp;#34;true&amp;#34;&amp;gt;A disabled link as a button&amp;lt;/a&amp;gt; Use the w-full width utility class to make a button styled link fill the full width of it’s container.
-Link styled as a full-width button &amp;lt;a class=&amp;#34;button w-full&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;Link styled as a full-width button&amp;lt;/a&amp;gt; </description>
+      <guid>http://localhost:1313/blocks/button/</guid>
+      <description>Use the .button class to style links as buttons.&#xA;A link as a button A link as a button A disabled link as a button&#xA;&amp;lt;a class=&amp;#34;button&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link styled as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; data-variant=&amp;#34;outline&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;A link as a button&amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;button&amp;#34; role=&amp;#34;link&amp;#34; aria-disabled=&amp;#34;true&amp;#34;&amp;gt;A disabled link as a button&amp;lt;/a&amp;gt; Use the w-full width utility class to make a button styled link fill the full width of it’s container.&#xA;Link styled as a full-width button &amp;lt;a class=&amp;#34;button w-full&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt;Link styled as a full-width button&amp;lt;/a&amp;gt; </description>
     </item>
-    
     <item>
       <title>Wrapper</title>
-      <link>https://cu.harrycresswell.com/utilities/wrapper/</link>
+      <link>http://localhost:1313/utilities/wrapper/</link>
       <pubDate>Wed, 12 Jul 2023 12:59:06 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/wrapper/</guid>
-      <description>Sets a max width, adds a consistent gutter and horizontally centers content.
-Margin Padding Content Padding Margin Wrapper with horizontal padding visualised in purple and margin in green /* WRAPPER @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/ */ .wrapper { max-width: var(--wrapper-max-width, 90rem); margin-left: auto; margin-right: auto; padding-left: var(--gutter); padding-right: var(--gutter); position: relative; } </description>
+      <guid>http://localhost:1313/utilities/wrapper/</guid>
+      <description>.wrapper horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.&#xA;This is useful for creating site wide content wrappers, or simply centering sections of content, as you see on the cu.css homepage.&#xA;Margin Padding Content Padding Margin Wrapper with horizontal padding visualised in purple and margin in green /* WRAPPER @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/ */ .wrapper { max-width: var(--wrapper-max-width, 90rem); margin-inline: auto; padding-inline: var(--gutter); position: relative; } The default max-width of .</description>
     </item>
-    
     <item>
       <title>Grid</title>
-      <link>https://cu.harrycresswell.com/compositions/grid/</link>
+      <link>http://localhost:1313/compositions/grid/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:51 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/compositions/grid/</guid>
-      <description>Grid comes in three flavours: Two-column, Three-column and Masonry layout.
-Two-column layout The two-column layout positions grid items side-by-side when space permits, so that items proportionately share the available space.
-Use the layout by adding data-layout=&amp;quot;50-50&amp;quot; to any element with the .grid class applied.
-Item 1 Item 2 Item 3 Item 4 Two column when space permits /* Two column when space permits */ .grid[data-layout=&amp;#39;50-50&amp;#39;] { --grid-placement: auto-fit; --grid-min-item-size: clamp(16rem, 50vw, 26rem); } Three-column layout The three-column layout positions grid items in three columns when space permits, so that items proportionately share the available space.</description>
+      <guid>http://localhost:1313/compositions/grid/</guid>
+      <description>Grid comes in three flavours: Two-column, Three-column and Masonry layout.&#xA;Two-column layout The two-column layout positions grid items side-by-side when space permits, so that items proportionately share the available space.&#xA;Use the layout by adding data-layout=&amp;quot;50-50&amp;quot; to any element with the .grid class applied.&#xA;Item 1 Item 2 Item 3 Item 4 Two column when space permits /* Two column when space permits */ .grid[data-layout=&amp;#39;50-50&amp;#39;] { --grid-placement: auto-fit; --grid-min-item-size: clamp(16rem, 50vw, 26rem); } Three-column layout The three-column layout positions grid items in three columns when space permits, so that items proportionately share the available space.</description>
     </item>
-    
     <item>
       <title>Installation</title>
-      <link>https://cu.harrycresswell.com/getting-started/installation/</link>
+      <link>http://localhost:1313/getting-started/installation/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/getting-started/installation/</guid>
-      <description>There are currently two different ways to install cu.css in your project, depending on whether you prefer to work with CSS or SASS.
-Installing CSS Follow these steps if you plan to work with CSS:
-Download the full project from Github. Copy main.css or main.min.css from the public/css folder into your project. Copy the fonts directory into your project. The final step is to link to your stylesheet file inside the &amp;lt;head&amp;gt; of your pages:</description>
+      <guid>http://localhost:1313/getting-started/installation/</guid>
+      <description>There are currently two different ways to install cu.css in your project, depending on whether you prefer to work with CSS or SASS.&#xA;Installing CSS Follow these steps if you plan to work with CSS:&#xA;Download the full project from Github. Copy main.css or main.min.css from the public/css folder into your project. Copy the fonts directory into your project. The final step is to link to your stylesheet file inside the &amp;lt;head&amp;gt; of your pages:</description>
     </item>
-    
     <item>
       <title>Typography</title>
-      <link>https://cu.harrycresswell.com/global-styles/typography/</link>
+      <link>http://localhost:1313/global-styles/typography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/typography/</guid>
-      <description>All typography is fluid responsive, set using Utopia’s Fluid Type Calculator, which makes use of the CSS Clamp function. Choose your min and max font size, then select a type scale and Utopia will generate the code.
-All six heading level elements are available to use.
-h1 heading h2 heading h3 heading h4 heading h5 heading h6 heading There are also various HTML elements you can use to format inline text in a bunch of different ways:</description>
+      <guid>http://localhost:1313/global-styles/typography/</guid>
+      <description>All typography is fluid responsive, set using Utopia’s Fluid Type Calculator, which makes use of the CSS Clamp function. Choose your min and max font size, then select a type scale and Utopia will generate the code.&#xA;Headings All six heading level elements are available to use.&#xA;h1 Heading 1 h2 Heading 2 h3 Heading 3 h4 Heading 4 h5 Heading 5 h6 Heading 6 &amp;lt;h1&amp;gt;h1 Heading 1&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;h2 Heading 2&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;h3 Heading 3&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;h4 Heading 4&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;h5 Heading 5&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;h6 Heading 6&amp;lt;/h6&amp;gt; Semantic heading classes All 6 headings sizes can also be applied as classes.</description>
     </item>
-    
     <item>
       <title>Callout</title>
-      <link>https://cu.harrycresswell.com/blocks/callout/</link>
+      <link>http://localhost:1313/blocks/callout/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:24 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/callout/</guid>
-      <description>Use .callout to draw attention to content in a visually distinct manner.
-Callouts are useful Use them to visually highlight important content. Grid Masonry layout shows a callout in action.
-&amp;lt;aside class=&amp;#34;callout&amp;#34;&amp;gt; &amp;lt;strong&amp;gt;Callouts are useful&amp;lt;/strong&amp;gt; &amp;lt;p&amp;gt;Use them to visually highlight important content. &amp;lt;a href=&amp;#34;/compositions/#masonry-layout&amp;#34;&amp;gt;Grid Masonry layout&amp;lt;/a&amp;gt; shows a callout in action.&amp;lt;/p&amp;gt; &amp;lt;/aside&amp;gt; Apply data-variant=&amp;quot;brand&amp;quot; to style a callout using the brand color.
-Callouts are useful Use them to visually highlight important content.</description>
+      <guid>http://localhost:1313/blocks/callout/</guid>
+      <description>Use .callout to draw attention to content in a visually distinct manner.&#xA;Callouts are useful Use them to visually highlight important content. Grid Masonry layout shows a callout in action.&#xA;&amp;lt;aside class=&amp;#34;callout&amp;#34;&amp;gt; &amp;lt;strong&amp;gt;Callouts are useful&amp;lt;/strong&amp;gt; &amp;lt;p&amp;gt;Use them to visually highlight important content. &amp;lt;a href=&amp;#34;/compositions/#masonry-layout&amp;#34;&amp;gt;Grid Masonry layout&amp;lt;/a&amp;gt; shows a callout in action.&amp;lt;/p&amp;gt; &amp;lt;/aside&amp;gt; Apply data-variant=&amp;quot;brand&amp;quot; to style a callout using the brand color.&#xA;Callouts are useful Use them to visually highlight important content.</description>
     </item>
-    
     <item>
       <title>Region</title>
-      <link>https://cu.harrycresswell.com/utilities/region/</link>
+      <link>http://localhost:1313/utilities/region/</link>
       <pubDate>Wed, 12 Jul 2023 12:58:48 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/region/</guid>
-      <description>.region adds consistent vertical padding to an element to create regions of content with sufficient spacing.
-By default, .region uses --space-l-xl from the space scale, however the amount of space can also be configured by setting --region-space inline or within any new class you decide to create and use alongside .region.
-Padding Content Padding A region of content with vertical padding visualised in purple /* REGION Add consistent vertical padding to create regions of content Can either be configured by setting --region-space or use a default from the space scale @link: https://codepen.</description>
+      <guid>http://localhost:1313/utilities/region/</guid>
+      <description>.region adds consistent vertical padding to an element to create regions of content with sufficient spacing.&#xA;By default, .region uses --space-l-xl from the space scale, however the amount of space can also be configured by setting --region-space inline or within any new class you decide to create and use alongside .region.&#xA;Padding Content Padding A region of content with vertical padding visualised in purple /* REGION Add consistent vertical padding to create regions of content Can either be configured by setting --region-space or use a default from the space scale @link: https://codepen.</description>
     </item>
-    
     <item>
       <title>Cluster</title>
-      <link>https://cu.harrycresswell.com/compositions/cluster/</link>
+      <link>http://localhost:1313/compositions/cluster/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/compositions/cluster/</guid>
-      <description>Cluster creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.
-This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the .cluster class to an element with nested children.
-Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Cluster will cluster items inline while space permits .</description>
+      <guid>http://localhost:1313/compositions/cluster/</guid>
+      <description>Cluster creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.&#xA;This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the .cluster class to an element with nested children.&#xA;Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Cluster will cluster items inline while space permits .</description>
     </item>
-    
     <item>
       <title>Working with CSS</title>
-      <link>https://cu.harrycresswell.com/getting-started/working-with-css/</link>
+      <link>http://localhost:1313/getting-started/working-with-css/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/getting-started/working-with-css/</guid>
-      <description>If you plan to customise or build upon cu.css, then you will find it much easier to work with the unminified css found in public/css/main.css. If you wish to use cu.css without modification, then working with the minified CSS found in public/css/main.min.css will ensure the smallest file size.
-The stylesheets in public/css contain configurations for custom fonts, customising the theme of cu.css, and managing fluid type and space scales. Most of these configurations consist of CSS custom properties.</description>
+      <guid>http://localhost:1313/getting-started/working-with-css/</guid>
+      <description>If you plan to customise or build upon cu.css, then you will find it much easier to work with the unminified css found in public/css/main.css. If you wish to use cu.css without modification, then working with the minified CSS found in public/css/main.min.css will ensure the smallest file size.&#xA;The stylesheets in public/css contain configurations for custom fonts, customising the theme of cu.css, and managing fluid type and space scales. Most of these configurations consist of CSS custom properties.</description>
     </item>
-    
     <item>
       <title>Lists</title>
-      <link>https://cu.harrycresswell.com/global-styles/list/</link>
+      <link>http://localhost:1313/global-styles/list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/list/</guid>
-      <description>Create unordered lists using the ul element:
-Unordered list item Unordered list item &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; Create ordered lists using the ol element:
-Ordered list item Ordered list item &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/list/</guid>
+      <description>Create unordered lists using the ul element:&#xA;Unordered list item Unordered list item &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; Create ordered lists using the ol element:&#xA;Ordered list item Ordered list item &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; </description>
     </item>
-    
     <item>
       <title>Card</title>
-      <link>https://cu.harrycresswell.com/blocks/card/</link>
+      <link>http://localhost:1313/blocks/card/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:37 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/card/</guid>
-      <description>.card can be used to distinguish content relating to a specific topic. Optionally include an image, heading, paragraph content, links and buttons.
-To make the whole card clickable, add an &amp;lt;a&amp;gt; element inside a heading element. Both links and buttons found elsewhere in the card will remain clickable.
-Use the Grid compostition to display multiple cards in columns, as shown below.
-Millennium Falcon Won by Han Solo from Lando Calrissian in a game of sabacc.</description>
+      <guid>http://localhost:1313/blocks/card/</guid>
+      <description>.card can be used to distinguish content relating to a specific topic. Optionally include an image, heading, paragraph content, links and buttons.&#xA;To make the whole card clickable, add an &amp;lt;a&amp;gt; element inside a heading element. Both links and buttons found elsewhere in the card will remain clickable.&#xA;Use the Grid compostition to display multiple cards in columns, as shown below.&#xA;Millennium Falcon Won by Han Solo from Lando Calrissian in a game of sabacc.</description>
     </item>
-    
     <item>
       <title>Flow</title>
-      <link>https://cu.harrycresswell.com/utilities/flow/</link>
+      <link>http://localhost:1313/utilities/flow/</link>
       <pubDate>Wed, 12 Jul 2023 12:58:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/flow/</guid>
-      <description>Applies a margin to sibling elements based on a --flow-space custom property.
-Content Margin (default) Content Margin (set inline using --flow-space) Content Flow utility with margin visualised in green /* FLOW @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/ @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility @link: https://piccalil.li/quick-tip/flow-utility/ */ .flow &amp;gt; * + * { margin-top: var(--flow-space, 1em); } </description>
+      <guid>http://localhost:1313/utilities/flow/</guid>
+      <description>Applies a margin to sibling elements based on a --flow-space custom property.&#xA;Content Margin (default) Content Margin (set inline using --flow-space) Content Flow utility with margin visualised in green /* FLOW @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/ @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility @link: https://piccalil.li/quick-tip/flow-utility/ */ .flow &amp;gt; * + * { margin-top: var(--flow-space, 1em); } </description>
     </item>
-    
     <item>
       <title>Repel</title>
-      <link>https://cu.harrycresswell.com/compositions/repel/</link>
+      <link>http://localhost:1313/compositions/repel/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/compositions/repel/</guid>
-      <description>Repel adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.
-Add the .repel class to site headers, site footers or anywhere you want to push two items away from each other.
-Use data-nowrap to prevent items from wrapping when space no longer permits.
-Item 1 Item 2 Repel quite literally repels two items from one another .</description>
+      <guid>http://localhost:1313/compositions/repel/</guid>
+      <description>Repel adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.&#xA;Add the .repel class to site headers, site footers or anywhere you want to push two items away from each other.&#xA;Use data-nowrap to prevent items from wrapping when space no longer permits.&#xA;Item 1 Item 2 Repel quite literally repels two items from one another .</description>
     </item>
-    
     <item>
       <title>Working with SASS</title>
-      <link>https://cu.harrycresswell.com/getting-started/working-with-sass/</link>
+      <link>http://localhost:1313/getting-started/working-with-sass/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/getting-started/working-with-sass/</guid>
-      <description>You can find the Sass files for cu.css inside the assets/scss directory. You may find working with Sass gives you a little more flexibility when customising.
-Understanding the directory structure Inside assets/scss you will find 5 directories and a bunch of files.
-The abstracts directory contains the project configurations outlined above: @font-face declarations for including custom fonts in the project. CSS custom properties for theming. CSS custom properties for Utopia fluid type and space scales.</description>
+      <guid>http://localhost:1313/getting-started/working-with-sass/</guid>
+      <description>You can find the Sass files for cu.css inside the assets/scss directory. You may find working with Sass gives you a little more flexibility when customising.&#xA;Understanding the directory structure Inside assets/scss you will find 5 directories and a bunch of files.&#xA;The abstracts directory contains the project configurations outlined above: @font-face declarations for including custom fonts in the project. CSS custom properties for theming. CSS custom properties for Utopia fluid type and space scales.</description>
     </item>
-    
     <item>
       <title>Blockquotes</title>
-      <link>https://cu.harrycresswell.com/global-styles/blockquote/</link>
+      <link>http://localhost:1313/global-styles/blockquote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/blockquote/</guid>
-      <description>Use the &amp;lt;blockquote&amp;gt; element to quote books you’ve read, things you’ve heard from your pals or even ideas you’ve had yourself.
-All large-scale human cooperation is ultimately based on our belief in imagined orders.
-– Yuval Noah Harari
-&amp;lt;blockquote&amp;gt; &amp;lt;p&amp;gt;All large-scale human cooperation is ultimately based on our belief in imagined orders.&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;- &amp;lt;cite&amp;gt;Yuval Noah Harari&amp;lt;/cite&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/blockquote/</guid>
+      <description>Use the &amp;lt;blockquote&amp;gt; element to quote books you’ve read, things you’ve heard from your pals or even ideas you’ve had yourself.&#xA;All large-scale human cooperation is ultimately based on our belief in imagined orders.&#xA;– Yuval Noah Harari&#xA;&amp;lt;blockquote&amp;gt; &amp;lt;p&amp;gt;All large-scale human cooperation is ultimately based on our belief in imagined orders.&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;- &amp;lt;cite&amp;gt;Yuval Noah Harari&amp;lt;/cite&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt; </description>
     </item>
-    
+    <item>
+      <title>Sidebar</title>
+      <link>http://localhost:1313/compositions/sidebar/</link>
+      <pubDate>Tue, 30 Jan 2024 14:46:29 +0000</pubDate>
+      <guid>http://localhost:1313/compositions/sidebar/</guid>
+      <description>Sidebar creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.&#xA;To use Sidebar, add the .sidebar class to a parent element containing two child elements.&#xA;You can learn more about this composition in Every Layout.&#xA;Item 1 Item 2 Sidebar will create a classic sidebar layout while space permits .</description>
+    </item>
     <item>
       <title>Hero</title>
-      <link>https://cu.harrycresswell.com/blocks/hero/</link>
+      <link>http://localhost:1313/blocks/hero/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:41 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/blocks/hero/</guid>
-      <description>Use .hero, combined with region and flow to create a distictive headline section for pages. For the sake of clarity, pipes are used to group classes, as seen below.
-A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.
-&amp;lt;div class=&amp;#34;hero | region | flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; </description>
+      <guid>http://localhost:1313/blocks/hero/</guid>
+      <description>Use .hero, combined with region and flow to create a distictive headline section for pages. For the sake of clarity, pipes are used to group classes, as seen below.&#xA;A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.&#xA;&amp;lt;div class=&amp;#34;hero | region | flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; </description>
     </item>
-    
     <item>
       <title>Visually Hidden</title>
-      <link>https://cu.harrycresswell.com/utilities/visually-hidden/</link>
+      <link>http://localhost:1313/utilities/visually-hidden/</link>
       <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/visually-hidden/</guid>
-      <description>Use the .visually-hidden utility to visually hide an element while ensuring it’s still accessible to assistive technologies, screen readers, and so on.
-/* VISUALLY HIDDEN @link: https://piccalil.li/quick-tip/visually-hidden/ */ .visually-hidden { border: 0; clip: rect(0 0 0 0); height: auto; margin: 0; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; } </description>
+      <guid>http://localhost:1313/utilities/visually-hidden/</guid>
+      <description>Use the .visually-hidden utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.&#xA;/* VISUALLY HIDDEN @link: https://piccalil.li/quick-tip/visually-hidden/ */ .visually-hidden { border: 0; clip: rect(0 0 0 0); height: auto; margin: 0; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; } This is different from using the [hidden] attribute which will hide the content from both the browser and assistive technologies.</description>
     </item>
-    
     <item>
       <title>Code blocks</title>
-      <link>https://cu.harrycresswell.com/global-styles/codeblock/</link>
+      <link>http://localhost:1313/global-styles/codeblock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/codeblock/</guid>
-      <description>Create code blocks, like the one below, using the &amp;lt;pre&amp;gt; element with a nested &amp;lt;code&amp;gt; element inside.
-&amp;lt;pre&amp;gt; &amp;lt;code&amp;gt; body { color: var(--color-dark); background: var(--color-light); font-size: var(--step-0); font-family: var(--font-base); letter-spacing: var(--tracking); } &amp;lt;/code&amp;gt; &amp;lt;/pre&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/codeblock/</guid>
+      <description>Create code blocks, like the one below, using the &amp;lt;pre&amp;gt; element with a nested &amp;lt;code&amp;gt; element inside.&#xA;&amp;lt;pre&amp;gt; &amp;lt;code&amp;gt; body { color: var(--color-dark); background: var(--color-light); font-size: var(--step-0); font-family: var(--font-base); letter-spacing: var(--tracking); } &amp;lt;/code&amp;gt; &amp;lt;/pre&amp;gt; </description>
     </item>
-    
+    <item>
+      <title>Prose</title>
+      <link>http://localhost:1313/blocks/prose/</link>
+      <pubDate>Wed, 07 Feb 2024 13:35:24 +0000</pubDate>
+      <guid>http://localhost:1313/blocks/prose/</guid>
+      <description>.prose can be used alongside the flow utility to improve the legibility of longform content. Particular useful for improving the look of typography in articles and pages.&#xA;Apply .prose to any HTML element that accepts flow content, to subtly increasing line-height, along with the default --flow-space of its children.&#xA;Consider the following extract with .prose and .flow applied:&#xA;The Chosen One Long ago, in a galaxy far, far away, the Skywalker saga began.</description>
+    </item>
+    <item>
+      <title>Reel</title>
+      <link>http://localhost:1313/compositions/reel/</link>
+      <pubDate>Wed, 31 Jan 2024 11:13:58 +0000</pubDate>
+      <guid>http://localhost:1313/compositions/reel/</guid>
+      <description>Real creates a carousel-like layout, where items that exceed the available horizontal space become horizontally scrollable.&#xA;This is a useful pattern for browsing lots of similar content in a limited amount of vertical space. For example, when creating sausage links or image galleries.&#xA;To create a Reel, add the .reel class to a parent element containing any number of child elements.&#xA;Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Item 7 Item 8 Default reel – a carousel-like horizontally scrollable layout &amp;lt;div class=&amp;#34;reel&amp;#34;&amp;gt; &amp;lt;div&amp;gt;Item 1&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 2&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 3&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 4&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 5&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 6&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 7&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 8&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Use the data-scroll=&amp;quot;snap&amp;quot; attribute to apply CSS scroll snap to your reel items.</description>
+    </item>
     <item>
       <title>Text</title>
-      <link>https://cu.harrycresswell.com/utilities/text/</link>
+      <link>http://localhost:1313/utilities/text/</link>
       <pubDate>Thu, 27 Jul 2023 16:50:03 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/text/</guid>
-      <description>The .text-center utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.
-.text-center { text-align: center; } </description>
+      <guid>http://localhost:1313/utilities/text/</guid>
+      <description>The .text-center utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.&#xA;This text is horizontally centered .text-center { text-align: center; } </description>
     </item>
-    
     <item>
       <title>Forms</title>
-      <link>https://cu.harrycresswell.com/global-styles/form/</link>
+      <link>http://localhost:1313/global-styles/form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/form/</guid>
-      <description>Use the &amp;lt;form&amp;gt; element to contain any interative elements, used to submit information and collect data.
-Email Address Password Submit &amp;lt;form&amp;gt; &amp;lt;label for=&amp;#34;email-address&amp;#34;&amp;gt;Email Address&amp;lt;/label&amp;gt; &amp;lt;input name=&amp;#34;email-address&amp;#34; id=&amp;#34;email-address&amp;#34; type=&amp;#34;email&amp;#34; autocomplete=&amp;#34;username&amp;#34; required&amp;gt; &amp;lt;label for=&amp;#34;password&amp;#34;&amp;gt;Password&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; id=&amp;#34;password&amp;#34; autocomplete=&amp;#34;current-password&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; value=&amp;#34;Submit&amp;#34;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Optionally, you can also:
-Use &amp;lt;fieldset&amp;gt; to group elements within the form. Use &amp;lt;legend&amp;gt; to caption the form contents. Add the w-full width utility class to any input, textarea or button to make it fill the width of the form.</description>
+      <guid>http://localhost:1313/global-styles/form/</guid>
+      <description>Use the &amp;lt;form&amp;gt; element to contain any interative elements, used to submit information and collect data.&#xA;Email Address Password Submit &amp;lt;form&amp;gt; &amp;lt;label for=&amp;#34;email-address&amp;#34;&amp;gt;Email Address&amp;lt;/label&amp;gt; &amp;lt;input name=&amp;#34;email-address&amp;#34; id=&amp;#34;email-address&amp;#34; type=&amp;#34;email&amp;#34; autocomplete=&amp;#34;username&amp;#34; required&amp;gt; &amp;lt;label for=&amp;#34;password&amp;#34;&amp;gt;Password&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; id=&amp;#34;password&amp;#34; autocomplete=&amp;#34;current-password&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; value=&amp;#34;Submit&amp;#34;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Optionally, you can also:&#xA;Use &amp;lt;fieldset&amp;gt; to group elements within the form. Use &amp;lt;legend&amp;gt; to caption the form contents. Add the w-full width utility class to any input, textarea or button to make it fill the width of the form.</description>
     </item>
-    
+    <item>
+      <title>Switcher</title>
+      <link>http://localhost:1313/compositions/switcher/</link>
+      <pubDate>Tue, 13 Feb 2024 11:53:42 +0000</pubDate>
+      <guid>http://localhost:1313/compositions/switcher/</guid>
+      <description>Switcher can be used to switch directly between a horizontal and vertical layout.&#xA;Useful where each item should be considered equal to one another. For example, when displaying content in a number list of steps or showing product benefits.&#xA;To create a Switcher, add the .switcher class to a parent element containing any number of child elements.&#xA;Switcher will display up to 4 items next to each other while horizontal space permits.</description>
+    </item>
     <item>
       <title>Width</title>
-      <link>https://cu.harrycresswell.com/utilities/width/</link>
+      <link>http://localhost:1313/utilities/width/</link>
       <pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/utilities/width/</guid>
-      <description>The .w-full utility class can be used to make an element fill the full width of its parent container. particularly useful for buttons and form elements.
-.w-full { width: 100%; } </description>
+      <guid>http://localhost:1313/utilities/width/</guid>
+      <description>The .w-full utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.&#xA;Submit .w-full { width: 100%; } </description>
     </item>
-    
     <item>
       <title>Accordions</title>
-      <link>https://cu.harrycresswell.com/global-styles/accordion/</link>
+      <link>http://localhost:1313/global-styles/accordion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/accordion/</guid>
-      <description>Use the &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; elements to create accordions.
-Do you ship internationally? Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.
-&amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Do you ship internationally?&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; Add data-variant=&amp;quot;fancy&amp;quot; to hide default ::marker and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the &amp;lt;summary&amp;gt; text.</description>
+      <guid>http://localhost:1313/global-styles/accordion/</guid>
+      <description>Use the &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; elements to create accordions.&#xA;Do you ship internationally? Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&#xA;&amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Do you ship internationally?&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; Add data-variant=&amp;quot;fancy&amp;quot; to hide default ::marker and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the &amp;lt;summary&amp;gt; text.</description>
     </item>
-    
+    <item>
+      <title>Skip link</title>
+      <link>http://localhost:1313/utilities/skip-link/</link>
+      <pubDate>Fri, 26 Jan 2024 10:19:37 +0000</pubDate>
+      <guid>http://localhost:1313/utilities/skip-link/</guid>
+      <description>The .skip-link utility can be used to create skip navigation links. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard Tab button to navigate a website.&#xA;&amp;lt;a class=&amp;#34;skip-link&amp;#34; href=&amp;#34;#main-content&amp;#34;&amp;gt;Skip to main content&amp;lt;/a&amp;gt; ... &amp;lt;main id=&amp;#34;main-content&amp;#34;&amp;gt; ... &amp;lt;/main&amp;gt; Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.</description>
+    </item>
     <item>
       <title>Tables</title>
-      <link>https://cu.harrycresswell.com/global-styles/table/</link>
+      <link>http://localhost:1313/global-styles/table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/table/</guid>
-      <description>Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: &amp;lt;table&amp;gt;, &amp;lt;thead&amp;gt;, &amp;lt;tr&amp;gt;, &amp;lt;th&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;td&amp;gt; and &amp;lt;caption&amp;gt;.
-Star Wars characters, their home worlds and preferred weapon. Character Homeworld Weapon Luke Tatooine Lightsaber Han Corellia Blaster Leia Alderaan Blaster Obi-Wan Stewjon Lightsaber Yoda Dagobah Lightsaber &amp;lt;table&amp;gt; &amp;lt;caption&amp;gt; &amp;lt;small&amp;gt;Star Wars characters and their home worlds&amp;lt;/small&amp;gt; &amp;lt;/caption&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;Character&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Homeworld&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Weapon&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Luke&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Tatooine&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Han&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Corellia&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Blaster&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Leia&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Alderaan&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Blaster&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Obi-Wan&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Stewjon&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Yoda&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Dagobah&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/table/</guid>
+      <description>Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: &amp;lt;table&amp;gt;, &amp;lt;thead&amp;gt;, &amp;lt;tr&amp;gt;, &amp;lt;th&amp;gt;, &amp;lt;tbody&amp;gt;, &amp;lt;td&amp;gt; and &amp;lt;caption&amp;gt;.&#xA;Star Wars characters, their home worlds and preferred weapon. Character Homeworld Weapon Luke Tatooine Lightsaber Han Corellia Blaster Leia Alderaan Blaster Obi-Wan Stewjon Lightsaber Yoda Dagobah Lightsaber &amp;lt;table&amp;gt; &amp;lt;caption&amp;gt; &amp;lt;small&amp;gt;Star Wars characters and their home worlds&amp;lt;/small&amp;gt; &amp;lt;/caption&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;Character&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Homeworld&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Weapon&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Luke&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Tatooine&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Han&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Corellia&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Blaster&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Leia&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Alderaan&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Blaster&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Obi-Wan&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Stewjon&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Yoda&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Dagobah&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Lightsaber&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; </description>
     </item>
-    
     <item>
       <title>Buttons</title>
-      <link>https://cu.harrycresswell.com/global-styles/button/</link>
+      <link>http://localhost:1313/global-styles/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/button/</guid>
-      <description>Use the &amp;lt;button&amp;gt; element to create interactive buttons. To style a button with the outline style, use the data attribute data-variant=&amp;quot;outline&amp;quot;. For more on this approach see Exception’s in Cube CSS.
-Submit Clear Disabled &amp;lt;button type=&amp;#34;submit&amp;#34; value=&amp;#34;Submit&amp;#34;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; data-variant=&amp;#34;outline&amp;#34; value=&amp;#34;Clear&amp;#34;&amp;gt;Clear&amp;lt;/button&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; disabled=&amp;#34;&amp;#34;&amp;gt;Disabled&amp;lt;/button&amp;gt; Inputs with type=&amp;quot;submit&amp;quot;, type=&amp;quot;reset&amp;quot; or type=&amp;quot;button&amp;quot; applied also inherit button styles. Therefore, you can apply the variant style to these elements too.
-&amp;lt;input type=&amp;#34;submit&amp;#34; /&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; data-variant=&amp;#34;outline&amp;#34; /&amp;gt; Just like with form elements, you can also use the w-full width utility class to make a &amp;lt;button&amp;gt; fill the full width of its parent container.</description>
+      <guid>http://localhost:1313/global-styles/button/</guid>
+      <description>Use the &amp;lt;button&amp;gt; element to create interactive buttons. To style a button with the outline style, use the data attribute data-variant=&amp;quot;outline&amp;quot;. For more on this approach see Exception’s in Cube CSS.&#xA;Submit Clear Disabled &amp;lt;button type=&amp;#34;submit&amp;#34; value=&amp;#34;Submit&amp;#34;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; data-variant=&amp;#34;outline&amp;#34; value=&amp;#34;Clear&amp;#34;&amp;gt;Clear&amp;lt;/button&amp;gt; &amp;lt;button type=&amp;#34;submit&amp;#34; disabled=&amp;#34;&amp;#34;&amp;gt;Disabled&amp;lt;/button&amp;gt; Inputs with type=&amp;quot;submit&amp;quot;, type=&amp;quot;reset&amp;quot; or type=&amp;quot;button&amp;quot; applied also inherit button styles. Therefore, you can apply the variant style to these elements too.&#xA;&amp;lt;input type=&amp;#34;submit&amp;#34; /&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; data-variant=&amp;#34;outline&amp;#34; /&amp;gt; Just like with form elements, you can also use the w-full width utility class to make a &amp;lt;button&amp;gt; fill the full width of its parent container.</description>
     </item>
-    
     <item>
       <title>Links</title>
-      <link>https://cu.harrycresswell.com/global-styles/link/</link>
+      <link>http://localhost:1313/global-styles/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/link/</guid>
-      <description>Use the anchor element, a.k.a &amp;lt;a&amp;gt; tag to link to different pages
-&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt; Links look like this, by default.
-But you can also use use the data attribute data-variant=&amp;quot;naked&amp;quot; to make them look like text.
-&amp;lt;a href=&amp;#34;/&amp;#34; data-variant=&amp;#34;naked&amp;#34;&amp;gt;A naked link&amp;lt;/a&amp;gt; An example of data-variant=&amp;quot;naked&amp;quot; being used on links can be seen in the navigation found at the top of each page on this website.</description>
+      <guid>http://localhost:1313/global-styles/link/</guid>
+      <description>Use the anchor element, a.k.a &amp;lt;a&amp;gt; tag to link to different pages&#xA;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt; Links look like this, by default. But you can also use use the data attribute data-variant=&amp;quot;naked&amp;quot; to make them look like the same as default text.&#xA;&amp;lt;a href=&amp;#34;/&amp;#34; data-variant=&amp;#34;naked&amp;#34;&amp;gt;A naked link&amp;lt;/a&amp;gt; An example of data-variant=&amp;quot;naked&amp;quot; being used on links can be seen in the navigation found at the top of each page on this website.</description>
     </item>
-    
     <item>
       <title>Images</title>
-      <link>https://cu.harrycresswell.com/global-styles/image/</link>
+      <link>http://localhost:1313/global-styles/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/image/</guid>
-      <description>Use the &amp;lt;img&amp;gt; element in the usual way. Images have max-width: 100% applied, ensuring they fill the entire width of parent element, as we’ve come to expect.
-&amp;lt;img src=&amp;#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; To give your image a caption, place your &amp;lt;img&amp;gt; inside a &amp;lt;figure&amp;gt; and use &amp;lt;figcaption&amp;gt; for the caption.
-Photo by Brian McGowan on Unsplash. &amp;lt;figure&amp;gt; &amp;lt;img src=&amp;#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; &amp;lt;figcaption&amp;gt; Photo by &amp;lt;a href=&amp;#34;https://unsplash.com/@sushioutlaw&amp;#34;&amp;gt;Brian McGowan&amp;lt;/a&amp;gt; on Unsplash. &amp;lt;/figcaption&amp;gt; &amp;lt;/figure&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/image/</guid>
+      <description>Use the &amp;lt;img&amp;gt; element in the usual way. Images have max-width: 100% applied, ensuring they fill the entire width of parent element, as we’ve come to expect.&#xA;&amp;lt;img src=&amp;#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; To give your image a caption, place your &amp;lt;img&amp;gt; inside a &amp;lt;figure&amp;gt; and use &amp;lt;figcaption&amp;gt; for the caption.&#xA;Photo by Brian McGowan on Unsplash. &amp;lt;figure&amp;gt; &amp;lt;img src=&amp;#34;/img/brian-mcgowan-HiftPDiIVTY-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; &amp;lt;figcaption&amp;gt; Photo by &amp;lt;a href=&amp;#34;https://unsplash.com/@sushioutlaw&amp;#34;&amp;gt;Brian McGowan&amp;lt;/a&amp;gt; on Unsplash. &amp;lt;/figcaption&amp;gt; &amp;lt;/figure&amp;gt; </description>
     </item>
-    
     <item>
       <title>Horizontal rule</title>
-      <link>https://cu.harrycresswell.com/global-styles/hr/</link>
+      <link>http://localhost:1313/global-styles/hr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cu.harrycresswell.com/global-styles/hr/</guid>
-      <description>The &amp;lt;hr&amp;gt; element can be used to create a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.
-&amp;lt;hr&amp;gt; </description>
+      <guid>http://localhost:1313/global-styles/hr/</guid>
+      <description>The &amp;lt;hr&amp;gt; element can be used to create a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.&#xA;&amp;lt;hr&amp;gt; </description>
     </item>
-    
+    <item>
+      <title>Visibility</title>
+      <link>http://localhost:1313/global-styles/visibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/global-styles/visibility/</guid>
+      <description>You can use the [hidden] attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript.&#xA;&amp;lt;p hidden&amp;gt;This paragraph is hidden from the browser and will not render&amp;lt;/p&amp;gt; If you don’t want content to be visible in the browser, but it should remain accessible to assistive technologies, such as screen readers, then use the visually hidden utility class instead.</description>
+    </item>
+    <item>
+      <title>v0.1.6</title>
+      <link>http://localhost:1313/changelog/24-04-04-v0.1.6/</link>
+      <pubDate>Thu, 04 Apr 2024 14:19:01 +0100</pubDate>
+      <guid>http://localhost:1313/changelog/24-04-04-v0.1.6/</guid>
+      <description>Bug fixes Switch to Utopia space custom property for .cluster gap fallback value. Switch h1, h2 and h3 line-height from from hardcoded 1 value to use --line-height-compact custom property. Improvements Change order of content sections on the homepage. Change the word “framework” to “boilerplate” when describing cu.css. This more acurrately describes what cu.css is. See Boilerplates vs. frameworks from Chris Ferdinandi for more. Various content updates to homepage sections. </description>
+    </item>
+    <item>
+      <title>v0.1.5</title>
+      <link>http://localhost:1313/changelog/24-02-14-v0.1.5/</link>
+      <pubDate>Wed, 14 Feb 2024 11:54:38 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/24-02-14-v0.1.5/</guid>
+      <description>Bug fixes markdownify excerpt in changelog list. Use viewport width over percentage in grid three column layout composition. Improvements Use .wrapper utility to center align content on index page of docs site, instead of inline styles. Switch to logical properties to reduce size of .wrapper CSS and improve for different writing modes. Add contextual examples to Wrapper documentation. Improve positioning of chevron on fancy accordion. Add Prose to Blocks documentation. Reduce font size of blockquote and update max-width of blockquote in prose.</description>
+    </item>
+    <item>
+      <title>v0.1.4</title>
+      <link>http://localhost:1313/changelog/24-02-01-v0.1.4/</link>
+      <pubDate>Thu, 01 Feb 2024 11:01:38 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/24-02-01-v0.1.4/</guid>
+      <description>Bug fixes Hidden default summary ::marker on iOS when using accordions with fancy variant Improvements Added sidebar composition to the docs. Added reel composition to the docs. Added references to Every Layout for further reading </description>
+    </item>
+    <item>
+      <title>V0.1.3</title>
+      <link>http://localhost:1313/changelog/24-01-26-v0.1.3/</link>
+      <pubDate>Fri, 26 Jan 2024 11:25:49 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/24-01-26-v0.1.3/</guid>
+      <description>Improvements Added semantic heading classes to the docs. Added visibility to docs. Added HTML example to headings docs. Added &amp;lt;del&amp;gt; to text basis docs and organised under section title. Updated visually-hidden utility docs to reference difference from [hidden] attribute. Moved _skip-link.scss partial to utilities folder. Added Skip link utility to the docs. </description>
+    </item>
+    <item>
+      <title>v0.1.2</title>
+      <link>http://localhost:1313/changelog/v0.1.2/</link>
+      <pubDate>Thu, 18 Jan 2024 12:46:47 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/v0.1.2/</guid>
+      <description>New features The cu.css site now has anchor links for all headings, this allows you to create a link to any section of any page. For example /changelog/v0.1.1/#bug-fixes. The docs now have previous and next buttons at the end of each page to make it easier to paginate between pages. Improvements Added smooth scroll to &amp;lt;html&amp;gt; element for when prefers reduced motion is specifed. This adds a fancy scroll animation when an anchor link is clicked.</description>
+    </item>
+    <item>
+      <title>v0.1.1</title>
+      <link>http://localhost:1313/changelog/v0.1.1/</link>
+      <pubDate>Tue, 16 Jan 2024 11:00:42 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/v0.1.1/</guid>
+      <description>New features This site now has this fancy changelog page, to record and keep track of new features, bug fixes and improvements.&#xA;I’ve also added some functionality that causes external links to open in a new tab. You can read more about this in Markdown Render Hooks in the Hugo docs.&#xA;Bug fixes Added missing font directory link in installation docs Committed the /public folder to the repo Added missing public/css folder link also in installation docs.</description>
+    </item>
   </channel>
 </rss>

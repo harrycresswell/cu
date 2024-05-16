@@ -1,0 +1,77 @@
+/* margin and padding used in utility visual examples */
+.demo {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l);
+  overflow-x: scroll; }
+
+.demo > *:not(img) {
+  padding: 1rem; }
+
+.demo .item {
+  display: flex;
+  background-color: var(--color-brand);
+  color: var(--color-bg); }
+
+.demo .margin {
+  background-color: var(--color-highlight); }
+
+.demo .padding {
+  color: var(--color-bg);
+  background-color: var(--color-brand); }
+
+.demo .container {
+  background-color: var(--color-bg);
+  color: var(--color-text); }
+
+/* changelog item */
+.changelog-item:not(:first-of-type) {
+  margin-block-start: var(--space-xl); }
+
+.changelog-item .cluster {
+  --gutter: 1rem;
+  --cluster-vertical-alignment: start;
+  font-family: var(--font-accent); }
+  .changelog-item .cluster span {
+    background-color: var(--color-bg-mod-1);
+    padding-inline: .5rem; }
+
+.changelog-item div:last-of-type {
+  --flow-space: 2rem; }
+
+/* Section pagination */
+.pagination a {
+  background-color: var(--color-bg-mod-1);
+  padding: var(--space-m-l); }
+  .pagination a:hover {
+    background-color: var(--color-bg-mod-2); }
+
+.pagination span {
+  display: block; }
+
+.pagination span:first-of-type {
+  font-family: var(--font-accent);
+  font-size: var(--step--1); }
+
+.pagination span:last-of-type {
+  font-size: var(--step-1); }
+
+/*Heading anchors */
+.heading-anchor {
+  display: inline;
+  margin-left: .5rem;
+  opacity: 0; }
+
+h2:focus > .heading-anchor,
+h2:hover > .heading-anchor,
+h3:focus > .heading-anchor,
+h3:hover > .heading-anchor,
+h4:focus > .heading-anchor,
+h4:hover > .heading-anchor {
+  opacity: 1; }
+
+.heading-anchor {
+  text-decoration: none; }
+  .heading-anchor:hover {
+    text-decoration: underline;
+    color: var(--color-brand);
+    background: none; }

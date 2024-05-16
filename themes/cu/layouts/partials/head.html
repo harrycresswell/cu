@@ -6,7 +6,7 @@
 
   {{ partial "meta-info.html" . }}
 
-  {{ if .Site.IsServer }}
+  {{ if hugo.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
     {{ $demo := resources.Get "scss/demo.scss" | toCSS }}

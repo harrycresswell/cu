@@ -1,0 +1,1127 @@
+@charset "UTF-8";
+/* 
+* The variables/tokens (or whatever you 
+* wish to call them) that power the rest of your styles
+*/
+/* 
+Google fonts with subsetting via Google Webfonts Helper
+
+@link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
+*/
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* 
+Utopia fluid space
+
+@link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
+*/
+:root {
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+  --space-2xs: clamp(0.50rem, calc(0.46rem + 0.22vw), 0.63rem);
+  --space-xs: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+  --space-s: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --space-m: clamp(1.50rem, calc(1.37rem + 0.65vw), 1.88rem);
+  --space-l: clamp(2.00rem, calc(1.83rem + 0.87vw), 2.50rem);
+  --space-xl: clamp(3.00rem, calc(2.74rem + 1.30vw), 3.75rem);
+  --space-2xl: clamp(4.00rem, calc(3.65rem + 1.74vw), 5.00rem);
+  --space-3xl: clamp(6.00rem, calc(5.48rem + 2.61vw), 7.50rem);
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.12rem + 0.65vw), 0.63rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.35rem + 0.76vw), 0.94rem);
+  --space-xs-s: clamp(0.75rem, calc(0.58rem + 0.87vw), 1.25rem);
+  --space-s-m: clamp(1.00rem, calc(0.70rem + 1.52vw), 1.88rem);
+  --space-m-l: clamp(1.50rem, calc(1.15rem + 1.74vw), 2.50rem);
+  --space-l-xl: clamp(2.00rem, calc(1.39rem + 3.04vw), 3.75rem);
+  --space-xl-2xl: clamp(3.00rem, calc(2.30rem + 3.48vw), 5.00rem);
+  --space-2xl-3xl: clamp(4.00rem, calc(2.78rem + 6.09vw), 7.50rem);
+  /* Custom pairs */
+  --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
+
+/* 
+Global theme tokens
+*/
+:root {
+  /* Typography */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-display: var(--font-base);
+  --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height-compact: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.7;
+  --width-compact: 35ch;
+  --width-longform: 65ch;
+  --tracking: -0.05ch;
+  --tracking-s: -0.05ch;
+  /* 
+  Colors created with Utopia Kickstarter project 
+  @link https://www.figma.com/community/file/1122903924123950023
+  */
+  --color-text: #1D1D1D;
+  --color-text-mod-1: #494949;
+  --color-text-mod-2: #616161;
+  --color-bg: #ffffff;
+  --color-bg-mod-1:#F8F8F8;
+  --color-bg-mod-2: #EDEDED;
+  --color-border: #1D1D1D;
+  --color-brand: #4f29f0;
+  --color-accent: #9F2C5E;
+  --color-highlight: #eefbc1;
+  /* Grid */
+  --gutter: var(--space-s-m);
+  /* Effects */
+  --border-radius: 0;
+  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025); }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* 
+      If theme doesn’t require a dark mode then remove this media query altogether
+    */
+      --color-text: #CED3E8;
+      --color-text-mod-1: #C4CAE3;
+      --color-text-mod-2: #8995C8;
+      --color-bg: #0D101A;
+      --color-bg-mod-1:#121626;
+      --color-bg-mod-2: #212845;
+      --color-border: #CED3E8;
+      --color-brand: #a08aff;
+      --color-accent: #FF70AE; } }
+/* 
+Utopia fluid type
+
+@link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN 
+*/
+:root {
+  --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+  --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --step-1: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem); }
+
+/* 
+* Embrace the cascade and inheritance to 
+* style as much as possible at a global level 
+*/
+/* 
+A modern reset
+
+@link: https://piccalil.li/blog/a-modern-css-reset/ 
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Prevent zooming when orientation changes on some iOS devices */
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important; } }
+
+/* 
+Global styles 
+
+Low-specificity, global styles that apply to the whole 
+project: https://cube.fyi/css.html
+*/
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth; } }
+
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-size: var(--step-0);
+  font-family: var(--font-base);
+  letter-spacing: var(--tracking); }
+
+/* Base typesetting */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: var(--line-height-compact);
+  letter-spacing: var(--tracking-s); }
+
+h1,
+.h1 {
+  font-size: var(--step-4); }
+
+h2,
+.h2 {
+  font-size: var(--step-3); }
+
+h3,
+.h3 {
+  font-size: var(--step-2); }
+
+h4,
+.h4 {
+  font-size: var(--step-1); }
+
+h5,
+.h5 {
+  font-size: var(--step-0); }
+
+h6,
+.h6 {
+  font-size: var(--step--1); }
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+  max-width: var(--width-longform); }
+
+h1,
+h2,
+h3 {
+  max-width: var(--width-compact); }
+
+hr {
+  border: none;
+  border-top: 2px dotted; }
+
+kbd {
+  background-color: var(--color-bg-mod-1);
+  border: solid 1px var(--color-bg-mod-2);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  padding: .115rem .25rem; }
+
+figcaption {
+  font-size: var(--step--1);
+  margin-block-start: .5rem;
+  text-align: center; }
+
+small {
+  font-size: var(--step--1); }
+
+/* More generic elements */
+blockquote:not([class]) {
+  border-left: solid 3px var(--color-text);
+  padding-inline-start: var(--space-s);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: var(--line-height-base); }
+
+/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+blockquote:not([class]) p:last-of-type,
+blockquote:not([class]) cite {
+  font-family: var(--font-base);
+  font-size: var(--step-0);
+  font-weight: normal;
+  margin-block-start: var(--space-2xs); }
+
+svg {
+  height: 2ex;
+  width: auto;
+  flex: none; }
+  svg path {
+    fill: var(--color-text); }
+
+/* Remove padding and margin on ul, ol elements with a list role */
+[role='list'] {
+  padding: 0;
+  margin: 0; }
+
+/* Base interactive elements */
+a {
+  color: currentcolor;
+  color: var(--color-brand); }
+
+a:hover {
+  background-color: var(--color-brand);
+  color: var(--color-bg);
+  text-decoration: none; }
+
+/* Use naked variant to style links as text*/
+a[data-variant="naked"] {
+  color: var(--color-text);
+  text-decoration: none; }
+
+a[data-variant="naked"]:hover {
+  background-color: unset;
+  text-decoration: underline; }
+
+/* Hide focus styles if they're not needed, for example, 
+ when an element receives focus via the mouse. */
+:focus:not(:focus-visible) {
+  outline: 0; }
+
+/* Show focus styles on keyboard focus. */
+:focus-visible {
+  outline: dotted 2px var(--color-text);
+  outline-offset: 3px; }
+
+/* Add scroll margin to all target elements 
+  * See https://piccalil.li/quick-tip/add-scroll-margin-to-all-elements-which-can-be-targeted/
+ */
+:target {
+  scroll-margin-top: 2ex; }
+
+main:focus {
+  outline: none; }
+
+/* Add highlight styles */
+mark,
+::selection {
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+  /* Reverse text colour in dark mode */ }
+  @media (prefers-color-scheme: dark) {
+    mark,
+    ::selection {
+      color: var(--color-bg); } }
+/* Decrease the brightness and contrast of images in dark mode */
+@media (prefers-color-scheme: dark) {
+  img,
+  picture {
+    filter: brightness(0.8) contrast(1.2); } }
+
+/* 
+Form styles
+
+Ditch these styles altogether if not required for the website.
+*/
+fieldset {
+  border: solid 0.1rem var(--color-border); }
+
+legend {
+  font-weight: var(--font-weight-bold); }
+
+label {
+  display: block;
+  margin-block: var(--space-3xs); }
+
+form button {
+  display: block;
+  margin-block-start: var(--space-xs); }
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  background: var(--color-bg);
+  box-shadow: none;
+  letter-spacing: -.5px;
+  border: solid 0.1rem var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  padding: var(--space-3xs) var(--space-2xs); }
+
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative; }
+
+/* Chevron for select */
+select:not([multiple]) {
+  background-image: linear-gradient(45deg, transparent 49%, var(--color-text) 51%), linear-gradient(135deg, var(--color-text) 51%, transparent 49%);
+  background-position: calc(100% - 16px), calc(100% - 11px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-inline-end: 2rem; }
+
+/* checkbox and radio button style */
+input[type="checkbox"],
+input[type="radio"] {
+  border: solid 0.1rem var(--color-border);
+  padding: var(--space-2xs);
+  vertical-align: middle;
+  position: relative;
+  width: min-content;
+  margin-inline-start: 0;
+  margin-inline-end: .25rem;
+  margin-block-end: .3rem; }
+
+input[type="checkbox"] {
+  border-radius: var(--border-radius); }
+
+input[type="radio"] {
+  border-radius: 100%; }
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  border: solid 0.1rem var(--color-brand);
+  background-color: var(--color-brand); }
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: .17em;
+  height: .32em;
+  border-radius: 0;
+  position: absolute;
+  top: .06em;
+  left: .16em;
+  background-color: transparent;
+  border-right: solid var(--color-bg) 0.07em;
+  border-bottom: solid var(--color-bg) 0.07em;
+  font-size: 2em;
+  transform: rotate(45deg); }
+
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: .25em;
+  height: .25em;
+  border-radius: 100%;
+  position: absolute;
+  top: .13em;
+  background-color: var(--color-bg);
+  left: .13em;
+  font-size: 2em; }
+
+/* 
+Code styles
+
+Used for inline code and code blocks
+
+Ditch these styles altogether if not required for the website.
+*/
+pre {
+  background: var(--color-bg-mod-1);
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-wrap: normal;
+  padding: var(--space-xs-s);
+  margin: 0; }
+
+code {
+  background: var(--color-bg-mod-1);
+  color: var(--color-accent);
+  font-size: 93%; }
+
+pre code {
+  color: var(--color-text); }
+
+p code,
+li code {
+  padding: .125rem .35rem; }
+
+/* 
+Details and summary styles
+
+Format the expanding box, a.k.a accordion.
+
+Ditch these styles altogether if not required for the website.
+*/
+details {
+  background: var(--color-bg-mod-1);
+  border-radius: var(--border-radius); }
+
+summary {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  padding: .5rem 1rem; }
+
+details[open] {
+  padding: .5rem 1rem .75rem 1rem; }
+
+details[open] summary {
+  margin-bottom: .5rem;
+  padding: 0; }
+
+details[open] > *:last-child {
+  margin-bottom: 0; }
+
+/* Variant to enhance the style of accordions with fancy arrows */
+details[data-variant='fancy'] {
+  position: relative; }
+  details[data-variant='fancy'] summary::-webkit-details-marker,
+  details[data-variant='fancy'] summary::marker {
+    content: "";
+    /* Hide marker on iOS */
+    display: none; }
+  details[data-variant='fancy'] summary:after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiMxRDFEMUQiLz4KPC9zdmc+Cg==");
+    /* Use light chevron for darkmode */
+    height: 1.5rem;
+    pointer-events: none;
+    position: absolute;
+    right: 1rem;
+    top: .7rem;
+    transform: rotate(180deg); }
+    @media (prefers-color-scheme: dark) {
+      details[data-variant='fancy'] summary:after {
+        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
+details[open][data-variant='fancy'] summary:after {
+  top: .7rem;
+  transform: rotate(0deg); }
+
+/* 
+Table styles
+
+Ditch these styles altogether if not required for the website.
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: scroll; }
+
+td,
+th {
+  border: 0.1rem solid var(--color-border);
+  text-align: left;
+  padding: 0.5rem; }
+
+th {
+  background: var(--color-bg-mod-1);
+  font-weight: bold; }
+
+tr:nth-child(even) {
+  background: var(--color-bg-mod-1); }
+
+table caption {
+  padding: .5rem;
+  caption-side: bottom; }
+
+/*
+Button styles
+
+Globally style the button element, submit, button and reset input.
+Include the .button class for styling <a> tags as buttons. 
+*/
+button,
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: var(--color-brand);
+  border: solid 0.1rem var(--color-brand);
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  cursor: pointer;
+  padding: var(--space-3xs) var(--space-2xs);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; }
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="button"]:hover
+input[type="button"]:focus {
+  filter: brightness(1.2);
+  transform: translateY(-2px); }
+
+button:disabled,
+.button[aria-disabled="true"],
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled {
+  background-color: var(--color-bg-mod-2);
+  border: solid 0.1rem var(--color-bg-mod-2);
+  color: var(--color-text-mod-2);
+  cursor: not-allowed;
+  transform: none;
+  filter: none; }
+
+/* 
+EXCEPTIONS
+
+Offer a variant button style
+
+@link https://cube.fyi/exception.html 
+*/
+button[data-variant='outline'],
+.button[data-variant='outline'],
+input[type="submit"][data-variant='outline'],
+input[type="reset"][data-variant='outline'],
+input[type="button"][data-variant='outline'] {
+  color: var(--color-brand);
+  background: var(--color-bg);
+  border: solid 0.1rem var(--color-brand); }
+
+button[data-variant='outline']:hover,
+.button[data-variant='outline']:hover,
+input[type="submit"][data-variant='outline']:hover,
+input[type="reset"][data-variant='outline']:hover,
+input[type="button"][data-variant='outline']:hover {
+  filter: brightness(1.2);
+  border: solid 0.1rem var(--color-brand); }
+
+nav[data-variant='main'] a[data-state='active'] {
+  text-decoration: underline; }
+
+nav[data-variant='main'] li a {
+  display: flex; }
+
+nav[data-variant='main'] li a span {
+  display: flex;
+  align-items: center;
+  margin-right: .5rem; }
+
+nav[data-variant='sidebar'] a[data-state='active'] {
+  text-decoration: line-through; }
+
+nav[data-variant='sidebar'] li {
+  max-width: unset; }
+
+nav[data-variant='sidebar'] li[data-children='true'] {
+  position: relative; }
+
+nav[data-variant='sidebar'] li[data-children='true']::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiMxRDFEMUQiLz4KPC9zdmc+Cg==");
+  /* Use light chevron for darkmode */
+  height: 1.2rem;
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: .6rem;
+  transform: rotate(180deg); }
+  @media (prefers-color-scheme: dark) {
+    nav[data-variant='sidebar'] li[data-children='true']::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE1LjM3NUw2IDkuMzc0OTlMNy4wNzUgOC4yOTk5OUwxMiAxMy4yNUwxNi45MjUgOC4zMjQ5OUwxOCA5LjM5OTk5TDEyIDE1LjM3NVoiIGZpbGw9IiNDRUQzRTgiLz4KPC9zdmc+Cg=="); } }
+nav[data-variant='sidebar'] li[data-children='true'][data-state='active']::before {
+  top: .2rem;
+  transform: rotate(0deg); }
+
+nav[data-variant='sidebar'] li[data-state='active'] + ul,
+nav[data-variant='sidebar'] ul[data-state='visible'] {
+  display: block;
+  padding-inline: 1rem;
+  width: 100%;
+  height: auto;
+  clip: auto; }
+
+nav[data-variant='sidebar'] ul > li ul {
+  display: none; }
+
+/* 
+* Skeletal components or organisational structures.
+*/
+.prose {
+  --flow-space: var(--space-s-m);
+  line-height: var(--line-height-loose); }
+
+.prose :is(p, ul:not([class]), ol:not([class])) {
+  max-width: var(--width-longform); }
+
+.prose :is(blockquote) {
+  max-width: 52ch; }
+
+.prose :is(pre,pre+*,figure,figure+*,h2,h3,h4) {
+  --flow-space: var(--space-l-xl); }
+
+/*
+HERO
+*/
+.hero {
+  --region-space: 8rem;
+  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
+  background-color: var(--color-bg);
+  background-position: 0 0, 50px 50px;
+  background-size: 3px 3px;
+  padding-inline: var(--space-s-m);
+  text-align: center; }
+
+/* 
+Ensure direct decending elements maintain a consistent flow space when hero is used with .flow. 
+Center align elements.
+*/
+.hero > * {
+  --flow-space: 1rem;
+  margin-inline: auto; }
+
+/* 
+CALLOUT
+*/
+.callout {
+  padding: var(--space-xs-s);
+  border: dotted 2px var(--color-text-mod-2);
+  max-width: var(--width-longform);
+  border-radius: var(--border-radius); }
+
+.callout > * {
+  line-height: var(--line-height-base); }
+
+.callout[data-variant='brand'] {
+  color: var(--color-brand);
+  border: dotted 2px var(--color-brand); }
+
+.callout[data-variant='brand'] > * {
+  color: var(--color-brand); }
+
+/*
+CARD
+
+A block that styles content as a card.
+Largely based on:
+@link: https://inclusive-components.design/cards/
+@link: https://portfolio.set.studio/design-system/component/cards/
+*/
+.card {
+  --img-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: solid .1rem;
+  border-radius: var(--border-radius); }
+
+/* Ensure consistent heading size regardless of heading level */
+.card :is(h2, h3, h4) {
+  font-size: var(--step-1); }
+
+/* Ensure consistent text size for all non-heading elements */
+.card > :not(h2, h3, h4) {
+  font-size: var(--step--1); }
+
+/* 
+  Use Heydon’s pseudo-content trick to make the whole card clickable
+  @link: https://inclusive-components.design/cards/#thepseudocontenttrick
+  See also Andy’s Breakout button 
+  @link: https://piccalil.li/tutorial/create-a-semantic-break-out-button-to-make-an-entire-element-clickable/
+*/
+.card :is(h2, h3, h4) > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+/* Raise all other links above the pseudo-content, so they remain clickable */
+.card p,
+.card button,
+.card .button {
+  position: relative;
+  z-index: 1; }
+
+/* Apply a basic focus style to the link so that users of older browsers that do not support :focus-within will still see a fallback focus style */
+.card a:focus {
+  text-decoration: underline; }
+
+/* Use :focus-within to match the :hover style */
+.card:focus-within {
+  box-shadow: 0 0 0 .1rem; }
+
+/* Remove the unnecessary basic :focus style only where :focus-within is supported */
+.card:focus-within a:focus {
+  text-decoration: none; }
+
+/* Create consistent image behaviour and ratio */
+.card > img {
+  aspect-ratio: var(--img-ratio);
+  object-fit: cover;
+  width: 100%; }
+
+/* Force the textual elements to take up all the available space and prevents line length for cards on large screens not supporting grid from becoming too long */
+.card > div {
+  --flow-space: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 60ch; }
+
+/* Push the last textual element to the bottom of the card, regardless of its height. */
+.card > div :last-child {
+  margin-top: auto; }
+
+/* Add a bottom margin to the second last element, to ensure a minimum level of separation */
+.card > div :nth-last-child(2) {
+  margin-bottom: var(--space-xs-s); }
+
+/* Optionally flip the card design
+ @link: https://cube.fyi/exception.html 
+*/
+.card[data-state='reversed'] {
+  display: flex;
+  flex-direction: column-reverse; }
+
+/* 
+* High level, flexible layouts that provide a 
+* skeleton to support any variant of a component
+*/
+/* 
+AUTO GRID
+Related Every Layout: https://every-layout.dev/layouts/grid/
+More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+A flexible layout that will create an auto-fill grid with
+configurable grid item sizes.
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+
+--grid-min-item-size (14rem): How large each item should be
+ideally, as a minimum.
+
+--grid-placement (auto-fill): Set either auto-fit or auto-fill
+to change how empty grid tracks are handled. 
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
+  gap: var(--gutter, var(--space-s-l)); }
+
+/* 
+EXCEPTIONS
+  
+@link https://cube.fyi/exception.html 
+*/
+/* Masonry layout (will work one day in all browsers) */
+.grid[data-rows='masonry'] {
+  grid-template-rows: masonry;
+  align-items: start; }
+
+/* Two column when space permits */
+.grid[data-layout='50-50'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 26rem); }
+
+/* Three column when space permits */
+.grid[data-layout='33x3'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33vw, 18rem); }
+
+/*
+REPEL
+A little layout that pushes items away from each other where
+there is space in the viewport and stacks on small viewports
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+--repel-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-s-l)); }
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap; }
+
+/*
+CLUSTER
+More info: https://every-layout.dev/layouts/cluster/
+A layout that lets you distribute items with consitent
+spacing, regardless of their size
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter ($global-gutter): This defines the space
+between each item.
+
+--cluster-horizontal-alignment (flex-start) How items should align
+horizontally. Can be any acceptable flexbox aligmnent value.
+
+--cluster-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l));
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  align-items: var(--cluster-vertical-alignment, center); }
+
+/* 
+SIDEBAR
+More info: https://every-layout.dev/layouts/sidebar/
+A layout that allows you to have a flexible main content area
+and a "fixed" width sidebar that sits on the left or right.
+If there is not enough viewport space to fit both the sidebar
+width *and* the main content minimum width, they will stack
+on top of each other
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-size-1)): This defines the space
+between the sidebar and main content.
+
+--sidebar-target-width (20rem): How large the sidebar should be
+
+--sidebar-content-min-width(50%): The minimum size of the main content area
+
+EXCEPTIONS
+.sidebar[data-direction='rtl']: flips the sidebar to be on the right 
+*/
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l)); }
+
+.sidebar:not([data-direction]) > :first-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1; }
+
+.sidebar:not([data-direction]) > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%); }
+
+/* 
+A flipped version where the sidebar is on the right
+*/
+.sidebar[data-direction='rtl'] > :last-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1; }
+
+.sidebar[data-direction='rtl'] > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%); }
+
+@media screen and (min-width: 960px) {
+  .sidebar[data-variant='sticky'] > :first-child {
+    position: sticky;
+    top: 2rem;
+    overflow: auto;
+    height: 100vh; } }
+
+/* 
+REEL
+A layout that creates a carousel-like element
+
+CONFIGURATION
+Add an attribute of data-scroll="snap" to the element
+to enable scroll snapping
+*/
+.reel {
+  --reel-space: 2rem;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  margin-inline: auto;
+  /* Padding allows child element hover states to show */
+  padding: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.reel > * {
+  flex-basis: var(--reel-item-width, calc(33.333% - var(--reel-space)));
+  flex-shrink: 0; }
+
+.reel > * + * {
+  margin-inline-start: var(--reel-space); }
+
+/* SCROLL TYPE EXCEPTION
+   Sets the reel to snap on each item on scroll */
+.reel[data-scroll='snap'] {
+  scroll-snap-type: x mandatory; }
+
+.reel[data-scroll='snap'] > * {
+  scroll-snap-align: start; }
+
+/* IMAGE EXCEPTION 
+   Use to maintain image aspect ratios when using image content in a reel */
+.reel[data-variant='img'] {
+  block-size: var(--reel-height, 50vh); }
+
+.reel[data-variant='img'] > img {
+  block-size: 100%;
+  width: auto; }
+
+/*
+SWITCHER
+More info: https://every-layout.dev/layouts/switcher/
+A layout that allows you to lay **4** items next to each other
+until there is not enough horizontal space to allow that.
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--gutter)): This defines the space
+between each item
+
+--switcher-target-container-width (40rem): How large the container
+needs to be to allow items to sit inline with each other
+
+--switcher-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1rem);
+  align-items: var(--switcher-vertical-alignment, flex-start); }
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-target-container-width, 40rem) - 100%) * 999); }
+
+/* Max 4 items,
+so we target everything *after* those */
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%; }
+
+/* 
+* Classes that do one job and one job well 
+*/
+/* 
+VISUALLY HIDDEN
+Info: https://piccalil.li/quick-tip/visually-hidden/ 
+*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+/*
+FLOW
+Applies a margin to sibling elements based on a --flow-space custom property.
+@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
+@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+@link: https://piccalil.li/quick-tip/flow-utility/
+*/
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+
+/*
+REGION 
+Add consistent vertical padding to create regions of content 
+Can either be configured by setting --region-space or use a default from the space scale
+*/
+.region {
+  padding-top: var(--region-space, var(--space-l-xl));
+  padding-bottom: var(--region-space, var(--space-l-xl)); }
+
+/*
+WRAPPER
+Sets a max width, adds a consistent gutter and horizontally
+centers the contents
+@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+*/
+.wrapper {
+  max-width: var(--wrapper-max-width, 90rem);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  position: relative; }
+
+.w-full {
+  width: 100%;
+  max-width: unset; }
+
+.text-center {
+  text-align: center; }
+
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999; }
+
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  width: auto;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-xs);
+  line-height: 1; }
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+/*# sourceMappingURL=main.css.map */
