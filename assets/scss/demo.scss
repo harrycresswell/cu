@@ -92,6 +92,9 @@ h4:hover>.heading-anchor {
   opacity: 1;
 }
 
+.heading-anchor:focus {
+  opacity: 1;
+}
 
 .heading-anchor {
   text-decoration: none;
