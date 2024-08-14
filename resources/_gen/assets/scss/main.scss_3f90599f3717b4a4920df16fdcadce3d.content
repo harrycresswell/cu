@@ -1036,6 +1036,31 @@ so we target everything *after* those */
 .switcher > :nth-last-child(n + 5) ~ * {
   flex-basis: 100%; }
 
+/*
+FRAME
+More info: https://every-layout.dev/layouts/frame/
+A layout that allows you to control the aspect ratio of the element within it. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--n: This is the numerator, or n, which represents the width.
+--d: This is the denominator, or d, which represnts the height.
+*/
+.frame {
+  --n: 16;
+  --d: 9;
+  aspect-ratio: var(--n)/var(--d);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Handles cropping of img and video content */
+.frame > img,
+.frame > video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover; }
+
 /* 
 * Classes that do one job and one job well 
 */
