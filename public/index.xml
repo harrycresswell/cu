@@ -6,7 +6,7 @@
     <description>Recent content in A lightweight CSS boilerplate on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 04 Apr 2024 14:19:01 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2024 11:57:01 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Button</title>
@@ -189,6 +189,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/global-styles/accordion/</guid>
       <description>Use the &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; elements to create accordions.&#xA;Do you ship internationally? Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&#xA;&amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Do you ship internationally?&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; Add data-variant=&amp;quot;fancy&amp;quot; to hide default ::marker and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the &amp;lt;summary&amp;gt; text.</description>
+    </item>
+    <item>
+      <title>Frame</title>
+      <link>http://localhost:1313/compositions/frame/</link>
+      <pubDate>Wed, 14 Aug 2024 11:57:01 +0100</pubDate>
+      <guid>http://localhost:1313/compositions/frame/</guid>
+      <description>Frame allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.&#xA;By default, Frame uses an aspect ratio of 16/9, however you can change this by setting a value for --n, (the numerator, or n), which represents the width, and --d (the denominator, or d), which represents the height.&#xA;By default, Frame will crop content to an aspect ratio of 16/9.</description>
     </item>
     <item>
       <title>Skip link</title>

@@ -6,7 +6,7 @@
     <description>Recent content in Compositions on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 13 Feb 2024 11:53:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2024 11:57:01 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/compositions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grid</title>
@@ -49,6 +49,13 @@
       <pubDate>Tue, 13 Feb 2024 11:53:42 +0000</pubDate>
       <guid>http://localhost:1313/compositions/switcher/</guid>
       <description>Switcher can be used to switch directly between a horizontal and vertical layout.&#xA;Useful where each item should be considered equal to one another. For example, when displaying content in a number list of steps or showing product benefits.&#xA;To create a Switcher, add the .switcher class to a parent element containing any number of child elements.&#xA;Switcher will display up to 4 items next to each other while horizontal space permits.</description>
+    </item>
+    <item>
+      <title>Frame</title>
+      <link>http://localhost:1313/compositions/frame/</link>
+      <pubDate>Wed, 14 Aug 2024 11:57:01 +0100</pubDate>
+      <guid>http://localhost:1313/compositions/frame/</guid>
+      <description>Frame allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.&#xA;By default, Frame uses an aspect ratio of 16/9, however you can change this by setting a value for --n, (the numerator, or n), which represents the width, and --d (the denominator, or d), which represents the height.&#xA;By default, Frame will crop content to an aspect ratio of 16/9.</description>
     </item>
   </channel>
 </rss>

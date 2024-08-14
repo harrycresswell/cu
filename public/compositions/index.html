@@ -276,6 +276,10 @@
                 <a href="#switcher">Switcher</a>
               </li>
             
+              <li>
+                <a href="#frame">Frame</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -665,6 +669,34 @@
 <p>Control the space between each item by setting a value for <code>--gutter</code>.</p>
 <p>Set how items should align vertically using <code>--switcher-vertical-alignment</code> with any flexbox alignment value.</p>
  
+        </article>
+      
+        <article class="prose | region flow">
+          <h2 id="frame">
+            Frame
+            <a class="heading-anchor" href="#frame" aria-label="Anchor">#</a>
+          </h2>
+          <p><em>Frame</em> allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.</p>
+<p>By default, <em>Frame</em> uses an aspect ratio of 16/9, however you can change this by setting a value for <code>--n</code>, (the numerator, or n), which represents the width, and <code>--d</code> (the denominator, or d), which represents the height.</p>
+<figure>
+  <div class="demo | frame">
+    <img src="/img/chuck-givens-02AQdLh4gP4-unsplash.jpg" alt="" />
+  </div>
+  <figcaption>By default, Frame will crop content to an aspect ratio of 16/9.</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;frame&#34;&gt;
+  &lt;img src=&#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/div&gt;
+</code></pre><figure>
+  <div class="demo | frame" style="--n: 1; --d:1;">
+    <img src="/img/chuck-givens-02AQdLh4gP4-unsplash.jpg" alt="" />
+  </div>
+  <figcaption>The default aspect ratio can be changed by updating the values of `--n` and `--d`.</figcaption>
+</figure>
+<pre tabindex="0"><code>&lt;div class=&#34;frame&#34; style=&#34;--n: 1; --d:1;&#34;&gt;
+  &lt;img src=&#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/div&gt;
+</code></pre> 
         </article>
       
       <div class="pagination | grid region" data-layout="50-50">

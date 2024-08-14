@@ -1039,7 +1039,7 @@ so we target everything *after* those */
 /*
 FRAME
 More info: https://every-layout.dev/layouts/frame/
-A layout that allows you to control the aspect ratio of the element within it. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio
+A layout that allows you to control the aspect ratio of the element within it. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.
 
 CUSTOM PROPERTIES AND CONFIGURATION
 --n: This is the numerator, or n, which represents the width.
