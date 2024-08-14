@@ -6,8 +6,15 @@
     <description>Recent content in Changelog on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 04 Apr 2024 14:19:01 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2024 12:28:38 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/changelog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v0.1.7</title>
+      <link>http://localhost:1313/changelog/24-08-14-v0.1.7/</link>
+      <pubDate>Wed, 14 Aug 2024 12:28:38 +0100</pubDate>
+      <guid>http://localhost:1313/changelog/24-08-14-v0.1.7/</guid>
+      <description>New features Add Frame composition for controlling aspect ratio of media content. Bug fixes Switch depreciated .Site.IsServer for hugo.IsServer. Switch depreciated .Site.Author for .Site.Params.author. Improvements Heading anchors now display on focus when using keyboard to navigate page. Rewrite .hero documentation to make it clearer how it can be used and how to use pipes to distiguish types of classes. </description>
+    </item>
     <item>
       <title>v0.1.6</title>
       <link>http://localhost:1313/changelog/24-04-04-v0.1.6/</link>
