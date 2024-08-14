@@ -125,7 +125,7 @@
       <link>http://localhost:1313/blocks/hero/</link>
       <pubDate>Thu, 27 Jul 2023 17:16:41 +0100</pubDate>
       <guid>http://localhost:1313/blocks/hero/</guid>
-      <description>Use .hero, combined with region and flow to create a distictive headline section for pages. For the sake of clarity, pipes are used to group classes, as seen below.&#xA;A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.&#xA;&amp;lt;div class=&amp;#34;hero | region | flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; </description>
+      <description>Use .hero, in combination with region and flow, to create a distictive section on pages. You can see .hero in action at the top of each page on this website.&#xA;A modern CSS framework cu.css is built using Cube CSS and Utopia fluid responsive design.&#xA;&amp;lt;div class=&amp;#34;hero | region flow&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Some page title&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;Some page description&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; Notice pipes are used to group classes, as seen in the example code above.</description>
     </item>
     <item>
       <title>Visually Hidden</title>
