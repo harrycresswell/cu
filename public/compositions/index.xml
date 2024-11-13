@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compositions on cu.css</title>
-    <link>http://localhost:1313/compositions/</link>
+    <link>http://localhost:55338/compositions/</link>
     <description>Recent content in Compositions on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 14 Aug 2024 11:57:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/compositions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55338/compositions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grid</title>
-      <link>http://localhost:1313/compositions/grid/</link>
+      <link>http://localhost:55338/compositions/grid/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:51 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/grid/</guid>
+      <guid>http://localhost:55338/compositions/grid/</guid>
       <description>Grid comes in three flavours: Two-column, Three-column and Masonry layout.&#xA;Two-column layout The two-column layout positions grid items side-by-side when space permits, so that items proportionately share the available space.&#xA;Use the layout by adding data-layout=&amp;quot;50-50&amp;quot; to any element with the .grid class applied.&#xA;Item 1 Item 2 Item 3 Item 4 Two column when space permits /* Two column when space permits */ .grid[data-layout=&amp;#39;50-50&amp;#39;] { --grid-placement: auto-fit; --grid-min-item-size: clamp(16rem, 50vw, 26rem); } Three-column layout The three-column layout positions grid items in three columns when space permits, so that items proportionately share the available space.</description>
     </item>
     <item>
       <title>Cluster</title>
-      <link>http://localhost:1313/compositions/cluster/</link>
+      <link>http://localhost:55338/compositions/cluster/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/cluster/</guid>
+      <guid>http://localhost:55338/compositions/cluster/</guid>
       <description>Cluster creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.&#xA;This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the .cluster class to an element with nested children.&#xA;Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Cluster will cluster items inline while space permits .</description>
     </item>
     <item>
       <title>Repel</title>
-      <link>http://localhost:1313/compositions/repel/</link>
+      <link>http://localhost:55338/compositions/repel/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/repel/</guid>
+      <guid>http://localhost:55338/compositions/repel/</guid>
       <description>Repel adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.&#xA;Add the .repel class to site headers, site footers or anywhere you want to push two items away from each other.&#xA;Use data-nowrap to prevent items from wrapping when space no longer permits.&#xA;Item 1 Item 2 Repel quite literally repels two items from one another .</description>
     </item>
     <item>
       <title>Sidebar</title>
-      <link>http://localhost:1313/compositions/sidebar/</link>
+      <link>http://localhost:55338/compositions/sidebar/</link>
       <pubDate>Tue, 30 Jan 2024 14:46:29 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/sidebar/</guid>
+      <guid>http://localhost:55338/compositions/sidebar/</guid>
       <description>Sidebar creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.&#xA;To use Sidebar, add the .sidebar class to a parent element containing two child elements.&#xA;You can learn more about this composition in Every Layout.&#xA;Item 1 Item 2 Sidebar will create a classic sidebar layout while space permits .</description>
     </item>
     <item>
       <title>Reel</title>
-      <link>http://localhost:1313/compositions/reel/</link>
+      <link>http://localhost:55338/compositions/reel/</link>
       <pubDate>Wed, 31 Jan 2024 11:13:58 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/reel/</guid>
+      <guid>http://localhost:55338/compositions/reel/</guid>
       <description>Real creates a carousel-like layout, where items that exceed the available horizontal space become horizontally scrollable.&#xA;This is a useful pattern for browsing lots of similar content in a limited amount of vertical space. For example, when creating sausage links or image galleries.&#xA;To create a Reel, add the .reel class to a parent element containing any number of child elements.&#xA;Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Item 7 Item 8 Default reel – a carousel-like horizontally scrollable layout &amp;lt;div class=&amp;#34;reel&amp;#34;&amp;gt; &amp;lt;div&amp;gt;Item 1&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 2&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 3&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 4&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 5&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 6&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 7&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;Item 8&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Use the data-scroll=&amp;quot;snap&amp;quot; attribute to apply CSS scroll snap to your reel items.</description>
     </item>
     <item>
       <title>Switcher</title>
-      <link>http://localhost:1313/compositions/switcher/</link>
+      <link>http://localhost:55338/compositions/switcher/</link>
       <pubDate>Tue, 13 Feb 2024 11:53:42 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/switcher/</guid>
+      <guid>http://localhost:55338/compositions/switcher/</guid>
       <description>Switcher can be used to switch directly between a horizontal and vertical layout.&#xA;Useful where each item should be considered equal to one another. For example, when displaying content in a number list of steps or showing product benefits.&#xA;To create a Switcher, add the .switcher class to a parent element containing any number of child elements.&#xA;Switcher will display up to 4 items next to each other while horizontal space permits.</description>
     </item>
     <item>
       <title>Frame</title>
-      <link>http://localhost:1313/compositions/frame/</link>
+      <link>http://localhost:55338/compositions/frame/</link>
       <pubDate>Wed, 14 Aug 2024 11:57:01 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/frame/</guid>
+      <guid>http://localhost:55338/compositions/frame/</guid>
       <description>Frame allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.&#xA;By default, Frame uses an aspect ratio of 16/9, however you can change this by setting a value for --n, (the numerator, or n), which represents the width, and --d (the denominator, or d), which represents the height.&#xA;By default, Frame will crop content to an aspect ratio of 16/9.</description>
     </item>
   </channel>

@@ -78,3 +78,7 @@ h4:hover > .heading-anchor {
     text-decoration: underline;
     color: var(--color-brand);
     background: none; }
+
+/* Utilities */
+.bt {
+  border-top: dotted 2px; }
