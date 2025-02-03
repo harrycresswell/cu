@@ -4,7 +4,7 @@ title = 'cu.css'
 theme = "cu"
 
 [params]
-site_description = 'A lightweight CSS framework'
+site_description = 'A lightweight CSS boilerplate'
 site_keywords = ""
 site_image = ""
 

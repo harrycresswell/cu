@@ -1,6 +1,6 @@
-# cu.css – A modern CSS framework
+# cu.css – A modern CSS boilerplate
 
-cu.css is a lightweight CSS framework that makes it quicker to start using [CUBE CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/) in your projects. To get the most out of cu.css, you will need to be familiar with both approaches.
+cu.css is a lightweight starting point for web projects. It makes it quicker to get up and running with [CUBE CSS](https://cube.fyi/) and [Utopia](https://utopia.fyi/). Though not essential, to get the most out of cu.css it will help to be familiar with both of these methodologies.
 
 cu.css is not a fully fledged CSS framework, like Tailwind or Bootstrap. If anything, it’s more of a boilerplate or starting point, designed to be built upon and expanded as you see fit.
 
