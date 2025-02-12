@@ -292,6 +292,10 @@ svg {
   svg path {
     fill: var(--color-text); }
 
+/* Remove default indent from lists */
+:is(ul, ol):not([class]) {
+  padding-inline-start: 1.7ch; }
+
 /* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
   padding: 0;
