@@ -273,14 +273,15 @@ small {
 /* More generic elements */
 blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
-  padding-inline-start: var(--space-s);
   font-family: var(--font-display);
   font-size: var(--step-1);
-  line-height: var(--line-height-base); }
+  line-height: var(--line-height-base);
+  padding-inline-start: var(--space-s); }
 
-/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+/* Markdown blockquote’s aren't ideal, so we're presuming the person quoted is the last p, added within a cite or footer tag */
 blockquote:not([class]) p:last-of-type,
-blockquote:not([class]) cite {
+blockquote:not([class]) cite,
+blockquote:not([class]) footer {
   font-family: var(--font-base);
   font-size: var(--step-0);
   font-weight: normal;
