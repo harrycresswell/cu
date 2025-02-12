@@ -461,7 +461,7 @@ Used for inline code and code blocks
 
 Ditch these styles altogether if not required for the website.
 */
-pre {
+pre:has(code) {
   background: var(--color-bg-mod-1);
   overflow: auto;
   overflow-x: scroll;
