@@ -131,6 +131,22 @@ A modern reset
 *::after {
   box-sizing: border-box; }
 
+/* Prevent zooming when orientation changes on some iOS devices */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
 /* Remove default margin */
 body,
 h1,
@@ -148,21 +164,6 @@ dd {
 ul[role='list'],
 ol[role='list'] {
   list-style: none; }
-
-/* Prevent zooming when orientation changes on some iOS devices */
-html {
-  text-size-adjust: none;
-  -webkit-text-size-adjust: none; }
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth; }
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5; }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -298,8 +299,8 @@ svg {
 
 /* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 /* Base interactive elements */
 a {
