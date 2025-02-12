@@ -18,6 +18,8 @@ code {
   background: var(--color-bg-mod-1);
   color: var(--color-accent);
   font-size: 93%;
+  /* Carry over padding when code breaks multiple lines */
+  box-decoration-break: clone;
 }
 
 pre code {

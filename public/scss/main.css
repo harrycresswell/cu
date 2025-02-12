@@ -472,7 +472,9 @@ pre {
 code {
   background: var(--color-bg-mod-1);
   color: var(--color-accent);
-  font-size: 93%; }
+  font-size: 93%;
+  /* Carry over padding when code breaks multiple lines */
+  box-decoration-break: clone; }
 
 pre code {
   color: var(--color-text); }
