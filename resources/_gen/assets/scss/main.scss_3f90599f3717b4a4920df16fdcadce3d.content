@@ -207,13 +207,12 @@ body {
   letter-spacing: var(--tracking); }
 
 /* Base typesetting */
-h1,
-h2,
-h3 {
+:is(h1, h2, h3) {
   font-family: var(--font-display);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-compact);
-  letter-spacing: var(--tracking-s); }
+  letter-spacing: var(--tracking-s);
+  text-wrap: balance; }
 
 h1,
 .h1 {
