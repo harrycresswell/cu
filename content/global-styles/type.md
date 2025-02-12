@@ -42,7 +42,7 @@ There are various HTML elements you can use to format inline text in a bunch of 
 - `<em>` to create *emphasised* text.
 - `<u>` to <u>underline</u> text.
 - `<small>` to make <small>small</small> text.
-- `<code>` to create inline code examples.
+- `<code>` to create `inline code` examples.
 - `<mark>` element to <mark>highlight text</mark>.
 - `<kbd>` for keyboard commands; <kbd>Ctrl</kbd> + <kbd>V</kbd>.
 - `<del>`  to create <del>text with a strikethrough</del>
