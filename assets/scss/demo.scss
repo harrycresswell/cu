@@ -83,12 +83,8 @@
   opacity: 0;
 }
 
-h2:focus>.heading-anchor,
-h2:hover>.heading-anchor,
-h3:focus>.heading-anchor,
-h3:hover>.heading-anchor,
-h4:focus>.heading-anchor,
-h4:hover>.heading-anchor {
+:is(h2, h3, h4, h5, h6):focus>.heading-anchor,
+:is(h2, h3, h4, h5, h6):hover>.heading-anchor {
   opacity: 1;
 }
 

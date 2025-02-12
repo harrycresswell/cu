@@ -200,8 +200,8 @@ project: https://cube.fyi/css.html
     scroll-behavior: smooth; } }
 
 body {
-  color: var(--color-text);
   background: var(--color-bg);
+  color: var(--color-text);
   font-size: var(--step-0);
   font-family: var(--font-base);
   letter-spacing: var(--tracking); }
@@ -956,7 +956,8 @@ A flipped version where the sidebar is on the right
   min-width: var(--sidebar-content-min-width, 50%); }
 
 @media screen and (min-width: 960px) {
-  .sidebar[data-variant='sticky'] > :first-child {
+  .sidebar:not([data-direction])[data-variant='sticky'] > :first-child,
+  .sidebar[data-direction][data-variant='sticky'] > :last-child {
     position: sticky;
     top: 2rem;
     overflow: auto;
