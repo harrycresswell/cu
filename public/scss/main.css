@@ -578,6 +578,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  /* Configure focus color from global focus */
+  --focus-color: var(--color-brand);
   background-color: var(--color-brand);
   border: solid 0.1rem var(--color-brand);
   border-radius: var(--border-radius);
