@@ -166,8 +166,8 @@ project: https://cube.fyi/css.html
 
  /* Show focus styles on keyboard focus. */
  :focus-visible {
-   outline: dotted 2px var(--color-text);
-   outline-offset: 3px;
+   outline: dotted 2px var(--focus-color, currentColor);
+   outline-offset:  var(--focus-offset, 2px);
  }
 
  /* Add scroll margin to all target elements 

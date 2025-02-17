@@ -5,16 +5,16 @@ Ditch these styles altogether if not required for the website.
 */
 table {
   border-collapse: collapse;
-  width: 100%;
   margin: 1.5rem 0;
   overflow-x: scroll;
+  width: 100%;
 }
 
 td,
 th {
   border: .1rem solid var(--color-border);
-  text-align: left;
   padding: 0.5rem;
+  text-align: left;
 }
 
 th {
