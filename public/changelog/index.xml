@@ -6,8 +6,15 @@
     <description>Recent content in Changelog on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 14 Aug 2024 12:28:38 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 15:16:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/changelog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>25 02 17 V0.1.8</title>
+      <link>http://localhost:1313/changelog/25-02-17-v0.1.8/</link>
+      <pubDate>Mon, 17 Feb 2025 15:16:54 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/25-02-17-v0.1.8/</guid>
+      <description>Bug fixes Remove unused gap utility. Remove unused fonts. Add missing font weight to h1-h3. Reverse sidebar composition sticky element for direction right-to-left. Reveal hidden heading anchors for h5 and h6 on hover and focus. Add missing -moz vendor prefix for text size adjust on &amp;lt;html&amp;gt; e lement. Improve blockquote comment to better explain the CSS. Add default button focus color as configurable custom variable which overides global style. Improvements Add util for border top, then add to footer to improve spacing on demo site.</description>
+    </item>
     <item>
       <title>v0.1.7</title>
       <link>http://localhost:1313/changelog/24-08-14-v0.1.7/</link>
