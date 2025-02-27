@@ -6,7 +6,7 @@
     <description>Recent content in A lightweight CSS boilerplate on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 14 Aug 2024 12:28:38 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 15:16:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Button</title>
@@ -245,6 +245,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/global-styles/visibility/</guid>
       <description>You can use the [hidden] attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript.&#xA;&amp;lt;p hidden&amp;gt;This paragraph is hidden from the browser and will not render&amp;lt;/p&amp;gt; If you don’t want content to be visible in the browser, but it should remain accessible to assistive technologies, such as screen readers, then use the visually hidden utility class instead.</description>
+    </item>
+    <item>
+      <title>v0.1.8</title>
+      <link>http://localhost:1313/changelog/25-02-17-v0.1.8/</link>
+      <pubDate>Mon, 17 Feb 2025 15:16:54 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/25-02-17-v0.1.8/</guid>
+      <description>Bug fixes Remove unused gap utility. Remove unused fonts. Add missing font weight to h1-h3. Reverse sidebar composition sticky element for direction right-to-left. Reveal hidden heading anchors for h5 and h6 on hover and focus. Add missing -moz vendor prefix for text size adjust on &amp;lt;html&amp;gt; e lement. Improve blockquote comment to better explain the CSS. Add default button focus color as configurable custom variable which overides global style. Improvements Add util for border top, then add to footer to improve spacing on demo site.</description>
     </item>
     <item>
       <title>v0.1.7</title>
