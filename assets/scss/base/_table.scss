@@ -3,6 +3,8 @@ Table styles
 
 Ditch these styles altogether if not required for the website.
 */
+
+/* Make sure table content scrolls horizontally when space no longer permits visiblity of full table */
 table {
   border-collapse: collapse;
   margin: 1.5rem 0;
@@ -10,6 +12,7 @@ table {
   width: 100%;
 }
 
+/* Add border to all table cells and aligned content left */
 td,
 th {
   border: .1rem solid var(--color-border);
@@ -17,15 +20,18 @@ th {
   text-align: left;
 }
 
+/* Give table header a background color */
 th {
   background: var(--color-bg-mod-1);
   font-weight: bold;
 }
 
+/* Give all even table rows a background color */
 tr:nth-child(even) {
   background: var(--color-bg-mod-1);
 }
 
+/* Make sure table captions sit beneath the table */
 table caption {
   padding: .5rem;
   caption-side: bottom;
