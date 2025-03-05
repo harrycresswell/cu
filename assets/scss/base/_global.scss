@@ -24,6 +24,7 @@ project: https://cube.fyi/css.html
   font-weight: var(--font-weight-bold);
 	line-height: var(--line-height-compact);
   letter-spacing: var(--tracking-s);
+  max-width: var(--width-compact);
   text-wrap: balance;
  }
 
@@ -62,12 +63,6 @@ project: https://cube.fyi/css.html
  li,
  blockquote:not([class]) {
    max-width: var(--width-longform);
- }
-
- h1,
- h2,
- h3 {
-   max-width: var(--width-compact);
  }
 
  hr {
