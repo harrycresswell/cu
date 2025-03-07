@@ -294,7 +294,7 @@ svg:not([class]) {
 svg {
   flex-shrink: 0; }
 
-/* If SVG has role “img” and a width and height, allow this width and height take over sizing */
+/* If SVG has role “img” and a width and height, allow that width and height to control sizing */
 svg[role='img'][width][height] {
   width: revert;
   height: revert; }
