@@ -3,6 +3,7 @@ Form styles
 
 Ditch these styles altogether if not required for the website.
 */
+
 fieldset {
   border: solid .1rem var(--color-border);
 }
@@ -21,28 +22,17 @@ form button {
   margin-block-start: var(--space-xs);
 }
 
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-textarea,
-select {
+:is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
   background: var(--color-bg);
-  box-shadow: none;
-  letter-spacing: -.5px;
   border: solid .1rem var(--color-border);
   border-radius: var(--border-radius);
+  box-shadow: none;
   color: var(--color-text);
+  letter-spacing: -.5px;
   padding: var(--space-3xs) var(--space-2xs);
 }
 
-input[type="submit"],
-input[type="checkbox"],
-input[type="radio"],
-select {
+:is(input[type="submit"], input[type="checkbox"], input[type="radio"]), select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -112,4 +102,14 @@ input[type="radio"]:checked::after {
   background-color: var(--color-bg);
   left: .13em;
   font-size: 2em;
+}
+
+input:disabled {
+  background: var(--color-bg-mod-2);
+}
+
+/* Give user a visual hint that the element is disabled */
+input:disabled,
+label input:disabled + * {
+  cursor: not-allowed;
 }
