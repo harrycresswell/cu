@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Utilities on cu.css</title>
-    <link>http://localhost:1313/utilities/</link>
+    <link>http://localhost:51317/utilities/</link>
     <description>Recent content in Utilities on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 26 Jan 2024 10:19:37 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/utilities/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51317/utilities/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wrapper</title>
-      <link>http://localhost:1313/utilities/wrapper/</link>
+      <link>http://localhost:51317/utilities/wrapper/</link>
       <pubDate>Wed, 12 Jul 2023 12:59:06 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/wrapper/</guid>
+      <guid>http://localhost:51317/utilities/wrapper/</guid>
       <description>.wrapper horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.&#xA;This is useful for creating site wide content wrappers, or simply centering sections of content, as you see on the cu.css homepage.&#xA;Margin Padding Content Padding Margin Wrapper with horizontal padding visualised in purple and margin in green /* WRAPPER @link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/ */ .wrapper { max-width: var(--wrapper-max-width, 90rem); margin-inline: auto; padding-inline: var(--gutter); position: relative; } The default max-width of .</description>
     </item>
     <item>
       <title>Region</title>
-      <link>http://localhost:1313/utilities/region/</link>
+      <link>http://localhost:51317/utilities/region/</link>
       <pubDate>Wed, 12 Jul 2023 12:58:48 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/region/</guid>
+      <guid>http://localhost:51317/utilities/region/</guid>
       <description>.region adds consistent vertical padding to an element to create regions of content with sufficient spacing.&#xA;By default, .region uses --space-l-xl from the space scale, however the amount of space can also be configured by setting --region-space inline or within any new class you decide to create and use alongside .region.&#xA;Padding Content Padding A region of content with vertical padding visualised in purple /* REGION Add consistent vertical padding to create regions of content Can either be configured by setting --region-space or use a default from the space scale @link: https://codepen.</description>
     </item>
     <item>
       <title>Flow</title>
-      <link>http://localhost:1313/utilities/flow/</link>
+      <link>http://localhost:51317/utilities/flow/</link>
       <pubDate>Wed, 12 Jul 2023 12:58:27 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/flow/</guid>
+      <guid>http://localhost:51317/utilities/flow/</guid>
       <description>Applies a margin to sibling elements based on a --flow-space custom property.&#xA;Content Margin (default) Content Margin (set inline using --flow-space) Content Flow utility with margin visualised in green /* FLOW @link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/ @link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility @link: https://piccalil.li/quick-tip/flow-utility/ */ .flow &amp;gt; * + * { margin-top: var(--flow-space, 1em); } </description>
     </item>
     <item>
       <title>Visually Hidden</title>
-      <link>http://localhost:1313/utilities/visually-hidden/</link>
+      <link>http://localhost:51317/utilities/visually-hidden/</link>
       <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/visually-hidden/</guid>
+      <guid>http://localhost:51317/utilities/visually-hidden/</guid>
       <description>Use the .visually-hidden utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.&#xA;/* VISUALLY HIDDEN @link: https://piccalil.li/quick-tip/visually-hidden/ */ .visually-hidden { border: 0; clip: rect(0 0 0 0); height: auto; margin: 0; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; } This is different from using the [hidden] attribute which will hide the content from both the browser and assistive technologies.</description>
     </item>
     <item>
       <title>Text</title>
-      <link>http://localhost:1313/utilities/text/</link>
+      <link>http://localhost:51317/utilities/text/</link>
       <pubDate>Thu, 27 Jul 2023 16:50:03 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/text/</guid>
+      <guid>http://localhost:51317/utilities/text/</guid>
       <description>The .text-center utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.&#xA;This text is horizontally centered .text-center { text-align: center; } </description>
     </item>
     <item>
       <title>Width</title>
-      <link>http://localhost:1313/utilities/width/</link>
+      <link>http://localhost:51317/utilities/width/</link>
       <pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/width/</guid>
+      <guid>http://localhost:51317/utilities/width/</guid>
       <description>The .w-full utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.&#xA;Submit .w-full { width: 100%; } </description>
     </item>
     <item>
       <title>Skip link</title>
-      <link>http://localhost:1313/utilities/skip-link/</link>
+      <link>http://localhost:51317/utilities/skip-link/</link>
       <pubDate>Fri, 26 Jan 2024 10:19:37 +0000</pubDate>
-      <guid>http://localhost:1313/utilities/skip-link/</guid>
+      <guid>http://localhost:51317/utilities/skip-link/</guid>
       <description>The .skip-link utility can be used to create skip navigation links. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard Tab button to navigate a website.&#xA;&amp;lt;a class=&amp;#34;skip-link&amp;#34; href=&amp;#34;#main-content&amp;#34;&amp;gt;Skip to main content&amp;lt;/a&amp;gt; ... &amp;lt;main id=&amp;#34;main-content&amp;#34;&amp;gt; ... &amp;lt;/main&amp;gt; Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.</description>
     </item>
   </channel>
