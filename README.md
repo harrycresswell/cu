@@ -18,7 +18,7 @@ cu.css is not a fully fledged CSS framework, like Tailwind or Bootstrap. If anyt
 
 ## Getting started
 
-The best way to get started with *cu.css* is to [read the docs](/getting-started/). 
+The best way to get started with *cu.css* is to [read the docs](https://cu.harrycresswell.com/getting-started/). 
 
 ## Resources
 
