@@ -34,6 +34,12 @@ details[open]>*:last-child {
 details[data-variant='fancy'] {
   position: relative;
 
+  summary {
+    /* Hide marker on Safari */
+    list-style-type: none;
+    list-style: none;
+  }
+
   summary::-webkit-details-marker,
   summary::marker {
     content: "";
