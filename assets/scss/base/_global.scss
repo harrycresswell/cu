@@ -24,7 +24,7 @@ body {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-compact);
   letter-spacing: var(--tracking-s);
-  max-width: var(--width-compact);
+  max-width: var(--measure-compact);
   text-wrap: balance;
 }
 
@@ -62,7 +62,7 @@ h6,
 p,
 li,
 blockquote:not([class]) {
-  max-width: var(--width-longform);
+  max-width: var(--measure-longform);
 }
 
 hr {

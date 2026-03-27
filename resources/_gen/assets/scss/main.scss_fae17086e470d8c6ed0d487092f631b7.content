@@ -27,7 +27,7 @@ Google fonts with subsetting via Google Webfonts Helper
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* 
-Utopia fluid space
+Utopia fluid space primitive tokens
 
 @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
 */
@@ -54,7 +54,7 @@ Utopia fluid space
   --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
 
 /* 
-Utopia fluid type
+Utopia fluid type primitive tokens
 
 @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN 
 */
@@ -67,25 +67,12 @@ Utopia fluid type
   --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem); }
 
 /* 
-Global theme tokens
+Theme tokens
 */
 :root {
-  /* Typography */
-  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --font-display: var(--font-base);
-  --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --line-height-flat: 1;
-  --line-height-compact: 1.2;
-  --line-height-base: 1.5;
-  --line-height-loose: 1.7;
-  --width-compact: 35ch;
-  --width-longform: 65ch;
-  --tracking: -0.05ch;
-  --tracking-s: -0.05ch;
   /* 
-  Color tokens created with Utopia Kickstarter project 
+  Color primitive tokens, not to be used in CSS styles
+  created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
   --color-dark: #0d101c;
@@ -104,7 +91,11 @@ Global theme tokens
   --color-secondary-tint: #FF70AE;
   --color-tertiary: #ddf87f;
   --color-tertiary-tint: #eefbc1;
-  /* Specific, semantic variables for use in CSS styles */
+  /*
+  Semantic color tokens,
+  to be used in CSS styles
+  */
+  /* Color semantic tokens */
   --color-text: var(--color-dark);
   --color-text-mod-1: var(--color-dark-mod-1);
   --color-text-mod-2: var(--color-dark-mod-2);
@@ -116,6 +107,20 @@ Global theme tokens
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
   --color-highlight: var(--color-tertiary);
+  /* Typography semantic tokens */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-display: var(--font-base);
+  --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height-flat: 1;
+  --line-height-compact: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.7;
+  --measure-compact: 35ch;
+  --measure-longform: 65ch;
+  --tracking: -0.05ch;
+  --tracking-s: -0.05ch;
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
@@ -234,7 +239,7 @@ body {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-compact);
   letter-spacing: var(--tracking-s);
-  max-width: var(--width-compact);
+  max-width: var(--measure-compact);
   text-wrap: balance; }
 
 h1,
@@ -265,7 +270,7 @@ h6,
 p,
 li,
 blockquote:not([class]) {
-  max-width: var(--width-longform); }
+  max-width: var(--measure-longform); }
 
 hr {
   border: none;
@@ -728,7 +733,7 @@ nav[data-variant='sidebar'] ul > li ul {
   line-height: var(--line-height-loose); }
 
 .prose :is(p, ul:not([class]), ol:not([class])) {
-  max-width: var(--width-longform); }
+  max-width: var(--measure-longform); }
 
 .prose :is(blockquote) {
   max-width: 52ch; }
@@ -762,7 +767,7 @@ CALLOUT
 .callout {
   padding: var(--space-xs-s);
   border: dotted 2px var(--color-text-mod-2);
-  max-width: var(--width-longform);
+  max-width: var(--measure-longform);
   border-radius: var(--border-radius); }
 
 .callout > * {

@@ -4,7 +4,7 @@
 }
 
 .prose :is(p, ul:not([class]), ol:not([class])) {
-  max-width: var(--width-longform);
+  max-width: var(--measure-longform);
 }
 
 .prose :is(blockquote) {
