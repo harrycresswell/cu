@@ -31,9 +31,7 @@ Theme tokens
 
   /* Color semantic tokens */
   --color-text: var(--color-dark);
-  --color-text-mod-1: var(--color-dark-mod-1);
-  --color-text-mod-2: var(--color-dark-mod-2);
-  --color-text-mod-3: var(--color-dark-mod-3);
+  --color-text-subtle: var(--color-dark-mod-3);
   --color-bg: var(--color-light);
   --color-bg-surface: var(--color-light-mod-1);
   --color-bg-surface-raised: var(--color-light-mod-2);
@@ -47,9 +45,7 @@ Theme tokens
       If theme doesn’t require a dark mode then remove this media query altogether
     */
     --color-text: var(--color-light-mod-3); 
-    --color-text-mod-1: var(--color-light-mod-4);
-    --color-text-mod-2: var(--color-light-mod-5);
-    --color-text-mod-3: var(--color-light-mod-5);
+    --color-text-subtle: var(--color-light-mod-5);
     --color-bg: var(--color-dark);
     --color-bg-surface: var(--color-dark-mod-1);
     --color-bg-surface-raised: var(--color-dark-mod-2);

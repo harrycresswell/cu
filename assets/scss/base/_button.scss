@@ -49,7 +49,7 @@ input[type="reset"]:disabled,
 input[type="button"]:disabled {
   background-color: var(--color-bg-surface-raised);
   border: solid 0.1rem var(--color-bg-surface-raised);
-  color: var(--color-text-mod-3);
+  color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
   filter: none;
