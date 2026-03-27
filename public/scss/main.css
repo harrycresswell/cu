@@ -101,8 +101,8 @@ Theme tokens
   --color-text-mod-2: var(--color-dark-mod-2);
   --color-text-mod-3: var(--color-dark-mod-3);
   --color-bg: var(--color-light);
-  --color-bg-mod-1: var(--color-light-mod-1);
-  --color-bg-mod-2: var(--color-light-mod-2);
+  --color-bg-surface: var(--color-light-mod-1);
+  --color-bg-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
@@ -145,8 +145,8 @@ Theme tokens
       --color-text-mod-2: var(--color-light-mod-5);
       --color-text-mod-3: var(--color-light-mod-5);
       --color-bg: var(--color-dark);
-      --color-bg-mod-1: var(--color-dark-mod-1);
-      --color-bg-mod-2: var(--color-dark-mod-2);
+      --color-bg-surface: var(--color-dark-mod-1);
+      --color-bg-surface-raised: var(--color-dark-mod-2);
       --color-border: var(--color-light-mod-3);
       --color-brand: var(--color-primary-tint);
       --color-accent: var(--color-secondary-tint);
@@ -286,8 +286,8 @@ hr {
   border-top: 2px dotted; }
 
 kbd {
-  background-color: var(--color-bg-mod-1);
-  border: solid 1px var(--color-bg-mod-2);
+  background-color: var(--color-bg-surface);
+  border: solid 1px var(--color-bg-surface-raised);
   border-radius: var(--border-radius-sm);
   font-family: var(--font-accent);
   font-size: 1rem;
@@ -492,7 +492,7 @@ input[type="radio"]:checked::after {
   font-size: 2em; }
 
 input:disabled {
-  background: var(--color-bg-mod-2); }
+  background: var(--color-bg-surface-raised); }
 
 /* Give user a visual hint that the element is disabled */
 input:disabled,
@@ -507,7 +507,7 @@ Used for inline code and code blocks
 Ditch these styles altogether if not required for the website.
 */
 pre:has(code) {
-  background: var(--color-bg-mod-1);
+  background: var(--color-bg-surface);
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
@@ -515,7 +515,7 @@ pre:has(code) {
   margin: 0; }
 
 code {
-  background: var(--color-bg-mod-1);
+  background: var(--color-bg-surface);
   color: var(--color-accent);
   font-size: 93%;
   /* Carry over padding when code breaks multiple lines */
@@ -536,7 +536,7 @@ Format the expanding box, a.k.a accordion.
 Ditch these styles altogether if not required for the website.
 */
 details {
-  background: var(--color-bg-mod-1);
+  background: var(--color-bg-surface);
   border-radius: var(--border-radius); }
 
 summary {
@@ -603,12 +603,12 @@ th {
 
 /* Give table header a background color */
 th {
-  background: var(--color-bg-mod-1);
+  background: var(--color-bg-surface);
   font-weight: bold; }
 
 /* Give all even table rows a background color */
 tr:nth-child(even) {
-  background: var(--color-bg-mod-1); }
+  background: var(--color-bg-surface); }
 
 /* Make sure table captions sit beneath the table */
 table caption {
@@ -656,8 +656,8 @@ button:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled {
-  background-color: var(--color-bg-mod-2);
-  border: solid 0.1rem var(--color-bg-mod-2);
+  background-color: var(--color-bg-surface-raised);
+  border: solid 0.1rem var(--color-bg-surface-raised);
   color: var(--color-text-mod-3);
   cursor: not-allowed;
   transform: none;

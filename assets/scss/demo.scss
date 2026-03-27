@@ -1,6 +1,6 @@
 /* margin and padding used in utility visual examples */
 .demo {
-  background-color: var(--color-bg-mod-1);
+  background-color: var(--color-bg-surface);
   padding: var(--space-m-l);
   overflow-x: scroll;
 }
@@ -41,7 +41,7 @@
     font-family: var(--font-accent);
 
     span {
-      background-color: var(--color-bg-mod-1);
+      background-color: var(--color-bg-surface);
       padding-inline: .5rem;
     }
   }
@@ -54,11 +54,11 @@
 /* Section pagination */
 .pagination {
   a {
-    background-color: var(--color-bg-mod-1);
+    background-color: var(--color-bg-surface);
     padding: var(--space-m-l);
 
     &:hover {
-      background-color: var(--color-bg-mod-2);
+      background-color: var(--color-bg-surface-raised);
     }
   }
 

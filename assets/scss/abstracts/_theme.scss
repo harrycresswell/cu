@@ -35,8 +35,8 @@ Theme tokens
   --color-text-mod-2: var(--color-dark-mod-2);
   --color-text-mod-3: var(--color-dark-mod-3);
   --color-bg: var(--color-light);
-  --color-bg-mod-1: var(--color-light-mod-1);
-  --color-bg-mod-2: var(--color-light-mod-2);
+  --color-bg-surface: var(--color-light-mod-1);
+  --color-bg-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
@@ -51,8 +51,8 @@ Theme tokens
     --color-text-mod-2: var(--color-light-mod-5);
     --color-text-mod-3: var(--color-light-mod-5);
     --color-bg: var(--color-dark);
-    --color-bg-mod-1: var(--color-dark-mod-1);
-    --color-bg-mod-2: var(--color-dark-mod-2);
+    --color-bg-surface: var(--color-dark-mod-1);
+    --color-bg-surface-raised: var(--color-dark-mod-2);
     --color-border: var(--color-light-mod-3);
     --color-brand: var(--color-primary-tint);
     --color-accent: var(--color-secondary-tint);

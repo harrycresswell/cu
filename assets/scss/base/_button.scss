@@ -47,8 +47,8 @@ For disabled link styles, used with role=link
 input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
-  background-color: var(--color-bg-mod-2);
-  border: solid 0.1rem var(--color-bg-mod-2);
+  background-color: var(--color-bg-surface-raised);
+  border: solid 0.1rem var(--color-bg-surface-raised);
   color: var(--color-text-mod-3);
   cursor: not-allowed;
   transform: none;

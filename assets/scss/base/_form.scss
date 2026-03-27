@@ -105,7 +105,7 @@ input[type="radio"]:checked::after {
 }
 
 input:disabled {
-  background: var(--color-bg-mod-2);
+  background: var(--color-bg-surface-raised);
 }
 
 /* Give user a visual hint that the element is disabled */
