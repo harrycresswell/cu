@@ -13,7 +13,7 @@ project: https://cube.fyi/css.html
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-size: var(--step-0);
+  font-size: var(--text-size-base);
   font-family: var(--font-base);
   letter-spacing: var(--tracking);
 }
@@ -30,32 +30,32 @@ body {
 
 h1,
 .h1 {
-  font-size: var(--step-4);
+  font-size: var(--text-size-heading-1);
 }
 
 h2,
 .h2 {
-  font-size: var(--step-3);
+  font-size: var(--text-size-heading-2);
 }
 
 h3,
 .h3 {
-  font-size: var(--step-2);
+  font-size: var(--text-size-heading-3);
 }
 
 h4,
 .h4 {
-  font-size: var(--step-1);
+  font-size: var(--text-size-heading-4);
 }
 
 h5,
 .h5 {
-  font-size: var(--step-0);
+  font-size: var(--text-size-heading-5);
 }
 
 h6,
 .h6 {
-  font-size: var(--step--1);
+  font-size: var(--text-size-heading-6);
 }
 
 /* Set line lengths */
@@ -80,20 +80,20 @@ kbd {
   }
 
 figcaption {
-  font-size: var(--step--1);
+  font-size: var(--text-size-meta);
   margin-block-start: .5rem;
   text-align: center;
 }
 
 small {
-  font-size: var(--step--1);
+  font-size: var(--text-size-meta);
 }
 
 /* More generic elements */
 blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
   font-family: var(--font-display);
-  font-size: var(--step-1);
+  font-size: var(--text-size-lede);
   line-height: var(--line-height-base);
   padding-inline-start: var(--space-s);
 }
@@ -103,7 +103,7 @@ blockquote:not([class]) p:last-of-type,
 blockquote:not([class]) cite,
 blockquote:not([class]) footer {
   font-family: var(--font-base);
-  font-size: var(--step-0);
+  font-size: var(--text-size-base);
   font-weight: normal;
   margin-block-start: var(--space-2xs);
 }

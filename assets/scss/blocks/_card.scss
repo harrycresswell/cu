@@ -17,12 +17,12 @@ Largely based on:
 
 /* Ensure consistent heading size regardless of heading level */
 .card :is(h2, h3, h4) {
-  font-size: var(--step-1);
+  font-size: var(--text-size-heading-4);
 }
 
 /* Ensure consistent text size for all non-heading elements */
 .card > :not(h2, h3, h4) {
-  font-size: var(--step--1);
+  font-size: var(--text-size-meta);
 }
 
 /* 
