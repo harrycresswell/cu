@@ -173,7 +173,13 @@
   &lt;li&gt;Unordered list item&lt;/li&gt;
   &lt;li&gt;Unordered list item&lt;/li&gt;
 &lt;/ol&gt;
-</code></pre> 
+</code></pre><p>Apply the ARIA <code>list</code> role to remove markers (bullets, numbers, etc) from list items without affecting list semantics. This will ensure assistive technologies such as screen readers are still able to identify list items. Scott O’Hara writes about why this is important in <a href="https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html" target="_blank" rel="noopener">&ldquo;Fixing&rdquo; Lists</a>.</p>
+<pre tabindex="0"><code>&lt;ul role=&#34;list&#34;&gt;
+  &lt;li&gt;Unordered list item&lt;/li&gt;
+  &lt;li&gt;Unordered list item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>This technique is useful when creating navigation items or a <a href="/blocks/#card">list of cards</a>, for example. Or, indeed, any other list that you don’t need markers for, and wish to style in a way that doesn’t represent a typical list of items.</p>
+ 
   </article>
 </section>
 
