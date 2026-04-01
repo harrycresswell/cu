@@ -155,25 +155,90 @@
         </section>
 <section class="wrapper region">
   <article class="prose flow">
-    <p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements to create accordions.</p>
-<details>
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
-<pre tabindex="0"><code>&lt;details&gt;
-  &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
-  &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
-&lt;/details&gt;
+    <p>Create accordions by grouping multiple disclosure widgets (<code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements) inside a <code>&lt;div&gt;</code> with the ARIA <code>group</code> role applied.</p>
+<div role="group" aria-labeledby="accordion-faq">
+  <span id="accordion-faq" hidden>Frequently Asked Questions</span>
+  <details>
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
+  </details>
+  <details>
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details>
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
+<pre tabindex="0"><code>&lt;div role=&#34;group&#34; aria-labeledby=&#34;accordion-faq&#34;&gt;
+  &lt;span id=&#34;accordion-faq&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
 </code></pre><p>Add <code>data-variant=&quot;fancy&quot;</code> to hide default <code>::marker</code> and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the <code>&lt;summary&gt;</code> text.</p>
-<details data-variant="fancy">
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
+<div role="group" aria-labeledby="accordion-faq-fancy">
+  <span id="accordion-faq-fancy" hidden>Frequently Asked Questions</span>
+  <details data-variant="fancy">
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>  
+  </details>
+  <details data-variant="fancy">
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details data-variant="fancy">
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
 <pre tabindex="0"><code>&lt;details data-variant=&#34;fancy&#34;&gt;
   &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
   &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
 &lt;/details&gt;
-</code></pre> 
+</code></pre><p>Use a <code>name</code> attribute with a matching value on each <code>&lt;details&gt;</code> element to create an exclusive accordions. This will ensure only one widget can be expanded at any one time.</p>
+<div role="group" aria-labeledby="accordion-faq-exclusive">
+  <span id="accordion-faq-exclusive" hidden>Frequently Asked Questions</span>
+  <details name="accordion-exclusive">
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
+  </details>
+  <details name="accordion-exclusive">
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details name="accordion-exclusive">
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
+<pre tabindex="0"><code>&lt;div role=&#34;group&#34; aria-labeledby=&#34;accordion-faq-exclusive&#34;&gt;
+  &lt;span id=&#34;accordion-faq-exclusive&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+</code></pre><p>Be mindful of the various <a href="https://yatil.net/blog/exclusive-accordions" target="_blank" rel="noopener">accessibility challenges of exclusive accordions</a> before use them.</p>
+ 
   </article>
 </section>
 
