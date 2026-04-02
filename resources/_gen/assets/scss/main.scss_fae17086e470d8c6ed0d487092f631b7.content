@@ -92,8 +92,7 @@ Theme tokens
   --color-tertiary: #ddf87f;
   --color-tertiary-tint: #eefbc1;
   /*
-  Semantic color tokens,
-  to be used in CSS styles
+  Semantic color tokens, convey meaning and purpose – how they should be used in CSS styles
   */
   /* Color semantic tokens */
   --color-text: var(--color-dark);

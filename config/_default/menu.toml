@@ -87,6 +87,12 @@ weight = 100
 parent = "Global"
 
 [[sidebar]]
+name = "Disclosure widgets"
+url = "#disclosure-widgets"
+weight = 105
+parent = "Global"
+
+[[sidebar]]
 name = "Accordions"
 url = "#accordions"
 weight = 110

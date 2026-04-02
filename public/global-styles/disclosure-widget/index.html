@@ -15,7 +15,7 @@
 
 
 
-<title>cu.css &middot; Visibility</title>
+<title>cu.css &middot; Disclosure widgets</title>
 
 
   <meta 
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/global-styles/visibility/">
+<link rel="canonical" href="http://localhost:1313/global-styles/disclosure-widget/">
 
 
 
@@ -50,9 +50,9 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:1313/global-styles/visibility/">
+  <meta property="og:url" content="http://localhost:1313/global-styles/disclosure-widget/">
   <meta property="og:title"
-    content="Visibility &middot; cu.css">
+    content="Disclosure widgets &middot; cu.css">
   <meta property="og:description"
     content="A lightweight CSS boilerplate">
   <meta property="og:site_name"
@@ -63,9 +63,9 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="http://localhost:1313/global-styles/visibility/">
+  <meta property="twitter:url" content="http://localhost:1313/global-styles/disclosure-widget/">
   <meta property="twitter:title"
-    content="Visibility &middot; cu.css">
+    content="Disclosure widgets &middot; cu.css">
   <meta property="twitter:description"
     content="A lightweight CSS boilerplate">
   
@@ -150,15 +150,30 @@
 </nav>
 </header><main id="main-content">
         <section class="hero | region | flow">
-            <h1>Visibility</h1>
+            <h1>Disclosure widgets</h1>
             
         </section>
 <section class="wrapper region">
   <article class="prose flow">
-    <p>You can use the <code>[hidden]</code> attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript, or if you wish to hide content from the accessibility tree.</p>
-<pre tabindex="0"><code>&lt;p hidden&gt;This paragraph is hidden from the browser and will not render&lt;/p&gt;
-</code></pre><p>If you don’t want content to be visible in the browser, but would like it to remain accessible to screen readers and other assistive technologies, then use the <a href="/utilities/#visually-hidden">visually hidden</a> utility class instead.</p>
- 
+    <p>Disclosure widgets can be used to reveal and hide content. Create them using the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements.</p>
+<details>
+  <summary>Disclosure control</summary>
+  <p>Disclosed content</p>
+</details>
+<pre tabindex="0"><code>&lt;details&gt;
+  &lt;summary&gt;Disclosure control&lt;/summary&gt;
+  &lt;p&gt;Disclosed content&lt;/p&gt;
+&lt;/details&gt;
+</code></pre><p>Add <code>data-variant=&quot;fancy&quot;</code> to hide default <code>::marker</code> and style disclosure widgets with fancy chevron, positioned to the far right of the <code>&lt;summary&gt;</code> text.</p>
+<details data-variant="fancy">
+  <summary>Disclosure control</summary>
+  <p>Disclosed content</p>
+</details>
+<pre tabindex="0"><code>&lt;details data-variant=&#34;fancy&#34;&gt;
+  &lt;summary&gt;Disclosure control&lt;/summary&gt;
+  &lt;p&gt;Disclosed content&lt;/p&gt;
+&lt;/details&gt;
+</code></pre> 
   </article>
 </section>
 

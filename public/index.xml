@@ -184,11 +184,11 @@
       <description>&lt;p&gt;The &lt;code&gt;.w-full&lt;/code&gt; utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.&lt;/p&gt;&#xA;&lt;form&gt;&#xA;  &lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.w-full {&#xA;  width: 100%;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Accordions</title>
-      <link>http://localhost:1313/global-styles/accordion/</link>
+      <title>Disclosure widgets</title>
+      <link>http://localhost:1313/global-styles/disclosure-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-styles/accordion/</guid>
-      <description>&lt;p&gt;Create accordions by grouping multiple disclosure widgets (&lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; elements) inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; with the ARIA &lt;code&gt;group&lt;/code&gt; role applied.&lt;/p&gt;&#xA;&lt;div role=&#34;group&#34; aria-labeledby=&#34;accordion-faq&#34;&gt;&#xA;  &lt;span id=&#34;accordion-faq&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;&#xA;    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;&#xA;  &lt;/details&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;&#xA;    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;&#xA;  &lt;/details&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;&#xA;    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/global-styles/disclosure-widget/</guid>
+      <description>&lt;p&gt;Disclosure widgets can be used to reveal and hide content. Create them using the &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; elements.&lt;/p&gt;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Disclosure control&lt;/summary&gt;&#xA;  &lt;p&gt;Disclosed content&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;details&amp;gt;&#xA;  &amp;lt;summary&amp;gt;Disclosure control&amp;lt;/summary&amp;gt;&#xA;  &amp;lt;p&amp;gt;Disclosed content&amp;lt;/p&amp;gt;&#xA;&amp;lt;/details&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add &lt;code&gt;data-variant=&amp;quot;fancy&amp;quot;&lt;/code&gt; to hide default &lt;code&gt;::marker&lt;/code&gt; and style disclosure widgets with fancy chevron, positioned to the far right of the &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; text.&lt;/p&gt;&#xA;&lt;details data-variant=&#34;fancy&#34;&gt;&#xA;  &lt;summary&gt;Disclosure control&lt;/summary&gt;&#xA;  &lt;p&gt;Disclosed content&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;details data-variant=&amp;#34;fancy&amp;#34;&amp;gt;&#xA;  &amp;lt;summary&amp;gt;Disclosure control&amp;lt;/summary&amp;gt;&#xA;  &amp;lt;p&amp;gt;Disclosed content&amp;lt;/p&amp;gt;&#xA;&amp;lt;/details&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Frame</title>
@@ -203,6 +203,13 @@
       <pubDate>Fri, 26 Jan 2024 10:19:37 +0000</pubDate>
       <guid>http://localhost:1313/utilities/skip-link/</guid>
       <description>&lt;p&gt;The &lt;code&gt;.skip-link&lt;/code&gt; utility can be used to create &lt;a href=&#34;https://webaim.org/techniques/skipnav/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;skip navigation links&lt;/a&gt;. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard &lt;kbd&gt;Tab&lt;/kbd&gt; button to navigate a website.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;a class=&amp;#34;skip-link&amp;#34; href=&amp;#34;#main-content&amp;#34;&amp;gt;Skip to main content&amp;lt;/a&amp;gt;&#xA;...&#xA;&amp;lt;main id=&amp;#34;main-content&amp;#34;&amp;gt;&#xA;    ...&#xA;&amp;lt;/main&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Accordions</title>
+      <link>http://localhost:1313/global-styles/accordion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/global-styles/accordion/</guid>
+      <description>&lt;p&gt;Create accordions by grouping multiple &lt;a href=&#34;#disclosure-widgets&#34;&gt;disclosure widgets&lt;/a&gt; together.&lt;/p&gt;&#xA;&lt;div role=&#34;group&#34; aria-labelledby=&#34;accordion-faq&#34;&gt;&#xA;  &lt;span id=&#34;accordion-faq&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;&#xA;    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;&#xA;  &lt;/details&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;&#xA;    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;&#xA;  &lt;/details&gt;&#xA;  &lt;details&gt;&#xA;    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;&#xA;    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tables</title>
@@ -244,7 +251,7 @@
       <link>http://localhost:1313/global-styles/visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/global-styles/visibility/</guid>
-      <description>&lt;p&gt;You can use the &lt;code&gt;[hidden]&lt;/code&gt; attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;p hidden&amp;gt;This paragraph is hidden from the browser and will not render&amp;lt;/p&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you don’t want content to be visible in the browser, but it should remain accessible to assistive technologies, such as screen readers, then use the &lt;a href=&#34;http://localhost:1313/utilities/#visually-hidden&#34;&gt;visually hidden&lt;/a&gt; utility class instead.&lt;/p&gt;</description>
+      <description>&lt;p&gt;You can use the &lt;code&gt;[hidden]&lt;/code&gt; attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript, or if you wish to hide content from the accessibility tree.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;p hidden&amp;gt;This paragraph is hidden from the browser and will not render&amp;lt;/p&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you don’t want content to be visible in the browser, but would like it to remain accessible to screen readers and other assistive technologies, then use the &lt;a href=&#34;http://localhost:1313/utilities/#visually-hidden&#34;&gt;visually hidden&lt;/a&gt; utility class instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>v0.1.9</title>

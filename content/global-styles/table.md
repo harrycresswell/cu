@@ -1,6 +1,6 @@
 ---
 title: 'Tables'
-weight: 7
+weight: 8
 ---
 
 Tables are handy for visualising and making connections between different types of structured data. Use all the usual elements: `<table>`, `<thead>`, `<tr>`, `<th>`, `<tbody>`,  `<td>` and `<caption>`.
