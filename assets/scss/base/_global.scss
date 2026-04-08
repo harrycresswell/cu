@@ -162,7 +162,10 @@ a[data-variant="naked"] {
 a[data-variant="naked"]:hover,
 a[data-variant="naked"]:focus {
   background-color: unset;
-  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color, currentColor);
+  text-decoration-line: var(--text-decoration-line, underline);
+  text-decoration-style: var(--text-decoration-style, solid);
+  text-decoration-thickness: var(--text-decoration-thickness, 2px);
 }
 
 /* Hide focus styles if they're not needed, for example, 

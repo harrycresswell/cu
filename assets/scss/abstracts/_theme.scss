@@ -81,6 +81,10 @@ Theme tokens
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
+  --text-decoration-color: currentColor;
+  --text-decoration-line: underline;
+  --text-decoration-style: solid;
+  --text-decoration-thickness: 2px;
   --focus-ring-width: 2px;
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;

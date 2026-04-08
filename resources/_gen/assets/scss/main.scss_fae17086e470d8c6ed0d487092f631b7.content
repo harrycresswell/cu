@@ -130,6 +130,10 @@ Theme tokens
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
+  --text-decoration-color: currentColor;
+  --text-decoration-line: underline;
+  --text-decoration-style: solid;
+  --text-decoration-thickness: 2px;
   --focus-ring-width: 2px;
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;
@@ -360,7 +364,10 @@ a[data-variant="naked"] {
 a[data-variant="naked"]:hover,
 a[data-variant="naked"]:focus {
   background-color: unset;
-  text-decoration: underline; }
+  text-decoration-color: var(--text-decoration-color, currentColor);
+  text-decoration-line: var(--text-decoration-line, underline);
+  text-decoration-style: var(--text-decoration-style, solid);
+  text-decoration-thickness: var(--text-decoration-thickness, 2px); }
 
 /* Hide focus styles if they're not needed, for example, 
 when an element receives focus via the mouse. */
