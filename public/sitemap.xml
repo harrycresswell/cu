@@ -72,8 +72,6 @@
     <loc>http://localhost:1313/utilities/width/</loc>
     <lastmod>2023-07-27T16:49:54+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/global-styles/accordion/</loc>
-  </url><url>
     <loc>http://localhost:1313/global-styles/disclosure-widget/</loc>
   </url><url>
     <loc>http://localhost:1313/compositions/frame/</loc>
@@ -82,14 +80,16 @@
     <loc>http://localhost:1313/utilities/skip-link/</loc>
     <lastmod>2024-01-26T10:19:37+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/global-styles/accordion/</loc>
+  </url><url>
     <loc>http://localhost:1313/global-styles/table/</loc>
   </url><url>
     <loc>http://localhost:1313/global-styles/button/</loc>
   </url><url>
-    <loc>http://localhost:1313/global-styles/link/</loc>
-  </url><url>
     <loc>http://localhost:1313/getting-started/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/global-styles/link/</loc>
   </url><url>
     <loc>http://localhost:1313/global-styles/image/</loc>
   </url><url>

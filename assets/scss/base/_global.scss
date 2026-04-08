@@ -173,8 +173,10 @@ when an element receives focus via the mouse. */
 
 /* Show focus styles on keyboard focus. */
 :focus-visible {
-  outline: dotted 2px var(--focus-color, currentColor);
-  outline-offset:  var(--focus-offset, 2px);
+  outline-color: var(--focus-ring-color,currentColor);
+  outline-offset: var(--focus-ring-offset, 2px);
+  outline-style: var(--focus-ring-style, solid);
+  outline-width: var(--focus-ring-width, 2px);
 }
 
 /* Add scroll margin to all target elements 
