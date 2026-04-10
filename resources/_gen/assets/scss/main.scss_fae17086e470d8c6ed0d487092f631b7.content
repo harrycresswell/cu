@@ -441,7 +441,7 @@ form button {
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
   box-shadow: none;
   color: var(--color-text);
   letter-spacing: -.5px;
@@ -476,7 +476,7 @@ input[type="radio"] {
   margin-block-end: .3rem; }
 
 input[type="checkbox"] {
-  border-radius: var(--border-radius); }
+  border-radius: var(--radius); }
 
 input[type="radio"] {
   border-radius: 100%; }
@@ -564,7 +564,7 @@ Ditch these styles altogether if not required for the website.
 */
 details {
   background: var(--color-bg-surface);
-  border-radius: var(--border-radius); }
+  border-radius: var(--radius); }
 
 summary {
   cursor: pointer;
@@ -660,7 +660,7 @@ input[type="button"] {
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
   color: var(--color-bg);
   cursor: pointer;
   display: inline-block;
@@ -817,7 +817,7 @@ CALLOUT
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
   max-width: var(--measure-longform);
-  border-radius: var(--border-radius); }
+  border-radius: var(--radius); }
 
 .callout > * {
   line-height: var(--line-height-base); }

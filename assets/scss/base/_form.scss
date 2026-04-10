@@ -29,7 +29,7 @@ form button {
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
   box-shadow: none;
   color: var(--color-text);
   letter-spacing: -.5px;
@@ -68,7 +68,7 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] {
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
 }
 
 input[type="radio"] {
