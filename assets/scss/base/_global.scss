@@ -71,8 +71,13 @@ hr {
 } 
 
 kbd {
+  --stroke-color: var(--color-bg-surface-raised);
+  --stroke-width: 1px;
+
   background-color: var(--color-bg-surface);
-  border: solid 1px var(--color-bg-surface-raised);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   font-family: var(--font-accent);
   font-size: 1rem;
   padding: .115rem .25rem;

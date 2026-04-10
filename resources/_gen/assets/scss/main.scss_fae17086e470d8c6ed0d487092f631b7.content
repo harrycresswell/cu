@@ -138,9 +138,8 @@ Includes primitive tokens for color and semantic tokens
   --focus-ring-offset: 2px;
   --focus-ring-style: dotted;
   --stroke-style: solid;
-  --stroke-weight: .1rem;
-  --stroke-color: var(--color-border);
-  --stroke: var(--stroke-style) var(--stroke-weight) var(--stroke-color, currentColor);
+  --stroke-width: .1rem;
+  --stroke-color: var(--color-border, currentColor);
   --border-radius: 0;
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
   /* 
@@ -295,8 +294,12 @@ hr {
   border-top: 2px dotted; }
 
 kbd {
+  --stroke-color: var(--color-bg-surface-raised);
+  --stroke-width: 1px;
   background-color: var(--color-bg-surface);
-  border: solid 1px var(--color-bg-surface-raised);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   font-family: var(--font-accent);
   font-size: 1rem;
   padding: .115rem .25rem; }
@@ -418,7 +421,9 @@ Form styles
 Ditch these styles altogether if not required for the website.
 */
 fieldset {
-  border: var(--stroke); }
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color); }
 
 legend {
   font-weight: var(--font-weight-bold); }
@@ -433,7 +438,9 @@ form button {
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
   background: var(--color-bg);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   border-radius: var(--border-radius);
   box-shadow: none;
   color: var(--color-text);
@@ -457,7 +464,9 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -474,10 +483,12 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  /* Configure stroke */
+  /* Configure stroke color */
   --stroke-color: var(--color-brand);
-  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
-  border: var(--stroke);
+  --focus-ring-color: var(--color-brand);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   background-color: var(--color-brand); }
 
 input[type="checkbox"]:checked::after {
@@ -645,9 +656,10 @@ input[type="button"] {
   /* Configure focus and stroke color */
   --focus-ring-color: var(--color-brand);
   --stroke-color: var(--color-brand);
-  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
   background-color: var(--color-brand);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   border-radius: var(--border-radius);
   color: var(--color-bg);
   cursor: pointer;
@@ -677,7 +689,9 @@ input[type="button"]:disabled {
   /* Configure stroke color */
   --stroke-color: var(--color-bg-surface-raised);
   background-color: var(--color-bg-surface-raised);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
@@ -697,7 +711,9 @@ input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
   background: var(--color-bg);
-  border: var(--stroke); }
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color); }
 
 button[data-variant='outline']:hover,
 .button[data-variant='outline']:hover,
@@ -795,10 +811,11 @@ CALLOUT
 .callout {
   /* Configure stroke */
   --stroke-style: dotted;
-  --stroke-weight: 2px;
-  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
+  --stroke-width: 2px;
   padding: var(--space-xs-s);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   max-width: var(--measure-longform);
   border-radius: var(--border-radius); }
 
@@ -809,7 +826,9 @@ CALLOUT
   /* Configure strok color */
   --stroke-color: var(--color-brand);
   color: var(--color-brand);
-  border: var(--stroke); }
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color); }
 
 .callout[data-variant='brand'] > * {
   color: var(--color-brand); }
@@ -827,8 +846,9 @@ Largely based on:
   display: flex;
   flex-direction: column;
   position: relative;
-  border: var(--stroke);
-  border-radius: var(--border-radius); }
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color); }
 
 /* Ensure consistent heading size regardless of heading level */
 .card :is(h2, h3, h4) {
@@ -865,7 +885,10 @@ Largely based on:
 
 /* Use :focus-within to match the :hover style */
 .card:focus-within {
-  box-shadow: 0 0 0 .1rem; }
+  outline-color: var(--focus-ring-color, currentColor);
+  outline-offset: var(--focus-ring-offset, 2px);
+  outline-style: var(--focus-ring-style, solid);
+  outline-width: var(--focus-ring-width, 2px); }
 
 /* Remove the unnecessary basic :focus style only where :focus-within is supported */
 .card:focus-within a:focus {

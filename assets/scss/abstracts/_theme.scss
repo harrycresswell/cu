@@ -74,11 +74,9 @@ Includes primitive tokens for color and semantic tokens
   --focus-ring-style: dotted;
   // Use stroke tokens for borders, outlines, SVG paths etc
   --stroke-style: solid;
-  --stroke-weight: .1rem;
-  --stroke-color: var(--color-border);
-  // Default composite stroke token used for borders
-  --stroke: var(--stroke-style) var(--stroke-weight) var(--stroke-color, currentColor);
-  --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, cards, callouts and accordians. 
+  --stroke-width: .1rem;
+  --stroke-color: var(--color-border, currentColor);
+  --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, callouts and accordians. 
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
 
   /* 

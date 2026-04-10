@@ -12,10 +12,11 @@ input[type="button"] {
   /* Configure focus and stroke color */
   --focus-ring-color: var(--color-brand);
   --stroke-color: var(--color-brand);
-  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
 
   background-color: var(--color-brand);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   border-radius: var(--border-radius);
   color: var(--color-bg);
   cursor: pointer;
@@ -53,7 +54,9 @@ input[type="button"]:disabled {
   --stroke-color: var(--color-bg-surface-raised);
 
   background-color: var(--color-bg-surface-raised);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
@@ -74,7 +77,9 @@ input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
   background: var(--color-bg);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 button[data-variant='outline']:hover,

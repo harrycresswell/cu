@@ -5,7 +5,9 @@ Ditch these styles altogether if not required for the website.
 */
 
 fieldset {
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 legend {
@@ -24,7 +26,9 @@ form button {
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
   background: var(--color-bg);
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   border-radius: var(--border-radius);
   box-shadow: none;
   color: var(--color-text);
@@ -51,7 +55,9 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -71,11 +77,13 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  /* Configure stroke */
+  /* Configure stroke color */
   --stroke-color: var(--color-brand);
-  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
+  --focus-ring-color: var(--color-brand);
 
-  border: var(--stroke);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   background-color: var(--color-brand);
 }
 

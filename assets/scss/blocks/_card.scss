@@ -8,11 +8,13 @@ Largely based on:
 */
 .card {
   --img-ratio: 3/2;
+  
   display: flex;
   flex-direction: column;
   position: relative;
-  border: var(--stroke);
-  border-radius: var(--border-radius);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 /* Ensure consistent heading size regardless of heading level */
@@ -53,10 +55,12 @@ Largely based on:
   text-decoration: underline;
 }
 
-
 /* Use :focus-within to match the :hover style */
 .card:focus-within {
-  box-shadow: 0 0 0 .1rem;
+  outline-color: var(--focus-ring-color,currentColor);
+  outline-offset: var(--focus-ring-offset, 2px);
+  outline-style: var(--focus-ring-style, solid);
+  outline-width: var(--focus-ring-width, 2px);
 }
 
 /* Remove the unnecessary basic :focus style only where :focus-within is supported */
