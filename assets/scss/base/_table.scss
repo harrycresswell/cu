@@ -15,7 +15,7 @@ table {
 /* Add border to all table cells and aligned content left */
 td,
 th {
-  border: .1rem solid var(--color-border);
+  border: var(--stroke);
   padding: 0.5rem;
   text-align: left;
 }

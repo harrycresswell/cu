@@ -11,7 +11,7 @@ Largely based on:
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid .1rem;
+  border: var(--stroke);
   border-radius: var(--border-radius);
 }
 

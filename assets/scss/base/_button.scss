@@ -9,16 +9,18 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  /* Configure focus color from global focus */
+  /* Configure focus and stroke color */
   --focus-color: var(--color-brand);
+  --stroke-color: var(--color-brand);
+  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
 
   background-color: var(--color-brand);
-  border: solid 0.1rem var(--color-brand);
+  border: var(--stroke);
   border-radius: var(--border-radius);
   color: var(--color-bg);
   cursor: pointer;
-  padding: var(--space-3xs) var(--space-2xs);
   display: inline-block;
+  padding: var(--space-3xs) var(--space-2xs);
   text-decoration: none;
   text-align: center;
 }
@@ -47,8 +49,11 @@ For disabled link styles, used with role=link
 input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
+  /* Configure stroke color */
+  --stroke-color: var(--color-bg-surface-raised);
+
   background-color: var(--color-bg-surface-raised);
-  border: solid 0.1rem var(--color-bg-surface-raised);
+  border: var(--stroke);
   color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
@@ -69,7 +74,7 @@ input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
   background: var(--color-bg);
-  border: solid 0.1rem var(--color-brand);
+  border: var(--stroke);
 }
 
 button[data-variant='outline']:hover,
@@ -78,5 +83,4 @@ input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
   filter: brightness(1.2);
-  border: solid 0.1rem var(--color-brand);
 }

@@ -5,7 +5,7 @@ Ditch these styles altogether if not required for the website.
 */
 
 fieldset {
-  border: solid .1rem var(--color-border);
+  border: var(--stroke);
 }
 
 legend {
@@ -24,7 +24,7 @@ form button {
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
   background: var(--color-bg);
-  border: solid .1rem var(--color-border);
+  border: var(--stroke);
   border-radius: var(--border-radius);
   box-shadow: none;
   color: var(--color-text);
@@ -51,7 +51,7 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: solid .1rem var(--color-border);
+  border: var(--stroke);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -71,7 +71,11 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  border: solid .1rem var(--color-brand);
+  /* Configure stroke */
+  --stroke-color: var(--color-brand);
+  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
+
+  border: var(--stroke);
   background-color: var(--color-brand);
 }
 

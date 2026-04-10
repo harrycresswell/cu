@@ -4,8 +4,8 @@
 * wish to call them) that power the rest of your styles
 */
 /* 
-Google fonts with subsetting via Google Webfonts Helper
-
+FONTS
+Subset using Google Webfonts Helper
 @link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
 */
 @font-face {
@@ -27,8 +27,8 @@ Google fonts with subsetting via Google Webfonts Helper
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* 
-Utopia fluid space primitive tokens
-
+SPACE primitive tokens
+Generated with Utopia Fluid Space
 @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
 */
 :root {
@@ -54,8 +54,8 @@ Utopia fluid space primitive tokens
   --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
 
 /* 
-Utopia fluid type primitive tokens
-
+TYPE primitive tokens
+Generated with Utopia Fluid Type
 @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,NaN 
 */
 :root {
@@ -67,12 +67,13 @@ Utopia fluid type primitive tokens
   --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem); }
 
 /* 
-Theme tokens
+THEME tokens
+Includes primitive tokens for color and semantic tokens
 */
 :root {
   /* 
-  Color primitive tokens, not to be used in CSS styles
-  created with Utopia Kickstarter project 
+  Color primitive tokens (not to be used in CSS styles)
+  Created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
   --color-dark: #0d101c;
@@ -92,9 +93,8 @@ Theme tokens
   --color-tertiary: #ddf87f;
   --color-tertiary-tint: #eefbc1;
   /*
-  Semantic color tokens, convey meaning and purpose – how they should be used in CSS styles
+  Color semantic tokens (convey meaning and purpose – describe how to apply primitives in CSS styles)
   */
-  /* Color semantic tokens */
   --color-text: var(--color-dark);
   --color-text-subtle: var(--color-dark-mod-3);
   --color-bg: var(--color-light);
@@ -127,24 +127,27 @@ Theme tokens
   --measure-longform: 65ch;
   --tracking: -0.04ch;
   --tracking-compact: -0.05ch;
-  /* Grid */
-  --gutter: var(--space-s-m);
-  /* Effects */
   --text-decoration-color: currentColor;
   --text-decoration-line: underline;
   --text-decoration-style: solid;
   --text-decoration-thickness: 2px;
+  /* UI semantic tokens */
+  --gutter: var(--space-s-m);
   --focus-ring-width: 2px;
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;
   --focus-ring-style: dotted;
+  --stroke-style: solid;
+  --stroke-weight: .1rem;
+  --stroke-color: var(--color-border);
+  --stroke: var(--stroke-style) var(--stroke-weight) var(--stroke-color, currentColor);
   --border-radius: 0;
-  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025); }
+  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
+  /* 
+    If theme doesn’t require dark mode then remove this media query and its contents
+  */ }
   @media (prefers-color-scheme: dark) {
     :root {
-      /* 
-      If theme doesn’t require a dark mode then remove this media query altogether
-    */
       --color-text: var(--color-light-mod-3);
       --color-text-subtle: var(--color-light-mod-5);
       --color-bg: var(--color-dark);
@@ -153,7 +156,10 @@ Theme tokens
       --color-border: var(--color-light-mod-3);
       --color-brand: var(--color-primary-tint);
       --color-accent: var(--color-secondary-tint);
-      --color-highlight: var(--color-tertiary-tint); } }
+      --color-highlight: var(--color-tertiary-tint);
+      --text-decoration-color: currentColor;
+      --focus-ring-color: currentColor;
+      --stroke-color: currentColor; } }
 /* 
 * Embrace the cascade and inheritance to 
 * style as much as possible at a global level 
@@ -412,7 +418,7 @@ Form styles
 Ditch these styles altogether if not required for the website.
 */
 fieldset {
-  border: solid 0.1rem var(--color-border); }
+  border: var(--stroke); }
 
 legend {
   font-weight: var(--font-weight-bold); }
@@ -427,7 +433,7 @@ form button {
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
   background: var(--color-bg);
-  border: solid 0.1rem var(--color-border);
+  border: var(--stroke);
   border-radius: var(--border-radius);
   box-shadow: none;
   color: var(--color-text);
@@ -451,7 +457,7 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: solid 0.1rem var(--color-border);
+  border: var(--stroke);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -468,7 +474,10 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  border: solid 0.1rem var(--color-brand);
+  /* Configure stroke */
+  --stroke-color: var(--color-brand);
+  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
+  border: var(--stroke);
   background-color: var(--color-brand); }
 
 input[type="checkbox"]:checked::after {
@@ -604,7 +613,7 @@ table {
 /* Add border to all table cells and aligned content left */
 td,
 th {
-  border: 0.1rem solid var(--color-border);
+  border: var(--stroke);
   padding: 0.5rem;
   text-align: left; }
 
@@ -633,15 +642,17 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  /* Configure focus color from global focus */
+  /* Configure focus and stroke color */
   --focus-color: var(--color-brand);
+  --stroke-color: var(--color-brand);
+  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
   background-color: var(--color-brand);
-  border: solid 0.1rem var(--color-brand);
+  border: var(--stroke);
   border-radius: var(--border-radius);
   color: var(--color-bg);
   cursor: pointer;
-  padding: var(--space-3xs) var(--space-2xs);
   display: inline-block;
+  padding: var(--space-3xs) var(--space-2xs);
   text-decoration: none;
   text-align: center; }
 
@@ -663,8 +674,10 @@ button:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled {
+  /* Configure stroke color */
+  --stroke-color: var(--color-bg-surface-raised);
   background-color: var(--color-bg-surface-raised);
-  border: solid 0.1rem var(--color-bg-surface-raised);
+  border: var(--stroke);
   color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
@@ -684,15 +697,14 @@ input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
   background: var(--color-bg);
-  border: solid 0.1rem var(--color-brand); }
+  border: var(--stroke); }
 
 button[data-variant='outline']:hover,
 .button[data-variant='outline']:hover,
 input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
-  filter: brightness(1.2);
-  border: solid 0.1rem var(--color-brand); }
+  filter: brightness(1.2); }
 
 nav[data-variant='main'] a[data-state='active'] {
   text-decoration: underline; }
@@ -781,8 +793,12 @@ Center align elements.
 CALLOUT
 */
 .callout {
+  /* Configure stroke */
+  --stroke-style: dotted;
+  --stroke-weight: 2px;
+  --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
   padding: var(--space-xs-s);
-  border: dotted 2px var(--color-border);
+  border: var(--stroke);
   max-width: var(--measure-longform);
   border-radius: var(--border-radius); }
 
@@ -790,8 +806,10 @@ CALLOUT
   line-height: var(--line-height-base); }
 
 .callout[data-variant='brand'] {
+  /* Configure strok color */
+  --stroke-color: var(--color-brand);
   color: var(--color-brand);
-  border: dotted 2px var(--color-brand); }
+  border: var(--stroke); }
 
 .callout[data-variant='brand'] > * {
   color: var(--color-brand); }
@@ -809,7 +827,7 @@ Largely based on:
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid .1rem;
+  border: var(--stroke);
   border-radius: var(--border-radius); }
 
 /* Ensure consistent heading size regardless of heading level */

@@ -1,10 +1,11 @@
 /* 
-Theme tokens
+THEME tokens
+Includes primitive tokens for color and semantic tokens
 */
 :root {
   /* 
-  Color primitive tokens, not to be used in CSS styles
-  created with Utopia Kickstarter project 
+  Color primitive tokens (not to be used in CSS styles)
+  Created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
   --color-dark: #0d101c;
@@ -25,10 +26,8 @@ Theme tokens
   --color-tertiary-tint: #eefbc1;
 
   /*
-  Semantic color tokens, convey meaning and purpose – how they should be used in CSS styles
+  Color semantic tokens (convey meaning and purpose – describe how to apply primitives in CSS styles)
   */
-
-  /* Color semantic tokens */
   --color-text: var(--color-dark);
   --color-text-subtle: var(--color-dark-mod-3);
   --color-bg: var(--color-light);
@@ -38,21 +37,6 @@ Theme tokens
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
   --color-highlight: var(--color-tertiary);
-  
-  @media (prefers-color-scheme: dark) {
-    /* 
-      If theme doesn’t require a dark mode then remove this media query altogether
-    */
-    --color-text: var(--color-light-mod-3); 
-    --color-text-subtle: var(--color-light-mod-5);
-    --color-bg: var(--color-dark);
-    --color-bg-surface: var(--color-dark-mod-1);
-    --color-bg-surface-raised: var(--color-dark-mod-2);
-    --color-border: var(--color-light-mod-3);
-    --color-brand: var(--color-primary-tint);
-    --color-accent: var(--color-secondary-tint);
-    --color-highlight: var(--color-tertiary-tint);
-  }
 
   /* Typography semantic tokens */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -77,18 +61,42 @@ Theme tokens
   --measure-longform: 65ch;
   --tracking: -0.04ch;
   --tracking-compact: -0.05ch;
-  
-  /* Grid */
-  --gutter: var(--space-s-m);
-  /* Effects */
   --text-decoration-color: currentColor;
   --text-decoration-line: underline;
   --text-decoration-style: solid;
   --text-decoration-thickness: 2px;
+  
+  /* UI semantic tokens */
+  --gutter: var(--space-s-m);
   --focus-ring-width: 2px;
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;
   --focus-ring-style: dotted;
+  // Use stroke tokens for borders, outlines, SVG paths etc
+  --stroke-style: solid;
+  --stroke-weight: .1rem;
+  --stroke-color: var(--color-border);
+  // Default composite stroke token used for borders
+  --stroke: var(--stroke-style) var(--stroke-weight) var(--stroke-color, currentColor);
   --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, cards, callouts and accordians. 
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
+
+  /* 
+    If theme doesn’t require dark mode then remove this media query and its contents
+  */
+  @media (prefers-color-scheme: dark) {
+  
+    --color-text: var(--color-light-mod-3); 
+    --color-text-subtle: var(--color-light-mod-5);
+    --color-bg: var(--color-dark);
+    --color-bg-surface: var(--color-dark-mod-1);
+    --color-bg-surface-raised: var(--color-dark-mod-2);
+    --color-border: var(--color-light-mod-3);
+    --color-brand: var(--color-primary-tint);
+    --color-accent: var(--color-secondary-tint);
+    --color-highlight: var(--color-tertiary-tint);
+    --text-decoration-color: currentColor;
+    --focus-ring-color: currentColor;
+    --stroke-color: currentColor;
+  }
 }
