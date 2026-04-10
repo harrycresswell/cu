@@ -10,7 +10,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   /* Configure focus and stroke color */
-  --focus-color: var(--color-brand);
+  --focus-ring-color: var(--color-brand);
   --stroke-color: var(--color-brand);
   --stroke: var(--stroke-style) var(--stroke-weight)  var(--stroke-color);
 
