@@ -30,9 +30,14 @@ Includes primitive tokens for color and semantic tokens
   */
   --color-text: var(--color-dark);
   --color-text-subtle: var(--color-dark-mod-3);
-  --color-bg: var(--color-light);
-  --color-bg-surface: var(--color-light-mod-1);
-  --color-bg-surface-raised: var(--color-light-mod-2);
+  /* Used when text sits on the brand color or a dark background.*/
+  --color-text-invert: var(--color-light);
+  /* The default background color */
+  --color-background: var(--color-light);
+  /* The default background color for surfaces, e.g. disclosure widgets, code blocks. */
+  --color-background-surface: var(--color-light-mod-1);
+  /* The background color of elevated surfaces */
+  --color-background-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
@@ -76,7 +81,7 @@ Includes primitive tokens for color and semantic tokens
   --stroke-style: solid;
   --stroke-width: .1rem;
   --stroke-color: var(--color-border, currentColor);
-  --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, callouts and accordians. 
+  --radius: 0; // Set a rem value to add border radius to buttons, form elements, callouts and accordians. 
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
 
   /* 
@@ -86,9 +91,10 @@ Includes primitive tokens for color and semantic tokens
   
     --color-text: var(--color-light-mod-3); 
     --color-text-subtle: var(--color-light-mod-5);
-    --color-bg: var(--color-dark);
-    --color-bg-surface: var(--color-dark-mod-1);
-    --color-bg-surface-raised: var(--color-dark-mod-2);
+    --color-text-invert: var(--color-dark);
+    --color-background: var(--color-dark);
+    --color-background-surface: var(--color-dark-mod-1);
+    --color-background-surface-raised: var(--color-dark-mod-2);
     --color-border: var(--color-light-mod-3);
     --color-brand: var(--color-primary-tint);
     --color-accent: var(--color-secondary-tint);

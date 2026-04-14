@@ -1,6 +1,6 @@
 /* margin and padding used in utility visual examples */
 .demo {
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-background-surface);
   padding: var(--space-m-l);
   overflow-x: scroll; }
 
@@ -10,17 +10,17 @@
 .demo .item {
   display: flex;
   background-color: var(--color-brand);
-  color: var(--color-bg); }
+  color: var(--color-background); }
 
 .demo .margin {
   background-color: var(--color-highlight); }
 
 .demo .padding {
-  color: var(--color-bg);
+  color: var(--color-background);
   background-color: var(--color-brand); }
 
 .demo .container {
-  background-color: var(--color-bg);
+  background-color: var(--color-background);
   color: var(--color-text); }
 
 /* changelog item */
@@ -32,7 +32,7 @@
   --cluster-vertical-alignment: start;
   font-family: var(--font-accent); }
   .changelog-item .cluster span {
-    background-color: var(--color-bg-surface);
+    background-color: var(--color-background-surface);
     padding-inline: .5rem; }
 
 .changelog-item div:last-of-type {
@@ -40,10 +40,10 @@
 
 /* Section pagination */
 .pagination a {
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-background-surface);
   padding: var(--space-m-l); }
   .pagination a:hover {
-    background-color: var(--color-bg-surface-raised); }
+    background-color: var(--color-background-surface-raised); }
 
 .pagination span {
   display: block; }

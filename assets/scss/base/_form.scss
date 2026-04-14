@@ -25,7 +25,7 @@ form button {
 }
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
-  background: var(--color-bg);
+  background: var(--color-background);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
@@ -97,8 +97,8 @@ input[type="checkbox"]:checked::after {
   top: .06em;
   left: .16em;
   background-color: transparent;
-  border-right: solid var(--color-bg) .07em;
-  border-bottom: solid var(--color-bg) .07em;
+  border-right: solid var(--color-background) .07em;
+  border-bottom: solid var(--color-background) .07em;
   font-size: 2em;
   transform: rotate(45deg);
 }
@@ -111,13 +111,13 @@ input[type="radio"]:checked::after {
   border-radius: 100%;
   position: absolute;
   top: .13em;
-  background-color: var(--color-bg);
+  background-color: var(--color-background);
   left: .13em;
   font-size: 2em;
 }
 
 input:disabled {
-  background: var(--color-bg-surface-raised);
+  background: var(--color-background-surface-raised);
 }
 
 /* Give user a visual hint that the element is disabled */

@@ -18,7 +18,7 @@ input[type="button"] {
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
   border-radius: var(--radius);
-  color: var(--color-bg);
+  color: var(--color-text-invert);
   cursor: pointer;
   display: inline-block;
   padding: var(--space-3xs) var(--space-2xs);
@@ -51,9 +51,9 @@ input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
   /* Configure stroke color */
-  --stroke-color: var(--color-bg-surface-raised);
+  --stroke-color: var(--color-background-surface-raised);
 
-  background-color: var(--color-bg-surface-raised);
+  background-color: var(--color-background-surface-raised);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
@@ -76,7 +76,7 @@ input[type="submit"][data-variant='outline'],
 input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-bg);
+  background: var(--color-background);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
