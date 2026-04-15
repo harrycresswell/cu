@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compositions on cu.css</title>
-    <link>http://localhost:1313/compositions/</link>
+    <link>http://localhost:51818/compositions/</link>
     <description>Recent content in Compositions on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 14 Aug 2024 11:57:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/compositions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51818/compositions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grid</title>
-      <link>http://localhost:1313/compositions/grid/</link>
+      <link>http://localhost:51818/compositions/grid/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:51 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/grid/</guid>
+      <guid>http://localhost:51818/compositions/grid/</guid>
       <description>&lt;p&gt;Grid comes in three flavours: &lt;em&gt;Two-column&lt;/em&gt;, &lt;em&gt;Three-column&lt;/em&gt; and &lt;em&gt;Masonry&lt;/em&gt; layout.&lt;/p&gt;&#xA;&lt;h3 id=&#34;two-column-layout&#34;&gt;Two-column layout&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;em&gt;two-column&lt;/em&gt; layout positions grid items side-by-side when space permits, so that items proportionately share the available space.&lt;/p&gt;&#xA;&lt;p&gt;Use the layout by adding &lt;code&gt;data-layout=&amp;quot;50-50&amp;quot;&lt;/code&gt; to any element with the &lt;code&gt;.grid&lt;/code&gt; class applied.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | grid&#34; data-layout=&#34;50-50&#34;&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 3&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 4&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Two column when space permits&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* Two column when space permits */&#xA;.grid[data-layout=&amp;#39;50-50&amp;#39;] {&#xA;  --grid-placement: auto-fit;&#xA;  --grid-min-item-size: clamp(16rem, 50vw, 26rem);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;three-column-layout&#34;&gt;Three-column layout&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;em&gt;three-column&lt;/em&gt; layout positions grid items in three columns when space permits, so that items proportionately share the available space.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cluster</title>
-      <link>http://localhost:1313/compositions/cluster/</link>
+      <link>http://localhost:51818/compositions/cluster/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/cluster/</guid>
+      <guid>http://localhost:51818/compositions/cluster/</guid>
       <description>&lt;p&gt;&lt;em&gt;Cluster&lt;/em&gt; creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.&lt;/p&gt;&#xA;&lt;p&gt;This layout is handy for grouping elements like navigation links, breadcrumbs, tags, etc. Use it by adding the &lt;code&gt;.cluster&lt;/code&gt; class to an element with nested children.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | cluster&#34;&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 3&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 4&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 5&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 6&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Cluster will cluster items inline while space permits&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.cluster {&#xA;  display: flex;&#xA;  flex-wrap: wrap;&#xA;  gap: var(--gutter, var(--space-size-1));&#xA;  justify-content: var(--cluster-horizontal-alignment, flex-start);&#xA;  align-items: var(--cluster-vertical-alignment, center);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Repel</title>
-      <link>http://localhost:1313/compositions/repel/</link>
+      <link>http://localhost:51818/compositions/repel/</link>
       <pubDate>Tue, 11 Jul 2023 16:42:27 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/repel/</guid>
+      <guid>http://localhost:51818/compositions/repel/</guid>
       <description>&lt;p&gt;&lt;em&gt;Repel&lt;/em&gt; adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements.&lt;/p&gt;&#xA;&lt;p&gt;Add the &lt;code&gt;.repel&lt;/code&gt; class to site headers, site footers or anywhere you want to push two items away from each other.&lt;/p&gt;&#xA;&lt;p&gt;Use &lt;code&gt;data-nowrap&lt;/code&gt; to prevent items from wrapping when space no longer permits.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | repel&#34;&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Repel quite literally repels two items from one another&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.repel {&#xA;  display: flex;&#xA;  flex-wrap: wrap;&#xA;  justify-content: space-between;&#xA;  align-items: var(--repel-vertical-alignment, center);&#xA;  gap: var(--gutter, var(--space-s-l));&#xA;}&#xA;&#xA;.repel[data-nowrap] {&#xA;  flex-wrap: nowrap;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Sidebar</title>
-      <link>http://localhost:1313/compositions/sidebar/</link>
+      <link>http://localhost:51818/compositions/sidebar/</link>
       <pubDate>Tue, 30 Jan 2024 14:46:29 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/sidebar/</guid>
+      <guid>http://localhost:51818/compositions/sidebar/</guid>
       <description>&lt;p&gt;&lt;em&gt;Sidebar&lt;/em&gt; creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.&lt;/p&gt;&#xA;&lt;p&gt;To use &lt;em&gt;Sidebar&lt;/em&gt;, add the &lt;code&gt;.sidebar&lt;/code&gt; class to a parent element containing two child elements.&lt;/p&gt;&#xA;&lt;p&gt;You can learn more about this composition in &lt;a href=&#34;https://every-layout.dev/layouts/sidebar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Every Layout&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | sidebar&#34;&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Sidebar will create a classic sidebar layout while space permits&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.sidebar {&#xA;  display: flex;&#xA;  flex-wrap: wrap;&#xA;  gap: var(--gutter, var(--space-s-l));&#xA;}&#xA;&#xA;.sidebar:not([data-direction]) &amp;gt; :first-child {&#xA;  flex-basis: var(--sidebar-target-width, 20rem);&#xA;  flex-grow: 1;&#xA;}&#xA;&#xA;.sidebar:not([data-direction]) &amp;gt; :last-child {&#xA;  flex-basis: 0;&#xA;  flex-grow: 999;&#xA;  min-width: var(--sidebar-content-min-width, 50%);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use the &lt;code&gt;data-direction=&amp;quot;rtl&amp;quot;&lt;/code&gt; exception to flip the orientation of the sidebar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reel</title>
-      <link>http://localhost:1313/compositions/reel/</link>
+      <link>http://localhost:51818/compositions/reel/</link>
       <pubDate>Wed, 31 Jan 2024 11:13:58 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/reel/</guid>
+      <guid>http://localhost:51818/compositions/reel/</guid>
       <description>&lt;p&gt;Real creates a carousel-like layout, where items that exceed the available horizontal space become horizontally scrollable.&lt;/p&gt;&#xA;&lt;p&gt;This is a useful pattern for browsing lots of similar content in a limited amount of vertical space. For example, when creating &lt;a href=&#34;https://btxx.org/posts/hamburger-menu-alternative/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sausage links&lt;/a&gt; or image galleries.&lt;/p&gt;&#xA;&lt;p&gt;To create a &lt;em&gt;Reel&lt;/em&gt;, add the &lt;code&gt;.reel&lt;/code&gt; class to a parent element containing any number of child elements.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | reel&#34;&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 1&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 2&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 3&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 4&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 5&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 6&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 7&lt;/div&gt;&#xA;    &lt;div class=&#34;item&#34;&gt;Item 8&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Default reel – a carousel-like horizontally scrollable layout&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;reel&amp;#34;&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 1&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 2&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 3&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 4&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 5&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 6&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 7&amp;lt;/div&amp;gt;&#xA;    &amp;lt;div&amp;gt;Item 8&amp;lt;/div&amp;gt;&#xA;  &amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use the &lt;code&gt;data-scroll=&amp;quot;snap&amp;quot;&lt;/code&gt; attribute to apply &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSS scroll snap&lt;/a&gt; to your reel items.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Switcher</title>
-      <link>http://localhost:1313/compositions/switcher/</link>
+      <link>http://localhost:51818/compositions/switcher/</link>
       <pubDate>Tue, 13 Feb 2024 11:53:42 +0000</pubDate>
-      <guid>http://localhost:1313/compositions/switcher/</guid>
+      <guid>http://localhost:51818/compositions/switcher/</guid>
       <description>&lt;p&gt;Switcher can be used to switch directly between a horizontal and vertical layout.&lt;/p&gt;&#xA;&lt;p&gt;Useful where each item should be considered equal to one another. For example, when displaying content in a number list of steps or showing product benefits.&lt;/p&gt;&#xA;&lt;p&gt;To create a Switcher, add the &lt;code&gt;.switcher&lt;/code&gt; class to a parent element containing any number of child elements.&lt;/p&gt;&#xA;&lt;p&gt;Switcher will display up to 4 items next to each other while horizontal space permits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Frame</title>
-      <link>http://localhost:1313/compositions/frame/</link>
+      <link>http://localhost:51818/compositions/frame/</link>
       <pubDate>Wed, 14 Aug 2024 11:57:01 +0100</pubDate>
-      <guid>http://localhost:1313/compositions/frame/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Frame&lt;/em&gt; allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.&lt;/p&gt;&#xA;&lt;p&gt;By default, &lt;em&gt;Frame&lt;/em&gt; uses an aspect ratio of 16/9, however you can change this by setting a value for &lt;code&gt;--n&lt;/code&gt;, (the numerator, or n), which represents the width, and &lt;code&gt;--d&lt;/code&gt; (the denominator, or d), which represents the height.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | frame&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:1313/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;By default, Frame will crop content to an aspect ratio of 16/9.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;frame&amp;#34;&amp;gt;&#xA;  &amp;lt;img src=&amp;#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | frame&#34; style=&#34;--n: 1; --d:1;&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:1313/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;The default aspect ratio can be changed by updating the values of `--n` and `--d`.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;frame&amp;#34; style=&amp;#34;--n: 1; --d:1;&amp;#34;&amp;gt;&#xA;  &amp;lt;img src=&amp;#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <guid>http://localhost:51818/compositions/frame/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Frame&lt;/em&gt; allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.&lt;/p&gt;&#xA;&lt;p&gt;By default, &lt;em&gt;Frame&lt;/em&gt; uses an aspect ratio of 16/9, however you can change this by setting a value for &lt;code&gt;--n&lt;/code&gt;, (the numerator, or n), which represents the width, and &lt;code&gt;--d&lt;/code&gt; (the denominator, or d), which represents the height.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | frame&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:51818/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;By default, Frame will crop content to an aspect ratio of 16/9.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;frame&amp;#34;&amp;gt;&#xA;  &amp;lt;img src=&amp;#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | frame&#34; style=&#34;--n: 1; --d:1;&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:51818/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&#34; alt=&#34;&#34; /&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;The default aspect ratio can be changed by updating the values of `--n` and `--d`.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;frame&amp;#34; style=&amp;#34;--n: 1; --d:1;&amp;#34;&amp;gt;&#xA;  &amp;lt;img src=&amp;#34;/img/chuck-givens-02AQdLh4gP4-unsplash.jpg&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

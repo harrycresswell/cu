@@ -99,9 +99,9 @@ Includes primitive tokens for color and semantic tokens
   --color-text-subtle: var(--color-dark-mod-3);
   /* Used when text sits on the brand color or a dark background.*/
   --color-text-invert: var(--color-light);
-  /* The default background color */
-  --color-background: var(--color-light);
-  /* The background color for surfaces, e.g. disclosure widgets, code blocks. */
+  /* The default color used for the main website background */
+  --color-canvas: var(--color-light);
+  /* The default color used for ui surfaces. The background of element that sit on top of the canvas, such as disclosure widgets, code blocks, etc. */
   --color-surface: var(--color-light-mod-1);
   /* The background color of elevated surfaces */
   --color-surface-raised: var(--color-light-mod-2);
@@ -250,7 +250,7 @@ project: https://cube.fyi/css.html
     scroll-behavior: smooth; } }
 
 body {
-  background: var(--color-background);
+  background: var(--color-canvas);
   color: var(--color-text);
   font-size: var(--font-size-base);
   font-family: var(--font-base);
@@ -414,7 +414,7 @@ mark,
   @media (prefers-color-scheme: dark) {
     mark,
     ::selection {
-      color: var(--color-background); } }
+      color: var(--color-canvas); } }
 /* Decrease the brightness and contrast of images in dark mode */
 @media (prefers-color-scheme: dark) {
   img,
@@ -443,7 +443,7 @@ form button {
   margin-block-start: var(--space-xs); }
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
-  background: var(--color-background);
+  background: var(--color-canvas);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
@@ -507,8 +507,8 @@ input[type="checkbox"]:checked::after {
   top: .06em;
   left: .16em;
   background-color: transparent;
-  border-right: solid var(--color-background) 0.07em;
-  border-bottom: solid var(--color-background) 0.07em;
+  border-right: solid var(--color-canvas) 0.07em;
+  border-bottom: solid var(--color-canvas) 0.07em;
   font-size: 2em;
   transform: rotate(45deg); }
 
@@ -520,7 +520,7 @@ input[type="radio"]:checked::after {
   border-radius: 100%;
   position: absolute;
   top: .13em;
-  background-color: var(--color-background);
+  background-color: var(--color-canvas);
   left: .13em;
   font-size: 2em; }
 
@@ -716,7 +716,7 @@ input[type="submit"][data-variant='outline'],
 input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-background);
+  background: var(--color-canvas);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color); }
@@ -796,8 +796,8 @@ HERO
 */
 .hero {
   --region-space: 8rem;
-  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-background) 20%, transparent 20%);
-  background-color: var(--color-background);
+  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-canvas) 20%, transparent 20%);
+  background-color: var(--color-canvas);
   background-position: 0 0, 50px 50px;
   background-size: 3px 3px;
   padding-inline: var(--space-s-m);
@@ -1246,7 +1246,7 @@ centers the contents
   height: auto;
   overflow: visible;
   width: auto;
-  background-color: var(--color-background);
+  background-color: var(--color-canvas);
   color: var(--color-text);
   padding: var(--space-xs);
   line-height: 1; }

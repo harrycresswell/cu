@@ -12,7 +12,7 @@
 .demo .item {
   display: flex;
   background-color: var(--color-brand); 
-  color: var(--color-background);
+  color: var(--color-canvas);
 }
 
 .demo .margin {
@@ -20,12 +20,12 @@
 }
 
 .demo .padding {
-  color: var(--color-background);
+  color: var(--color-canvas);
   background-color: var(--color-brand);
 }
 
 .demo .container {
-  background-color: var(--color-background);
+  background-color: var(--color-canvas);
   color: var(--color-text); 
 }
 

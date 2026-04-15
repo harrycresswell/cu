@@ -25,7 +25,7 @@ form button {
 }
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
-  background: var(--color-background);
+  background: var(--color-canvas);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
@@ -97,8 +97,8 @@ input[type="checkbox"]:checked::after {
   top: .06em;
   left: .16em;
   background-color: transparent;
-  border-right: solid var(--color-background) .07em;
-  border-bottom: solid var(--color-background) .07em;
+  border-right: solid var(--color-canvas) .07em;
+  border-bottom: solid var(--color-canvas) .07em;
   font-size: 2em;
   transform: rotate(45deg);
 }
@@ -111,7 +111,7 @@ input[type="radio"]:checked::after {
   border-radius: 100%;
   position: absolute;
   top: .13em;
-  background-color: var(--color-background);
+  background-color: var(--color-canvas);
   left: .13em;
   font-size: 2em;
 }
