@@ -51,9 +51,9 @@ input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
   /* Configure stroke color */
-  --stroke-color: var(--color-background-surface-raised);
+  --stroke-color: var(--color-surface-raised);
 
-  background-color: var(--color-background-surface-raised);
+  background-color: var(--color-surface-raised);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);

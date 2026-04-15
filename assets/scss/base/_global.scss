@@ -71,10 +71,10 @@ hr {
 } 
 
 kbd {
-  --stroke-color: var(--color-background-surface-raised);
+  --stroke-color: var(--color-surface-raised);
   --stroke-width: 1px;
 
-  background-color: var(--color-background-surface);
+  background-color: var(--color-surface);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);

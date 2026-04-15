@@ -35,9 +35,9 @@ Includes primitive tokens for color and semantic tokens
   /* The default background color */
   --color-background: var(--color-light);
   /* The background color for surfaces, e.g. disclosure widgets, code blocks. */
-  --color-background-surface: var(--color-light-mod-1);
+  --color-surface: var(--color-light-mod-1);
   /* The background color of elevated surfaces */
-  --color-background-surface-raised: var(--color-light-mod-2);
+  --color-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);

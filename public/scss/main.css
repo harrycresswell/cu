@@ -102,9 +102,9 @@ Includes primitive tokens for color and semantic tokens
   /* The default background color */
   --color-background: var(--color-light);
   /* The background color for surfaces, e.g. disclosure widgets, code blocks. */
-  --color-background-surface: var(--color-light-mod-1);
+  --color-surface: var(--color-light-mod-1);
   /* The background color of elevated surfaces */
-  --color-background-surface-raised: var(--color-light-mod-2);
+  --color-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
@@ -300,9 +300,9 @@ hr {
   border-top: 2px dotted; }
 
 kbd {
-  --stroke-color: var(--color-background-surface-raised);
+  --stroke-color: var(--color-surface-raised);
   --stroke-width: 1px;
-  background-color: var(--color-background-surface);
+  background-color: var(--color-surface);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);
@@ -525,7 +525,7 @@ input[type="radio"]:checked::after {
   font-size: 2em; }
 
 input:disabled {
-  background: var(--color-background-surface-raised); }
+  background: var(--color-surface-raised); }
 
 /* Give user a visual hint that the element is disabled */
 input:disabled,
@@ -540,7 +540,7 @@ Used for inline code and code blocks
 Ditch these styles altogether if not required for the website.
 */
 pre:has(code) {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
@@ -548,7 +548,7 @@ pre:has(code) {
   margin: 0; }
 
 code {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
   color: var(--color-accent);
   font-size: 93%;
   /* Carry over padding when code breaks multiple lines */
@@ -569,7 +569,7 @@ Format the expanding box, a.k.a accordion.
 Ditch these styles altogether if not required for the website.
 */
 details {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
   border-radius: var(--radius); }
 
 summary {
@@ -636,12 +636,12 @@ th {
 
 /* Give table header a background color */
 th {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
   font-weight: bold; }
 
 /* Give all even table rows a background color */
 tr:nth-child(even) {
-  background: var(--color-background-surface); }
+  background: var(--color-surface); }
 
 /* Make sure table captions sit beneath the table */
 table caption {
@@ -693,8 +693,8 @@ input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled {
   /* Configure stroke color */
-  --stroke-color: var(--color-background-surface-raised);
-  background-color: var(--color-background-surface-raised);
+  --stroke-color: var(--color-surface-raised);
+  background-color: var(--color-surface-raised);
   border-width: var(--stroke-width);
   border-style: var(--stroke-style);
   border-color: var(--stroke-color);

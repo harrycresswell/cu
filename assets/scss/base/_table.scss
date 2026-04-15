@@ -22,13 +22,13 @@ th {
 
 /* Give table header a background color */
 th {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
   font-weight: bold;
 }
 
 /* Give all even table rows a background color */
 tr:nth-child(even) {
-  background: var(--color-background-surface);
+  background: var(--color-surface);
 }
 
 /* Make sure table captions sit beneath the table */
