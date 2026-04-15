@@ -101,7 +101,7 @@ Includes primitive tokens for color and semantic tokens
   --color-text-invert: var(--color-light);
   /* The default background color */
   --color-background: var(--color-light);
-  /* The default background color for surfaces, e.g. disclosure widgets, code blocks. */
+  /* The background color for surfaces, e.g. disclosure widgets, code blocks. */
   --color-background-surface: var(--color-light-mod-1);
   /* The background color of elevated surfaces */
   --color-background-surface-raised: var(--color-light-mod-2);
@@ -115,15 +115,15 @@ Includes primitive tokens for color and semantic tokens
   --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --text-size-base: var(--step-0);
-  --text-size-lede: var(--step-1);
-  --text-size-meta: var(--step--1);
-  --text-size-heading-1: var(--step-4);
-  --text-size-heading-2: var(--step-3);
-  --text-size-heading-3: var(--step-2);
-  --text-size-heading-4: var(--step-1);
-  --text-size-heading-5: var(--step-0);
-  --text-size-heading-6: var(--step--1)
+  --font-size-base: var(--step-0);
+  --font-size-lede: var(--step-1);
+  --font-size-meta: var(--step--1);
+  --font-size-2xl: var(--step-4);
+  --font-size-xl: var(--step-3);
+  --font-size-l: var(--step-2);
+  --font-size-m: var(--step-1);
+  --font-size-s: var(--step-0);
+  --font-size-xs: var(--step--1);
   --line-height-flat: 1;
   --line-height-compact: 1.2;
   --line-height-base: 1.5;
@@ -252,7 +252,7 @@ project: https://cube.fyi/css.html
 body {
   background: var(--color-background);
   color: var(--color-text);
-  font-size: var(--text-size-base);
+  font-size: var(--font-size-base);
   font-family: var(--font-base);
   letter-spacing: var(--tracking); }
 
@@ -267,27 +267,27 @@ body {
 
 h1,
 .h1 {
-  font-size: var(--text-size-heading-1); }
+  font-size: var(--font-size-2xl); }
 
 h2,
 .h2 {
-  font-size: var(--text-size-heading-2); }
+  font-size: var(--font-size-xl); }
 
 h3,
 .h3 {
-  font-size: var(--text-size-heading-3); }
+  font-size: var(--font-size-l); }
 
 h4,
 .h4 {
-  font-size: var(--text-size-heading-4); }
+  font-size: var(--font-size-m); }
 
 h5,
 .h5 {
-  font-size: var(--text-size-heading-5); }
+  font-size: var(--font-size-s); }
 
 h6,
 .h6 {
-  font-size: var(--text-size-heading-6); }
+  font-size: var(--font-size-xs); }
 
 /* Set line lengths */
 p,
@@ -311,18 +311,18 @@ kbd {
   padding: .115rem .25rem; }
 
 figcaption {
-  font-size: var(--text-size-meta);
+  font-size: var(--font-size-meta);
   margin-block-start: .5rem;
   text-align: center; }
 
 small {
-  font-size: var(--text-size-meta); }
+  font-size: var(--font-size-meta); }
 
 /* More generic elements */
 blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
   font-family: var(--font-display);
-  font-size: var(--text-size-lede);
+  font-size: var(--font-size-lede);
   line-height: var(--line-height-base);
   padding-inline-start: var(--space-s); }
 
@@ -331,7 +331,7 @@ blockquote:not([class]) p:last-of-type,
 blockquote:not([class]) cite,
 blockquote:not([class]) footer {
   font-family: var(--font-base);
-  font-size: var(--text-size-base);
+  font-size: var(--font-size-base);
   font-weight: normal;
   margin-block-start: var(--space-2xs); }
 
@@ -858,11 +858,11 @@ Largely based on:
 
 /* Ensure consistent heading size regardless of heading level */
 .card :is(h2, h3, h4) {
-  font-size: var(--text-size-heading-4); }
+  font-size: var(--font-size-m); }
 
 /* Ensure consistent text size for all non-heading elements */
 .card > :not(h2, h3, h4) {
-  font-size: var(--text-size-meta); }
+  font-size: var(--font-size-meta); }
 
 /* 
   Use Heydon’s pseudo-content trick to make the whole card clickable

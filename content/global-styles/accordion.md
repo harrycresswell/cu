@@ -98,7 +98,7 @@ As with single discloure widgets, you can use `data-variant="fancy"` to hide def
 </div>
 ```
 
-Use a `name` attribute with a matching value on each `<details>` element to create an exclusive accordion. This will ensure only one widget expands at any one time.
+Use a `name` attribute with a matching value on each `<details>` element to create an exclusive accordion. This will ensure only one disclosure widget opens at a time.
 
 <div role="group" aria-labelledby="accordion-faq-exclusive">
   <span id="accordion-faq-exclusive" hidden>Frequently Asked Questions</span>

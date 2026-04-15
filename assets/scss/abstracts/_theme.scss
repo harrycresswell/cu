@@ -34,7 +34,7 @@ Includes primitive tokens for color and semantic tokens
   --color-text-invert: var(--color-light);
   /* The default background color */
   --color-background: var(--color-light);
-  /* The default background color for surfaces, e.g. disclosure widgets, code blocks. */
+  /* The background color for surfaces, e.g. disclosure widgets, code blocks. */
   --color-background-surface: var(--color-light-mod-1);
   /* The background color of elevated surfaces */
   --color-background-surface-raised: var(--color-light-mod-2);
@@ -49,15 +49,15 @@ Includes primitive tokens for color and semantic tokens
   --font-accent: 'Menlo', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', 'Courier New', monospace;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --text-size-base: var(--step-0);
-  --text-size-lede: var(--step-1);
-  --text-size-meta: var(--step--1);
-  --text-size-heading-1: var(--step-4);
-  --text-size-heading-2: var(--step-3);
-  --text-size-heading-3: var(--step-2);
-  --text-size-heading-4: var(--step-1);
-  --text-size-heading-5: var(--step-0);
-  --text-size-heading-6: var(--step--1)
+  --font-size-base: var(--step-0);
+  --font-size-lede: var(--step-1);
+  --font-size-meta: var(--step--1);
+  --font-size-2xl: var(--step-4);
+  --font-size-xl: var(--step-3);
+  --font-size-l: var(--step-2);
+  --font-size-m: var(--step-1);
+  --font-size-s: var(--step-0);
+  --font-size-xs: var(--step--1);
   --line-height-flat: 1;
   --line-height-compact: 1.2;
   --line-height-base: 1.5;
