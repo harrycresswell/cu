@@ -23,3 +23,16 @@ Used for theme toggle functionality.
 html {
   color-scheme: var(--color-theme, light);
 }
+
+[data-theme="dark"] {
+  mark,
+  ::selection {
+    color: var(--color-canvas);
+    background-color: var(--color-highlight);
+  }
+
+  img,
+  picture {
+    filter: brightness(.8) contrast(1.2);
+  }
+}

@@ -115,6 +115,15 @@ Used for theme toggle functionality.
 html {
   color-scheme: var(--color-theme, light); }
 
+[data-theme="dark"] mark,
+[data-theme="dark"] ::selection {
+  color: var(--color-canvas);
+  background-color: var(--color-highlight); }
+
+[data-theme="dark"] img,
+[data-theme="dark"] picture {
+  filter: brightness(0.8) contrast(1.2); }
+
 /* 
 THEME SWITCH 
 */
