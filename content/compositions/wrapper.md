@@ -2,7 +2,7 @@
 title: "Wrapper"
 date: 2023-07-12T12:59:06+01:00
 draft: false
-weight: 1
+weight: 2
 ---
 
 `.wrapper` horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.

@@ -2,7 +2,7 @@
 title: "Sidebar"
 date: 2024-01-30T14:46:29Z
 draft: false
-weight: 4
+weight: 7
 ---
 
 *Sidebar* creates a classic sidebar layout, where two elements appear side-by-side, when space permits. The first of the two adjacent elements has a fixed width – the sidebar, itself – and the second takes up the rest of the available space.

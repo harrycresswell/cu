@@ -2,7 +2,7 @@
 title: "Skip link"
 date: 2024-01-26T10:19:37Z
 draft: false
-weight: 7
+weight: 3
 ---
 
 The `.skip-link` utility can be used to create [skip navigation links](https://webaim.org/techniques/skipnav/). These are links that are visually hidden by default and become visible on focus, usually when using the keyboard <kbd>Tab</kbd> button to navigate a website.

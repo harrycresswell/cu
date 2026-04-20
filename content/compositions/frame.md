@@ -2,7 +2,7 @@
 title: "Frame"
 date: 2024-08-14T11:57:01+01:00
 draft: false
-weight: 7
+weight: 10
 ---
 
 *Frame* allows you to control the aspect ratio of a child element. Frame is mostly useful for cropping media (videos and images) to a desired aspect ratio.

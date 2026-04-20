@@ -6,35 +6,14 @@
     <description>Recent content in Utilities on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 26 Jan 2024 10:19:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 11:02:35 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/utilities/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Wrapper</title>
-      <link>http://localhost:1313/utilities/wrapper/</link>
-      <pubDate>Wed, 12 Jul 2023 12:59:06 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/wrapper/</guid>
-      <description>&lt;p&gt;&lt;code&gt;.wrapper&lt;/code&gt; horizontally centers content and adds a minimum margin either side to prevent content sitting flush to the parent element.&lt;/p&gt;&#xA;&lt;p&gt;This is useful for creating site wide content wrappers, or simply centering sections of content, as you see on the &lt;a href=&#34;http://localhost:1313/&#34;&gt;&lt;em&gt;cu.css&lt;/em&gt; homepage&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo&#34; style=&#34;display: flex;&#34;&gt;&#xA;    &lt;div class=&#34;margin&#34;&gt;&lt;mark&gt;Margin&lt;/mark&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;padding&#34;&gt;Padding&lt;/div&gt;&#xA;    &lt;div class=&#34;container&#34; style=&#34;flex: 1; padding: 1rem;&#34;&gt;Content&lt;/div&gt;&#xA;    &lt;div class=&#34;padding&#34;&gt;Padding&lt;/div&gt;&#xA;    &lt;div class=&#34;margin&#34;&gt;&lt;mark&gt;Margin&lt;/mark&gt;&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Wrapper with horizontal padding visualised in purple and margin in green&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/*&#xA;WRAPPER&#xA;@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/&#xA;*/&#xA;.wrapper {&#xA;  max-width: var(--wrapper-max-width, 90rem);&#xA;  margin-inline: auto;&#xA;  padding-inline: var(--gutter);&#xA;  position: relative;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The default max-width of &lt;code&gt;.wrapper&lt;/code&gt; is set to &lt;code&gt;90rem&lt;/code&gt;. However, by setting a &lt;code&gt;--wrapper-max-width&lt;/code&gt; value, you can control the maximum width of an element that has the class applied.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Region</title>
-      <link>http://localhost:1313/utilities/region/</link>
-      <pubDate>Wed, 12 Jul 2023 12:58:48 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/region/</guid>
-      <description>&lt;p&gt;&lt;code&gt;.region&lt;/code&gt; adds consistent vertical padding to an element to create regions of content with sufficient spacing.&lt;/p&gt;&#xA;&lt;p&gt;By default, &lt;code&gt;.region&lt;/code&gt; uses &lt;code&gt;--space-l-xl&lt;/code&gt; from &lt;a href=&#34;assets/scss/abstracts/_space.scss&#34;&gt;the space scale&lt;/a&gt;, however the amount of space can also be configured by setting &lt;code&gt;--region-space&lt;/code&gt; inline or within any new class you decide to create and use alongside &lt;code&gt;.region&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo | region&#34;&gt;&#xA;    &lt;div class=&#34;padding&#34;&gt;Padding&lt;/div&gt;&#xA;    &lt;div class=&#34;container&#34;&gt;Content&lt;/div&gt;&#xA;    &lt;div class=&#34;padding&#34;&gt;Padding&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;A region of content with vertical padding visualised in purple&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/*&#xA;REGION &#xA;Add consistent vertical padding to create regions of content &#xA;Can either be configured by setting --region-space or use a default from the space scale&#xA;@link: https://codepen.io/harrycresswell/pen/bGQmBNL&#xA;*/&#xA;.region {&#xA; padding-top: var(--region-space, var(--space-l-xl));&#xA; padding-bottom: var(--region-space, var(--space-l-xl));&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Flow</title>
-      <link>http://localhost:1313/utilities/flow/</link>
-      <pubDate>Wed, 12 Jul 2023 12:58:27 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/flow/</guid>
-      <description>&lt;p&gt;Applies a margin to sibling elements based on a &lt;code&gt;--flow-space&lt;/code&gt; custom property.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;demo&#34;&gt;&#xA;    &lt;div class=&#34;container&#34; style=&#34;height: 4rem;&#34;&gt;Content&lt;/div&gt;&#xA;    &lt;div class=&#34;margin&#34;&gt;&lt;mark&gt;Margin (default)&lt;/mark&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;container&#34; style=&#34;height: 4rem;&#34;&gt;Content&lt;/div&gt;&#xA;    &lt;div class=&#34;margin&#34; style=&#34;height: 8rem;&#34;&gt;&lt;mark&gt;Margin (set inline using --flow-space)&lt;/mark&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;container&#34; style=&#34;height: 4rem;&#34;&gt;Content&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;figcaption&gt;Flow utility with margin visualised in green&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/*&#xA;FLOW&#xA;@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/&#xA;@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility&#xA;@link: https://piccalil.li/quick-tip/flow-utility/&#xA;*/&#xA;.flow &amp;gt; * + * {&#xA;  margin-top: var(--flow-space, 1em);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Visually Hidden</title>
-      <link>http://localhost:1313/utilities/visually-hidden/</link>
-      <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/visually-hidden/</guid>
-      <description>&lt;p&gt;Use the &lt;code&gt;.visually-hidden&lt;/code&gt; utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* &#xA;VISUALLY HIDDEN&#xA;@link: https://piccalil.li/quick-tip/visually-hidden/ &#xA;*/&#xA;.visually-hidden {&#xA;  border: 0;&#xA;  clip: rect(0 0 0 0);&#xA;  height: auto;&#xA;  margin: 0;&#xA;  overflow: hidden;&#xA;  padding: 0;&#xA;  position: absolute;&#xA;  width: 1px;&#xA;  white-space: nowrap;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is different from &lt;a href=&#34;http://localhost:1313/global-styles/#visibility&#34;&gt;using the [hidden] attribute&lt;/a&gt; which will hide the content from both the browser and assistive technologies.&lt;/p&gt;</description>
+      <title>Center</title>
+      <link>http://localhost:1313/utilities/center/</link>
+      <pubDate>Mon, 20 Apr 2026 11:02:35 +0100</pubDate>
+      <guid>http://localhost:1313/utilities/center/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;.center&lt;/code&gt; utility can be used to horizontally center block-level items.&lt;/p&gt;&#xA;&lt;div class=&#34;demo center&#34;&gt;&#xA; &lt;div class=&#34;item&#34;&gt;Item centered&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.center {&#xA;  display: flex;&#xA;  align-items: center;&#xA;  justify-content: center;&#xA;  flex-direction: column;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Text</title>
@@ -44,18 +23,25 @@
       <description>&lt;p&gt;The &lt;code&gt;.text-center&lt;/code&gt; utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.&lt;/p&gt;&#xA;&lt;div class=&#34;demo text-center&#34;&gt;&#xA;This text is horizontally centered&#xA;&lt;/div&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.text-center {&#xA;  text-align: center;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Width</title>
-      <link>http://localhost:1313/utilities/width/</link>
-      <pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate>
-      <guid>http://localhost:1313/utilities/width/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;.w-full&lt;/code&gt; utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.&lt;/p&gt;&#xA;&lt;form&gt;&#xA;  &lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.w-full {&#xA;  width: 100%;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
       <title>Skip link</title>
       <link>http://localhost:1313/utilities/skip-link/</link>
       <pubDate>Fri, 26 Jan 2024 10:19:37 +0000</pubDate>
       <guid>http://localhost:1313/utilities/skip-link/</guid>
       <description>&lt;p&gt;The &lt;code&gt;.skip-link&lt;/code&gt; utility can be used to create &lt;a href=&#34;https://webaim.org/techniques/skipnav/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;skip navigation links&lt;/a&gt;. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard &lt;kbd&gt;Tab&lt;/kbd&gt; button to navigate a website.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;a class=&amp;#34;skip-link&amp;#34; href=&amp;#34;#main-content&amp;#34;&amp;gt;Skip to main content&amp;lt;/a&amp;gt;&#xA;...&#xA;&amp;lt;main id=&amp;#34;main-content&amp;#34;&amp;gt;&#xA;    ...&#xA;&amp;lt;/main&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Visually Hidden</title>
+      <link>http://localhost:1313/utilities/visually-hidden/</link>
+      <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>
+      <guid>http://localhost:1313/utilities/visually-hidden/</guid>
+      <description>&lt;p&gt;Use the &lt;code&gt;.visually-hidden&lt;/code&gt; utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* &#xA;VISUALLY HIDDEN&#xA;@link: https://piccalil.li/quick-tip/visually-hidden/ &#xA;*/&#xA;.visually-hidden {&#xA;  border: 0;&#xA;  clip: rect(0 0 0 0);&#xA;  height: auto;&#xA;  margin: 0;&#xA;  overflow: hidden;&#xA;  padding: 0;&#xA;  position: absolute;&#xA;  width: 1px;&#xA;  white-space: nowrap;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is different from &lt;a href=&#34;http://localhost:1313/global-styles/#visibility&#34;&gt;using the [hidden] attribute&lt;/a&gt; which will hide the content from both the browser and assistive technologies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Width</title>
+      <link>http://localhost:1313/utilities/width/</link>
+      <pubDate>Thu, 27 Jul 2023 16:49:54 +0100</pubDate>
+      <guid>http://localhost:1313/utilities/width/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;.w-full&lt;/code&gt; utility class can be used to make an element fill the full width of its parent container. Particularly useful for buttons and form elements.&lt;/p&gt;&#xA;&lt;form&gt;&#xA;  &lt;button class=&#34;w-full&#34; type=&#34;submit&#34; value=&#34;Submit&#34;&gt;Submit&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.w-full {&#xA;  width: 100%;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

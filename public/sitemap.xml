@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/utilities/center/</loc>
+    <lastmod>2026-04-20T11:02:35+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blocks/button/</loc>
     <lastmod>2023-07-27T17:16:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/wrapper/</loc>
-    <lastmod>2023-07-12T12:59:06+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/compositions/grid/</loc>
-    <lastmod>2023-07-11T16:42:51+01:00</lastmod>
+    <loc>http://localhost:1313/compositions/region/</loc>
+    <lastmod>2023-07-12T12:58:48+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/getting-started/installation/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
@@ -19,72 +19,75 @@
     <loc>http://localhost:1313/blocks/callout/</loc>
     <lastmod>2023-07-27T17:16:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/region/</loc>
-    <lastmod>2023-07-12T12:58:48+01:00</lastmod>
+    <loc>http://localhost:1313/utilities/text/</loc>
+    <lastmod>2023-07-27T16:50:03+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/compositions/cluster/</loc>
-    <lastmod>2023-07-11T16:42:27+01:00</lastmod>
+    <loc>http://localhost:1313/compositions/wrapper/</loc>
+    <lastmod>2023-07-12T12:59:06+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/getting-started/working-with-css/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/global-styles/list/</loc>
   </url><url>
+    <loc>http://localhost:1313/utilities/skip-link/</loc>
+    <lastmod>2024-01-26T10:19:37+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blocks/card/</loc>
     <lastmod>2023-07-27T17:16:37+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/flow/</loc>
-    <lastmod>2023-07-12T12:58:27+01:00</lastmod>
+    <loc>http://localhost:1313/utilities/visually-hidden/</loc>
+    <lastmod>2023-07-12T12:59:32+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/compositions/repel/</loc>
-    <lastmod>2023-07-11T16:42:27+01:00</lastmod>
+    <loc>http://localhost:1313/compositions/flow/</loc>
+    <lastmod>2023-07-12T12:58:27+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/getting-started/working-with-sass/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/global-styles/blockquote/</loc>
   </url><url>
-    <loc>http://localhost:1313/compositions/sidebar/</loc>
-    <lastmod>2024-01-30T14:46:29+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blocks/hero/</loc>
     <lastmod>2023-07-27T17:16:41+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/visually-hidden/</loc>
-    <lastmod>2023-07-12T12:59:32+01:00</lastmod>
+    <loc>http://localhost:1313/utilities/width/</loc>
+    <lastmod>2023-07-27T16:49:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/compositions/cluster/</loc>
+    <lastmod>2023-07-11T16:42:27+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/global-styles/codeblock/</loc>
   </url><url>
     <loc>http://localhost:1313/blocks/prose/</loc>
     <lastmod>2024-02-07T13:35:24+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/compositions/repel/</loc>
+    <lastmod>2023-07-11T16:42:27+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/global-styles/form/</loc>
+  </url><url>
+    <loc>http://localhost:1313/compositions/grid/</loc>
+    <lastmod>2023-07-11T16:42:51+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/global-styles/disclosure-widget/</loc>
+  </url><url>
+    <loc>http://localhost:1313/compositions/sidebar/</loc>
+    <lastmod>2024-01-30T14:46:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/global-styles/accordion/</loc>
+  </url><url>
     <loc>http://localhost:1313/compositions/reel/</loc>
     <lastmod>2024-01-31T11:13:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/text/</loc>
-    <lastmod>2023-07-27T16:50:03+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/global-styles/form/</loc>
+    <loc>http://localhost:1313/global-styles/table/</loc>
   </url><url>
     <loc>http://localhost:1313/compositions/switcher/</loc>
     <lastmod>2024-02-13T11:53:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/utilities/width/</loc>
-    <lastmod>2023-07-27T16:49:54+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/global-styles/disclosure-widget/</loc>
+    <loc>http://localhost:1313/global-styles/button/</loc>
   </url><url>
     <loc>http://localhost:1313/compositions/frame/</loc>
     <lastmod>2024-08-14T11:57:01+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/utilities/skip-link/</loc>
-    <lastmod>2024-01-26T10:19:37+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/global-styles/accordion/</loc>
-  </url><url>
-    <loc>http://localhost:1313/global-styles/table/</loc>
-  </url><url>
-    <loc>http://localhost:1313/global-styles/button/</loc>
   </url><url>
     <loc>http://localhost:1313/getting-started/</loc>
     <lastmod>2023-07-11T16:42:27+01:00</lastmod>
@@ -103,7 +106,7 @@
     <lastmod>2024-08-14T11:57:01+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/utilities/</loc>
-    <lastmod>2024-01-26T10:19:37+00:00</lastmod>
+    <lastmod>2026-04-20T11:02:35+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blocks/</loc>
     <lastmod>2024-02-07T13:35:24+00:00</lastmod>
@@ -111,7 +114,7 @@
     <loc>http://localhost:1313/resources/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-07T10:58:28+00:00</lastmod>
+    <lastmod>2026-04-20T11:02:35+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/changelog/v0.1.9/</loc>
     <lastmod>2025-03-07T10:58:28+00:00</lastmod>

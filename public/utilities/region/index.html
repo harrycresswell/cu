@@ -89,6 +89,20 @@
 
 
 
+  <script>
+    
+
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   
     
     

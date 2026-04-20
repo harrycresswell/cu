@@ -2,7 +2,7 @@
 title: "Region"
 date: 2023-07-12T12:58:48+01:00
 draft: false
-weight: 2
+weight: 1
 ---
 
 `.region` adds consistent vertical padding to an element to create regions of content with sufficient spacing. 
@@ -11,9 +11,9 @@ By default, `.region` uses `--space-l-xl` from [the space scale](assets/scss/abs
 
 <figure>
   <div class="demo | region">
-    <div class="padding">Padding</div>
+    <div class="padding" style="height: 6rem;">Padding</div>
     <div class="container">Content</div>
-    <div class="padding">Padding</div>
+    <div class="padding" style="height: 6rem;">Padding</div>
   </div>
   <figcaption>A region of content with vertical padding visualised in purple</figcaption>
 </figure>

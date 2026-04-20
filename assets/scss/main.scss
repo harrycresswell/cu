@@ -33,6 +33,9 @@
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
 */
+@import 'compositions/flow';
+@import 'compositions/region';
+@import 'compositions/wrapper';
 @import 'compositions/grid';
 @import 'compositions/repel';
 @import 'compositions/cluster';
@@ -45,9 +48,7 @@
 * Classes that do one job and one job well 
 */
 @import 'utilities/visually-hidden';
-@import 'utilities/flow';
-@import 'utilities/region';
-@import 'utilities/wrapper';
 @import 'utilities/width';
 @import 'utilities/text';
 @import 'utilities/skip-link';
+@import 'utilities/center';

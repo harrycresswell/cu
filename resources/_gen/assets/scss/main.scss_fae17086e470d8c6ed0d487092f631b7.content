@@ -948,6 +948,37 @@ THEME SWITCH
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
 */
+/*
+FLOW
+Applies a margin to sibling elements based on a --flow-space custom property.
+@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
+@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
+@link: https://piccalil.li/quick-tip/flow-utility/
+*/
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+
+/*
+REGION 
+Add consistent vertical padding to create regions of content 
+Can either be configured by setting --region-space or use a default from the space scale
+*/
+.region {
+  padding-top: var(--region-space, var(--space-l-xl));
+  padding-bottom: var(--region-space, var(--space-l-xl)); }
+
+/*
+WRAPPER
+Sets a max width, adds a consistent gutter and horizontally
+centers the contents
+@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+*/
+.wrapper {
+  max-width: var(--wrapper-max-width, 90rem);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  position: relative; }
+
 /* 
 AUTO GRID
 Related Every Layout: https://every-layout.dev/layouts/grid/
@@ -1206,37 +1237,6 @@ Info: https://piccalil.li/quick-tip/visually-hidden/
   width: 1px;
   white-space: nowrap; }
 
-/*
-FLOW
-Applies a margin to sibling elements based on a --flow-space custom property.
-@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
-@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
-@link: https://piccalil.li/quick-tip/flow-utility/
-*/
-.flow > * + * {
-  margin-top: var(--flow-space, 1em); }
-
-/*
-REGION 
-Add consistent vertical padding to create regions of content 
-Can either be configured by setting --region-space or use a default from the space scale
-*/
-.region {
-  padding-top: var(--region-space, var(--space-l-xl));
-  padding-bottom: var(--region-space, var(--space-l-xl)); }
-
-/*
-WRAPPER
-Sets a max width, adds a consistent gutter and horizontally
-centers the contents
-@link: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
-*/
-.wrapper {
-  max-width: var(--wrapper-max-width, 90rem);
-  margin-inline: auto;
-  padding-inline: var(--gutter);
-  position: relative; }
-
 .w-full {
   width: 100%;
   max-width: unset; }
@@ -1275,5 +1275,11 @@ centers the contents
   position: absolute;
   width: 1px;
   white-space: nowrap; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */
