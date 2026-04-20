@@ -6,6 +6,22 @@
 
   {{ partial "meta-info.html" . }}
 
+  <script>
+    /* 
+    Retrive any saved theme preferences from local storage.
+    This prevents FOUC from occuring.
+    */
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   {{ if hugo.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
     {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
@@ -14,6 +30,7 @@
     <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
     <link rel="stylesheet" href="{{ $demo.Permalink | relURL }}" media="screen">
   {{ else }}
+
     <!-- Set target path -->
     {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
     {{ $demoOpts := (dict "targetPath" "css/demo.css" ) }}

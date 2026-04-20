@@ -146,25 +146,28 @@ Includes primitive tokens for color and semantic tokens
   --stroke-width: .1rem;
   --stroke-color: var(--color-border, currentColor);
   --radius: 0;
-  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
-  /* 
-    If theme doesn’t require dark mode then remove this media query and its contents
-  */ }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-text: var(--color-light-mod-3);
-      --color-text-subtle: var(--color-light-mod-5);
-      --color-text-invert: var(--color-dark);
-      --color-background: var(--color-dark);
-      --color-background-surface: var(--color-dark-mod-1);
-      --color-background-surface-raised: var(--color-dark-mod-2);
-      --color-border: var(--color-light-mod-3);
-      --color-brand: var(--color-primary-tint);
-      --color-accent: var(--color-secondary-tint);
-      --color-highlight: var(--color-tertiary-tint);
-      --text-decoration-color: currentColor;
-      --focus-ring-color: currentColor;
-      --stroke-color: currentColor; } }
+  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025); }
+
+/* 
+DARK MODE 
+If theme doesn’t require dark mode then remove everything below
+*/
+:root[data-theme="dark"] {
+  --color-theme: dark;
+  --color-text: var(--color-light-mod-3);
+  --color-text-subtle: var(--color-light-mod-5);
+  --color-text-invert: var(--color-dark);
+  --color-canvas: var(--color-dark);
+  --color-surface: var(--color-dark-mod-1);
+  --color-surface-raised: var(--color-dark-mod-2);
+  --color-border: var(--color-light-mod-3);
+  --color-brand: var(--color-primary-tint);
+  --color-accent: var(--color-secondary-tint);
+  --color-highlight: var(--color-tertiary-tint);
+  --text-decoration-color: currentColor;
+  --focus-ring-color: currentColor;
+  --stroke-color: currentColor; }
+
 /* 
 * Embrace the cascade and inheritance to 
 * style as much as possible at a global level 
@@ -245,6 +248,10 @@ Global styles
 Low-specificity, global styles that apply to the whole 
 project: https://cube.fyi/css.html
 */
+/* Remove if dark mode is not used. */
+html {
+  color-scheme: var(--color-theme, light); }
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth; } }
@@ -929,6 +936,13 @@ Largely based on:
 .card[data-state='reversed'] {
   display: flex;
   flex-direction: column-reverse; }
+
+/* 
+THEME SWITCH 
+*/
+.theme-switch {
+  --cluster-horizontal-alignment: center;
+  --gutter: var(--space-2xs); }
 
 /* 
 * High level, flexible layouts that provide a 

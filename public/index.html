@@ -90,6 +90,20 @@
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="cu.css" />
 
 
+  <script>
+    
+
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   
     
     
@@ -231,11 +245,21 @@
   </article>
 </section>
 
-      </main><footer class="region | text-center bt">
-  <div class="wrapper">
-    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
-    <a href="/changelog">Changelog.</a>
-    </small>
+      </main><footer class="region | bt">
+  <div class="wrapper | text-center | flow">
+    <p>Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. </p>
+    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. MIT license. <a href="/changelog">Changelog.</a></small>
+    <form class="theme-switch" data-element="theme-switch" hidden>
+  <div class="cluster">
+    <label for="theme-switch">Theme:</label>
+    <select id="theme-switch">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
   </div>
-</footer></body>
+</form>
+  </div>
+</footer>
+      <script src="/js/main.js"></script></body>
 </html>
