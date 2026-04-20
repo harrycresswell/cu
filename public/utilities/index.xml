@@ -23,13 +23,6 @@
       <description>&lt;p&gt;The &lt;code&gt;.text-center&lt;/code&gt; utility class can be used to center the horizontal alignment of inline-level content inside a block element or table-cell box.&lt;/p&gt;&#xA;&lt;div class=&#34;demo text-center&#34;&gt;&#xA;This text is horizontally centered&#xA;&lt;/div&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.text-center {&#xA;  text-align: center;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Skip link</title>
-      <link>http://localhost:1313/utilities/skip-link/</link>
-      <pubDate>Fri, 26 Jan 2024 10:19:37 +0000</pubDate>
-      <guid>http://localhost:1313/utilities/skip-link/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;.skip-link&lt;/code&gt; utility can be used to create &lt;a href=&#34;https://webaim.org/techniques/skipnav/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;skip navigation links&lt;/a&gt;. These are links that are visually hidden by default and become visible on focus, usually when using the keyboard &lt;kbd&gt;Tab&lt;/kbd&gt; button to navigate a website.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;a class=&amp;#34;skip-link&amp;#34; href=&amp;#34;#main-content&amp;#34;&amp;gt;Skip to main content&amp;lt;/a&amp;gt;&#xA;...&#xA;&amp;lt;main id=&amp;#34;main-content&amp;#34;&amp;gt;&#xA;    ...&#xA;&amp;lt;/main&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Useful if, for example, you want to offer your website visitors the option to skip the navigation and head straight to your main page content without the need to tab through every link in your navigation.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Visually Hidden</title>
       <link>http://localhost:1313/utilities/visually-hidden/</link>
       <pubDate>Wed, 12 Jul 2023 12:59:32 +0100</pubDate>

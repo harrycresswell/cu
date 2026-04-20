@@ -233,12 +233,6 @@ weight = 320
 parent = "Utilities"
 
 [[sidebar]]
-name = "Skip link"
-url = "#skip-link"
-weight = 325
-parent = "Utilities"
-
-[[sidebar]]
 pageRef = "blocks"
 name = "Blocks"
 url = "/blocks/"
@@ -276,7 +270,13 @@ weight = 380
 parent = "Blocks"
 
 [[sidebar]]
+name = "Skip link"
+url = "#skip-link"
+weight = 390
+parent = "Blocks"
+
+[[sidebar]]
 pageRef = "resources"
 name = "Resources"
 url = "/resources/"
-weight = 390
+weight = 400
