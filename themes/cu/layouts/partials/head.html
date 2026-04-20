@@ -24,11 +24,11 @@
 
   {{ if hugo.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
-    {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
     {{ $docs := resources.Get "docs/scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
     <!-- Load CSS -->
-    <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
     <link rel="stylesheet" href="{{ $docs.Permalink | relURL }}" media="screen">
+    <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
   {{ else }}
 
     <!-- Set target path -->

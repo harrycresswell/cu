@@ -1,11 +1,15 @@
 /* 
 These styles are only used for the cu-css documentation website, they are not part of the cu-css boilerplate itself.
 */
-/* Utilities */
+/* 
+Border utility 
+*/
 .bt {
   border-top: dotted 2px; }
 
-/* changelog item */
+/* 
+Changelog
+*/
 .changelog-item:not(:first-of-type) {
   margin-block-start: var(--space-xl); }
 
@@ -20,7 +24,8 @@ These styles are only used for the cu-css documentation website, they are not pa
 .changelog-item div:last-of-type {
   --flow-space: 2rem; }
 
-/* margin and padding used in utility visual examples */
+/* 
+Demo, used to represent margin and padding in visual examples */
 .demo {
   background-color: var(--color-surface);
   padding: var(--space-m-l);
@@ -45,7 +50,9 @@ These styles are only used for the cu-css documentation website, they are not pa
   background-color: var(--color-canvas);
   color: var(--color-text); }
 
-/*Heading anchors */
+/*
+Heading anchors 
+*/
 .heading-anchor {
   display: inline;
   margin-left: .5rem;
@@ -65,7 +72,9 @@ These styles are only used for the cu-css documentation website, they are not pa
     color: var(--color-brand);
     background: none; }
 
-/* Section pagination */
+/* 
+Pagination 
+*/
 .pagination a {
   background-color: var(--color-surface);
   padding: var(--space-m-l); }
@@ -81,5 +90,36 @@ These styles are only used for the cu-css documentation website, they are not pa
 
 .pagination span:last-of-type {
   font-size: var(--font-size-m); }
+
+/* 
+Theme
+Used for theme toggle functionality.
+*/
+:root[data-theme="dark"] {
+  --color-theme: dark;
+  --color-text: var(--color-light-mod-3);
+  --color-text-subtle: var(--color-light-mod-5);
+  --color-text-invert: var(--color-dark);
+  --color-canvas: var(--color-dark);
+  --color-surface: var(--color-dark-mod-1);
+  --color-surface-raised: var(--color-dark-mod-2);
+  --color-border: var(--color-light-mod-3);
+  --color-brand: var(--color-primary-tint);
+  --color-accent: var(--color-secondary-tint);
+  --color-highlight: var(--color-tertiary-tint);
+  --text-decoration-color: currentColor;
+  --focus-ring-color: currentColor;
+  --stroke-color: currentColor; }
+
+/* Remove if dark mode is not used. */
+html {
+  color-scheme: var(--color-theme, light); }
+
+/* 
+THEME SWITCH 
+*/
+.theme-switch {
+  --cluster-horizontal-alignment: center;
+  --gutter: var(--space-2xs); }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,11 +5,6 @@ Low-specificity, global styles that apply to the whole
 project: https://cube.fyi/css.html
 */
 
-/* Remove if dark mode is not used. */
-html {
-  color-scheme: var(--color-theme, light);
-}
-
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
@@ -214,12 +209,6 @@ mark,
     color: var(--color-canvas);
   }
 }
-
-// [data-theme="dark"] {
-//   ::selection {
-//     color: var(--color-canvas);
-//   }
-// }
 
 /* Decrease the brightness and contrast of images in dark mode */
 @media (prefers-color-scheme: dark) {

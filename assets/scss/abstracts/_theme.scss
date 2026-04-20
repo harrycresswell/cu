@@ -87,22 +87,24 @@ Includes primitive tokens for color and semantic tokens
 
 /* 
 DARK MODE 
-If theme doesn’t require dark mode then remove everything below
+If theme doesn’t require system preferences dark mode then remove everything below.
 */
 
-:root[data-theme="dark"] {
-  --color-theme: dark;
-  --color-text: var(--color-light-mod-3); 
-  --color-text-subtle: var(--color-light-mod-5);
-  --color-text-invert: var(--color-dark);
-  --color-canvas: var(--color-dark);
-  --color-surface: var(--color-dark-mod-1);
-  --color-surface-raised: var(--color-dark-mod-2);
-  --color-border: var(--color-light-mod-3);
-  --color-brand: var(--color-primary-tint);
-  --color-accent: var(--color-secondary-tint);
-  --color-highlight: var(--color-tertiary-tint);
-  --text-decoration-color: currentColor;
-  --focus-ring-color: currentColor;
-  --stroke-color: currentColor;  
+@media (prefers-color-scheme: dark) {
+  :root {
+    // --color-theme: dark;
+    --color-text: var(--color-light-mod-3); 
+    --color-text-subtle: var(--color-light-mod-5);
+    --color-text-invert: var(--color-dark);
+    --color-canvas: var(--color-dark);
+    --color-surface: var(--color-dark-mod-1);
+    --color-surface-raised: var(--color-dark-mod-2);
+    --color-border: var(--color-light-mod-3);
+    --color-brand: var(--color-primary-tint);
+    --color-accent: var(--color-secondary-tint);
+    --color-highlight: var(--color-tertiary-tint);
+    --text-decoration-color: currentColor;
+    --focus-ring-color: currentColor;
+    --stroke-color: currentColor;  
+  }
 }
