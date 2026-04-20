@@ -215,6 +215,12 @@ mark,
   }
 }
 
+// [data-theme="dark"] {
+//   ::selection {
+//     color: var(--color-canvas);
+//   }
+// }
+
 /* Decrease the brightness and contrast of images in dark mode */
 @media (prefers-color-scheme: dark) {
   img,

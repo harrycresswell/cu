@@ -1,0 +1,30 @@
+/* margin and padding used in utility visual examples */
+.demo {
+  background-color: var(--color-surface);
+  padding: var(--space-m-l);
+  overflow-x: scroll;
+}
+
+.demo > *:not(img) {
+  padding: 1rem;
+}
+
+.demo .item {
+  display: flex;
+  background-color: var(--color-brand); 
+  color: var(--color-canvas);
+}
+
+.demo .margin {
+  background-color: var(--color-highlight);
+}
+
+.demo .padding {
+  color: var(--color-canvas);
+  background-color: var(--color-brand);
+}
+
+.demo .container {
+  background-color: var(--color-canvas);
+  color: var(--color-text); 
+}

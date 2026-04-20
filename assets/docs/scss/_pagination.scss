@@ -1,0 +1,24 @@
+/* Section pagination */
+.pagination {
+  a {
+    background-color: var(--color-surface);
+    padding: var(--space-m-l);
+
+    &:hover {
+      background-color: var(--color-surface-raised);
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  span:first-of-type {
+    font-family: var(--font-accent);
+    font-size: var(--font-size-meta);
+  }
+
+  span:last-of-type {
+    font-size: var(--font-size-m);
+  }
+}
