@@ -49,6 +49,27 @@ weight = 40
 parent = "Getting Started"
 
 [[sidebar]]
+pageRef = "#updating-fonts"
+name = "Updating fonts"
+url = "#updating-fonts"
+weight = 41
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "#type-and-space"
+name = "Type and space"
+url = "#type-and-space"
+weight = 42
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "#theming"
+name = "Theming"
+url = "#theming"
+weight = 43
+parent = "Getting Started"
+
+[[sidebar]]
 pageRef = "global-styles"
 name = "Global styles"
 url = "/global-styles/"

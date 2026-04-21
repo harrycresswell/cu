@@ -173,17 +173,17 @@
 <h3 id="understanding-the-directory-structure">Understanding the directory structure&nbsp;<a class="heading-anchor" href="#understanding-the-directory-structure" aria-label="Anchor">#</a> </h3>
 <p>Inside <code>assets/scss</code> you will find 5 directories and a bunch of files.</p>
 <ul>
-<li>The <code>abstracts</code> directory contains the project configurations outlined above:
+<li>The <code>abstracts</code> directory contains project configurations:
 <ul>
 <li><code>@font-face</code> declarations for including custom fonts in the project.</li>
-<li>CSS custom properties for theming.</li>
 <li>CSS custom properties for <a href="https://utopia.fyi/" target="_blank" rel="noopener">Utopia</a> fluid type and space scales.</li>
+<li>CSS custom properties for theming.</li>
 </ul>
 </li>
 <li>The <code>base</code> directory contains low-specificity <a href="/global-styles/">global styles</a> that style HTML elements and apply to the whole project. Here you will find:
 <ul>
-<li>A reset file.</li>
-<li>“Core” global styles.</li>
+<li>A <code>_reset.scss</code> file, used to tame default browser styles.</li>
+<li>“Core” global styles which can be found inside <code>_global.scss</code>.</li>
 <li>“Non-core” global styles, which you may wish to keep or discard depending on your project requirements.</li>
 </ul>
 </li>
@@ -192,10 +192,10 @@
 <li>The <code>utilities</code> directory contains <a href="/utilities/">utility</a> classes.</li>
 <li>The <code>main.scss</code> file pulls all other files together into a single file, ready for transpilation to CSS.</li>
 </ul>
-<h4 id="working-with-partial-files">Working with partial files&nbsp;<a class="heading-anchor" href="#working-with-partial-files" aria-label="Anchor">#</a> </h4>
-<p>I’ve intentionally used SASS with a very light touch, mostly just to split the CSS into granular partial files. This makes it super easy to ditch certain styles you have no use for in your project.</p>
-<p>For example, your project may not use <em>forms</em>, <em>tables</em> or <em>cards</em>, so you might decide to delete <code>base/_form.scss</code>, <code>base/_table.scss</code> and <code>blocks/_card.scss</code>, respectively.</p>
-<p>If you do decide to delete certain partials, ensure you also remove the associated <code>@import</code> from <code>main.scss</code>.</p>
+<h3 id="working-with-partial-files">Working with partial files&nbsp;<a class="heading-anchor" href="#working-with-partial-files" aria-label="Anchor">#</a> </h3>
+<p>I’ve intentionally used SASS with a very light touch, mostly just to split the CSS into granular partial files. This makes it super easy to ditch certain <code>.scss</code> files, if you have no use for the styles in a particular project.</p>
+<p>For example, your project may not use <em>forms</em>, <em>tables</em> or <em>cards</em>, so you might decide to delete <code>base/_form.scss</code>, <code>base/_table.scss</code> and <code>blocks/_card.scss</code>, respectively. Likewise, if you have no need for <code>compositions/_sidebar.scss</code>, just remove the file.</p>
+<p>If you do decide to delete certain partials, ensure you also remove the associated <code>@import</code> from the <code>main.scss</code> file.</p>
  
   </article>
 </section>

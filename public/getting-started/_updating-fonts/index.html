@@ -15,7 +15,7 @@
 
 
 
-<title>cu.css &middot; Flow</title>
+<title>cu.css &middot; Updating fonts</title>
 
 
   <meta 
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/utilities/flow/">
+<link rel="canonical" href="http://localhost:1313/getting-started/_updating-fonts/">
 
 
 
@@ -50,9 +50,9 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:1313/utilities/flow/">
+  <meta property="og:url" content="http://localhost:1313/getting-started/_updating-fonts/">
   <meta property="og:title"
-    content="Flow &middot; cu.css">
+    content="Updating fonts &middot; cu.css">
   <meta property="og:description"
     content="A lightweight CSS boilerplate">
   <meta property="og:site_name"
@@ -63,9 +63,9 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="http://localhost:1313/utilities/flow/">
+  <meta property="twitter:url" content="http://localhost:1313/getting-started/_updating-fonts/">
   <meta property="twitter:title"
-    content="Flow &middot; cu.css">
+    content="Updating fonts &middot; cu.css">
   <meta property="twitter:description"
     content="A lightweight CSS boilerplate">
   
@@ -108,8 +108,8 @@
     
     
     
+    <link rel="stylesheet" href="/docs/scss/main.css" media="screen">
     <link rel="stylesheet" href="/scss/main.css" media="screen">
-    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
       <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
@@ -164,32 +164,37 @@
 </nav>
 </header><main id="main-content">
         <section class="hero | region | flow">
-            <h1>Flow</h1>
+            <h1>Updating fonts</h1>
             
         </section>
 <section class="wrapper region">
   <article class="prose flow">
-    <p>Applies a margin to sibling elements based on a <code>--flow-space</code> custom property.</p>
-<figure>
-  <div class="demo">
-    <div class="container" style="height: 4rem;">Content</div>
-    <div class="margin"><mark>Margin (default)</mark></div>
-    <div class="container" style="height: 4rem;">Content</div>
-    <div class="margin" style="height: 8rem;"><mark>Margin (set inline using --flow-space)</mark></div>
-    <div class="container" style="height: 4rem;">Content</div>
-  </div>
-  <figcaption>Flow utility with margin visualised in green</figcaption>
-</figure>
-<pre tabindex="0"><code>/*
-FLOW
-@link: See The Stack in Every Layout https://every-layout.dev/layouts/stack/
-@link: https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website#heading-the-flow-utility
-@link: https://piccalil.li/quick-tip/flow-utility/
+    <p>The default font used in <em>cu.css</em> is <a href="https://rsms.me/inter/" target="_blank" rel="noopener">Inter</a> by Rasmus Andersson. The font has been subset and the <code>@font-face</code> code generated using <a href="https://gwfh.mranftl.com/fonts" target="_blank" rel="noopener">Google Webfonts Helper</a>. This makes it easier to self-host Google Fonts and optimse for performance.</p>
+<p>You can find the code inside <code>scss/abstracts/_fonts.scss</code>.</p>
+<pre tabindex="0"><code>/* 
+Google fonts with subsetting via Google Webfonts Helper
+@link https://gwfh.mranftl.com/fonts/inter?subsets=latin 
 */
-.flow &gt; * + * {
-  margin-top: var(--flow-space, 1em);
-}
-</code></pre> 
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: &#39;Inter&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(&#34;../fonts/inter-v12-latin-regular.woff2&#34;) format(&#34;woff2&#34;), url(&#34;../fonts/inter-v12-latin-regular.woff&#34;) format(&#34;woff&#34;);
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: &#39;Inter&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(&#34;../fonts/inter-v12-latin-700.woff2&#34;) format(&#34;woff2&#34;), url(&#34;../fonts/inter-v12-latin-700.woff&#34;) format(&#34;woff&#34;);
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+</code></pre><p>You may wish to replace the generated code with a different font using Google Webfonts Helper, or remove this code entirely and use a <a href="https://modernfontstacks.com/" target="_blank" rel="noopener">system font stack</a> instead.</p>
+<p>When replacing the default fonts, you will also need to update the typography related custom properties found inside <code>scss/abstracts/_theme.scss</code>. For example, <code>--font-base</code>, and potentially <code>--font-display</code> and <code>--font-accent</code>.</p>
+ 
   </article>
 </section>
 
@@ -209,5 +214,5 @@ FLOW
 </form>
   </div>
 </footer>
-      <script src="/js/main.js"></script></body>
+      <script src="/docs/js/main.js"></script></body>
 </html>

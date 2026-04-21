@@ -55,6 +55,8 @@
   </url><url>
     <loc>http://localhost:1313/global-styles/codeblock/</loc>
   </url><url>
+    <loc>http://localhost:1313/getting-started/_updating-fonts/</loc>
+  </url><url>
     <loc>http://localhost:1313/blocks/prose/</loc>
     <lastmod>2024-02-07T13:35:24+00:00</lastmod>
   </url><url>
@@ -63,6 +65,8 @@
   </url><url>
     <loc>http://localhost:1313/global-styles/form/</loc>
   </url><url>
+    <loc>http://localhost:1313/getting-started/_type-and-space/</loc>
+  </url><url>
     <loc>http://localhost:1313/blocks/skip-link/</loc>
     <lastmod>2024-01-26T10:19:37+00:00</lastmod>
   </url><url>
@@ -70,6 +74,8 @@
     <lastmod>2023-07-11T16:42:51+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/global-styles/disclosure-widget/</loc>
+  </url><url>
+    <loc>http://localhost:1313/getting-started/_theming/</loc>
   </url><url>
     <loc>http://localhost:1313/compositions/sidebar/</loc>
     <lastmod>2024-01-30T14:46:29+00:00</lastmod>
