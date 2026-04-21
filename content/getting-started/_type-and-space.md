@@ -26,7 +26,7 @@ Utopia fluid type
 ```
 
 > [!TIP] Customising the prefix
-> Note, if you change the custom property prefix in the generator, you will need to update the `--font-size-*` properties inside `_theme.scss`.
+> If you change the custom property prefix in the generator from `step` to something else, then make sure to update the values of the `--font-size-*` properties inside `_theme.scss` to your new prefix.
 
 It’s generally advised against using these [primitive type tokens](#primitive-vs-semantic-tokens) directly in your styles. Instead, work with the semantic `--font-size-*` tokens that make use of these primitives. You can find theme inside `scss/abstracts/_theme.scss`.
 
@@ -65,7 +65,7 @@ Utopia fluid space
 }
 ```
 
-> [!TIP] Avoid customising the space the prefix
-> Note, if you change the prefix in the generator, you will need to update all styles that use it.
+> [!TIP] Customising the prefix
+> Keep in mind, if you change the custom property prefix in the generator from `space` to something else, then you will need to update every style that uses it.
 
 Unlike the fluid type tokens, make use of these fluid space tokens anywhere in your styles. 

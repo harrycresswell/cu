@@ -1,0 +1,18 @@
+{{ if eq .Type "alert" }}
+  <div>
+    <aside class="callout flow" data-variant="{{ .AlertType }}" style="--flow-space: 1rem;">
+      <strong class="callout-heading">
+        {{ with .AlertTitle }}
+          {{ . }}
+        {{ else }}
+          {{ or (i18n .AlertType) (title .AlertType) }}
+        {{ end }}
+      </strong>
+      {{ .Text }}
+    </aside>
+  </div>
+{{ else }}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{ end }}
