@@ -3,15 +3,15 @@ title: Theming
 weight: 6
 ---
 
-Assuming you have already configured custom fonts, as well as type and space scales, head to `scss/abstracts/_theme.scss` to customise the theme of *cu.css* using CSS Custom Properties. Typography, color (light and dark mode), grid gutter, border radius etc, are all managed here. 
+With custom fonts, type and space scales in place, you may wish to modify color, typography and UI related custom properties to further customise the theme.
 
-These custom properties are used throughout the boilerplate, cascading through the entire CSS, so any changes you make here will have a wide reaching impact.
+These custom properties are used throughout the boilerplate, cascading through the entire CSS, so any changes you make here will have a wide reaching impact. They can be found inside `scss/abstracts/_theme.scss`.
 
 ### Primitive vs semantic tokens
 
 *cu.css* adopts a two-layered approach to theming. This is done by borrowing the concept of *primitive* and *semantic* design tokens from the world of design systems.
 
-Primitive tokens store raw values and generally aren’t used to author styles. Their primary purpose is to construct semantic tokens. In *cu.css*, the custom properties found inside `_type.scss` are considered primitive tokens. As are the first block of color tokens found inside `_theme.scss`.
+Primitive tokens store raw values and generally aren’t used to author styles. Their primary purpose is to construct semantic tokens. In *cu.css*, the custom properties found inside `_type.scss` are considered primitive tokens. As are the first block of color related custom properties found inside `_theme.scss`.
 
 As the name suggests, semantic tokens convey meaning and purpose. They often consume primitive tokens and describe how or where the token should be used when authoring styles. The custom properties found inside `_space.scss` are considered semantic tokens. As are the second block of color tokens found inside `_theme.scss`, as well as the typography and UI related tokens.
 

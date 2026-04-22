@@ -3,7 +3,7 @@ title: 'Accordions'
 weight: 7
 ---
 
-Create accordions by grouping multiple [disclosure widgets](#disclosure-widgets) together.  
+Create accordions by grouping multiple [disclosure widgets](#disclosure-widgets) together using a generic `<div>`.
 
 <div role="group" aria-labelledby="accordion-faq">
   <span id="accordion-faq" hidden>Frequently Asked Questions</span>
@@ -37,11 +37,11 @@ Create accordions by grouping multiple [disclosure widgets](#disclosure-widgets)
     <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
   </details>
 </div>
-```
+``` 
 
-The example above exposes the disclosure widgets as a _named group_ to communicate their semantic relationship to assistive technologies. This is done by applying the ARIA `group` role to the container, then using `aria-labelledby` to reference a [hidden](#visibility) name. 
+Expose your disclosure widgets as a _named group_ to communicate their semantic relationship and purpose to assistive technologies. This can be done by applying the ARIA `group` role to a generic `<div>` container, then using `aria-labelledby` to reference a visible heading, or a [hidden](#visibility) label (as shown in the example above). Either way, an accessible name is exposed to screen readers.
 
-To include your accordion in the document outline, expose your widgets as a landmark either by using the ARIA `region` role, or by giving the `<section>` element an accessible name. In this case, you’ll most likely want to use a visible heading.
+If your accordion content is important and you wish to include it in the document outline, expose your widgets as a landmark region instead of a group. This will make it easier to navigate to quickly by user agents and assistive technologies. This can be done either by using the ARIA `region` role, or by giving the `<section>` element an accessible name. In this case, you’ll most likely want to use a visible heading.
 
 ```
 <section aria-labelledby="accordion-faq">
@@ -134,4 +134,4 @@ Use a `name` attribute with a matching value on each `<details>` element to crea
 </div>
 ```
 
-Be mindful of the various [accessibility challenges of exclusive accordions](https://yatil.net/blog/exclusive-accordions) before use them.
+Be mindful of the various [accessibility challenges of exclusive accordions](https://yatil.net/blog/exclusive-accordions) before use.

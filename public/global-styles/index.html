@@ -701,7 +701,7 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
             Accordions
             <a class="heading-anchor" href="#accordions" aria-label="Anchor">#</a>
           </h2>
-          <p>Create accordions by grouping multiple <a href="#disclosure-widgets">disclosure widgets</a> together.</p>
+          <p>Create accordions by grouping multiple <a href="#disclosure-widgets">disclosure widgets</a> together using a generic <code>&lt;div&gt;</code>.</p>
 <div role="group" aria-labelledby="accordion-faq">
   <span id="accordion-faq" hidden>Frequently Asked Questions</span>
   <details>
@@ -732,8 +732,8 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
   &lt;/details&gt;
 &lt;/div&gt;
-</code></pre><p>The example above exposes the disclosure widgets as a <em>named group</em> to communicate their semantic relationship to assistive technologies. This is done by applying the ARIA <code>group</code> role to the container, then using <code>aria-labelledby</code> to reference a <a href="#visibility">hidden</a> name.</p>
-<p>To include your accordion in the document outline, expose your widgets as a landmark either by using the ARIA <code>region</code> role, or by giving the <code>&lt;section&gt;</code> element an accessible name. In this case, you’ll most likely want to use a visible heading.</p>
+</code></pre><p>Expose your disclosure widgets as a <em>named group</em> to communicate their semantic relationship and purpose to assistive technologies. This can be done by applying the ARIA <code>group</code> role to a generic <code>&lt;div&gt;</code> container, then using <code>aria-labelledby</code> to reference a visible heading, or a <a href="#visibility">hidden</a> label (as shown in the example above). Either way, an accessible name is exposed to screen readers.</p>
+<p>If your accordion content is important and you wish to include it in the document outline, expose your widgets as a landmark region instead of a group. This will make it easier to navigate to quickly by user agents and assistive technologies. This can be done either by using the ARIA <code>region</code> role, or by giving the <code>&lt;section&gt;</code> element an accessible name. In this case, you’ll most likely want to use a visible heading.</p>
 <pre tabindex="0"><code>&lt;section aria-labelledby=&#34;accordion-faq&#34;&gt;
   &lt;h2 id=&#34;accordion-faq&#34;&gt;Frequently Asked Questions&lt;/h2&gt;
   &lt;details&gt;
@@ -811,7 +811,7 @@ With CUBE CSS, we embrace the cascade and inheritance to style as much as possib
     &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
   &lt;/details&gt;
 &lt;/div&gt;
-</code></pre><p>Be mindful of the various <a href="https://yatil.net/blog/exclusive-accordions" target="_blank" rel="noopener">accessibility challenges of exclusive accordions</a> before use them.</p>
+</code></pre><p>Be mindful of the various <a href="https://yatil.net/blog/exclusive-accordions" target="_blank" rel="noopener">accessibility challenges of exclusive accordions</a> before use.</p>
  
         </article>
       
