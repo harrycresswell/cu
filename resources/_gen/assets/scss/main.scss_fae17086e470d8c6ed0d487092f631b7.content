@@ -27,7 +27,7 @@ Subset using Google Webfonts Helper
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* 
-SPACE primitive tokens
+SPACE primitive/semantic tokens
 Generated with Utopia Fluid Space
 @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
 */
@@ -68,7 +68,7 @@ Generated with Utopia Fluid Type
 
 /* 
 THEME tokens
-Includes primitive tokens for color and semantic tokens
+Includes primitive tokens for color and semantic tokens.
 */
 :root {
   /* 
@@ -97,13 +97,9 @@ Includes primitive tokens for color and semantic tokens
   */
   --color-text: var(--color-dark);
   --color-text-subtle: var(--color-dark-mod-3);
-  /* Used when text sits on the brand color or a dark background.*/
   --color-text-invert: var(--color-light);
-  /* The default color used for the main website background */
   --color-canvas: var(--color-light);
-  /* The default color used for ui surfaces. The background of element that sit on top of the canvas, such as disclosure widgets, code blocks, etc. */
   --color-surface: var(--color-light-mod-1);
-  /* The background color of elevated surfaces */
   --color-surface-raised: var(--color-light-mod-2);
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);

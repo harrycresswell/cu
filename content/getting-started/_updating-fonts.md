@@ -5,7 +5,7 @@ weight: 4
 
 The default font used in *cu.css* is [Inter](https://rsms.me/inter/) by Rasmus Andersson. The font has been subset and the `@font-face` code generated using [Google Webfonts Helper](https://gwfh.mranftl.com/fonts). This makes it easier to self-host Google Fonts and optimse for performance.
 
-You can find the code inside `scss/abstracts/_fonts.scss`. 
+You can find the code inside `assets/scss/abstracts/_fonts.scss`. 
 
 ```
 /* 

@@ -3,24 +3,36 @@ title: Theming
 weight: 6
 ---
 
-With custom fonts, type and space scales in place, you may wish to modify color, typography and UI related custom properties to further customise the theme.
+With custom fonts set up and scales for type and space in place, you may wish to modify colors, configure UI related settings and make granular typography adjustments, to further customise the theme.
 
-These custom properties are used throughout the boilerplate, cascading through the entire CSS, so any changes you make here will have a wide reaching impact. They can be found inside `scss/abstracts/_theme.scss`.
+This can be done by updating the values of the various custom properties found inside `assets/scss/abstracts/_theme.scss`. These custom properties store granular design decisions (a.k.a design tokens) that cascade through the entire project, so any changes you make here will have a wide reaching impact.
 
 ### Primitive vs semantic tokens
 
-*cu.css* adopts a two-layered approach to theming. This is done by borrowing the concept of *primitive* and *semantic* design tokens from the world of design systems.
+*cu.css* adopts a two-layered approach to theming, by borrowing the concept of *primitive* and *semantic* design tokens from the world of design systems.
 
-Primitive tokens store raw values and generally aren’t used to author styles. Their primary purpose is to construct semantic tokens. In *cu.css*, the custom properties found inside `_type.scss` are considered primitive tokens. As are the first block of color related custom properties found inside `_theme.scss`.
+Primitive tokens store raw values and generally aren’t used to author styles. Their primary purpose is to construct semantic tokens. 
 
-As the name suggests, semantic tokens convey meaning and purpose. They often consume primitive tokens and describe how or where the token should be used when authoring styles. The custom properties found inside `_space.scss` are considered semantic tokens. As are the second block of color tokens found inside `_theme.scss`, as well as the typography and UI related tokens.
+```
+--color-dark: #0d101c;
+```
 
-I’ve purposely kept the naming of semantic tokens quite general to make sure they are easy to use in a variety of situations when extending existing styles. For example, you will find `--font-size-2xl` rather than `--heading-level-1`, as it’s more widely applicable. I appreciate the difference between primitive and semantic tokens may seem negligable.
+In *cu.css*, the custom properties found inside `assets/scss/abstracts/_type.scss` store primitive tokens. As do the first block of color related custom properties found inside `assets/scss/abstracts/_theme.scss`.
+
+Semantic tokens convey meaning and purpose, describing how or where a token should be used when authoring styles. They are composed from raw values or primitive tokens. 
+
+```
+--color-text: var(--color-dark);
+```
+
+The custom properties found inside `assets/scss/abstracts/_space.scss` are considered semantic tokens. As are the second block of color tokens, as well as all typography and UI related tokens found inside `assets/scss/abstracts/_theme.scss`.
+
+*cu.css* keeps the naming of semantic tokens general to make them useful in a variety of situations when extending existing styles. 
 
 
 ### Customising the theme
 
-First update the color primitives based on your design preferences.
+Head to `assets/scss/abstracts/_theme.scss` and begin by updating the color primitives tokens according to your design preferences.
 
 ```
 :root {
@@ -48,7 +60,7 @@ First update the color primitives based on your design preferences.
 }
 ```
 
-Then update the semantic tokens for typography and UI.
+Next, update the semantic tokens for typography and UI.
 
 ```
 :root {
@@ -80,14 +92,13 @@ Then update the semantic tokens for typography and UI.
   --text-decoration-style: solid;
   --text-decoration-thickness: 2px;
   
-  /* UI semantic tokens */
+   /* UI semantic tokens */
   --gutter: var(--space-s-m);
   --focus-ring-width: 2px;
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;
   --focus-ring-style: dotted;
-  // Use stroke tokens for borders, outlines, SVG paths etc
-  --stroke-style: solid;
+  --stroke-style: solid; // Use stroke tokens for borders, outlines, SVG paths etc
   --stroke-width: .1rem;
   --stroke-color: var(--color-border, currentColor);
   --radius: 0; // Set a rem value to add border radius to buttons, form elements, callouts and accordians. 
@@ -97,9 +108,9 @@ Then update the semantic tokens for typography and UI.
 
 ### Dark mode
 
-You’ll find the user-preference dark mode configuration at the bottom of the `scss/abstracts/_theme.scss` file. 
+You’ll find the user-preference dark mode configuration at the bottom of the `assets/scss/abstracts/_theme.scss` file. 
 
-Here you’ll find semantic color tokens referencing the primitive color tokens found at the top of the file. If you wish to customise the dark mode colors, then you will need to configure the primitive color tokens first.
+Here you’ll find semantic color tokens referencing the primitive color tokens found at the top of the file. If you wish to customise dark mode colors, then you will need to configure primitive color tokens first.
 
 ```
 /* 
@@ -126,4 +137,4 @@ If theme doesn’t require system preferences dark mode then remove everything b
 }
 ```
 
-If your project doesn’t require a dark mode, then remove this code entirely.
+If your project doesn’t require a dark mode then remove this entire block of code.

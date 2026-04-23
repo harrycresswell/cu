@@ -1,6 +1,6 @@
 /* 
 THEME tokens
-Includes primitive tokens for color and semantic tokens
+Includes primitive tokens for color and semantic tokens.
 */
 :root {
   /* 
@@ -30,14 +30,10 @@ Includes primitive tokens for color and semantic tokens
   */
   --color-text: var(--color-dark);
   --color-text-subtle: var(--color-dark-mod-3);
-  /* Used when text sits on the brand color or a dark background.*/
-  --color-text-invert: var(--color-light);
-  /* The default color used for the main website background */
-  --color-canvas: var(--color-light);
-  /* The default color used for ui surfaces. The background of element that sit on top of the canvas, such as disclosure widgets, code blocks, etc. */
-  --color-surface: var(--color-light-mod-1);
-  /* The background color of elevated surfaces */
-  --color-surface-raised: var(--color-light-mod-2);
+  --color-text-invert: var(--color-light); // For text that sits on a dark background or brand color
+  --color-canvas: var(--color-light); // Default color used for main website background
+  --color-surface: var(--color-light-mod-1); // Default color for UI surfaces. The background of element that sit on top of the canvas, such as disclosure widgets, code blocks, etc.
+  --color-surface-raised: var(--color-light-mod-2);  // Background color of elevated UI surfaces
   --color-border: var(--color-dark);
   --color-brand: var(--color-primary);
   --color-accent: var(--color-secondary);
@@ -77,8 +73,7 @@ Includes primitive tokens for color and semantic tokens
   --focus-ring-color: currentColor;
   --focus-ring-offset: 2px;
   --focus-ring-style: dotted;
-  // Use stroke tokens for borders, outlines, SVG paths etc
-  --stroke-style: solid;
+  --stroke-style: solid; // Use stroke tokens for borders, outlines, SVG paths etc
   --stroke-width: .1rem;
   --stroke-color: var(--color-border, currentColor);
   --radius: 0; // Set a rem value to add border radius to buttons, form elements, callouts and accordians. 
