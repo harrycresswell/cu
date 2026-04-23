@@ -1,0 +1,38 @@
+/* 
+Theme
+Used for theme toggle functionality.
+*/
+:root[data-theme="dark"] {
+  --color-theme: dark;
+  --color-text: var(--color-light-mod-3); 
+  --color-text-subtle: var(--color-light-mod-5);
+  --color-text-invert: var(--color-dark);
+  --color-canvas: var(--color-dark);
+  --color-surface: var(--color-dark-mod-1);
+  --color-surface-raised: var(--color-dark-mod-2);
+  --color-border: var(--color-light-mod-3);
+  --color-brand: var(--color-primary-tint);
+  --color-accent: var(--color-secondary-tint);
+  --color-highlight: var(--color-tertiary-tint);
+  --text-decoration-color: currentColor;
+  --focus-ring-color: currentColor;
+  --stroke-color: currentColor;  
+}
+
+/* Remove if dark mode is not used. */
+html {
+  color-scheme: var(--color-theme, light);
+}
+
+[data-theme="dark"] {
+  mark,
+  ::selection {
+    color: var(--color-canvas);
+    background-color: var(--color-highlight);
+  }
+
+  img,
+  picture {
+    filter: brightness(.8) contrast(1.2);
+  }
+}

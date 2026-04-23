@@ -2,7 +2,7 @@
 title: "Repel"
 date: 2023-07-11T16:42:27+01:00
 draft: false
-weight: 3
+weight: 5
 ---
 
 *Repel* adds as much inline space as possibe between two grid items, so that 100% of the inline space has been filled. When space doesn’t permit, items will wrap, appearing as block elements. 

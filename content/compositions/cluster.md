@@ -2,7 +2,7 @@
 title: "Cluster"
 date: 2023-07-11T16:42:27+01:00
 draft: false
-weight: 2
+weight: 4
 ---
 
 *Cluster* creates flex items which cluster inline, until space no longer permits. At this point, items begin to wrap and display in block. The width of an item is determined by its content.

@@ -6,8 +6,8 @@ Format the expanding box, a.k.a accordion.
 Ditch these styles altogether if not required for the website.
 */
 details {
-  background: var(--color-bg-mod-1);
-  border-radius: var(--border-radius);
+  background: var(--color-surface);
+  border-radius: var(--radius);
 }
 
 summary {
@@ -33,6 +33,12 @@ details[open]>*:last-child {
 
 details[data-variant='fancy'] {
   position: relative;
+
+  summary {
+    /* Hide marker on Safari */
+    list-style-type: none;
+    list-style: none;
+  }
 
   summary::-webkit-details-marker,
   summary::marker {

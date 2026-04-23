@@ -5,7 +5,9 @@ Ditch these styles altogether if not required for the website.
 */
 
 fieldset {
-  border: solid .1rem var(--color-border);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 legend {
@@ -23,9 +25,11 @@ form button {
 }
 
 :is(input:not([type="checkbox"], [type="radio"], [type="color"]), select, textarea) {
-  background: var(--color-bg);
-  border: solid .1rem var(--color-border);
-  border-radius: var(--border-radius);
+  background: var(--color-canvas);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
+  border-radius: var(--radius);
   box-shadow: none;
   color: var(--color-text);
   letter-spacing: -.5px;
@@ -51,7 +55,9 @@ select:not([multiple]) {
 /* checkbox and radio button style */
 input[type="checkbox"],
 input[type="radio"] {
-  border: solid .1rem var(--color-border);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   padding: var(--space-2xs);
   vertical-align: middle;
   position: relative;
@@ -62,7 +68,7 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] {
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
 }
 
 input[type="radio"] {
@@ -71,7 +77,13 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  border: solid .1rem var(--color-brand);
+  /* Configure stroke color */
+  --stroke-color: var(--color-brand);
+  --focus-ring-color: var(--color-brand);
+
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   background-color: var(--color-brand);
 }
 
@@ -85,8 +97,8 @@ input[type="checkbox"]:checked::after {
   top: .06em;
   left: .16em;
   background-color: transparent;
-  border-right: solid var(--color-bg) .07em;
-  border-bottom: solid var(--color-bg) .07em;
+  border-right: solid var(--color-canvas) .07em;
+  border-bottom: solid var(--color-canvas) .07em;
   font-size: 2em;
   transform: rotate(45deg);
 }
@@ -99,13 +111,13 @@ input[type="radio"]:checked::after {
   border-radius: 100%;
   position: absolute;
   top: .13em;
-  background-color: var(--color-bg);
+  background-color: var(--color-canvas);
   left: .13em;
   font-size: 2em;
 }
 
 input:disabled {
-  background: var(--color-bg-mod-2);
+  background: var(--color-surface-raised);
 }
 
 /* Give user a visual hint that the element is disabled */

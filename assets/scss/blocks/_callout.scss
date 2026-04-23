@@ -2,10 +2,16 @@
 CALLOUT
 */
 .callout {
+  /* Configure stroke */
+  --stroke-style: dotted;
+  --stroke-width: 2px; 
+
   padding: var(--space-xs-s);
-  border: dotted 2px var(--color-text-mod-2);
-  max-width: var(--width-longform);
-  border-radius: var(--border-radius);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
+  max-width: var(--measure-longform);
+  border-radius: var(--radius);
 }
 
 .callout > * {
@@ -13,8 +19,13 @@ CALLOUT
 }
 
 .callout[data-variant='brand'] {
+  /* Configure strok color */
+  --stroke-color: var(--color-brand);
+
   color: var(--color-brand);
-  border: dotted 2px var(--color-brand);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 .callout[data-variant='brand'] > * {

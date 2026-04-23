@@ -4,6 +4,7 @@ Global styles
 Low-specificity, global styles that apply to the whole 
 project: https://cube.fyi/css.html
 */
+
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
@@ -11,9 +12,9 @@ project: https://cube.fyi/css.html
 }
 
 body {
-  background: var(--color-bg);
+  background: var(--color-canvas);
   color: var(--color-text);
-  font-size: var(--step-0);
+  font-size: var(--font-size-base);
   font-family: var(--font-base);
   letter-spacing: var(--tracking);
 }
@@ -23,46 +24,46 @@ body {
   font-family: var(--font-display);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-compact);
-  letter-spacing: var(--tracking-s);
-  max-width: var(--width-compact);
+  letter-spacing: var(--tracking-compact);
+  max-width: var(--measure-compact);
   text-wrap: balance;
 }
 
 h1,
 .h1 {
-  font-size: var(--step-4);
+  font-size: var(--font-size-2xl);
 }
 
 h2,
 .h2 {
-  font-size: var(--step-3);
+  font-size: var(--font-size-xl);
 }
 
 h3,
 .h3 {
-  font-size: var(--step-2);
+  font-size: var(--font-size-l);
 }
 
 h4,
 .h4 {
-  font-size: var(--step-1);
+  font-size: var(--font-size-m);
 }
 
 h5,
 .h5 {
-  font-size: var(--step-0);
+  font-size: var(--font-size-s);
 }
 
 h6,
 .h6 {
-  font-size: var(--step--1);
+  font-size: var(--font-size-xs);
 }
 
 /* Set line lengths */
 p,
 li,
 blockquote:not([class]) {
-  max-width: var(--width-longform);
+  max-width: var(--measure-longform);
 }
 
 hr {
@@ -71,29 +72,33 @@ hr {
 } 
 
 kbd {
-  background-color: var(--color-bg-mod-1);
-  border: solid 1px var(--color-bg-mod-2);
-  border-radius: var(--border-radius-sm);
+  --stroke-color: var(--color-surface-raised);
+  --stroke-width: 1px;
+
+  background-color: var(--color-surface);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
   font-family: var(--font-accent);
   font-size: 1rem;
   padding: .115rem .25rem;
   }
 
 figcaption {
-  font-size: var(--step--1);
+  font-size: var(--font-size-meta);
   margin-block-start: .5rem;
   text-align: center;
 }
 
 small {
-  font-size: var(--step--1);
+  font-size: var(--font-size-meta);
 }
 
 /* More generic elements */
 blockquote:not([class]) {
   border-left: solid 3px var(--color-text);
   font-family: var(--font-display);
-  font-size: var(--step-1);
+  font-size: var(--font-size-lede);
   line-height: var(--line-height-base);
   padding-inline-start: var(--space-s);
 }
@@ -103,7 +108,7 @@ blockquote:not([class]) p:last-of-type,
 blockquote:not([class]) cite,
 blockquote:not([class]) footer {
   font-family: var(--font-base);
-  font-size: var(--step-0);
+  font-size: var(--font-size-base);
   font-weight: normal;
   margin-block-start: var(--space-2xs);
 }
@@ -148,7 +153,7 @@ a {
 
 a:hover {
   background-color: var(--color-brand);
-  color: var(--color-bg);
+  color: var(--color-text-invert);
   text-decoration: none;
 
 }
@@ -163,7 +168,10 @@ a[data-variant="naked"] {
 a[data-variant="naked"]:hover,
 a[data-variant="naked"]:focus {
   background-color: unset;
-  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color, currentColor);
+  text-decoration-line: var(--text-decoration-line, underline);
+  text-decoration-style: var(--text-decoration-style, solid);
+  text-decoration-thickness: var(--text-decoration-thickness, 2px);
 }
 
 /* Hide focus styles if they're not needed, for example, 
@@ -174,8 +182,10 @@ when an element receives focus via the mouse. */
 
 /* Show focus styles on keyboard focus. */
 :focus-visible {
-  outline: dotted 2px var(--focus-color, currentColor);
-  outline-offset:  var(--focus-offset, 2px);
+  outline-color: var(--focus-ring-color,currentColor);
+  outline-offset: var(--focus-ring-offset, 2px);
+  outline-style: var(--focus-ring-style, solid);
+  outline-width: var(--focus-ring-width, 2px);
 }
 
 /* Add scroll margin to all target elements 
@@ -196,7 +206,7 @@ mark,
   background-color: var(--color-highlight);
   /* Reverse text colour in dark mode */
   @media (prefers-color-scheme: dark) {
-    color: var(--color-bg);
+    color: var(--color-canvas);
   }
 }
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51317&amp;path=livereload" data-no-instant defer></script>
-  <meta name="generator" content="Hugo 0.126.1">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.151.2">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:51317/global-styles/accordion/">
+<link rel="canonical" href="http://localhost:1313/global-styles/accordion/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:51317/global-styles/accordion/">
+  <meta property="og:url" content="http://localhost:1313/global-styles/accordion/">
   <meta property="og:title"
     content="Accordions &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="http://localhost:51317/global-styles/accordion/">
+  <meta property="twitter:url" content="http://localhost:1313/global-styles/accordion/">
   <meta property="twitter:title"
     content="Accordions &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="http://localhost:51317/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,21 +81,35 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="http://localhost:51317/img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="http://localhost:51317/img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="http://localhost:51317/img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="http://localhost:51317/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
 
+
+  <script>
+    
+
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
 
   
     
     
     
     
+    <link rel="stylesheet" href="/docs/scss/main.css" media="screen">
     <link rel="stylesheet" href="/scss/main.css" media="screen">
-    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
       <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
@@ -155,33 +169,136 @@
         </section>
 <section class="wrapper region">
   <article class="prose flow">
-    <p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements to create accordions.</p>
-<details>
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
-<pre tabindex="0"><code>&lt;details&gt;
-  &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
-  &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
-&lt;/details&gt;
-</code></pre><p>Add <code>data-variant=&quot;fancy&quot;</code> to hide default <code>::marker</code> and enhance accordions with fancy “more” and “less” arrows, positioned on the far right of the <code>&lt;summary&gt;</code> text.</p>
-<details data-variant="fancy">
-  <summary>Do you ship internationally?</summary>
-  <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
-</details>
-<pre tabindex="0"><code>&lt;details data-variant=&#34;fancy&#34;&gt;
-  &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
-  &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
-&lt;/details&gt;
-</code></pre> 
+    <p>Create accordions by grouping multiple <a href="#disclosure-widgets">disclosure widgets</a> together using a generic <code>&lt;div&gt;</code>.</p>
+<div role="group" aria-labelledby="accordion-faq">
+  <span id="accordion-faq" hidden>Frequently Asked Questions</span>
+  <details>
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
+  </details>
+  <details>
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details>
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
+<pre tabindex="0"><code>&lt;div role=&#34;group&#34; aria-labelledby=&#34;accordion-faq&#34;&gt;
+  &lt;span id=&#34;accordion-faq&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+</code></pre><p>Expose your disclosure widgets as a <em>named group</em> to communicate their semantic relationship and purpose to assistive technologies. This can be done by applying the ARIA <code>group</code> role to a generic <code>&lt;div&gt;</code> container, then using <code>aria-labelledby</code> to reference a visible heading, or a <a href="#visibility">hidden</a> label (as shown in the example above). Either way, an accessible name is exposed to screen readers.</p>
+<p>If your accordion content is important and you wish to include it in the document outline, expose your widgets as a landmark region instead of a group. This will make it easier to navigate to quickly by user agents and assistive technologies. This can be done either by using the ARIA <code>region</code> role, or by giving the <code>&lt;section&gt;</code> element an accessible name. In this case, you’ll most likely want to use a visible heading.</p>
+<pre tabindex="0"><code>&lt;section aria-labelledby=&#34;accordion-faq&#34;&gt;
+  &lt;h2 id=&#34;accordion-faq&#34;&gt;Frequently Asked Questions&lt;/h2&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/section&gt;
+</code></pre><p>As with single discloure widgets, you can use <code>data-variant=&quot;fancy&quot;</code> to hide default <code>::marker</code> and style accordions with a fancy chevron, positioned on the far right of the <code>&lt;summary&gt;</code> text.</p>
+<div role="group" aria-labelledby="accordion-faq-fancy">
+  <span id="accordion-faq-fancy" hidden>Frequently Asked Questions</span>
+  <details data-variant="fancy">
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>  
+  </details>
+  <details data-variant="fancy">
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details data-variant="fancy">
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
+<pre tabindex="0"><code>&lt;div role=&#34;group&#34; aria-labelledby=&#34;accordion-faq&#34;&gt;
+  &lt;span id=&#34;accordion-faq&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;
+  &lt;details data-variant=&#34;fancy&#34;&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details data-variant=&#34;fancy&#34;&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details data-variant=&#34;fancy&#34;&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+</code></pre><p>Use a <code>name</code> attribute with a matching value on each <code>&lt;details&gt;</code> element to create an exclusive accordion. This will ensure only one disclosure widget opens at a time.</p>
+<div role="group" aria-labelledby="accordion-faq-exclusive">
+  <span id="accordion-faq-exclusive" hidden>Frequently Asked Questions</span>
+  <details name="accordion-exclusive">
+    <summary>Do you ship internationally?</summary>
+    <p>Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.</p>
+  </details>
+  <details name="accordion-exclusive">
+    <summary>What’s your returns policy?</summary>
+    <p>Please return unworn items within 30 days of purchase.</p>
+  </details>
+  <details name="accordion-exclusive">
+    <summary>Which credit cards do you accept?</summary>
+    <p>We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.</p>
+  </details>
+</div>
+<pre tabindex="0"><code>&lt;div role=&#34;group&#34; aria-labelledby=&#34;accordion-faq-exclusive&#34;&gt;
+  &lt;span id=&#34;accordion-faq-exclusive&#34; hidden&gt;Frequently Asked Questions&lt;/span&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;Do you ship internationally?&lt;/summary&gt;
+    &lt;p&gt;Unfortunately, we only ship domestically at this time, however we hope to ship internationally in the not too distant future.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;What’s your returns policy?&lt;/summary&gt;
+    &lt;p&gt;Please return unworn items within 30 days of purchase.&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details name=&#34;accordion-exclusive&#34;&gt;
+    &lt;summary&gt;Which credit cards do you accept?&lt;/summary&gt;
+    &lt;p&gt;We accept Visa, Mastercard and Maestro credit and debit cards, we are also able to accept payment through PayPal.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+</code></pre><p>Be mindful of the various <a href="https://yatil.net/blog/exclusive-accordions" target="_blank" rel="noopener">accessibility challenges of exclusive accordions</a> before use.</p>
+ 
   </article>
 </section>
 
-      </main><footer class="region | text-center bt">
-  <div class="wrapper">
-    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
-    <a href="/changelog">Changelog.</a>
-    </small>
+      </main><footer class="region | bt">
+  <div class="wrapper | center | flow">
+    <p>Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. </p>
+    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. MIT license. <a href="/changelog">Changelog.</a></small>
+    <form class="theme-switch" data-element="theme-switch" hidden>
+  <div class="cluster">
+    <label for="theme-switch">Theme:</label>
+    <select id="theme-switch">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
   </div>
-</footer></body>
+</form>
+  </div>
+</footer>
+      <script src="/docs/js/main.js"></script></body>
 </html>

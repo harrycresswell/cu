@@ -1,6 +1,6 @@
 ---
 title: 'Links'
-weight: 9
+weight: 10
 ---
 
 Use the anchor element, a.k.a `<a>` tag to link to different pages

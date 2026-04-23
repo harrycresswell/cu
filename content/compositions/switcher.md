@@ -2,7 +2,7 @@
 title: "Switcher"
 date: 2024-02-13T11:53:42Z
 draft: false
-weight: 6
+weight: 9
 ---
 
 Switcher can be used to switch directly between a horizontal and vertical layout. 

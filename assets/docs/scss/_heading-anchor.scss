@@ -1,0 +1,27 @@
+/*
+Heading anchors 
+*/
+.heading-anchor {
+  display: inline;
+  margin-left: .5rem;
+  opacity: 0;
+}
+
+:is(h2, h3, h4, h5, h6):focus>.heading-anchor,
+:is(h2, h3, h4, h5, h6):hover>.heading-anchor {
+  opacity: 1;
+}
+
+.heading-anchor:focus {
+  opacity: 1;
+}
+
+.heading-anchor {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-brand);
+    background: none;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: 'Buttons'
-weight: 8
+weight: 9
 ---
 
 Use the `<button>` element to create interactive buttons. To style a button with the outline style, use the data attribute `data-variant="outline"`. For more on this approach see [Exception’s in Cube CSS](https://cube.fyi/exception.html). 

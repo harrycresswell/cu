@@ -2,7 +2,7 @@
 title: "Visually Hidden"
 date: 2023-07-12T12:59:32+01:00
 draft: false
-weight: 4
+weight: 3
 ---
 
 Use the `.visually-hidden` utility to visually hide an element in the browser while ensuring it’s still accessible to assistive technologies, such as screen readers.

@@ -49,6 +49,27 @@ weight = 40
 parent = "Getting Started"
 
 [[sidebar]]
+pageRef = "#updating-fonts"
+name = "Updating fonts"
+url = "#updating-fonts"
+weight = 41
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "#type-and-space"
+name = "Type and space"
+url = "#type-and-space"
+weight = 42
+parent = "Getting Started"
+
+[[sidebar]]
+pageRef = "#theming"
+name = "Theming"
+url = "#theming"
+weight = 43
+parent = "Getting Started"
+
+[[sidebar]]
 pageRef = "global-styles"
 name = "Global styles"
 url = "/global-styles/"
@@ -84,6 +105,12 @@ parent = "Global"
 name = "Forms"
 url = "#forms"
 weight = 100
+parent = "Global"
+
+[[sidebar]]
+name = "Disclosure widgets"
+url = "#disclosure-widgets"
+weight = 105
 parent = "Global"
 
 [[sidebar]]
@@ -136,135 +163,141 @@ weight = 170
 identifier = "Compositions"
 
 [[sidebar]]
-name = "Grid"
-url = "#grid"
+name = "Region"
+url = "#region"
 weight = 180
+parent = "Compositions"
+
+[[sidebar]]
+name = "Wrapper"
+url = "#wrapper"
+weight = 190
+parent = "Compositions"
+
+[[sidebar]]
+name = "Flow"
+url = "#flow"
+weight = 200
 parent = "Compositions"
 
 [[sidebar]]
 name = "Cluster"
 url = "#cluster"
-weight = 190
+weight = 210
 parent = "Compositions"
 
 [[sidebar]]
 name = "Repel"
 url = "#repel"
-weight = 200
+weight = 220
+parent = "Compositions"
+
+[[sidebar]]
+name = "Grid"
+url = "#grid"
+weight = 230
 parent = "Compositions"
 
 [[sidebar]]
 name = "Sidebar"
 url = "#sidebar"
-weight = 201
+weight = 240
 parent = "Compositions"
 
 [[sidebar]]
 name = "Reel"
 url = "#reel"
-weight = 202
+weight = 250
 parent = "Compositions"
 
 [[sidebar]]
 name = "Switcher"
 url = "#switcher"
-weight = 203
+weight = 260
 parent = "Compositions"
 
 [[sidebar]]
 name = "Frame"
 url = "#frame"
-weight = 204
+weight = 270
 parent = "Compositions"
 
 [[sidebar]]
 pageRef = "/utilities/"
 name = "Utilities"
 url = "/utilities/"
-weight = 210
+weight = 280
 identifier = "Utilities"
 
 [[sidebar]]
-name = "Wrapper"
-url = "#wrapper"
-weight = 220
-parent = "Utilities"
-
-[[sidebar]]
-name = "Region"
-url = "#region"
-weight = 230
-parent = "Utilities"
-
-[[sidebar]]
-name = "Flow"
-url = "#flow"
-weight = 240
-parent = "Utilities"
-
-[[sidebar]]
-name = "Visually Hidden"
-url = "#visually-hidden"
-weight = 250
+name = "Center"
+url = "#center"
+weight = 290
 parent = "Utilities"
 
 [[sidebar]]
 name = "Text"
 url = "#text"
-weight = 260
+weight = 300
+parent = "Utilities"
+
+[[sidebar]]
+name = "Visually Hidden"
+url = "#visually-hidden"
+weight = 310
 parent = "Utilities"
 
 [[sidebar]]
 name = "Width"
 url = "#width"
-weight = 270
-parent = "Utilities"
-
-[[sidebar]]
-name = "Skip link"
-url = "#skip-link"
-weight = 275
+weight = 320
 parent = "Utilities"
 
 [[sidebar]]
 pageRef = "blocks"
 name = "Blocks"
 url = "/blocks/"
-weight = 280
+weight = 330
 identifier = "Blocks"
 
 [[sidebar]]
 name = "Button"
 url = "#button"
-weight = 290
+weight = 340
 parent = "Blocks"
 
 [[sidebar]]
 name = "Callout"
 url = "#callout"
-weight = 300
+weight = 350
 parent = "Blocks"
 
 [[sidebar]]
 name = "Card"
 url = "#card"
-weight = 310
+weight = 360
 parent = "Blocks"
 
 [[sidebar]]
 name = "Hero"
 url = "#hero"
-weight = 320
+weight = 370
 parent = "Blocks"
 
 [[sidebar]]
 name = "Prose"
 url = "#prose"
-weight = 325
+weight = 380
+parent = "Blocks"
+
+[[sidebar]]
+name = "Skip link"
+url = "#skip-link"
+weight = 390
 parent = "Blocks"
 
 [[sidebar]]
 pageRef = "resources"
 name = "Resources"
 url = "/resources/"
-weight = 330
+weight = 400

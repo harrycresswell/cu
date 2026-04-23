@@ -15,20 +15,20 @@ table {
 /* Add border to all table cells and aligned content left */
 td,
 th {
-  border: .1rem solid var(--color-border);
+  border: var(--stroke);
   padding: 0.5rem;
   text-align: left;
 }
 
 /* Give table header a background color */
 th {
-  background: var(--color-bg-mod-1);
+  background: var(--color-surface);
   font-weight: bold;
 }
 
 /* Give all even table rows a background color */
 tr:nth-child(even) {
-  background: var(--color-bg-mod-1);
+  background: var(--color-surface);
 }
 
 /* Make sure table captions sit beneath the table */

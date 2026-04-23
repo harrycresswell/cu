@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51317&amp;path=livereload" data-no-instant defer></script>
-  <meta name="generator" content="Hugo 0.126.1">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.151.2">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:51317/categories/">
+<link rel="canonical" href="http://localhost:1313/categories/">
 
 
 
@@ -50,7 +50,7 @@
     <meta property="og:locale" content="en-gb">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:51317/categories/">
+  <meta property="og:url" content="http://localhost:1313/categories/">
   <meta property="og:title"
     content="Categories &middot; cu.css">
   <meta property="og:description"
@@ -63,7 +63,7 @@
 
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="http://localhost:51317/categories/">
+  <meta property="twitter:url" content="http://localhost:1313/categories/">
   <meta property="twitter:title"
     content="Categories &middot; cu.css">
   <meta property="twitter:description"
@@ -73,7 +73,7 @@
 
 
 
-<link rel="author" href="http://localhost:51317/humans.txt" />
+<link rel="author" href="http://localhost:1313/humans.txt" />
 
     
 <meta name="author" content="Harry Cresswell">
@@ -81,22 +81,36 @@
 <link href="https://linkedin.com/in/harrycresswell/" rel="me">
 
 
-<link rel="apple-touch-icon" href="http://localhost:51317/img/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="http://localhost:51317/img/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="http://localhost:51317/img/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="shortcut icon" href="http://localhost:51317/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:51317/categories/index.xml" title="cu.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="cu.css" />
 
+
+  <script>
+    
+
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
 
   
     
     
     
     
+    <link rel="stylesheet" href="/docs/scss/main.css" media="screen">
     <link rel="stylesheet" href="/scss/main.css" media="screen">
-    <link rel="stylesheet" href="/scss/demo.css" media="screen">
   
 </head><body>
       <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
@@ -180,6 +194,18 @@
                 <a href="#working-with-sass">Working with SASS</a>
               </li>
             
+              <li>
+                <a href="#updating-fonts">Updating fonts</a>
+              </li>
+            
+              <li>
+                <a href="#type-and-space">Type and space</a>
+              </li>
+            
+              <li>
+                <a href="#theming">Theming</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -210,6 +236,10 @@
             
               <li>
                 <a href="#forms">Forms</a>
+              </li>
+            
+              <li>
+                <a href="#disclosure-widgets">Disclosure widgets</a>
               </li>
             
               <li>
@@ -253,7 +283,15 @@
 
             
               <li>
-                <a href="#grid">Grid</a>
+                <a href="#region">Region</a>
+              </li>
+            
+              <li>
+                <a href="#wrapper">Wrapper</a>
+              </li>
+            
+              <li>
+                <a href="#flow">Flow</a>
               </li>
             
               <li>
@@ -262,6 +300,10 @@
             
               <li>
                 <a href="#repel">Repel</a>
+              </li>
+            
+              <li>
+                <a href="#grid">Grid</a>
               </li>
             
               <li>
@@ -293,19 +335,7 @@
 
             
               <li>
-                <a href="#wrapper">Wrapper</a>
-              </li>
-            
-              <li>
-                <a href="#region">Region</a>
-              </li>
-            
-              <li>
-                <a href="#flow">Flow</a>
-              </li>
-            
-              <li>
-                <a href="#visually-hidden">Visually Hidden</a>
+                <a href="#center">Center</a>
               </li>
             
               <li>
@@ -313,11 +343,11 @@
               </li>
             
               <li>
-                <a href="#width">Width</a>
+                <a href="#visually-hidden">Visually Hidden</a>
               </li>
             
               <li>
-                <a href="#skip-link">Skip link</a>
+                <a href="#width">Width</a>
               </li>
             
           </ul>
@@ -352,6 +382,10 @@
                 <a href="#prose">Prose</a>
               </li>
             
+              <li>
+                <a href="#skip-link">Skip link</a>
+              </li>
+            
           </ul>
         </li>
       
@@ -377,11 +411,21 @@
   </div>
 </section>
 
-      </main><footer class="region | text-center bt">
-  <div class="wrapper">
-    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. MIT license.
-    <a href="/changelog">Changelog.</a>
-    </small>
+      </main><footer class="region | bt">
+  <div class="wrapper | center | flow">
+    <p>Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. </p>
+    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. MIT license. <a href="/changelog">Changelog.</a></small>
+    <form class="theme-switch" data-element="theme-switch" hidden>
+  <div class="cluster">
+    <label for="theme-switch">Theme:</label>
+    <select id="theme-switch">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
   </div>
-</footer></body>
+</form>
+  </div>
+</footer>
+      <script src="/docs/js/main.js"></script></body>
 </html>

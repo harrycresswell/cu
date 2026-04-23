@@ -3,8 +3,8 @@ HERO
 */
 .hero {
   --region-space: 8rem;
-  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-bg) 20%, transparent 20%);
-  background-color: var(--color-bg);
+  background-image: radial-gradient(var(--color-text) 7%, transparent 20%), radial-gradient(var(--color-canvas) 20%, transparent 20%);
+  background-color: var(--color-canvas);
   background-position: 0 0, 50px 50px;
   background-size: 3px 3px;
   padding-inline: var(--space-s-m);

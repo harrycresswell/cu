@@ -9,16 +9,19 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  /* Configure focus color from global focus */
-  --focus-color: var(--color-brand);
+  /* Configure focus and stroke color */
+  --focus-ring-color: var(--color-brand);
+  --stroke-color: var(--color-brand);
 
   background-color: var(--color-brand);
-  border: solid 0.1rem var(--color-brand);
-  border-radius: var(--border-radius);
-  color: var(--color-bg);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
+  border-radius: var(--radius);
+  color: var(--color-text-invert);
   cursor: pointer;
-  padding: var(--space-3xs) var(--space-2xs);
   display: inline-block;
+  padding: var(--space-3xs) var(--space-2xs);
   text-decoration: none;
   text-align: center;
 }
@@ -47,9 +50,14 @@ For disabled link styles, used with role=link
 input[type="submit"]:disabled,
 input[type="reset"]:disabled, 
 input[type="button"]:disabled {
-  background-color: var(--color-bg-mod-2);
-  border: solid 0.1rem var(--color-bg-mod-2);
-  color: var(--color-text-mod-2);
+  /* Configure stroke color */
+  --stroke-color: var(--color-surface-raised);
+
+  background-color: var(--color-surface-raised);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
+  color: var(--color-text-subtle);
   cursor: not-allowed;
   transform: none;
   filter: none;
@@ -68,8 +76,10 @@ input[type="submit"][data-variant='outline'],
 input[type="reset"][data-variant='outline'],
 input[type="button"][data-variant='outline'] {
   color: var(--color-brand);
-  background: var(--color-bg);
-  border: solid 0.1rem var(--color-brand);
+  background: var(--color-canvas);
+  border-width: var(--stroke-width);
+  border-style: var(--stroke-style);
+  border-color: var(--stroke-color);
 }
 
 button[data-variant='outline']:hover,
@@ -78,5 +88,4 @@ input[type="submit"][data-variant='outline']:hover,
 input[type="reset"][data-variant='outline']:hover,
 input[type="button"][data-variant='outline']:hover {
   filter: brightness(1.2);
-  border: solid 0.1rem var(--color-brand);
 }
