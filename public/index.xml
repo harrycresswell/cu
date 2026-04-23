@@ -6,7 +6,7 @@
     <description>Recent content in A lightweight CSS boilerplate on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 20 Apr 2026 11:02:35 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 14:57:04 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Center</title>
@@ -280,6 +280,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/global-styles/visibility/</guid>
       <description>&lt;p&gt;You can use the &lt;code&gt;[hidden]&lt;/code&gt; attribute to prevent the browser from rendering content. This is useful when you are manipulating content with JavaScript, or if you wish to hide content from the accessibility tree.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;p hidden&amp;gt;This paragraph is hidden from the browser and will not render&amp;lt;/p&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you don’t want content to be visible in the browser, but would like it to remain accessible to screen readers and other assistive technologies, then use the &lt;a href=&#34;http://localhost:1313/utilities/#visually-hidden&#34;&gt;visually hidden&lt;/a&gt; utility class instead.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>v0.2.0</title>
+      <link>http://localhost:1313/changelog/26-04-23-v0.2.0/</link>
+      <pubDate>Thu, 23 Apr 2026 14:57:04 +0100</pubDate>
+      <guid>http://localhost:1313/changelog/26-04-23-v0.2.0/</guid>
+      <description>&lt;p&gt;Custom properties have been completely overhauled in this release with a new &lt;em&gt;primitive&lt;/em&gt; and &lt;em&gt;semantic&lt;/em&gt; design tokens approach which makes theming easier and more logical, so expect breaking changes.&lt;/p&gt;&#xA;&lt;p&gt;Primitive tokens store design decisions, mostly as raw values. Semantic tokens describe how or where primitive tokens should be used when authoring styles. They are made up of both primitives and raw values. Read more about this approach in the &lt;a href=&#34;http://localhost:1313/getting-started/#theming&#34;&gt;theming docs&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>v0.1.9</title>

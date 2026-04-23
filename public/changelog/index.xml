@@ -6,8 +6,15 @@
     <description>Recent content in Changelog on cu.css</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 07 Mar 2025 10:58:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 14:57:04 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/changelog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v0.2.0</title>
+      <link>http://localhost:1313/changelog/v0.2.0/</link>
+      <pubDate>Thu, 23 Apr 2026 14:57:04 +0100</pubDate>
+      <guid>http://localhost:1313/changelog/v0.2.0/</guid>
+      <description>&lt;p&gt;Custom properties have been completely overhauled in this release with a new &lt;em&gt;primitive&lt;/em&gt; and &lt;em&gt;semantic&lt;/em&gt; design tokens approach which makes theming easier and more logical, so expect breaking changes.&lt;/p&gt;&#xA;&lt;p&gt;Primitive tokens store design decisions, mostly as raw values. Semantic tokens describe how or where primitive tokens should be used when authoring styles. They are made up of both primitives and raw values. Read more about this approach in the &lt;a href=&#34;http://localhost:1313/getting-started/#theming&#34;&gt;theming docs&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>v0.1.9</title>
       <link>http://localhost:1313/changelog/v0.1.9/</link>

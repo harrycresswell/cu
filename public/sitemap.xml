@@ -120,7 +120,10 @@
     <loc>http://localhost:1313/resources/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-20T11:02:35+01:00</lastmod>
+    <lastmod>2026-04-23T14:57:04+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/changelog/26-04-23-v0.2.0/</loc>
+    <lastmod>2026-04-23T14:57:04+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/changelog/v0.1.9/</loc>
     <lastmod>2025-03-07T10:58:28+00:00</lastmod>

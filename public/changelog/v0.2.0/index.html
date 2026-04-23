@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="generator" content="Hugo 0.151.2">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+
+
+
+
+
+
+
+
+<title>cu.css &middot; v0.2.0</title>
+
+
+  <meta 
+  name="description"
+  content="A lightweight CSS boilerplate">
+
+  
+
+
+  
+  <meta name="robots" content="index,follow" />
+  
+  <meta name="googlebot" content="index,follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+
+<link rel="canonical" href="http://localhost:1313/changelog/v0.2.0/">
+
+
+
+
+
+
+  <meta http-equiv="content-language" content="en-gb" />
+
+
+
+
+  
+    <meta property="og:locale" content="en-gb">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:1313/changelog/v0.2.0/">
+  <meta property="og:title"
+    content="v0.2.0 &middot; cu.css">
+  <meta property="og:description"
+    content="A lightweight CSS boilerplate">
+  <meta property="og:site_name"
+    content="cu.css">
+  
+  <meta property="og:image" content="">
+
+
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:1313/changelog/v0.2.0/">
+  <meta property="twitter:title"
+    content="v0.2.0 &middot; cu.css">
+  <meta property="twitter:description"
+    content="A lightweight CSS boilerplate">
+  
+   <meta property="twitter:image" content="" />
+
+
+
+<link rel="author" href="http://localhost:1313/humans.txt" />
+
+    
+<meta name="author" content="Harry Cresswell">
+<link href="https://github.com/harrycresswell" rel="me">
+<link href="https://linkedin.com/in/harrycresswell/" rel="me">
+
+
+<link rel="apple-touch-icon" href="http://localhost:1313/img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico">
+
+
+
+
+  <script>
+    
+
+    (function() {
+      let theme = window.localStorage.getItem("theme"),
+          doc = document.documentElement;
+      if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          doc.setAttribute("data-theme", "dark");
+      } else if (!theme && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          doc.setAttribute("data-theme", "light");
+      } else if (theme) doc.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  
+    
+    
+    
+    
+    <link rel="stylesheet" href="/docs/scss/main.css" media="screen">
+    <link rel="stylesheet" href="/scss/main.css" media="screen">
+  
+</head><body>
+      <a class="skip-link" href="#main-content">Skip to main content</a><header class="wrapper region repel" style="--region-space: 1.5rem;">
+  <a data-variant="naked" href="/">cu.css</a>
+  <nav data-variant="main" aria-label="Main">
+  <ul class="cluster" style="--gutter: 1.5rem" role="list">
+    
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+        href="/"
+        >
+          
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+        href="/getting-started/"
+        >
+          
+          Docs
+        </a>
+      </li>
+    
+      <li>
+        <a 
+        data-variant="naked"
+        
+        
+          target="_blank" rel="noopener noreferrer"
+        
+        href="https://github.com/harrycresswell/cu"
+        >
+          
+            <span class="icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><path fill-rule="evenodd" d="M10.178 0C4.55 0 0 4.583 0 10.254c0 4.532 2.915 8.369 6.96 9.727.505.102.69-.221.69-.493 0-.237-.016-1.052-.016-1.9-2.832.61-3.421-1.223-3.421-1.223-.455-1.188-1.13-1.494-1.13-1.494-.926-.628.068-.628.068-.628 1.028.068 1.567 1.052 1.567 1.052.91 1.562 2.376 1.12 2.966.85.084-.663.354-1.121.64-1.376-2.258-.238-4.634-1.12-4.634-5.059 0-1.12.405-2.037 1.045-2.75-.101-.254-.455-1.307.101-2.716 0 0 .86-.272 2.797 1.052a9.786 9.786 0 0 1 2.545-.34c.86 0 1.735.12 2.544.34 1.938-1.324 2.798-1.052 2.798-1.052.556 1.409.202 2.462.1 2.716.658.713 1.045 1.63 1.045 2.75 0 3.939-2.375 4.804-4.65 5.06.37.322.69.933.69 1.9 0 1.375-.016 2.479-.016 2.818 0 .272.185.595.69.493a10.246 10.246 0 0 0 6.96-9.728C20.356 4.584 15.789 0 10.178 0Z" clip-rule="evenodd"/></svg>
+            </span>
+          
+          Github
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+</header><main id="main-content">
+        <section class="hero | region | flow">
+            <h1>v0.2.0</h1>
+            
+        </section>
+<section class="changelog | wrapper region" style="--wrapper-max-width: 80rem;">
+  <article class="changelog-item | sidebar">
+      <div class="cluster">
+        <time>2026-04-23</time><span>Updated</span><span>Fixed</span></div>
+      <div class="flow">
+        
+          <p>New approach to theming and various improvements to the documentation website, including dark mode support.</p>
+        
+        <p>Custom properties have been completely overhauled in this release with a new <em>primitive</em> and <em>semantic</em> design tokens approach which makes theming easier and more logical, so expect breaking changes.</p>
+<p>Primitive tokens store design decisions, mostly as raw values. Semantic tokens describe how or where primitive tokens should be used when authoring styles. They are made up of both primitives and raw values. Read more about this approach in the <a href="/getting-started/#theming">theming docs</a></p>
+<p>I’ve also made a bunch of improvements to the documentation website, including reorganising the getting started section and adding of a theme toggle, for those that prefer reading in dark mode.</p>
+<h2 id="improvements">Improvements&nbsp;<a class="heading-anchor" href="#improvements" aria-label="Anchor">#</a> </h2>
+<h3 id="core-boilerplate">Core boilerplate&nbsp;<a class="heading-anchor" href="#core-boilerplate" aria-label="Anchor">#</a> </h3>
+<ul>
+<li>Semantic color tokens replace primitives in authored styles. For example,  <code>color: var(--color-text)</code> is now used instead of <code>color: var(--color-dark)</code>. Primitives (e.g <code>--color-dark: #0d101c</code>) still remain in the codebase, but are now only used to create semantic tokens. They are no longer used directly within style declarations.</li>
+<li><code>--width-*</code> properties renamed to more semantic <code>--measure-*</code> to make clear there use is for typographical purposes – setting <a href="https://practicaltypography.com/line-length.html" target="_blank" rel="noopener">line length</a>, a.k.a line measure.</li>
+<li><code>--tracking-s</code> renamed <code>--tracking-compact</code> inline with other typography related tokens.</li>
+<li>Added semantic <code> --focus-ring-*</code> tokens to allow customisation of focus ring <em>width</em>, <em>color</em>, <em>offset</em> and <em>style</em>.</li>
+<li>Added semantic <code>--text-decoration-*</code> tokens to allow customisation of text decoration <em>color</em>, <em>line</em>, <em>style</em> and <em>thickness</em>.</li>
+<li>Added semantic <code>--stroke-*</code> tokens to allow customisation of <em>style</em>, <em>width</em> and <em>color</em> of borders, outlines, SVG paths etc.</li>
+<li>Renamed <code>--border-radius</code> to <code>--radius</code> to make it more widely applicable, particularly when using to modify borderless elements. Also helps prevent confusion as to why most border related properties use <code>--stroke-*</code>, except for <code>border-radius</code> which used <code>--border-radius</code>.</li>
+<li>Rename <code>--color-bg-*</code> tokens to more semantic <code>--color-canvas</code> (used for main website background) and <code>--color-surface-*</code>, used backgrounds of UI elements.</li>
+<li>Introduce semantic <code>--font-size-*</code> tokens using t-shirt sizing scale. These consume non-semantic type scale primitives (e.g. <code>--step-1</code>).</li>
+<li>Added <a href="/utilities/#center">center utility</a> which can be used to horizontally center block-level items.</li>
+<li>Moved <a href="/compositions/#region">region</a>, <a href="/compositions/#wrapper">wrapper</a> and <a href="/compositions/#flow">flow</a> from <code>scss/utilities</code> to <code>scss/compositions</code>, as I tend to consider these layout related helpers. and in the boilerplate SCSS, as I tend to consider these layout related helpers.</li>
+<li>Moved <a href="/blocks/#skip-link">skip link</a> from <code>scss/utilities</code> to <code>scss/blocks</code>, as I tend to consider this pattern a component.</li>
+</ul>
+<h3 id="documentation-website">Documentation website&nbsp;<a class="heading-anchor" href="#documentation-website" aria-label="Anchor">#</a> </h3>
+<ul>
+<li>Added theme toggle functionality, allowing site visitors to set their theme preferences whilst reading the docs. Note, this is not part of the <em>cu.css</em> boilerplate as the functionality requires JavaScript to make a theme persists in localStorage. Dark mode in the boilerplate continues to be automatic ”user-preference” only, based on your system settings.</li>
+<li>Added use of ARIA <code>list</code> role  to remove markers from <code>&lt;ol&gt;</code>’s and <code>&lt;ul&gt;</code>’s.</li>
+<li>Split <a href="/#accordions">accordion docs</a> into Disclosure Widget and Accordions (a group of disclosure widgets) and added information about how to make accordions accessible.</li>
+<li>Moved <a href="/compositions/#region">region</a>, <a href="/compositions/#wrapper">wrapper</a> and <a href="/compositions/#flow">flow</a> from Utilities to Compositions section, as I tend to consider these layout related helpers.</li>
+<li>Moved <a href="/blocks/#skip-link">skip link</a> from Utilities to Blocks section, as I tend to consider this pattern a component.</li>
+<li>Reorganising <a href="/getting-started/">getting started</a> docs into more logic sections - updating fonts, type and space, and theming.</li>
+<li>Moved documentation site related CSS and JavaScript away from the core boilerplate (<code>assets/scss</code>) and into its own location (<code>docs/scss</code> and <code>docs/js</code>). This should prevent confusion as to which code is core and which code is only used in the docs site.</li>
+<li>Minor improvements to wording on the homepage.</li>
+<li>Add <a href="https://gohugo.io/render-hooks/blockquotes/" target="_blank" rel="noopener">blockquote render hook</a> for styling callouts.</li>
+</ul>
+<h2 id="bug-fixes">Bug fixes&nbsp;<a class="heading-anchor" href="#bug-fixes" aria-label="Anchor">#</a> </h2>
+<ul>
+<li>Added list-style values to remove default <code>&lt;summary&gt;</code> marker on Safari , see <a href="https://www.matuzo.at/blog/2023/details-summary" target="_blank" rel="noopener">details/summary inconsistencies</a> from Manuel Matuzović for more on this.</li>
+<li>Added missing <code>::selection</code> styles and <code>img</code> filter to <code>[data-theme=&quot;dark&quot;]</code>. Note, this only applies to the documentation website and doesn’t affect the core boilerplate itself.</li>
+</ul>
+ 
+      </div>
+  </article>
+</section>
+
+      </main><footer class="region | bt">
+  <div class="wrapper | center | flow">
+    <p>Inspired by <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">CUBE CSS</a>, <a href="https://utopia.fyi/" target="_blank" rel="noopener noreferrer">Utopia</a>, <a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every Layout</a>, <a href="https://inclusive-components.design/" target="_blank" rel="noopener noreferrer">Inclusive Components</a> and <a href="https://simplecss.org/" target="_blank" rel="noopener noreferrer">Simple CSS</a>. </p>
+    <small>Created by <a href="https://harrycresswell.com/" target="_blank" rel="noopener noreferrer">Harry Cresswell</a>. MIT license. <a href="/changelog">Changelog.</a></small>
+    <form class="theme-switch" data-element="theme-switch" hidden>
+  <div class="cluster">
+    <label for="theme-switch">Theme:</label>
+    <select id="theme-switch">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </div>
+</form>
+  </div>
+</footer>
+      <script src="/docs/js/main.js"></script></body>
+</html>
